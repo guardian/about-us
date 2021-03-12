@@ -1,0 +1,37 @@
+{
+  "name": "about-us",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardian/about-us.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "typescript",
+    "nextjs"
+  ],
+  "author": "richard.bangay.freelancer@guardian.co.uk",
+  "license": "ISC",
+  "homepage": "https://github.com/guardian/about-us#readme",
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@guardian/src-foundations": "^3.3.0",
+    "next": "^10.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.33",
+    "@types/prettier": "^2.2.2",
+    "@types/react": "^17.0.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  }
+}
