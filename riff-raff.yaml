@@ -8,3 +8,4 @@ deployments:
     parameters:
       bucket: gu-about-us
       prefixStack: false
+      cacheControl: no-cache
