@@ -1,0 +1,10 @@
+regions:
+  - eu-west-1
+stacks:
+  - about-us
+deployments:
+  gu-about-us-upload:
+    type: aws-s3
+    parameters:
+      bucket: gu-about-us
+      prefixStack: false
