@@ -3,8 +3,8 @@
 import { jsx, css } from "@emotion/react";
 import React from "react";
 import { background } from "@guardian/src-foundations/palette";
-import { GLogo } from "../components/gLogo";
-import { PageStyles } from "../components/pageStyles";
+import { GLogo } from "../../components/gLogo";
+import { PageStyles } from "../../components/pageStyles";
 
 const HomePage = () => {
   const headerCss = css`
