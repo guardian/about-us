@@ -1,7 +1,7 @@
 regions:
   - eu-west-1
 stacks:
-  - about-us
+  - membership-about-us
 deployments:
   gu-about-us-upload:
     type: aws-s3
