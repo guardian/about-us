@@ -1,11 +1,12 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import React from "react";
-import { css, Global, jsx } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
-import { brand } from "@guardian/src-foundations/palette";
+import { brand, brandAlt } from "@guardian/src-foundations/palette";
 import { headline, textSans } from "@guardian/src-foundations/typography";
-import {space} from "@guardian/src-foundations";
+import { space } from "@guardian/src-foundations";
+import { minWidth } from "../styles/breakpoints";
 
 interface NavSection {
   title: string;
@@ -17,131 +18,249 @@ interface HeaderProps {
   navSections: NavSection[];
 }
 
-const HeaderStyles = () => (
-  <Global
-    styles={css`
-      header {
-        background-color: ${brand[400]};
-        padding: 0 57px 0 10px;
-        text-align: right;
-        position: relative;
+const cssTransitionFunc = "cubic-bezier(0.23, 1, 0.32, 1)";
+
+const headerStyles = css`
+  background-color: ${brand[400]};
+  padding: 0 57px 0 10px;
+  text-align: right;
+  position: relative;
+  & .top-and-bottom-nav {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    width: calc(100vw - 30px);
+    height: 100vh;
+    background-color: ${brand[400]};
+    transition: left 0.4s ${cssTransitionFunc};
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      right: -21px;
+      width: 42px;
+      height: 42px;
+      background-image: url("/images/menu-opened.svg");
+    }
+  }
+
+  & input:checked ~ .top-and-bottom-nav {
+    left: 0;
+  }
+  & .top-and-bottom-nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ${cssTransitionFunc};
+  }
+  & input:checked ~ .top-and-bottom-nav:before {
+    opacity: 0.8;
+  }
+  & .nav-button {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 9;
+    background-image: url(/images/menu-closed.svg);
+  }
+  & input:checked ~ .nav-button {
+    background-image: url(/images/menu-opened.svg);
+  }
+
+  & nav {
+    text-align: left;
+  }
+
+  & nav a {
+    ${headline.xsmall({ fontWeight: "bold" })};
+    line-height: 1.5;
+    padding-bottom: ${space[5]}px;
+    border-bottom: 1px solid ${brand[600]};
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+  & nav:nth-of-type(2) a {
+    ${textSans.medium({ fontWeight: "bold" })};
+  }
+
+  ${minWidth.tablet} {
+    padding: 0;
+
+    & .top-and-bottom-nav {
+      position: static;
+      background-color: transparent;
+      transition: unset;
+      width: unset;
+      height: unset;
+      padding-left: ${space[2]}px;
+      border-top: 1px solid ${brand[600]};
+      border-bottom: 1px solid ${brand[600]};
+      &: before, &: after {
+        display: none;
       }
-      header .top-and-bottom-nav {
-        position: fixed;
-        top: 0;
-        left: -100vw;
-        width: 100vw;
-        width: calc(100vw - 30px);
-        height: 100vh;
-        background-color: ${brand[400]};
-        transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        &:after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 22px;
-          right: -21px;
-          width: 42px;
-          height: 42px;
-          background-image: url("/images/menu-opened.svg");
-        }
-      }
-      header input:checked ~ .top-and-bottom-nav {
-        left: 0;
-      }
-      header .top-and-bottom-nav:before {
+    }
+    & nav a {
+      ${headline.xxsmall({ fontWeight: "bold" })};
+      line-height: 1.25;
+      display: inline-block;
+      margin-left: 0;
+      padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
+      border-bottom: 0;
+      position: relative;
+      &:after {
         content: '';
         position: absolute;
         top: 0;
-        left: 100%;
-        width: 100vw;
-        height: 100vh;
-        background-color: black;
-        overflow-X: hidden;
-        opacity: 0;
-        transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: ${brandAlt[400]};
+        transition: height .3s ease-in-out;
       }
-      header input:checked ~ .top-and-bottom-nav:before {
-        opacity: 0.8;
+      &:hover:after {
+        height: 3px;
       }
-      header .nav-button {
-        width: 42px;
-        height: 42px;
+      & + a:before {
+        content: '';
         position: absolute;
-        right: 10px;
-        bottom: 5px;
-        z-index: 9;
-        background-image: url(/images/menu-closed.svg);
+        left: 0;
+        top: 0;
+        height: 70%;
+        border-left: 1px solid ${brand[600]};
       }
-      header input:checked ~ .nav-button {
-        background-image: url(/images/menu-opened.svg);
+    }
+    & nav a.selected-nav-item: after {
+      height: 3px;
+    }
+    & nav:nth-of-type(2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      & a {
+        ${textSans.small({ fontWeight: "bold" })};
+        border-bottom: 0;
+        transition: color 250ms ease-out;
+        &:after {
+          display: none;
+        }
+        &:hover {
+          color: ${brandAlt[400]};
+        }
       }
+    }
+  }
+  ${minWidth.desktop} {
+    & .top-and-bottom-nav {
+      max-width: 980px;
+      margin: 0 auto;
+      padding-left: 0;
+      border-left: 1px solid ${brand[600]};
+      border-right: 1px solid ${brand[600]};
+    }
+    & nav:first-of-type a:first-of-type {
+      padding-left: ${space[5]}px;
+    }
+    & nav:nth-of-type(2) {
+      left: 50%;
+      transform: translateX(-490px);
+      & a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 70%;
+        border-left: 1px solid ${brand[600]};
+      }
+    }
+  }
+  ${minWidth.wide} {
+    & .top-and-bottom-nav {
+      max-width: 1300px;
+    }
+    & nav:nth-of-type(2) {
+      transform: translateX(-650px);
+    }
+  }
+`;
 
-      header nav {
-        text-align: left;
-      }
+const logoHolderStyle = css`
+  &:after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-image: url("/images/menu-closed.svg");
+    position: absolute;
+    top: 22px;
+    right: 10px;
+  }
 
-      header nav a {
-        ${headline.xsmall({ fontWeight: "bold" })};
-        line-height: 1.5;
-        padding-bottom: ${space[5]}px;
-        border-bottom: 1px solid ${brand[600]};
-        color: white;
-        display: block;
-        text-decoration: none;
-        margin-left: 50px;
-      }
-      header nav:nth-child(2) a {
-        ${textSans.medium({ fontWeight: "bold" })};
-      }
-    `}
-  />
-);
+  ${minWidth.tablet} {
+    &:after {
+      display: none;
+    }
+  }
+  ${minWidth.desktop} {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  ${minWidth.wide} {
+    max-width: 1300px;
+  }
+`;
+
+const hiddenCheckboxStyle = css`
+  opacity: 0;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  z-index: 10;
+  ${minWidth.tablet} {
+    display: none;
+  }
+`;
 
 const Header = (props: HeaderProps) => (
   <>
-    <HeaderStyles />
-    <header>
-      <div
-        css={css`
-          &:after {
-            content: "";
-            display: block;
-            width: 42px;
-            height: 42px;
-            background-image: url("/images/menu-closed.svg");
-            position: absolute;
-            top: 22px;
-            right: 10px;
-          }
-        `}
-      >
+    <header css={headerStyles}>
+      <div css={logoHolderStyle}>
         <GLogo />
       </div>
-      <input
-        type="checkbox"
-        css={css`
-          opacity: 0;
-          width: 42px;
-          height: 42px;
-          position: absolute;
-          right: 10px;
-          bottom: 5px;
-          z-index: 10;
-        `}
-      />
+      <input type="checkbox" css={hiddenCheckboxStyle} />
       <div className="top-and-bottom-nav">
         <nav>
           {props.navSections.map((navItem, navItemIndex) => (
-            <a href={navItem.link} key={`nav-${navItemIndex}`}>
+            <a
+              href={navItem.link}
+              {...(navItem.isSelected
+                ? { className: "selected-nav-item" }
+                : {})}
+              key={`nav-${navItemIndex}`}
+            >
               {navItem.title}
             </a>
           ))}
         </nav>
         <nav>
-          <a href="https://theguardian.com">Guardian press office</a>
-          <a href="https://theguardian.com">Work for us</a>
-          <a href="https://theguardian.com">Contact us</a>
+          <a href="https://www.theguardian.com/gnm-press-office">
+            Guardian press office
+          </a>
+          <a href="https://workforus.theguardian.com/">Work for us</a>
+          <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
         </nav>
       </div>
     </header>

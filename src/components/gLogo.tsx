@@ -1,6 +1,8 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import {space} from "@guardian/src-foundations";
+import {minWidth} from "../styles/breakpoints";
 
 export const GLogo = () => (
   <a
@@ -25,6 +27,10 @@ export const GLogo = () => (
         height: 48px;
         width: auto;
         margin: 5px 0 12px;
+        ${minWidth.tablet} {
+          height: 96px;
+          margin: ${space[2]}px ${space[4]}px ${space[4]}px;
+        }
       `}
     >
       <path

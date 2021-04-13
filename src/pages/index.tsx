@@ -14,22 +14,22 @@ const HomePage = () => (
         {
           title: "About us",
           isSelected: true,
-          link: "https://theguardian.com",
+          link: "/",
         },
         {
           title: "Our organisation",
           isSelected: false,
-          link: "https://theguardian.com",
+          link: "/our-organisation",
         },
         {
           title: "Our history",
           isSelected: false,
-          link: "https://theguardian.com",
+          link: "/our-history",
         },
         {
           title: "Journalism",
           isSelected: false,
-          link: "https://theguardian.com",
+          link: "/journalism",
         },
       ]}
     />
