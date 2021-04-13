@@ -14,7 +14,7 @@ const OurHistory = () => {
     <>
       <PageStyles />
       <header css={headerCss}>
-        <GLogo width={295} />
+        <GLogo />
       </header>
     </>
   );
