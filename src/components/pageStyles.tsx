@@ -8,6 +8,7 @@ export const PageStyles = () => (
     styles={css`
       ${fonts};
       ${resets.defaults};
+
       body {
         margin: 0;
         padding: 0;
