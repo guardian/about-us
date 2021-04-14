@@ -40,16 +40,15 @@ const triangleCss = css`
     left: 100px;
   }
   ${minWidth.wide} {
-    left: 330px;
+    left: 50%;
+    left: calc(50% - 320px);
   }
 `;
 
 const blockquoteCss = css`
   display: inline;
   margin-left: 0;
-  ${titlepiece.small({
-    unit: "px",
-  })};
+  ${titlepiece.small()};
   font-size: 36px;
   line-height: 1.15;
   ${minWidth.tablet} {
@@ -69,7 +68,7 @@ const quotationMarkCss = css`
   margin-right: 6px;
   ${minWidth.tablet} {
     height: 40px;
-    margin-right: 8px;
+    margin-right: ${space[2]}px;
   }
   ${minWidth.desktop} {
     height: 52px;
@@ -84,7 +83,6 @@ const quotationMarkCss = css`
 `;
 
 const quoteDivCss = css`
-  position: relative;
   padding: 27px ${space[6]}px;
   ${minWidth.tablet} {
     padding: 45px 140px;
@@ -94,6 +92,7 @@ const quoteDivCss = css`
   }
   ${minWidth.wide} {
     padding: 95px 170px 95px 330px;
+    position: relative;
   }
 `;
 
@@ -101,18 +100,15 @@ const citeCss = css`
   display: block;
   margin-top: ${space[2]}px;
   ${headline.xxsmall({
-    lineHeight: "loose",
-    unit: "px",
+    lineHeight: "tight",
     fontWeight: "regular",
   })}
   ${minWidth.tablet} {
     font-size: 30px;
-    line-height: 35px;
     margin-top: ${space[3]}px;
   }
   ${minWidth.desktop} {
     font-size: 35px;
-    line-height: 30.5px;
     margin-top: ${space[5]}px;
   }
 `;
