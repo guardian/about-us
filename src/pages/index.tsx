@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import React from "react";
-import { background } from "@guardian/src-foundations";
+import { background } from "@guardian/src-foundations/palette";
 import { GLogo } from "../components/gLogo";
 import HeaderQuote from "../components/headerQuote";
 import { PageStyles } from "../components/pageStyles";
