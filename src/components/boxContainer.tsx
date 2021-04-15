@@ -3,12 +3,15 @@
 import { jsx, css } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import { space } from "@guardian/src-foundations";
+import { neutral, space, sport } from "@guardian/src-foundations";
+
+type Theme = "light" | "dark";
 
 interface BoxContainerProps {
   overlap?: boolean;
   children: ReactElement;
   background: string;
+  theme: Theme;
 }
 
 const BoxContainer = (props: BoxContainerProps) => {
@@ -41,6 +44,9 @@ const BoxContainer = (props: BoxContainerProps) => {
 
   const boxContentsCss = css`
     padding: 0px ${space[3]}px;
+    background: ${props.theme == "light" ? neutral[100] : sport[300]};
+    border: 1px solid ${props.theme == "light" ? neutral[86] : sport[300]};
+    color: ${props.theme == "light" ? neutral[7] : neutral[100]};
     ${minWidth.tablet} {
       padding: 0px ${space[5]}px;
     }
