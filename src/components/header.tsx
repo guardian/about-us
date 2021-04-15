@@ -7,7 +7,6 @@ import { brand, brandAlt } from "@guardian/src-foundations/palette";
 import { headline, textSans } from "@guardian/src-foundations/typography";
 import { space } from "@guardian/src-foundations";
 import { minWidth } from "../styles/breakpoints";
-import { guardianEgyp } from "../styles/fonts";
 
 interface NavSection {
   title: string;
@@ -85,7 +84,7 @@ const headerStyles = css`
   }
 
   & nav a {
-    ${headline.xsmall({ fontWeight: "bold", lineHeight: "loose" })};
+    ${headline.xsmall({fontWeight: "bold", lineHeight: "loose" })};
     padding-bottom: ${space[5]}px;
     border-bottom: 1px solid ${brand[600]};
     color: white;
@@ -94,10 +93,10 @@ const headerStyles = css`
     margin-left: 50px;
   }
   & nav:nth-of-type(2) a {
-    ${textSans.medium({ fontWeight: "bold" })};
+    ${textSans.medium({ fontWeight: "regular" })};
   }
 
-  ${minWidth.tablet} {
+  ${minWidth.headerTablet} {
     padding: 0;
     border-bottom: 1px solid ${brand[600]};
     & .top-and-bottom-nav {
@@ -149,8 +148,11 @@ const headerStyles = css`
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      max-width: 680px;
       & a {
-        ${textSans.small({ fontWeight: "bold" })};
+        ${textSans.small({ fontWeight: "regular" })};
+        padding: ${space[2]}px;
         border-bottom: 0;
         transition: color 250ms ease-out;
         &:after {
@@ -176,6 +178,9 @@ const headerStyles = css`
     & nav:nth-of-type(2) {
       left: 50%;
       transform: translateX(-490px);
+      & a {
+        padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
+      }
       & a:before {
         content: '';
         position: absolute;
@@ -208,7 +213,7 @@ const logoHolderStyle = css`
     right: 10px;
   }
 
-  ${minWidth.tablet} {
+  ${minWidth.headerTablet} {
     &:after {
       display: none;
     }
@@ -230,7 +235,7 @@ const hiddenCheckboxStyle = css`
   right: 10px;
   bottom: 5px;
   z-index: 10;
-  ${minWidth.tablet} {
+  ${minWidth.headerTablet} {
     display: none;
   }
 `;
