@@ -11,8 +11,10 @@ import { headline, titlepiece } from "@guardian/src-foundations/typography";
 import { ReactElement } from "react";
 import { minWidth } from "../styles/breakpoints";
 
+type Theme = "light" | "dark";
+
 interface FullWidthTextProps {
-  theme: string;
+  theme: Theme;
   children: ReactElement;
   title?: string;
 }
