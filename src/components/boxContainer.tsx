@@ -48,7 +48,7 @@ const BoxContainer = (props: BoxContainerProps) => {
       padding: 0px 80px;
     }
     ${minWidth.wide} {
-      padding: 0px 80px 0px 330px;
+      padding: 0px 95px 0px 259px;
     }
   `;
 
