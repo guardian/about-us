@@ -47,7 +47,7 @@ const triangleCss = css`
 
 const blockquoteCss = css`
   display: inline;
-  margin-left: 0;
+  margin: 0;
   ${titlepiece.small()};
   font-size: 36px;
   line-height: 1.15;
@@ -77,7 +77,7 @@ const quotationMarkCss = css`
   ${minWidth.wide} {
     height: 55px;
     position: absolute;
-    left: 235px;
+    left: 160px;
     top: 110px;
   }
 `;
@@ -85,13 +85,13 @@ const quotationMarkCss = css`
 const quoteDivCss = css`
   padding: 27px ${space[6]}px;
   ${minWidth.tablet} {
-    padding: 45px 140px;
+    padding: 45px 141px;
   }
   ${minWidth.desktop} {
-    padding: 95px 100px;
+    padding: 95px 101px;
   }
   ${minWidth.wide} {
-    padding: 95px 170px 95px 330px;
+    padding: 95px 95px 95px 259px;
     position: relative;
   }
 `;
