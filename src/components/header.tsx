@@ -4,9 +4,10 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import { brand, brandAlt } from "@guardian/src-foundations/palette";
-import { headline, textSans } from "@guardian/src-foundations/typography";
+import { textSans } from "@guardian/src-foundations/typography";
 import { space } from "@guardian/src-foundations";
 import { minWidth } from "../styles/breakpoints";
+import {guardianEgyp} from "../styles/fonts";
 
 interface NavSection {
   title: string;
@@ -19,6 +20,8 @@ interface HeaderProps {
 }
 
 const cssTransitionFunc = "cubic-bezier(0.23, 1, 0.32, 1)";
+const mobileOpenCloseBtnSize = 42;
+const desktopMenuHighlightHeight = 4;
 
 const headerStyles = css`
   background-color: ${brand[400]};
@@ -40,8 +43,8 @@ const headerStyles = css`
       position: absolute;
       top: 22px;
       right: -21px;
-      width: 42px;
-      height: 42px;
+      width: ${mobileOpenCloseBtnSize}px;
+      height: ${mobileOpenCloseBtnSize}px;
       background-image: url("/images/menu-opened.svg");
     }
   }
@@ -65,8 +68,8 @@ const headerStyles = css`
     opacity: 0.8;
   }
   & .nav-button {
-    width: 42px;
-    height: 42px;
+    width: ${mobileOpenCloseBtnSize}px;
+    height: ${mobileOpenCloseBtnSize}px;
     position: absolute;
     right: 10px;
     bottom: 5px;
@@ -82,7 +85,9 @@ const headerStyles = css`
   }
 
   & nav a {
-    ${headline.xsmall({ fontWeight: "bold" })};
+    font-family: ${guardianEgyp};
+    font-weight: 900;
+    font-size: 24px;
     line-height: 1.5;
     padding-bottom: ${space[5]}px;
     border-bottom: 1px solid ${brand[600]};
@@ -112,7 +117,7 @@ const headerStyles = css`
       }
     }
     & nav a {
-      ${headline.xxsmall({ fontWeight: "bold" })};
+      font-size: 20px;
       line-height: 1.25;
       display: inline-block;
       margin-left: 0;
@@ -130,7 +135,7 @@ const headerStyles = css`
         transition: height .3s ease-in-out;
       }
       &:hover:after {
-        height: 3px;
+        height: ${desktopMenuHighlightHeight}px;
       }
       & + a:before {
         content: '';
@@ -142,7 +147,7 @@ const headerStyles = css`
       }
     }
     & nav a.selected-nav-item: after {
-      height: 3px;
+      height: ${desktopMenuHighlightHeight}px;
     }
     & nav:nth-of-type(2) {
       position: absolute;
@@ -199,8 +204,8 @@ const logoHolderStyle = css`
   &:after {
     content: "";
     display: block;
-    width: 42px;
-    height: 42px;
+    width: ${mobileOpenCloseBtnSize}px;
+    height: ${mobileOpenCloseBtnSize}px;
     background-image: url("/images/menu-closed.svg");
     position: absolute;
     top: 22px;
@@ -223,8 +228,8 @@ const logoHolderStyle = css`
 
 const hiddenCheckboxStyle = css`
   opacity: 0;
-  width: 42px;
-  height: 42px;
+  width: ${mobileOpenCloseBtnSize}px;
+  height: ${mobileOpenCloseBtnSize}px;
   position: absolute;
   right: 10px;
   bottom: 5px;
@@ -259,6 +264,7 @@ const Header = (props: HeaderProps) => (
           <a href="https://www.theguardian.com/gnm-press-office">
             Guardian press office
           </a>
+          <a href="https://www.theguardian.com/the-guardian-foundation">Guardian foundation</a>
           <a href="https://workforus.theguardian.com/">Work for us</a>
           <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
         </nav>
