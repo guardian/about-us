@@ -27,6 +27,7 @@ const headerStyles = css`
   padding: 0 57px 0 10px;
   text-align: right;
   position: relative;
+  z-index: 10;
   & .top-and-bottom-nav {
     position: fixed;
     top: 0;
