@@ -73,7 +73,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
       }
     }
     ${minWidth.wide} {
-      padding: 85px 170px 85px 330px;
+      padding: 85px 95px 85px 259px;
     }
   `;
 
