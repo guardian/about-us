@@ -41,7 +41,7 @@ const triangleCss = css`
   }
   ${minWidth.wide} {
     left: 50%;
-    left: calc(50% - 320px);
+    left: calc(50% - 393px);
   }
 `;
 
