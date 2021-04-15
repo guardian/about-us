@@ -4,10 +4,10 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import { brand, brandAlt } from "@guardian/src-foundations/palette";
-import { textSans } from "@guardian/src-foundations/typography";
+import { headline, textSans } from "@guardian/src-foundations/typography";
 import { space } from "@guardian/src-foundations";
 import { minWidth } from "../styles/breakpoints";
-import {guardianEgyp} from "../styles/fonts";
+import { guardianEgyp } from "../styles/fonts";
 
 interface NavSection {
   title: string;
@@ -85,10 +85,7 @@ const headerStyles = css`
   }
 
   & nav a {
-    font-family: ${guardianEgyp};
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.5;
+    ${headline.xsmall({ fontWeight: "bold", lineHeight: "loose" })};
     padding-bottom: ${space[5]}px;
     border-bottom: 1px solid ${brand[600]};
     color: white;
@@ -102,7 +99,7 @@ const headerStyles = css`
 
   ${minWidth.tablet} {
     padding: 0;
-
+    border-bottom: 1px solid ${brand[600]};
     & .top-and-bottom-nav {
       position: static;
       background-color: transparent;
@@ -111,7 +108,6 @@ const headerStyles = css`
       height: unset;
       padding-left: ${space[2]}px;
       border-top: 1px solid ${brand[600]};
-      border-bottom: 1px solid ${brand[600]};
       &: before, &: after {
         display: none;
       }
@@ -264,7 +260,9 @@ const Header = (props: HeaderProps) => (
           <a href="https://www.theguardian.com/gnm-press-office">
             Guardian press office
           </a>
-          <a href="https://www.theguardian.com/the-guardian-foundation">Guardian foundation</a>
+          <a href="https://www.theguardian.com/the-guardian-foundation">
+            Guardian foundation
+          </a>
           <a href="https://workforus.theguardian.com/">Work for us</a>
           <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
         </nav>
