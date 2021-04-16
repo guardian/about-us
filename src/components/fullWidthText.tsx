@@ -38,7 +38,10 @@ const FullWidthText = (props: FullWidthTextProps) => {
     display: block;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 42px ${space[6]}px;
+    padding-top: ${props.title ? space[5] : "39"}px;
+    padding-bottom: ${props.title ? "53" : "39"}px;
+    padding-left: ${space[5]}px;
+    padding-right: ${space[5]}px;
     p {
       ${headline.xxsmall({
         fontWeight: "regular",
@@ -46,12 +49,19 @@ const FullWidthText = (props: FullWidthTextProps) => {
       })};
       margin: 0;
     }
+    p + p {
+      margin-top: 0.75em;
+    }
     h2 {
-      ${titlepiece.small({ fontWeight: "regular", lineHeight: "loose" })};
-      margin: 0;
+      ${titlepiece.small({ fontWeight: "regular" })};
+      margin: 0 0 0.5em;
+      line-height: 1;
     }
     ${minWidth.tablet} {
-      padding: 70px 140px;
+      padding-top: ${props.title ? space[5] : "70"}px;
+      padding-bottom: ${props.title ? "65" : "70"}px;
+      padding-left: 140px;
+      padding-right: 140px;
       p {
         ${headline.small({
           fontWeight: "regular",
@@ -59,24 +69,28 @@ const FullWidthText = (props: FullWidthTextProps) => {
         })};
       }
       h2 {
-        ${titlepiece.medium({ fontWeight: "regular", lineHeight: "loose" })};
+        ${titlepiece.medium({ fontWeight: "regular" })};
+        line-height: 1;
       }
     }
     ${minWidth.desktop} {
-      padding: 95px 100px;
+      padding-top: ${props.title ? "45" : "95"}px;
+      padding-bottom: ${props.title ? "112" : "95"}px;
+      padding-left: 100px;
+      padding-right: 100px;
       p {
-        ${headline.medium({
-          fontWeight: "regular",
-          lineHeight: "loose",
-        })};
         font-size: 35px;
       }
       h2 {
-        ${titlepiece.large({ fontWeight: "regular", lineHeight: "loose" })};
+        ${titlepiece.large({ fontWeight: "regular" })};
+        line-height: 1;
       }
     }
     ${minWidth.wide} {
-      padding: 85px 91px 85px 259px;
+      padding-top: ${props.title ? "45" : "85"}px;
+      padding-bottom: ${props.title ? "93" : "85"}px;
+      padding-left: 259px;
+      padding-right: 91px;
     }
   `;
 
