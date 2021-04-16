@@ -1,5 +1,6 @@
 interface Breakpoints {
   readonly tablet: number;
+  readonly headerTablet: number;
   readonly desktop: number;
   readonly wide: number;
 }
@@ -8,6 +9,7 @@ type BreakpointQueries = { [_ in keyof Breakpoints]: string };
 
 const namedBreakpoints: Breakpoints = {
   tablet: 740,
+  headerTablet: 820,
   desktop: 980,
   wide: 1300,
 };
@@ -31,6 +33,7 @@ const mapBreakpointValues: (
   f: (x: number) => string
 ) => BreakpointQueries = (bs, f) => ({
   tablet: f(bs.tablet),
+  headerTablet: f(bs.headerTablet),
   desktop: f(bs.desktop),
   wide: f(bs.wide),
 });
