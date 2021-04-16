@@ -69,13 +69,14 @@ const FullWidthText = (props: FullWidthTextProps) => {
           fontWeight: "regular",
           lineHeight: "loose",
         })};
+        font-size: 35px;
       }
       h2 {
         ${titlepiece.large({ fontWeight: "regular", lineHeight: "loose" })};
       }
     }
     ${minWidth.wide} {
-      padding: 85px 95px 85px 259px;
+      padding: 85px 91px 85px 259px;
     }
   `;
 
