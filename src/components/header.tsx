@@ -3,7 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
-import { brand, brandAlt } from "@guardian/src-foundations/palette";
+import { brand, brandAlt, neutral } from "@guardian/src-foundations/palette";
 import { headline, textSans } from "@guardian/src-foundations/typography";
 import { space } from "@guardian/src-foundations";
 import { minWidth } from "../styles/breakpoints";
@@ -37,6 +37,18 @@ const headerStyles = css`
     height: 100vh;
     background-color: ${brand[400]};
     transition: left 0.4s ${cssTransitionFunc};
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      overflow-x: hidden;
+      opacity: 0;
+      transition: opacity 0.4s ${cssTransitionFunc};
+      }
     &:after {
       content: "";
       display: block;
@@ -52,32 +64,9 @@ const headerStyles = css`
   & input:checked ~ .top-and-bottom-nav {
     left: 0;
   }
-  & .top-and-bottom-nav:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    overflow-x: hidden;
-    opacity: 0;
-    transition: opacity 0.4s ${cssTransitionFunc};
-  }
+
   & input:checked ~ .top-and-bottom-nav:before {
     opacity: 0.8;
-  }
-  & .nav-button {
-    width: ${mobileOpenCloseBtnSize}px;
-    height: ${mobileOpenCloseBtnSize}px;
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
-    z-index: 9;
-    background-image: url(/images/menu-closed.svg);
-  }
-  & input:checked ~ .nav-button {
-    background-image: url(/images/menu-opened.svg);
   }
 
   & nav {
@@ -85,10 +74,10 @@ const headerStyles = css`
   }
 
   & nav a {
-    ${headline.xsmall({fontWeight: "bold", lineHeight: "loose" })};
+    ${headline.xsmall({ fontWeight: "bold", lineHeight: "loose" })};
     padding-bottom: ${space[5]}px;
     border-bottom: 1px solid ${brand[600]};
-    color: white;
+    color: ${neutral[100]};
     display: block;
     text-decoration: none;
     margin-left: 50px;
@@ -152,13 +141,9 @@ const headerStyles = css`
       width: 100%;
       max-width: 680px;
       & a {
-        ${textSans.small({ fontWeight: "regular" })};
         padding: ${space[2]}px;
         border-bottom: 0;
         transition: color 250ms ease-out;
-        &:after {
-          display: none;
-        }
         &:hover {
           color: ${brandAlt[400]};
         }
@@ -242,39 +227,35 @@ const hiddenCheckboxStyle = css`
 `;
 
 const Header = (props: HeaderProps) => (
-  <>
-    <header css={headerStyles}>
-      <div css={logoHolderStyle}>
-        <GLogo />
-      </div>
-      <input type="checkbox" css={hiddenCheckboxStyle} />
-      <div className="top-and-bottom-nav">
-        <nav>
-          {props.navSections.map((navItem, navItemIndex) => (
-            <a
-              href={navItem.link}
-              {...(navItem.isSelected
-                ? { className: "selected-nav-item" }
-                : {})}
-              key={`nav-${navItemIndex}`}
-            >
-              {navItem.title}
-            </a>
-          ))}
-        </nav>
-        <nav>
-          <a href="https://www.theguardian.com/gnm-press-office">
-            Guardian press office
+  <header css={headerStyles}>
+    <div css={logoHolderStyle}>
+      <GLogo />
+    </div>
+    <input type="checkbox" css={hiddenCheckboxStyle} />
+    <div className="top-and-bottom-nav">
+      <nav>
+        {props.navSections.map((navItem, navItemIndex) => (
+          <a
+            href={navItem.link}
+            {...(navItem.isSelected ? { className: "selected-nav-item" } : {})}
+            key={`nav-${navItemIndex}`}
+          >
+            {navItem.title}
           </a>
-          <a href="https://www.theguardian.com/the-guardian-foundation">
-            Guardian foundation
-          </a>
-          <a href="https://workforus.theguardian.com/">Work for us</a>
-          <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
-        </nav>
-      </div>
-    </header>
-  </>
+        ))}
+      </nav>
+      <nav>
+        <a href="https://www.theguardian.com/gnm-press-office">
+          Guardian press office
+        </a>
+        <a href="https://www.theguardian.com/the-guardian-foundation">
+          Guardian foundation
+        </a>
+        <a href="https://workforus.theguardian.com/">Work for us</a>
+        <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
+      </nav>
+    </div>
+  </header>
 );
 
 export default Header;

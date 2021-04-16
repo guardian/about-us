@@ -29,7 +29,7 @@ export const GLogo = () => (
         height: 48px;
         width: auto;
         margin: 5px 0 12px;
-        ${minWidth.tablet} {
+        ${minWidth.headerTablet} {
           height: 95px;
           margin: 5px 19px 10px 0;
         }
