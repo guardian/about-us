@@ -9,7 +9,7 @@ type BreakpointQueries = { [_ in keyof Breakpoints]: string };
 
 const namedBreakpoints: Breakpoints = {
   tablet: 740,
-  headerTablet: 800,
+  headerTablet: 820,
   desktop: 980,
   wide: 1300,
 };
