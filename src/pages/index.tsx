@@ -6,6 +6,7 @@ import FullWidthText, { highlightedCss } from "../components/fullWidthText";
 import HeaderQuote from "../components/headerQuote";
 import { PageStyles } from "../components/pageStyles";
 import Header from "../components/header";
+import Overlap from "../components/overlap";
 
 const HomePage = () => (
   <>
@@ -52,6 +53,110 @@ const HomePage = () => (
         – relentlessly and courageously.
       </p>
     </FullWidthText>
+    <Overlap overlapContentTop={true}>
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <Overlap
+      overlapBackgroundTop={true}
+      overlapBackgroundBottom={true}
+      backgroundColour="blue"
+    >
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <Overlap>
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <Overlap>
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <Overlap>
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <Overlap overlapContentBottom={true}>
+      <>
+        <h2>test content</h2>
+        <p>
+          Guardian Media Group (GMG) owns Guardian News & Media (GNM) - the
+          publisher of the Guardian and Observer newspapers in the UK,
+          theguardian.com and Guardian US and Australia.
+        </p>
+        <p>
+          The Scott Trust, named after our longest serving editor, CP Scott,
+          exists to secure the financial and editorial independence of the
+          Guardian in perpetuity.
+        </p>
+      </>
+    </Overlap>
+    <p
+      css={css`
+        min-height: 500px;
+        padding-top: 60px;
+        margin : 0 auto;
+        max-width: 800px;
+      `}
+    >
+      This is some content that sits at the bottom of the page to demonstrate the bottom content overflow of the previous component.
+    </p>
   </>
 );
 
