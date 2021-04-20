@@ -3,11 +3,7 @@
 import { jsx, css } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import {
-  body,
-  headline,
-  titlepiece,
-} from "@guardian/src-foundations/typography";
+import { body, titlepiece } from "@guardian/src-foundations/typography";
 import { brandAlt, neutral } from "@guardian/src-foundations/palette";
 import { serif } from "../styles/fonts";
 
@@ -40,6 +36,7 @@ const InnerText = (props: InnerTextProps) => {
 
   const h2Css = css`
     ${titlepiece.small()};
+    max-width: 608px;
     font-size: 32px;
     line-height: 1.15;
     margin: 3px 0 18px 0;
