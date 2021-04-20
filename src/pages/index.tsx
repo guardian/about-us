@@ -55,7 +55,11 @@ const HomePage = () => (
         – relentlessly and courageously.
       </p>
     </FullWidthText>
-    <BoxContainer theme="light" background={`${neutral[97]}`} overlapTop={true}>
+    <BoxContainer
+      theme="light"
+      background={{ color: `${neutral[97]}` }}
+      overlapTop={true}
+    >
       <InnerText title="Our Organisation" theme="light">
         <>
           <p>
@@ -75,7 +79,7 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="dark" background={`${neutral[97]}`}>
+    <BoxContainer theme="dark" background={{ color: `${neutral[97]}` }}>
       <InnerText title="We're reader funded" theme="dark">
         <>
           <p>
@@ -91,7 +95,7 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={`${neutral[97]}`}>
+    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
       <InnerText title="Journalism" theme="light">
         <>
           <p>

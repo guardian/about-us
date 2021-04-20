@@ -8,6 +8,7 @@ import Header from "../../components/header";
 import BoxContainer from "../../components/boxContainer";
 import InnerText from "../../components/innerText";
 import { neutral } from "@guardian/src-foundations";
+import { headingCss } from "../../styles/sharedStyles";
 
 const JournalismPage = () => (
   <>
@@ -47,7 +48,11 @@ const JournalismPage = () => (
         bringing about a more hopeful future.
       </p>
     </FullWidthText>
-    <BoxContainer theme="light" background={`${neutral[97]}`} overlapTop={true}>
+    <BoxContainer
+      theme="light"
+      background={{ color: `${neutral[97]}` }}
+      overlapTop={true}
+    >
       <InnerText title="Our values and mission for journalism" theme="light">
         <p>
           The Scott Trust, which owns the Guardian was established in 1936 to
@@ -58,8 +63,11 @@ const JournalismPage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={`${neutral[97]}`}>
-      <InnerText title="Journalism" theme="light">
+    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+      <h2 css={headingCss}>Editors</h2>
+    </BoxContainer>
+    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+      <InnerText title="Guardian journalism" theme="light">
         <p>
           The Guardian's purposeful journalism spans several formats to serve
           our global audience, including print and digital products, multimedia
@@ -68,7 +76,10 @@ const JournalismPage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={`${neutral[97]}`}>
+    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+      <h2 css={headingCss}>Editorial standards</h2>
+    </BoxContainer>
+    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
       <InnerText title="Got a story?" theme="light">
         <p>
           The Guardian welcomes anonymous and confidential news tips to help
