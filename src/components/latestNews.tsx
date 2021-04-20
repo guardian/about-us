@@ -31,10 +31,6 @@ const innerContainerCss = css`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  & img {
-    width: 100%;
-    height: auto;
-  }
 
   & article {
     margin-bottom: ${space[6]}px;
@@ -62,13 +58,8 @@ const innerContainerCss = css`
   }
 
   ${minWidth.tablet} {
-    & img {
-      width: 50%;
-      max-width: 543px;
-    }
     & article {
       width: 50%;
-      width: calc(50% - 60px);
     }
     & article h2 {
       font-size: 35px;
@@ -90,9 +81,6 @@ const innerContainerCss = css`
     }
   }
   ${minWidth.wide} {
-    & img {
-      width: calc(50% - 82px);
-    }
     & article {
       width: calc(50% - 82px);
       padding-right: 185px;
@@ -100,10 +88,26 @@ const innerContainerCss = css`
   }
 `;
 
+const imageContainerCss = css`
+  & img {
+    width: 100%;
+    height: auto;
+  }
+  ${minWidth.tablet} {
+    width: calc(50% - 50px);
+    max-width: 543px;
+  }
+  ${minWidth.wide} {
+    width: calc(50% - 82px);
+  }
+`;
+
 const LatestNews = () => (
   <div css={containerCss}>
     <div css={innerContainerCss}>
-      <img src="/images/front-page-13.png" />
+      <div css={imageContainerCss}>
+        <img src="/images/front-page-13.png" />
+      </div>
       <article>
         <h2>Latest News</h2>
         <p>
