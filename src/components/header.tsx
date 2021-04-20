@@ -42,12 +42,12 @@ const headerStyles = css`
       position: absolute;
       top: 0;
       left: 100%;
-      width: 100vw;
+      width: 0;
       height: 100vh;
       background-color: black;
       overflow-x: hidden;
       opacity: 0;
-      transition: opacity 0.4s ${cssTransitionFunc};
+      transition: opacity 0.4s ${cssTransitionFunc}, width 0.4s ${cssTransitionFunc};
       }
     &:after {
       content: "";
@@ -67,6 +67,7 @@ const headerStyles = css`
 
   & input:checked ~ .top-and-bottom-nav:before {
     opacity: 0.8;
+    width: 100vw;
   }
 
   & nav {
