@@ -36,9 +36,11 @@ const BoxContainer = (props: BoxContainerProps) => {
     }
     ${minWidth.desktop} {
       padding: 0px ${space[5]}px;
+      margin: ${props.overlapTop ? "-62px" : 0} auto 0;
     }
     ${minWidth.wide} {
       margin: ${props.overlapTop ? -space[5] : 0}px auto 0;
+      margin: ${props.overlapTop ? "-84px" : 0} auto 0;
     }
   `;
 
@@ -53,7 +55,7 @@ const BoxContainer = (props: BoxContainerProps) => {
       padding: ${space[2]}px 80px 57px 80px;
     }
     ${minWidth.wide} {
-      padding: ${space[2]}px 95px 57px 259px;
+      padding: ${space[2]}px 72px 57px 239px;
     }
   `;
 
