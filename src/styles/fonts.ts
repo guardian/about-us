@@ -218,4 +218,60 @@ export const fonts = `
 		font-style: italic;
 		font-display: swap;
 }
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Regular.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Regular.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-RegularItalic.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-RegularItalic.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-RegularItalic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Medium.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Medium.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-MediumItalic.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-MediumItalic.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-MediumItalic.ttf") format("truetype");
+	font-weight: 500;
+	font-style: italic;
+	}
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Bold.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Bold.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	}
+
+@font-face {
+	font-family: "GuardianTextEgyptian";
+	src: url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-BoldItalic.woff2") format("woff2"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-BoldItalic.woff") format("woff"),
+					url("${fontAssetsUrl}guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+	}
 `;
+
+export const serif = `"GuardianTextEgyptian", Georgia, serif`;
