@@ -7,22 +7,42 @@ import { neutral, space, sport } from "@guardian/src-foundations";
 
 type Theme = "light" | "dark";
 
+interface Background {
+  color?: string;
+  mobile?: string;
+  tablet?: string;
+  wide?: string;
+}
 interface BoxContainerProps {
   overlapTop?: boolean;
   children: ReactElement;
-  background: string;
+  background: Background;
   theme: Theme;
 }
 
+export const boxContainerPadding = {
+  mobile: `${space[5]}px`,
+  tablet: `${space[9]}px`,
+  wide: `${space[12]}px`,
+};
+
 const BoxContainer = (props: BoxContainerProps) => {
   const containerCss = css`
-    background: ${props.background};
-    padding-top: ${space[5]}px;
+    background: ${props.background.color
+      ? props.background.color
+      : props.background.mobile};
+    padding-top: ${boxContainerPadding.mobile};
     ${minWidth.tablet} {
-      padding-top: ${space[9]}px;
+      padding-top: ${boxContainerPadding.tablet};
+      background: ${props.background.color
+        ? props.background.color
+        : props.background.tablet};
     }
     ${minWidth.wide} {
-      padding-top: ${space[12]}px;
+      padding-top: ${boxContainerPadding.wide};
+      background: ${props.background.color
+        ? props.background.color
+        : props.background.wide};
     }
   `;
 
