@@ -81,13 +81,13 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: brand[400] }}>
+    <BoxContainer theme="light" background={{ backgroundColor: brand[400] }}>
       <h2 css={headingCss}>Leadership</h2>
     </BoxContainer>
     <BoxContainer theme="light" background={reportsBkg}>
       <h2 css={headingCss}>GMG financial and corporate reports</h2>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: neutral[97] }}>
+    <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }}>
       <InnerText title="Sustainability" theme="light">
         <>
           <p>
@@ -102,7 +102,10 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Our people" theme="light">
         <p>
           The majority of our staff, around 90% of our workforce, are employed
@@ -113,7 +116,10 @@ const HomePage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Commercial" theme="light">
         <p>
           GMG operates a diverse revenue model including reader revenues,
@@ -123,7 +129,10 @@ const HomePage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Guardian Foundation" theme="light">
         <p>
           Through the Scott Trust, our independent charity the Guardian

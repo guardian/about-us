@@ -53,10 +53,16 @@ const OurHistory = () => (
         </p>
       </>
     </FullWidthText>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <h2 css={headingCss}>Read more</h2>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <h2 css={headingCss}>The Scott Trust</h2>
     </BoxContainer>
   </>

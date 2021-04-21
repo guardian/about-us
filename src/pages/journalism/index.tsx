@@ -50,7 +50,7 @@ const JournalismPage = () => (
     </FullWidthText>
     <BoxContainer
       theme="light"
-      background={{ color: `${neutral[97]}` }}
+      background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
     >
       <InnerText title="Our values and mission for journalism" theme="light">
@@ -63,10 +63,16 @@ const JournalismPage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <h2 css={headingCss}>Editors</h2>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Guardian journalism" theme="light">
         <p>
           The Guardian's purposeful journalism spans several formats to serve
@@ -76,10 +82,16 @@ const JournalismPage = () => (
         </p>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <h2 css={headingCss}>Editorial standards</h2>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Got a story?" theme="light">
         <p>
           The Guardian welcomes anonymous and confidential news tips to help

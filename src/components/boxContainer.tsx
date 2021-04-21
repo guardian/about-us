@@ -8,7 +8,7 @@ import { neutral, space, sport } from "@guardian/src-foundations";
 type Theme = "light" | "dark";
 
 interface Background {
-  color?: string;
+  backgroundColor?: string;
   mobile?: string;
   tablet?: string;
   wide?: string;
@@ -28,20 +28,20 @@ export const boxContainerPadding = {
 
 const BoxContainer = (props: BoxContainerProps) => {
   const containerCss = css`
-    background: ${props.background.color
-      ? props.background.color
+    background: ${props.background.backgroundColor
+      ? props.background.backgroundColor
       : props.background.mobile};
     padding-top: ${boxContainerPadding.mobile};
     ${minWidth.tablet} {
       padding-top: ${boxContainerPadding.tablet};
-      background: ${props.background.color
-        ? props.background.color
+      background: ${props.background.backgroundColor
+        ? props.background.backgroundColor
         : props.background.tablet};
     }
     ${minWidth.wide} {
       padding-top: ${boxContainerPadding.wide};
-      background: ${props.background.color
-        ? props.background.color
+      background: ${props.background.backgroundColor
+        ? props.background.backgroundColor
         : props.background.wide};
     }
   `;
@@ -49,13 +49,13 @@ const BoxContainer = (props: BoxContainerProps) => {
   const boxContainerCss = css`
     max-width: 1300px;
     margin: ${props.overlapTop ? "-40px" : 0} auto 0;
-    padding: 0px ${space[3]}px;
+    padding: 0 ${space[3]}px;
     ${minWidth.tablet} {
       margin: ${props.overlapTop ? "-62px" : 0} auto 0;
-      padding: 0px 120px;
+      padding: 0 120px;
     }
     ${minWidth.desktop} {
-      padding: 0px ${space[5]}px;
+      padding: 0 ${space[5]}px;
       margin: ${props.overlapTop ? "-62px" : 0} auto 0;
     }
     ${minWidth.wide} {

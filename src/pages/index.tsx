@@ -57,7 +57,7 @@ const HomePage = () => (
     </FullWidthText>
     <BoxContainer
       theme="light"
-      background={{ color: `${neutral[97]}` }}
+      background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
     >
       <InnerText title="Our Organisation" theme="light">
@@ -79,7 +79,10 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="dark" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="dark"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="We're reader funded" theme="dark">
         <>
           <p>
@@ -95,7 +98,10 @@ const HomePage = () => (
         </>
       </InnerText>
     </BoxContainer>
-    <BoxContainer theme="light" background={{ color: `${neutral[97]}` }}>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
       <InnerText title="Journalism" theme="light">
         <>
           <p>
