@@ -9,7 +9,7 @@ import {
 } from "@guardian/src-foundations";
 import { headline, titlepiece } from "@guardian/src-foundations/typography";
 import { ReactElement } from "react";
-import { minWidth } from "../styles/breakpoints";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 type Theme = "light" | "dark";
 
@@ -40,8 +40,8 @@ const FullWidthText = (props: FullWidthTextProps) => {
     margin: 0 auto;
     padding-top: ${props.title ? space[5] : "39"}px;
     padding-bottom: ${props.title ? "53" : "39"}px;
-    padding-left: ${space[5]}px;
-    padding-right: ${space[5]}px;
+    padding-left: ${space[6]}px;
+    padding-right: ${space[6]}px;
     p {
       ${headline.xxsmall({
         fontWeight: "regular",
@@ -60,8 +60,9 @@ const FullWidthText = (props: FullWidthTextProps) => {
     ${minWidth.tablet} {
       padding-top: ${props.title ? space[5] : "70"}px;
       padding-bottom: ${props.title ? "65" : "70"}px;
-      padding-left: 140px;
-      padding-right: 140px;
+      padding-left: ${space[5]}px;
+      padding-right: ${space[5]}px;
+      width: ${namedBreakpoints.tablet}px;
       p {
         ${headline.small({
           fontWeight: "regular",
@@ -76,8 +77,9 @@ const FullWidthText = (props: FullWidthTextProps) => {
     ${minWidth.desktop} {
       padding-top: ${props.title ? "45" : "95"}px;
       padding-bottom: ${props.title ? "112" : "95"}px;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: 80px;
+      padding-right: 80px;
+      width: ${namedBreakpoints.desktop}px;
       p {
         font-size: 35px;
       }
@@ -89,8 +91,9 @@ const FullWidthText = (props: FullWidthTextProps) => {
     ${minWidth.wide} {
       padding-top: ${props.title ? "45" : "85"}px;
       padding-bottom: ${props.title ? "93" : "85"}px;
-      padding-left: 259px;
-      padding-right: 91px;
+      padding-left: 239px;
+      padding-right: 72px;
+      width: ${namedBreakpoints.wide}px;
     }
   `;
 
