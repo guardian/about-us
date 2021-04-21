@@ -8,7 +8,7 @@ import {
   space,
 } from "@guardian/src-foundations";
 import { headline, titlepiece } from "@guardian/src-foundations/typography";
-import { minWidth } from "../styles/breakpoints";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { containerCss } from "../styles/sharedStyles";
 
 interface HeaderQuoteProps {
@@ -24,21 +24,21 @@ const headerQuoteCss = css`
 
 const triangleCss = css`
   position: absolute;
+  top: 100%;
   left: ${space[6]}px;
   border-style: solid;
   border-color: transparent ${background.ctaPrimary} transparent transparent;
   border-width: 0 42.3px 37.14px 0;
   ${minWidth.tablet} {
     border-width: 0 64px 56.14px 0;
-    left: 140px;
+    left: ${space[5]}px;
   }
   ${minWidth.desktop} {
     border-width: 0 80px 75.14px 0;
-    left: 100px;
+    left: 80px;
   }
   ${minWidth.wide} {
-    left: 50%;
-    left: calc(50% - 393px);
+    left: 239px;
   }
 `;
 
@@ -74,22 +74,26 @@ const quotationMarkCss = css`
   ${minWidth.wide} {
     height: 55px;
     position: absolute;
-    left: 160px;
+    left: 140px;
     top: 110px;
   }
 `;
 
 const quoteDivCss = css`
   padding: 27px ${space[6]}px;
+  position: relative;
   ${minWidth.tablet} {
-    padding: 45px 141px;
+    padding: 45px ${space[5]}px;
+    margin: 0 auto;
+    width: ${namedBreakpoints.tablet}px;
   }
   ${minWidth.desktop} {
-    padding: 95px 101px;
+    padding: 95px 80px;
+    width: ${namedBreakpoints.desktop}px;
   }
   ${minWidth.wide} {
-    padding: 95px 95px 95px 259px;
-    position: relative;
+    padding: 95px 72px 95px 239px;
+    width: ${namedBreakpoints.wide}px;
   }
 `;
 
@@ -128,8 +132,8 @@ const HeaderQuote = (props: HeaderQuoteProps) => (
         </svg>
         <blockquote css={blockquoteCss}>{props.quote}</blockquote>
         <cite css={citeCss}>{props.author}</cite>
+        <div css={triangleCss} />
       </div>
-      <div css={triangleCss} />
     </div>
   </div>
 );

@@ -1,7 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import { minWidth } from "../styles/breakpoints";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { ReactElement } from "react";
 import { neutral, space, sport } from "@guardian/src-foundations";
 
@@ -52,15 +52,17 @@ const BoxContainer = (props: BoxContainerProps) => {
     padding: 0 ${space[3]}px;
     ${minWidth.tablet} {
       margin: ${props.overlapTop ? "-62px" : 0} auto 0;
-      padding: 0 120px;
+      width: ${namedBreakpoints.tablet}px;
+      padding: 0;
     }
     ${minWidth.desktop} {
-      padding: 0 ${space[5]}px;
+      padding: 0;
       margin: ${props.overlapTop ? "-62px" : 0} auto 0;
+      width: ${namedBreakpoints.desktop}px;
     }
     ${minWidth.wide} {
-      margin: ${props.overlapTop ? -space[5] : 0}px auto 0;
       margin: ${props.overlapTop ? "-84px" : 0} auto 0;
+      width: ${namedBreakpoints.wide}px;
     }
   `;
 
