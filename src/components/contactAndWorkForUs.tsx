@@ -2,10 +2,10 @@
 /** @jsx jsx */
 import { background, brand, neutral, space } from "@guardian/src-foundations";
 import { body, headline } from "@guardian/src-foundations/typography";
-import { LinkButton } from "@guardian/src-button";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { css, jsx } from "@emotion/react";
-import { minWidth } from "../styles/breakpoints";
+import { LinkButton } from "@guardian/src-button";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
+import { SvgArrowRightStraight } from "@guardian/src-icons";
 
 const divCss = css`
   width: 100%;
@@ -63,13 +63,19 @@ const contactAndWorkForUsCss = css`
   padding: 46px ${space[5]}px ${space[6]}px;
   ${minWidth.tablet} {
     flex-direction: row;
-    padding: ${space[12]}px 140px 34px;
+    padding: ${space[12]}px ${space[5]}px 34px;
+    margin: 0 auto;
+    width: ${namedBreakpoints.tablet}px;
   }
   ${minWidth.desktop} {
-    padding: 58px 100px 74px;
+    padding: 58px 80px 74px;
+    margin: 0 auto;
+    width: ${namedBreakpoints.desktop}px;
   }
   ${minWidth.wide} {
-    padding: 72px 259px ${space[24]}px;
+    padding: 72px 239px ${space[24]}px;
+    margin: 0 auto;
+    width: ${namedBreakpoints.wide}px;
   }
 `;
 
