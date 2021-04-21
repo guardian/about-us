@@ -10,6 +10,8 @@ import HeaderQuote from "../components/headerQuote";
 import InnerText from "../components/innerText";
 import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
+import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
+import { threeColumnResponsiveCardHolder } from "../styles/sharedStyles";
 
 const HomePage = () => (
   <>
@@ -61,24 +63,43 @@ const HomePage = () => (
       background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
     >
-      <InnerText title="Our Organisation" theme="light">
-        <>
-          <p>
-            The Guardian is owned by Guardian Media Group, which has only one
-            shareholder - the Scott Trust.
-          </p>
-          <p>
-            The Scott Trust, named after our longest serving editor, CP Scott,
-            exists to secure the financial and editorial independence of the
-            Guardian in perpetuity.
-          </p>
-          <p>
-            Today more than half of our revenue comes directly from our readers,
-            helping to support Guardian journalism and keep it open for
-            everyone.
-          </p>
-        </>
-      </InnerText>
+      <>
+        <InnerText title="Our Organisation" theme="light">
+          <>
+            <p>
+              The Guardian is owned by Guardian Media Group, which has only one
+              shareholder - the Scott Trust.
+            </p>
+            <p>
+              The Scott Trust, named after our longest serving editor, CP Scott,
+              exists to secure the financial and editorial independence of the
+              Guardian in perpetuity.
+            </p>
+            <p>
+              Today more than half of our revenue comes directly from our
+              readers, helping to support Guardian journalism and keep it open
+              for everyone.
+            </p>
+          </>
+        </InnerText>
+        <div css={threeColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="A mission for journalism: an essay by our editor"
+            imagePath="/images/responsive-card-bg.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Media Group"
+            imagePath="/images/responsive-card-bg.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="The Scott Trust and our values"
+            imagePath="/images/responsive-card-bg.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="dark"

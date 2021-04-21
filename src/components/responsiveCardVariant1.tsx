@@ -11,6 +11,7 @@ import { SvgArrowRightStraight } from "@guardian/src-icons";
 
 interface ResponsiveCardVariant1Props {
   title: string;
+  imagePath: string;
   linkUrl?: string;
   linkText?: string;
 }
@@ -79,7 +80,7 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
   return (
     <article css={articleCss}>
       <div css={imageHolderCss}>
-        <img src="/images/responsive-card-bg.png" css={imageCss} />
+        <img src={props.imagePath} css={imageCss} />
       </div>
       <div css={titleAndLinkCss}>
         {props.linkUrl ? (

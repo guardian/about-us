@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { neutral } from "@guardian/src-foundations";
+import { neutral, space } from "@guardian/src-foundations";
 import { titlepiece } from "@guardian/src-foundations/typography";
 import { minWidth } from "./breakpoints";
 
@@ -20,5 +20,24 @@ export const headingCss = css`
   ${minWidth.desktop} {
     font-size: 50px;
     margin: 8px 0 27px 0;
+  }
+`;
+
+export const threeColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    justify-content: space-between;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+      margin-top: ${space[5]}px;
+    }
   }
 `;
