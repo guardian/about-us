@@ -9,15 +9,12 @@ import {
 } from "@guardian/src-foundations";
 import { headline, titlepiece } from "@guardian/src-foundations/typography";
 import { minWidth } from "../styles/breakpoints";
+import { containerCss } from "../styles/sharedStyles";
 
 interface HeaderQuoteProps {
   quote: string;
   author: string;
 }
-
-const containerCss = css`
-  background-color: ${background.ctaPrimary};
-`;
 
 const headerQuoteCss = css`
   color: ${neutral[100]};
@@ -114,7 +111,7 @@ const citeCss = css`
 `;
 
 const HeaderQuote = (props: HeaderQuoteProps) => (
-  <div css={containerCss}>
+  <div css={containerCss(background.ctaPrimary)}>
     <div css={headerQuoteCss}>
       <div css={quoteDivCss}>
         <svg

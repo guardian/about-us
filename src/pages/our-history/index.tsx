@@ -5,6 +5,9 @@ import React from "react";
 import { PageStyles } from "../../components/pageStyles";
 import Header from "../../components/header";
 import FullWidthText from "../../components/fullWidthText";
+import BoxContainer from "../../components/boxContainer";
+import { neutral } from "@guardian/src-foundations/palette";
+import { headingCss } from "../../styles/sharedStyles";
 
 const OurHistory = () => (
   <>
@@ -50,6 +53,18 @@ const OurHistory = () => (
         </p>
       </>
     </FullWidthText>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
+      <h2 css={headingCss}>Read more</h2>
+    </BoxContainer>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
+      <h2 css={headingCss}>The Scott Trust</h2>
+    </BoxContainer>
   </>
 );
 

@@ -1,10 +1,29 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
+import { brand, neutral } from "@guardian/src-foundations";
 import React from "react";
+import BoxContainer, {
+  boxContainerPadding,
+} from "../../components/boxContainer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
+import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
+import { headingCss } from "../../styles/sharedStyles";
+
+// placeholder values for the background gradient until values are agreed upon for each breakpoint
+const ourStructureBkg = {
+  mobile: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+  tablet: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+  wide: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+};
+
+const reportsBkg = {
+  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 20px), #052962 calc(100% - ${boxContainerPadding.mobile} - 20px))`,
+  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 20px), #052962 calc(100% - ${boxContainerPadding.tablet} - 20px))`,
+  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 20px), #052962 calc(100% - ${boxContainerPadding.wide} - 20px))`,
+};
 
 const HomePage = () => (
   <>
@@ -46,6 +65,84 @@ const HomePage = () => (
         </p>
       </>
     </FullWidthText>
+    <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
+      <InnerText title="Our structure" theme="light">
+        <>
+          <p>
+            Guardian Media Group (GMG) owns Guardian News &amp; Media (GNM) -
+            the publisher of the Guardian and Observer newspapers in the UK,
+            theguardian.com and Guardian US and Australia.
+          </p>
+          <p>
+            The Scott Trust, named after our longest serving editor, CP Scott,
+            exists to secure the financial and editorial independence of the
+            Guardian in perpetuity.
+          </p>
+        </>
+      </InnerText>
+    </BoxContainer>
+    <BoxContainer theme="light" background={{ backgroundColor: brand[400] }}>
+      <h2 css={headingCss}>Leadership</h2>
+    </BoxContainer>
+    <BoxContainer theme="light" background={reportsBkg}>
+      <h2 css={headingCss}>GMG financial and corporate reports</h2>
+    </BoxContainer>
+    <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }}>
+      <InnerText title="Sustainability" theme="light">
+        <>
+          <p>
+            As an organisation we recognise that the escalating climate crisis
+            is the defining issue of our times.
+          </p>
+          <p>
+            In 2019, we became the first major news organisation to certify as a
+            B Corporation, and made a climate pledge to our readers committing
+            to reach net zero carbon emissions by 2030.
+          </p>
+        </>
+      </InnerText>
+    </BoxContainer>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
+      <InnerText title="Our people" theme="light">
+        <p>
+          The majority of our staff, around 90% of our workforce, are employed
+          in the UK, and we have growing operations in the US and Australia. We
+          value and respect all differences in all people, seen and unseen, and
+          aspire to an open, supportive and inclusive culture which makes the
+          Guardian a good place to work for everyone.
+        </p>
+      </InnerText>
+    </BoxContainer>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
+      <InnerText title="Commercial" theme="light">
+        <p>
+          GMG operates a diverse revenue model including reader revenues,
+          advertising, jobs advertising, licencing and philanthropic funding.
+          Revenue from readers now accounts for over 50% of GMG's annual
+          revenues.
+        </p>
+      </InnerText>
+    </BoxContainer>
+    <BoxContainer
+      theme="light"
+      background={{ backgroundColor: `${neutral[97]}` }}
+    >
+      <InnerText title="Guardian Foundation" theme="light">
+        <p>
+          Through the Scott Trust, our independent charity the Guardian
+          Foundation supports media under threat, promotes diversity in the
+          media and empowers children and young people to engage with the news.
+          The charity envisions a world in which all people can tell their
+          stories, access the truth and hold power to account.
+        </p>
+      </InnerText>
+    </BoxContainer>
   </>
 );
 
