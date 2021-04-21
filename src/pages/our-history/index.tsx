@@ -2,12 +2,13 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import React from "react";
-import { PageStyles } from "../../components/pageStyles";
-import Header from "../../components/header";
-import FullWidthText from "../../components/fullWidthText";
 import BoxContainer from "../../components/boxContainer";
-import { neutral } from "@guardian/src-foundations/palette";
+import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import FullWidthText from "../../components/fullWidthText";
+import Header from "../../components/header";
+import { PageStyles } from "../../components/pageStyles";
 import { headingCss } from "../../styles/sharedStyles";
+import { neutral } from "@guardian/src-foundations/palette";
 
 const OurHistory = () => (
   <>
@@ -65,6 +66,7 @@ const OurHistory = () => (
     >
       <h2 css={headingCss}>The Scott Trust</h2>
     </BoxContainer>
+    <ContactAndWorkForUs />
   </>
 );
 
