@@ -29,11 +29,11 @@ export const footerLinks: FooterLink[][] = [
       title: "Work for us",
       link: `https://workforus.${domain}`,
     },
-    // {
-    //   title: "Privacy settings",
-    //   titleUSA: "California resident – Do Not Sell",
-    //   cmp: true,
-    // },
+    {
+      title: "Privacy settings",
+      //   titleUSA: "California resident – Do Not Sell",
+      //   cmp: true,
+    },
     {
       title: "Privacy policy",
       link: `https://${domain}/info/privacy`,

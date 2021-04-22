@@ -7,6 +7,7 @@ import BoxContainer, {
 } from "../../components/boxContainer";
 import { brand, neutral } from "@guardian/src-foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import { Footer } from "../../components/footer/footer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { headingCss } from "../../styles/sharedStyles";
@@ -145,6 +146,7 @@ const HomePage = () => (
       </InnerText>
     </BoxContainer>
     <ContactAndWorkForUs />
+    <Footer />
   </>
 );
 
