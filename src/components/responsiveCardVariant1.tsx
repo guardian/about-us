@@ -1,6 +1,5 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import React from "react";
 import { css, jsx } from "@emotion/react";
 import { brand, neutral } from "@guardian/src-foundations/palette";
 import { headline } from "@guardian/src-foundations/typography";
@@ -12,7 +11,7 @@ import { SvgArrowRightStraight } from "@guardian/src-icons";
 interface ResponsiveCardVariant1Props {
   title: string;
   imagePath: string;
-  linkUrl?: string;
+  linkUrl: string;
   linkText?: string;
   alwaysImgOnLeft?: boolean;
 }
@@ -91,24 +90,19 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
         <img src={props.imagePath} css={imageCss} />
       </div>
       <div css={titleAndLinkCss}>
-        {props.linkUrl ? (
-          <a href={props.linkUrl} css={titleLinkCss}>
-            <h2 css={titleCss}>{props.title}</h2>
-          </a>
-        ) : (
+        <a href={props.linkUrl} css={titleLinkCss}>
           <h2 css={titleCss}>{props.title}</h2>
-        )}
-        {props.linkUrl && (
-          <LinkButton
-            priority="tertiary"
-            size="default"
-            icon={<SvgArrowRightStraight />}
-            iconSide="right"
-            href={props.linkUrl}
-          >
-            {props.linkText || "Read more"}
-          </LinkButton>
-        )}
+        </a>
+        <LinkButton
+          priority="tertiary"
+          size="default"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          href={props.linkUrl}
+        >
+          {props.linkText || "Read more"}
+        </LinkButton>
       </div>
     </article>
   );

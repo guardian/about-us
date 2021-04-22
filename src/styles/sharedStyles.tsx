@@ -145,8 +145,10 @@ export const threeThenOneColumnResponsiveCardHolder = css`
 export const singleColumnResponsiveCardHolder = css`
   border-top: 1px solid ${neutral[86]};
   margin: 40px 0 0;
+  display: flex;
   & > * {
     margin-top: ${space[3]}px;
+    width: 100%;
   }
   & > h3 {
     ${headline.small({ fontWeight: "bold" })};
