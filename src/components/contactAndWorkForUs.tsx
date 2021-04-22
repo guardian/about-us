@@ -2,12 +2,13 @@
 /** @jsx jsx */
 import { background, brand, neutral, space } from "@guardian/src-foundations";
 import { body, headline } from "@guardian/src-foundations/typography";
+import { containerCss } from "../styles/sharedStyles";
 import { css, jsx } from "@emotion/react";
 import { LinkButton } from "@guardian/src-button";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 
-const divCss = css`
+const contactSectionItemCss = css`
   width: 100%;
   border-top: 1px solid ${neutral[86]};
   margin-bottom: ${space[9]}px;
@@ -17,27 +18,27 @@ const divCss = css`
   }
 `;
 
-const h3Css = css`
+const contactSectionItemH3Css = css`
   color: ${brand[400]};
   ${headline.xsmall({ fontWeight: "bold" })};
   margin: 0;
 `;
 
-const pCss = css`
-  ${body.medium({ fontWeight: "regular" })}
+const contactSectionItemPCss = css`
+  ${body.medium({ fontWeight: "regular" })};
   color: ${neutral[7]};
 `;
 
-interface ContactSectionProps {
+interface ContactSectionItemProps {
   title: string;
   body: string;
   href: string;
 }
 
-const ContactSection = (props: ContactSectionProps) => (
-  <div css={divCss}>
-    <h3 css={h3Css}>{props.title}</h3>
-    <p css={pCss}>{props.body}</p>
+const ContactSectionItem = (props: ContactSectionItemProps) => (
+  <div css={contactSectionItemCss}>
+    <h3 css={contactSectionItemH3Css}>{props.title}</h3>
+    <p css={contactSectionItemPCss}>{props.body}</p>
     <LinkButton
       priority="tertiary"
       size="small"
@@ -51,10 +52,6 @@ const ContactSection = (props: ContactSectionProps) => (
   </div>
 );
 
-const containerCss = css`
-  background-color: ${background.primary};
-`;
-
 const contactAndWorkForUsCss = css`
   display: flex;
   flex-direction: column;
@@ -64,31 +61,28 @@ const contactAndWorkForUsCss = css`
   ${minWidth.tablet} {
     flex-direction: row;
     padding: ${space[12]}px ${space[5]}px 34px;
-    margin: 0 auto;
     width: ${namedBreakpoints.tablet}px;
   }
   ${minWidth.desktop} {
     padding: 58px 80px 74px;
-    margin: 0 auto;
     width: ${namedBreakpoints.desktop}px;
   }
   ${minWidth.wide} {
     padding: 72px 239px ${space[24]}px;
-    margin: 0 auto;
     width: ${namedBreakpoints.wide}px;
   }
 `;
 
 const ContactAndWorkForUs = () => {
   return (
-    <div css={containerCss}>
+    <div css={containerCss(background.primary)}>
       <div css={contactAndWorkForUsCss}>
-        <ContactSection
+        <ContactSectionItem
           title="Contact us"
           body="Find out how to get in touch with The Guardian."
           href="https://www.theguardian.com/help/contact-us"
         />
-        <ContactSection
+        <ContactSectionItem
           title="Work for us"
           body="Search for jobs at The Guardian and apply. "
           href="https://workforus.theguardian.com/"
