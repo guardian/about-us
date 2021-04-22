@@ -4,6 +4,7 @@ import { css, jsx } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import { Footer } from "../../components/footer/footer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -213,6 +214,7 @@ const JournalismPage = () => (
       </>
     </BoxContainer>
     <ContactAndWorkForUs />
+    <Footer />
   </>
 );
 
