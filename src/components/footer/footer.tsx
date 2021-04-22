@@ -249,7 +249,7 @@ export const Footer = () => {
                         css={css`
                           padding: 0 14px;
                         `}
-                        href=""
+                        href="https://support.theguardian.com/uk/contribute"
                       >
                         Contribute
                       </LinkButton>
@@ -262,7 +262,7 @@ export const Footer = () => {
                       css={css`
                         padding: 0 14px;
                       `}
-                      href=""
+                      href="https://support.theguardian.com/uk/subscribe"
                     >
                       Subscribe
                     </LinkButton>
