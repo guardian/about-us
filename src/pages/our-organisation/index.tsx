@@ -1,16 +1,17 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import { brand, neutral } from "@guardian/src-foundations";
 import React from "react";
 import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";
+import { brand, neutral } from "@guardian/src-foundations";
+import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
+import { headingCss } from "../../styles/sharedStyles";
 import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
-import { headingCss } from "../../styles/sharedStyles";
 
 // placeholder values for the background gradient until values are agreed upon for each breakpoint
 const ourStructureBkg = {
@@ -143,6 +144,7 @@ const HomePage = () => (
         </p>
       </InnerText>
     </BoxContainer>
+    <ContactAndWorkForUs />
   </>
 );
 

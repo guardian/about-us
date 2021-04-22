@@ -2,13 +2,14 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
 import React from "react";
-import FullWidthText from "../../components/fullWidthText";
-import { PageStyles } from "../../components/pageStyles";
-import Header from "../../components/header";
 import BoxContainer from "../../components/boxContainer";
+import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import FullWidthText from "../../components/fullWidthText";
+import Header from "../../components/header";
+import { headingCss } from "../../styles/sharedStyles";
 import InnerText from "../../components/innerText";
 import { neutral } from "@guardian/src-foundations";
-import { headingCss } from "../../styles/sharedStyles";
+import { PageStyles } from "../../components/pageStyles";
 
 const JournalismPage = () => (
   <>
@@ -100,6 +101,7 @@ const JournalismPage = () => (
         </p>
       </InnerText>
     </BoxContainer>
+    <ContactAndWorkForUs />
   </>
 );
 
