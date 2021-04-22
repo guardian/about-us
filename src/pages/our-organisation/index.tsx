@@ -19,6 +19,7 @@ import {
   threeColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
+import FullWidthImage from "../../components/fullWidthImage";
 
 // placeholder values for the background gradient until values are agreed upon for each breakpoint
 const ourStructureBkg = {
@@ -73,6 +74,7 @@ const HomePage = () => (
         </p>
       </>
     </FullWidthText>
+    <FullWidthImage smallImageUrl="/images/organisation-full-width-small.png" largeImageUrl="/images/organisation-full-width-large.png" />
     <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
       <>
         <InnerText title="Our structure" theme="light">

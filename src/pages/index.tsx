@@ -61,7 +61,7 @@ const HomePage = () => (
         – relentlessly and courageously.
       </p>
     </FullWidthText>
-    <FullWidthImage smallImageUrl="/images/full-width-image-small.png" largeImageUrl="/images/full-width-image-large.png" />
+    <FullWidthImage smallImageUrl="/images/front-page-full-width-small.png" largeImageUrl="/images/front-page-full-width-large.png" />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}

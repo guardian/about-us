@@ -17,6 +17,7 @@ import {
   twoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
+import FullWidthImage from "../../components/fullWidthImage";
 
 const JournalismPage = () => (
   <>
@@ -56,6 +57,7 @@ const JournalismPage = () => (
         bringing about a more hopeful future.
       </p>
     </FullWidthText>
+    <FullWidthImage smallImageUrl="/images/journalism-full-width-small.png" largeImageUrl="/images/journalism-full-width-large.png" />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
