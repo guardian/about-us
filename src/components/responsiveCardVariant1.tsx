@@ -14,6 +14,7 @@ interface ResponsiveCardVariant1Props {
   imagePath: string;
   linkUrl?: string;
   linkText?: string;
+  alwaysImgOnLeft?: boolean;
 }
 
 const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
@@ -22,14 +23,14 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
     display: flex;
     background-color: ${neutral[100]};
     ${minWidth.tablet} {
-      flex-direction: column;
+      flex-direction: ${props.alwaysImgOnLeft ? "row" : "column"};
     }
   `;
 
   const imageHolderCss = css`
     width: 40%;
     ${minWidth.tablet} {
-      width: 100%;
+      width: ${props.alwaysImgOnLeft ? "66%" : "100%"};
     }
   `;
 
@@ -46,12 +47,19 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
       display: none;
     }
     ${minWidth.tablet} {
-      width: 100%;
-      height: 100%;
-      padding: ${space[3]}px;
+      ${props.alwaysImgOnLeft
+        ? `
+        width: 33%;
+        `
+        : `
+          width: 100%;
+
+          `}
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      height: 100%;
+      padding: ${space[3]}px;
       & a:last-of-type {
         display: inline-flex;
         width: max-content;

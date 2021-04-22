@@ -11,7 +11,10 @@ import InnerText from "../components/innerText";
 import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
-import { threeColumnResponsiveCardHolder } from "../styles/sharedStyles";
+import {
+  threeThenOneColumnResponsiveCardHolder,
+  twoColumnResponsiveCardHolder,
+} from "../styles/sharedStyles";
 
 const HomePage = () => (
   <>
@@ -82,21 +85,27 @@ const HomePage = () => (
             </p>
           </>
         </InnerText>
-        <div css={threeColumnResponsiveCardHolder}>
+        <div css={threeThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="/images/responsive-card-bg.png"
+            imagePath="/images/front-page-2.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="/images/responsive-card-bg.png"
+            imagePath="/images/front-page-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="/images/responsive-card-bg.png"
+            imagePath="/images/front-page-4.png"
             linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            imagePath="/images/front-page-5.png"
+            linkUrl="https://www.theguardian.com/uk"
+            alwaysImgOnLeft={true}
           />
         </div>
       </>
@@ -124,28 +133,44 @@ const HomePage = () => (
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <InnerText title="Journalism" theme="light">
-        <>
-          <p>
-            The Guardian is globally renowned for its coverage of politics, the
-            environment, science, social justice, sport and culture. Our
-            journalists deliver agenda-setting investigations, breaking live
-            news, compelling opinion writing and the liveliest features, as well
-            as award-winning podcasts, video documentaries and infographics and
-            visuals.
-          </p>
-          <p>
-            Our Covid-19 investigations exposed governmental and social
-            failings, as did the Snowden Files, Panama Papers, Cambridge
-            Analytica Files and the Windrush revelations in the UK.
-          </p>
-          <p>
-            Our teams in the UK, US and Australia produce theguardian.com,
-            Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
-            and Observer newspapers in the UK.
-          </p>
-        </>
-      </InnerText>
+      <>
+        <InnerText title="Journalism" theme="light">
+          <>
+            <p>
+              The Guardian is globally renowned for its coverage of politics,
+              the environment, science, social justice, sport and culture. Our
+              journalists deliver agenda-setting investigations, breaking live
+              news, compelling opinion writing and the liveliest features, as
+              well as award-winning podcasts, video documentaries and
+              infographics and visuals.
+            </p>
+            <p>
+              Our Covid-19 investigations exposed governmental and social
+              failings, as did the Snowden Files, Panama Papers, Cambridge
+              Analytica Files and the Windrush revelations in the UK.
+            </p>
+            <p>
+              Our teams in the UK, US and Australia produce theguardian.com,
+              Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
+              and Observer newspapers in the UK.
+            </p>
+          </>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Guardian US"
+            imagePath="/images/front-page-11.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Visit Guardian US"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Australia"
+            imagePath="/images/front-page-12.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Guardian Australia"
+          />
+        </div>
+      </>
     </BoxContainer>
     <ContactAndWorkForUs />
   </>
