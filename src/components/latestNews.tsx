@@ -122,6 +122,7 @@ const LatestNews = () => (
           size="default"
           icon={<SvgArrowRightStraight />}
           iconSide="right"
+          nudgeIcon={true}
           href="https://www.theguardian.com/gnm-press-office"
         >
           Go to press office
