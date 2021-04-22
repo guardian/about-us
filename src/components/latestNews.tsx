@@ -6,14 +6,14 @@ import { space } from "@guardian/src-foundations";
 import { neutral, news } from "@guardian/src-foundations/palette";
 import { headline, titlepiece } from "@guardian/src-foundations/typography";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
-import { minWidth } from "../styles/breakpoints";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const containerCss = css`
   background-color: ${news[400]};
-  padding: ${space[5]}px;
+  padding: ${space[5]}px ${space[3]}px;
 
   ${minWidth.tablet} {
-    padding: 35px 120px;
+    padding: 35px ${space[3]}px;
   }
   ${minWidth.desktop} {
     padding: 38px ${space[5]}px;
@@ -58,6 +58,7 @@ const innerContainerCss = css`
   }
 
   ${minWidth.tablet} {
+    max-width: ${namedBreakpoints.tablet}px;
     & article {
       width: 50%;
     }
