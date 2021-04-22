@@ -71,7 +71,7 @@ const JournalismPage = () => (
             journalism.
           </p>
         </InnerText>
-        <div css={threeColumnResponsiveCardHolder}>
+        <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
             imagePath="/images/journalism-2.png"
@@ -85,6 +85,11 @@ const JournalismPage = () => (
           <ResponsiveCardVariant1
             title="How the Guardian covered 2020"
             imagePath="/images/journalism-4.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            imagePath="/images/front-page-5.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>

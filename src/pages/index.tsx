@@ -11,10 +11,7 @@ import InnerText from "../components/innerText";
 import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
-import {
-  threeThenOneColumnResponsiveCardHolder,
-  twoColumnResponsiveCardHolder,
-} from "../styles/sharedStyles";
+import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 
 const HomePage = () => (
   <>
@@ -85,7 +82,7 @@ const HomePage = () => (
             </p>
           </>
         </InnerText>
-        <div css={threeThenOneColumnResponsiveCardHolder}>
+        <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
             imagePath="/images/front-page-2.png"
@@ -105,7 +102,6 @@ const HomePage = () => (
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
             imagePath="/images/front-page-5.png"
             linkUrl="https://www.theguardian.com/uk"
-            alwaysImgOnLeft={true}
           />
         </div>
       </>
