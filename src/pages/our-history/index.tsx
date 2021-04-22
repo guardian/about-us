@@ -7,8 +7,12 @@ import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
-import { headingCss } from "../../styles/sharedStyles";
 import { neutral } from "@guardian/src-foundations/palette";
+import {
+  headingCss,
+  twoThenOneColumnResponsiveCardHolder,
+} from "../../styles/sharedStyles";
+import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 
 const OurHistory = () => (
   <>
@@ -58,13 +62,53 @@ const OurHistory = () => (
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <h2 css={headingCss}>Read more</h2>
+      <>
+        <h2 css={headingCss}>Read more</h2>
+        <div css={twoThenOneColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Advertising"
+            imagePath="/images/history-2.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Jobs"
+            imagePath="/images/history-3.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="GNM Archive"
+            imagePath="/images/history-4.png"
+            linkUrl="https://www.theguardian.com/uk"
+            alwaysImgOnLeft={true}
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <h2 css={headingCss}>The Scott Trust</h2>
+      <>
+        <h2 css={headingCss}>The Scott Trust</h2>
+        <div css={twoThenOneColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Scott Trust values"
+            imagePath="/images/history-6.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Scott Trust timeline"
+            imagePath="/images/history-7.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            imagePath="/images/history-8.png"
+            linkUrl="https://www.theguardian.com/uk"
+            alwaysImgOnLeft={true}
+          />
+        </div>
+      </>
     </BoxContainer>
     <ContactAndWorkForUs />
   </>

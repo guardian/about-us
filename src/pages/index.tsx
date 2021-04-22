@@ -10,6 +10,8 @@ import HeaderQuote from "../components/headerQuote";
 import InnerText from "../components/innerText";
 import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
+import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
+import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 
 const HomePage = () => (
   <>
@@ -61,24 +63,48 @@ const HomePage = () => (
       background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
     >
-      <InnerText title="Our Organisation" theme="light">
-        <>
-          <p>
-            The Guardian is owned by Guardian Media Group, which has only one
-            shareholder - the Scott Trust.
-          </p>
-          <p>
-            The Scott Trust, named after our longest serving editor, CP Scott,
-            exists to secure the financial and editorial independence of the
-            Guardian in perpetuity.
-          </p>
-          <p>
-            Today more than half of our revenue comes directly from our readers,
-            helping to support Guardian journalism and keep it open for
-            everyone.
-          </p>
-        </>
-      </InnerText>
+      <>
+        <InnerText title="Our Organisation" theme="light">
+          <>
+            <p>
+              The Guardian is owned by Guardian Media Group, which has only one
+              shareholder - the Scott Trust.
+            </p>
+            <p>
+              The Scott Trust, named after our longest serving editor, CP Scott,
+              exists to secure the financial and editorial independence of the
+              Guardian in perpetuity.
+            </p>
+            <p>
+              Today more than half of our revenue comes directly from our
+              readers, helping to support Guardian journalism and keep it open
+              for everyone.
+            </p>
+          </>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="A mission for journalism: an essay by our editor"
+            imagePath="/images/front-page-2.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Media Group"
+            imagePath="/images/front-page-3.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="The Scott Trust and our values"
+            imagePath="/images/front-page-4.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            imagePath="/images/front-page-5.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="dark"
@@ -103,28 +129,44 @@ const HomePage = () => (
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <InnerText title="Journalism" theme="light">
-        <>
-          <p>
-            The Guardian is globally renowned for its coverage of politics, the
-            environment, science, social justice, sport and culture. Our
-            journalists deliver agenda-setting investigations, breaking live
-            news, compelling opinion writing and the liveliest features, as well
-            as award-winning podcasts, video documentaries and infographics and
-            visuals.
-          </p>
-          <p>
-            Our Covid-19 investigations exposed governmental and social
-            failings, as did the Snowden Files, Panama Papers, Cambridge
-            Analytica Files and the Windrush revelations in the UK.
-          </p>
-          <p>
-            Our teams in the UK, US and Australia produce theguardian.com,
-            Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
-            and Observer newspapers in the UK.
-          </p>
-        </>
-      </InnerText>
+      <>
+        <InnerText title="Journalism" theme="light">
+          <>
+            <p>
+              The Guardian is globally renowned for its coverage of politics,
+              the environment, science, social justice, sport and culture. Our
+              journalists deliver agenda-setting investigations, breaking live
+              news, compelling opinion writing and the liveliest features, as
+              well as award-winning podcasts, video documentaries and
+              infographics and visuals.
+            </p>
+            <p>
+              Our Covid-19 investigations exposed governmental and social
+              failings, as did the Snowden Files, Panama Papers, Cambridge
+              Analytica Files and the Windrush revelations in the UK.
+            </p>
+            <p>
+              Our teams in the UK, US and Australia produce theguardian.com,
+              Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
+              and Observer newspapers in the UK.
+            </p>
+          </>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Guardian US"
+            imagePath="/images/front-page-11.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Visit Guardian US"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Australia"
+            imagePath="/images/front-page-12.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Guardian Australia"
+          />
+        </div>
+      </>
     </BoxContainer>
     <ContactAndWorkForUs />
   </>

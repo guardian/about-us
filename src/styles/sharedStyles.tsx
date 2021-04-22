@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
-import { neutral } from "@guardian/src-foundations";
-import { titlepiece } from "@guardian/src-foundations/typography";
+import { neutral, space } from "@guardian/src-foundations";
+import { headline, titlepiece } from "@guardian/src-foundations/typography";
 import { minWidth } from "./breakpoints";
 
 export const containerCss = (backgroundColor: string) => css`
@@ -20,5 +20,144 @@ export const headingCss = css`
   ${minWidth.desktop} {
     font-size: 50px;
     margin: 8px 0 27px 0;
+  }
+`;
+
+export const twoColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  & > h3 {
+    ${headline.small({ fontWeight: "bold" })};
+    width: 100%;
+    margin: ${space[1]}px 0 ${space[2]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 50%;
+      width: calc(50% - 10px);
+      margin-top: ${space[5]}px;
+    }
+  }
+`;
+
+export const twoThenOneColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  & > h3 {
+    ${headline.small({ fontWeight: "bold" })};
+    width: 100%;
+    margin: ${space[1]}px 0 ${space[2]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 50%;
+      width: calc(50% - 10px);
+      margin-top: ${space[5]}px;
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+export const threeColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+      margin-top: ${space[5]}px;
+    }
+  }
+`;
+
+export const oneThenThreeColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+      margin-top: ${space[5]}px;
+      &:first-of-type {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+export const threeThenOneColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+      margin-top: ${space[5]}px;
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+  }
+`;
+
+export const singleColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  & > * {
+    margin-top: ${space[3]}px;
+    width: 100%;
+  }
+  & > h3 {
+    ${headline.small({ fontWeight: "bold" })};
+    width: 100%;
+    margin: ${space[1]}px 0 ${space[2]}px;
+  }
+  ${minWidth.tablet} {
+    & > * {
+      margin-top: ${space[5]}px;
+    }
   }
 `;

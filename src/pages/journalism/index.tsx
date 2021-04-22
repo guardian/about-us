@@ -1,15 +1,21 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { jsx } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
-import { headingCss } from "../../styles/sharedStyles";
 import InnerText from "../../components/innerText";
-import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../../components/pageStyles";
+import { neutral } from "@guardian/src-foundations";
+import {
+  headingCss,
+  oneThenThreeColumnResponsiveCardHolder,
+  threeColumnResponsiveCardHolder,
+  twoColumnResponsiveCardHolder,
+} from "../../styles/sharedStyles";
+import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 
 const JournalismPage = () => (
   <>
@@ -54,52 +60,157 @@ const JournalismPage = () => (
       background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
     >
-      <InnerText title="Our values and mission for journalism" theme="light">
-        <p>
-          The Scott Trust, which owns the Guardian was established in 1936 to
-          secure the financial and editorial independence of the Guardian in
-          perpetuity and to safeguard the journalistic freedom and liberal
-          values of the Guardian free from commercial or political interference.
-          To this day our independence and values drive Guardian journalism.
-        </p>
-      </InnerText>
+      <>
+        <InnerText title="Our values and mission for journalism" theme="light">
+          <p>
+            The Scott Trust, which owns the Guardian was established in 1936 to
+            secure the financial and editorial independence of the Guardian in
+            perpetuity and to safeguard the journalistic freedom and liberal
+            values of the Guardian free from commercial or political
+            interference. To this day our independence and values drive Guardian
+            journalism.
+          </p>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="A mission for journalism: an essay by our editor"
+            imagePath="/images/journalism-2.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="How the Guardian is editorially independent"
+            imagePath="/images/journalism-3.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="How the Guardian covered 2020"
+            imagePath="/images/journalism-4.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            imagePath="/images/front-page-5.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <h2 css={headingCss}>Editors</h2>
+      <>
+        <h2 css={headingCss}>Editors</h2>
+        <div css={oneThenThreeColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Katharine Viner, editor-in-chief, Guardian News & Media"
+            imagePath="/images/journalism-5.png"
+            linkUrl="https://www.theguardian.com/uk"
+            alwaysImgOnLeft={true}
+          />
+          <ResponsiveCardVariant1
+            title="John Mulholland, editor of Guardian US"
+            imagePath="/images/journalism-6.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Lenore Taylor, editor of Guardian Australia"
+            imagePath="/images/journalism-7.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Paul Webster, editor of the Observer"
+            imagePath="/images/journalism-8.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <InnerText title="Guardian journalism" theme="light">
-        <p>
-          The Guardian's purposeful journalism spans several formats to serve
-          our global audience, including print and digital products, multimedia
-          journalism, email round-ups and a dedicated programme of live
-          discussions, debates and interviews.
-        </p>
-      </InnerText>
+      <>
+        <InnerText title="Guardian journalism" theme="light">
+          <p>
+            The Guardian's purposeful journalism spans several formats to serve
+            our global audience, including print and digital products,
+            multimedia journalism, email round-ups and a dedicated programme of
+            live discussions, debates and interviews.
+          </p>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <h3>International editions</h3>
+          <ResponsiveCardVariant1
+            title="Guardian US"
+            imagePath="/images/journalism-18.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Visit Guardian US"
+          />
+          <ResponsiveCardVariant1
+            title="Guardian Australia"
+            imagePath="/images/journalism-19.png"
+            linkUrl="https://www.theguardian.com/uk"
+            linkText="Guardian Australia"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <h2 css={headingCss}>Editorial standards</h2>
+      <>
+        <h2 css={headingCss}>Editorial standards</h2>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Editorial code of conduct for journalists"
+            imagePath="/images/journalism-20.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="About our readers’ editor who manages complaints"
+            imagePath="/images/journalism-21.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Community standards"
+            imagePath="/images/journalism-22.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Style guide"
+            imagePath="/images/journalism-23.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <InnerText title="Got a story?" theme="light">
-        <p>
-          The Guardian welcomes anonymous and confidential news tips to help
-          inform our journalism. Find out how to get in touch with the Guardian
-          to share a story or reach our editorial departments.
-        </p>
-      </InnerText>
+      <>
+        <InnerText title="Got a story?" theme="light">
+          <p>
+            The Guardian welcomes anonymous and confidential news tips to help
+            inform our journalism. Find out how to get in touch with the
+            Guardian to share a story or reach our editorial departments.
+          </p>
+        </InnerText>
+        <div css={twoColumnResponsiveCardHolder}>
+          <ResponsiveCardVariant1
+            title="Contact us securely"
+            imagePath="/images/journalism-24.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+          <ResponsiveCardVariant1
+            title="Contact our editorial desks "
+            imagePath="/images/journalism-25.png"
+            linkUrl="https://www.theguardian.com/uk"
+          />
+        </div>
+      </>
     </BoxContainer>
     <ContactAndWorkForUs />
   </>
