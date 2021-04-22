@@ -71,6 +71,7 @@ const innerContainerCss = css`
     }
   }
   ${minWidth.desktop} {
+    max-width: ${namedBreakpoints.desktop}px;
     & article {
       width: calc(50% - 77px);
     }
@@ -82,6 +83,7 @@ const innerContainerCss = css`
     }
   }
   ${minWidth.wide} {
+    max-width: ${namedBreakpoints.wide}px;
     & article {
       width: calc(50% - 82px);
       padding-right: 185px;
