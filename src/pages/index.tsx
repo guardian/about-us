@@ -12,6 +12,7 @@ import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
+import LatestNews from "../components/latestNews";
 
 const HomePage = () => (
   <>
@@ -168,6 +169,7 @@ const HomePage = () => (
         </div>
       </>
     </BoxContainer>
+    <LatestNews />
     <ContactAndWorkForUs />
   </>
 );
