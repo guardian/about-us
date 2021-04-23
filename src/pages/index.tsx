@@ -14,7 +14,10 @@ import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
 import ReaderFundedSubscribeCard from "../components/reader-funded/readerFundedSubscribeCard";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
-import { readerFundedCardHolder } from "../styles/sharedStyles";
+import {
+  readerFundedSubscribeCardHolderCss,
+  readerFundedSubscribeHeadingCss,
+} from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 
@@ -132,7 +135,8 @@ const HomePage = () => (
             whichever way suits you best.
           </p>
         </InnerText>
-        <div css={readerFundedCardHolder}>
+        <h3 css={readerFundedSubscribeHeadingCss}>Subscribe</h3>
+        <div css={readerFundedSubscribeCardHolderCss}>
           <ReaderFundedSubscribeCard
             imagePath={{
               mobile: "/images/front-page-7.png",

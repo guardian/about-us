@@ -183,7 +183,7 @@ export const x = css`
   }
 `;
 
-export const readerFundedCardHolder = css`
+export const readerFundedSubscribeCardHolderCss = css`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -198,5 +198,15 @@ export const readerFundedCardHolder = css`
     grid-template-rows: 1fr;
     gap: 20px;
     grid-template-areas: ". . .";
+  }
+`;
+
+export const readerFundedSubscribeHeadingCss = css`
+  color: ${neutral[100]};
+  ${headline.small({ fontWeight: "bold" })}
+  border-top: 1px solid #90ABC4;
+  margin: 41.5px 0 30px 0;
+  ${minWidth.tablet} {
+    margin: 49px 0 21px 0;
   }
 `;
