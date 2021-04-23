@@ -31,15 +31,25 @@ const pCss = css`
 
 const cardImageCss = css`
   width: 100%;
-  padding-top: 60%;
-  background-image: url("/images/front-page-10.png");
+  padding-top: 47.25%;
+  background-image: url("/images/front-page-10-mobile.png");
   background-size: cover;
   flex: 0 0 40%;
-  height: 80%;
+  height: 100%;
   margin: auto;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
   ${minWidth.tablet} {
-    height: max-content;
-    background-image: url("/images/front-page-10.png");
+    height: 80%;
+    background-image: url("/images/front-page-10-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  ${minWidth.desktop} {
+    background-size: cover;
+    background-image: url("/images/front-page-10-desktop.png");
+    padding-top: 56.25%;
   }
 `;
 
