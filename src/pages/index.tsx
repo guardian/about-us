@@ -9,11 +9,16 @@ import FullWidthText, { highlightedCss } from "../components/fullWidthText";
 import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
 import InnerText from "../components/innerText";
+import LatestNews from "../components/latestNews";
 import { neutral } from "@guardian/src-foundations";
 import { PageStyles } from "../components/pageStyles";
+import ReaderFundedSubscribeCard from "../components/reader-funded/readerFundedSubscribeCard";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
+import {
+  readerFundedSubscribeCardHolderCss,
+  readerFundedHeadingCss,
+} from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
-import LatestNews from "../components/latestNews";
 import FullWidthImage from "../components/fullWidthImage";
 
 const HomePage = () => (
@@ -61,7 +66,10 @@ const HomePage = () => (
         – relentlessly and courageously.
       </p>
     </FullWidthText>
-    <FullWidthImage smallImageUrl="/images/front-page-full-width-small.png" largeImageUrl="/images/front-page-full-width-large.png" />
+    <FullWidthImage
+      smallImageUrl="/images/front-page-full-width-small.png"
+      largeImageUrl="/images/front-page-full-width-large.png"
+    />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
@@ -114,8 +122,8 @@ const HomePage = () => (
       theme="dark"
       background={{ backgroundColor: `${neutral[97]}` }}
     >
-      <InnerText title="We're reader funded" theme="dark">
-        <>
+      <>
+        <InnerText title="We're reader funded" theme="dark">
           <p>
             The Guardian’s independent, high-impact journalism is powered by its
             global readership. In 2020 alone, more than 1.5 million readers
@@ -126,8 +134,38 @@ const HomePage = () => (
             to be told. You can show your support for our work today, in
             whichever way suits you best.
           </p>
-        </>
-      </InnerText>
+        </InnerText>
+        <h3 css={readerFundedHeadingCss}>Subscribe</h3>
+        <div css={readerFundedSubscribeCardHolderCss}>
+          <ReaderFundedSubscribeCard
+            imagePath={{
+              mobile: "/images/front-page-7-mobile.png",
+              tabletAndAbove: "/images/front-page-7-desktop.png",
+            }}
+            title="Digital"
+            bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
+            href="https://support.theguardian.com/uk/subscribe"
+          />
+          <ReaderFundedSubscribeCard
+            imagePath={{
+              mobile: "/images/front-page-8-mobile.png",
+              tabletAndAbove: "/images/front-page-8-desktop.png",
+            }}
+            title="Print"
+            bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
+            href="https://support.theguardian.com/uk/subscribe"
+          />
+          <ReaderFundedSubscribeCard
+            imagePath={{
+              mobile: "/images/front-page-9-mobile.png",
+              tabletAndAbove: "/images/front-page-9-desktop.png",
+            }}
+            title="Guardian Weekly"
+            bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
+            href="https://support.theguardian.com/uk/subscribe"
+          />
+        </div>
+      </>
     </BoxContainer>
     <BoxContainer
       theme="light"
@@ -179,4 +217,3 @@ const HomePage = () => (
 );
 
 export default HomePage;
-
