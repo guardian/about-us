@@ -20,6 +20,7 @@ import {
 } from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
+import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 
 const HomePage = () => (
   <>
@@ -165,6 +166,8 @@ const HomePage = () => (
             href="https://support.theguardian.com/uk/subscribe"
           />
         </div>
+        <h3 css={readerFundedHeadingCss}>Make a contribution</h3>
+        <ReaderFundedContributeCard />
       </>
     </BoxContainer>
     <BoxContainer
