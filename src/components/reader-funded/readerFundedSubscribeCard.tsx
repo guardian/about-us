@@ -35,7 +35,7 @@ const pCss = css`
   ${body.small({ lineHeight: "loose" })}
 `;
 
-const cardContainerCss = css`
+export const cardContainerCss = css`
   display: grid;
   grid-auto-columns: 1.8fr 1fr;
   grid-auto-rows: 1fr;
