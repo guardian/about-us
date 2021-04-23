@@ -6,6 +6,7 @@ import { body, headline } from "@guardian/src-foundations/typography";
 import { brandAlt, neutral } from "@guardian/src-foundations/palette";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../../styles/breakpoints";
+import { space } from "@guardian/src-foundations";
 
 interface ImagePath {
   mobile: string;
@@ -31,7 +32,6 @@ const h3Css = css`
 
 const pCss = css`
   color: ${neutral[100]};
-  text-decoration: none;
   ${body.small({ lineHeight: "loose" })}
 `;
 
@@ -53,12 +53,12 @@ const cardContainerCss = css`
   }
 `;
 
-const titleAndLinkCss = css`
+const textAndLinkButtonCss = css`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 0 0 60%;
-  padding-right: 12px;
+  padding-right: ${space[3]}px;
   grid-area: text;
   ${minWidth.tablet} {
     padding-right: 0;
@@ -90,14 +90,13 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
       padding-top: 56.25%;
       background-size: cover;
       background-image: url(${props.imagePath.tabletAndAbove});
-      height: max-content;
     }
   `;
 
   return (
     <div css={cardContainerCss}>
       <div css={cardImageCss} />
-      <div css={titleAndLinkCss}>
+      <div css={textAndLinkButtonCss}>
         <div>
           <a css={aCss} href={props.href}>
             <h3 css={h3Css}>{props.title}</h3>
