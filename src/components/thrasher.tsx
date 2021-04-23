@@ -4,27 +4,59 @@ import { jsx, css } from "@emotion/react";
 import { space } from "@guardian/src-foundations";
 import { body } from "@guardian/src-foundations/typography";
 import { brandAlt, news } from "@guardian/src-foundations/palette";
-import { minWidth } from "../styles/breakpoints";
+import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 
 const containerCss = css`
   background-color: ${brandAlt[400]};
+
   ${minWidth.tablet} {
-    background-color: green;
+    border-bottom: 1px solid black;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-top: 32.14%;
+      background-image: linear-gradient(
+          to bottom,
+          ${brandAlt[400]},
+          ${brandAlt[400]} 10%,
+          transparent 50%
+        ),
+        url("/images/thrasher-paper-bg-tablet.png");
+      background-size: 100% 100%;
+    }
   }
 `;
 
 const innerContainerCss = css`
   padding: ${space[6]}px 0 0;
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 0;
     padding-top: 96%;
-    background-image: linear-gradient(to bottom, ${brandAlt[400]}, ${brandAlt[400]} 10%, transparent 50%), url('/images/thrasher-paper-bg-mobile.png');
+    background-image: linear-gradient(
+        to bottom,
+        ${brandAlt[400]},
+        ${brandAlt[400]} 10%,
+        transparent 50%
+      ),
+      url("/images/thrasher-paper-bg-mobile.png");
     background-size: 100% 100%;
+    ${minWidth.tablet} {
+      display: none;
+    }
+  }
+  ${minWidth.tablet} {
+    display: flex;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: ${namedBreakpoints.tablet}px;
   }
 `;
 
@@ -46,10 +78,22 @@ const birthdayCopyHolderCss = css`
     transparent calc(93.4% + 2px)
   );
   padding: 0 ${space[6]}px;
+  height: max-content;
 `;
 
 const pAndLinkButtonHolderCss = css`
   margin: 16px ${space[6]}px 0;
+  &:after {
+    content: "";
+    display: block;
+    width: 146px;
+    height: 50px;
+    background: url("/images/thrasher-logo.svg");
+    background-size: 100% 100%;
+    ${minWidth.tablet} {
+      display: none;
+    }
+  }
 `;
 
 const pCss = css`
@@ -63,10 +107,6 @@ const linkButtonCssOverides = css`
   &:hover {
     background-color: #be4043;
   }
-`;
-
-const thrasherLogoCss = css`
-  display: block;
 `;
 
 const Thrasher = () => (
@@ -94,7 +134,6 @@ const Thrasher = () => (
         >
           More on the Guardian 200
         </LinkButton>
-        <img src="/images/thrasher-logo.svg" css={thrasherLogoCss} />
       </div>
     </div>
   </div>
