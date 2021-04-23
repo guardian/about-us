@@ -16,7 +16,7 @@ import ReaderFundedSubscribeCard from "../components/reader-funded/readerFundedS
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
 import {
   readerFundedSubscribeCardHolderCss,
-  readerFundedSubscribeHeadingCss,
+  readerFundedHeadingCss,
 } from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
@@ -135,7 +135,7 @@ const HomePage = () => (
             whichever way suits you best.
           </p>
         </InnerText>
-        <h3 css={readerFundedSubscribeHeadingCss}>Subscribe</h3>
+        <h3 css={readerFundedHeadingCss}>Subscribe</h3>
         <div css={readerFundedSubscribeCardHolderCss}>
           <ReaderFundedSubscribeCard
             imagePath={{

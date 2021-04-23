@@ -35,15 +35,7 @@ const pCss = css`
   ${body.small({ lineHeight: "loose" })}
 `;
 
-const y = css`
-  display: flex;
-  flex-direction: row-reverse;
-  ${minWidth.tablet} {
-    flex-direction: column;
-  }
-`;
-
-export const cardContainerCss = css`
+const cardContainerCss = css`
   display: grid;
   grid-auto-columns: 1.8fr 1fr;
   grid-auto-rows: 1fr;
@@ -89,6 +81,8 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     padding-top: 56.25%;
     background-image: url(${props.imagePath.mobile});
     background-size: cover;
+    height: 80%;
+    margin: auto;
     flex: 0 0 40%;
     ${minWidth.tablet} {
       background-image: url(${props.imagePath.tabletAndAbove});
