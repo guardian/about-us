@@ -22,6 +22,7 @@ import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
+import Thrasher from "../components/thrasher";
 
 const HomePage = () => (
   <>
@@ -120,6 +121,7 @@ const HomePage = () => (
         </div>
       </>
     </BoxContainer>
+    <Thrasher />
     <BoxContainer
       theme="dark"
       background={{ backgroundColor: `${neutral[97]}` }}
