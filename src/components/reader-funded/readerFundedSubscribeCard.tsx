@@ -78,13 +78,17 @@ const linkButtonCss = css`
 const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
   const cardImageCss = css`
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 47.25%;
     background-image: url(${props.imagePath.mobile});
-    background-size: cover;
-    height: 80%;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100%;
     margin: auto;
     flex: 0 0 40%;
     ${minWidth.tablet} {
+      padding-top: 56.25%;
+      background-size: cover;
       background-image: url(${props.imagePath.tabletAndAbove});
       height: max-content;
     }
