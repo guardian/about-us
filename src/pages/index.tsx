@@ -14,6 +14,7 @@ import { PageStyles } from "../components/pageStyles";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import LatestNews from "../components/latestNews";
+import FullWidthImage from "../components/fullWidthImage";
 
 const HomePage = () => (
   <>
@@ -60,6 +61,7 @@ const HomePage = () => (
         – relentlessly and courageously.
       </p>
     </FullWidthText>
+    <FullWidthImage smallImageUrl="/images/front-page-full-width-small.png" largeImageUrl="/images/front-page-full-width-large.png" />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
@@ -177,3 +179,4 @@ const HomePage = () => (
 );
 
 export default HomePage;
+
