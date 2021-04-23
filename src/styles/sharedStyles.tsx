@@ -187,5 +187,6 @@ export const readerFundedHeadingCss = css`
   margin: 41.5px 0 30px 0;
   ${minWidth.tablet} {
     margin: 49px 0 21px 0;
+    font-size: 34px;
   }
 `;

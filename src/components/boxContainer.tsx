@@ -69,7 +69,7 @@ const BoxContainer = (props: BoxContainerProps) => {
   const boxContentsCss = css`
     padding: ${space[1]}px ${space[3]}px 41px ${space[3]}px;
     background: ${props.theme === "light" ? neutral[100] : sport[300]};
-    border: 1px solid ${props.theme === "light" ? neutral[86] : sport[300]};
+    border: ${props.theme === "light" ? `1px solid ${neutral[86]}` : "none"};
     ${minWidth.tablet} {
       padding: ${space[1]}px ${space[5]}px ${space[12]}px ${space[5]}px;
     }

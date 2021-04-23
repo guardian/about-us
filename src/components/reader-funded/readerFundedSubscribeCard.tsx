@@ -85,6 +85,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     background-repeat: no-repeat;
     height: 100%;
     margin: auto;
+    margin-right: -${space[3]}px;
     flex: 0 0 40%;
     ${minWidth.tablet} {
       padding-top: 56.25%;

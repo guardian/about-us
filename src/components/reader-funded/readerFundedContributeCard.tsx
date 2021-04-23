@@ -17,9 +17,11 @@ const h3Css = css`
   margin: 0;
   ${minWidth.tablet} {
     ${headline.xsmall()}
+    margin-bottom: 30px;
   }
   ${minWidth.wide} {
-    padding-right: ${space[9]}px;
+    margin-bottom: ${space[9]}px;
+    margin-right: ${space[5]}px;
   }
 `;
 
@@ -27,6 +29,9 @@ const pCss = css`
   color: ${neutral[100]};
   text-decoration: none;
   ${body.small({ lineHeight: "loose" })}
+  ${minWidth.tablet} {
+    margin: 0;
+  }
 `;
 
 const cardImageCss = css`
@@ -37,6 +42,7 @@ const cardImageCss = css`
   flex: 0 0 40%;
   height: 100%;
   margin: auto;
+  margin-right: -${space[3]}px;
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
@@ -49,7 +55,7 @@ const cardImageCss = css`
   ${minWidth.desktop} {
     background-size: cover;
     background-image: url("/images/front-page-10-desktop.png");
-    padding-top: 56.25%;
+    padding-top: 60.25%;
   }
 `;
 
@@ -58,19 +64,20 @@ const containerCss = css`
   grid-template-columns: 1.8fr 1fr;
   grid-template-rows: 1fr;
   gap: 0 12px;
-  & .item1 {
+  border-top: 1px solid #90abc4;
+  & .gridItem1 {
     grid-area: 1 / 1 / span 1 / span 1;
   }
-  & .item2 {
+  & .gridItem2 {
     grid-area: 2 / 1 / span 1 / span 1;
   }
-  & .item3 {
+  & .gridItem3 {
     display: none;
   }
-  & .item4 {
+  & .gridItem4 {
     grid-area: 1 / 2 / span 3 / span 1;
   }
-  & .item6 {
+  & .gridItem6 {
     display: inline-flex;
     width: max-content;
   }
@@ -78,23 +85,30 @@ const containerCss = css`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0 20px;
-    & .item2 {
+    border-top: none;
+    & .gridItem2 {
       grid-area: 1 / 2 / span 2 / span 1;
     }
-    & .item4 {
+    & .gridItem4 {
       grid-area: 1 / 3 / span 1 / span 1;
       height: 100%;
+      ${minWidth.desktop} {
+        transform: translateY(-44px);
+      }
     }
-    & .item5 {
+    & .gridItem5 {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       grid-area: 1 / 1 / span 2 / span 1;
+      ${minWidth.tablet} {
+        justify-content: normal;
+      }
     }
-    & .item6 {
+    & .gridItem6 {
       display: none;
     }
-    & .item3 {
+    & .gridItem3 {
       display: inline-flex;
       width: max-content;
     }
@@ -104,9 +118,9 @@ const containerCss = css`
 const ReaderFundedContributeCard = () => {
   return (
     <div css={containerCss}>
-      <div className="item5">
+      <div className="gridItem5">
         <a
-          className="item1"
+          className="gridItem1"
           css={aCss}
           href="https://support.theguardian.com/uk/contribute"
         >
@@ -119,13 +133,13 @@ const ReaderFundedContributeCard = () => {
             iconSide="right"
             nudgeIcon={true}
             href="https://support.theguardian.com/uk/contribute"
-            className="item3"
+            className="gridItem3"
           >
             Contribute
           </LinkButton>
         </ThemeProvider>
       </div>
-      <p className="item2" css={pCss}>
+      <p className="gridItem2" css={pCss}>
         Choose to give once from as little as $1, or set up a recurring
         contribution to support us each month or year.
       </p>
@@ -136,12 +150,12 @@ const ReaderFundedContributeCard = () => {
           iconSide="right"
           nudgeIcon={true}
           href="https://support.theguardian.com/uk/contribute"
-          className="item6"
+          className="gridItem6"
         >
           Contribute
         </LinkButton>
       </ThemeProvider>
-      <div css={cardImageCss} className="item4" />
+      <div css={cardImageCss} className="gridItem4" />
     </div>
   );
 };
