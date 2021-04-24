@@ -12,7 +12,15 @@ const containerCss = css`
   background-color: ${brandAlt[400]};
 
   ${minWidth.tablet} {
-    border-bottom: 1px solid black;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid black;
+    }
     &:after {
       content: "";
       display: block;
@@ -23,11 +31,51 @@ const containerCss = css`
           to bottom,
           ${brandAlt[400]},
           ${brandAlt[400]} 10%,
+          ${brandAlt[400]} 12.44%,
+          black calc(12.44% + 1px),
+          ${brandAlt[400]} calc(12.44% + 2px),
           transparent 50%
         ),
         url("/images/thrasher-paper-bg-tablet.png");
       background-size: 100% 100%;
+      margin-top: -4%;
     }
+  }
+  ${minWidth.desktop} {
+    padding-bottom: 36px;
+    background-image: url("/images/thrasher-paper-bg-desktop.png");
+    background-image: linear-gradient(
+        to right,
+        ${brandAlt[400]},
+        ${brandAlt[400]} calc(50% - 375px),
+        transparent calc(50% - 100px),
+        transparent
+      ),
+      url("/images/thrasher-paper-bg-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 520px) top;
+    &:before {
+      top: 0;
+      height: 100%;
+      border-top: none;
+      background-image: linear-gradient(
+        to bottom,
+        transparent,
+        transparent 35px,
+        black 36px,
+        transparent 37px,
+        transparent calc(100% - 37px),
+        black calc(100% - 36px),
+        transparent calc(100% - 35px)
+      );
+    }
+    &:after {
+      display: none;
+    }
+  }
+  ${minWidth.wide} {
+    background-position: left calc(50% + 360px) top;
   }
 `;
 
@@ -47,16 +95,30 @@ const innerContainerCss = css`
       ),
       url("/images/thrasher-paper-bg-mobile.png");
     background-size: 100% 100%;
-    ${minWidth.tablet} {
-      display: none;
-    }
   }
   ${minWidth.tablet} {
     display: flex;
     margin: 0 auto;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    padding: 36px 0 0;
     width: ${namedBreakpoints.tablet}px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: 0;
+      height: calc(100% - 36px);
+      border-left: 1px solid black;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  ${minWidth.desktop} {
+    width: ${namedBreakpoints.desktop}px;
+  }
+  ${minWidth.wide} {
+    width: ${namedBreakpoints.wide}px;
   }
 `;
 
@@ -79,6 +141,20 @@ const birthdayCopyHolderCss = css`
   );
   padding: 0 ${space[6]}px;
   height: max-content;
+  ${minWidth.tablet} {
+    margin-top: ${space[3]}px;
+    padding: 0 ${space[3]}px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: ${space[3]}px;
+      left: ${space[3]}px;
+      width: 146px;
+      height: 50px;
+      background: url("/images/thrasher-logo.svg");
+      background-size: 100% 100%;
+    }
+  }
 `;
 
 const pAndLinkButtonHolderCss = css`
@@ -90,9 +166,19 @@ const pAndLinkButtonHolderCss = css`
     height: 50px;
     background: url("/images/thrasher-logo.svg");
     background-size: 100% 100%;
-    ${minWidth.tablet} {
+  }
+  ${minWidth.tablet} {
+    padding: ${space[3]}px ${space[5]}px ${space[5]}px;
+    margin: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    &:after {
       display: none;
     }
+  }
+  ${minWidth.desktop} {
+    max-width: 342px;
+    border-right: none;
   }
 `;
 
