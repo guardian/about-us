@@ -13,11 +13,13 @@ import { neutral } from "@guardian/src-foundations";
 import {
   headingCss,
   oneThenThreeColumnResponsiveCardHolder,
+  responsiveCardV2Holder,
   threeColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
+import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
 
 const JournalismPage = () => (
   <>
@@ -142,6 +144,17 @@ const JournalismPage = () => (
             live discussions, debates and interviews.
           </p>
         </InnerText>
+        <div css={responsiveCardV2Holder}>
+          <ResponsiveCardVariant2 title="Website" href="https://www.theguardian.com" imageUrl="/images/journalism-9.png" />
+          <ResponsiveCardVariant2 title="Apps" href="https://www.theguardian.com" imageUrl="/images/journalism-10.png" />
+          <ResponsiveCardVariant2 title="Newsletters" href="https://www.theguardian.com" imageUrl="/images/journalism-11.png" />
+          <ResponsiveCardVariant2 title="The Guardian newspaper" href="https://www.theguardian.com" imageUrl="/images/journalism-12.png" />
+          <ResponsiveCardVariant2 title="The Observer newspaper" href="https://www.theguardian.com" imageUrl="/images/journalism-13.png" />
+          <ResponsiveCardVariant2 title="The Guardian Weekly" href="https://www.theguardian.com" imageUrl="/images/journalism-14.png" />
+          <ResponsiveCardVariant2 title="Podcasts" href="https://www.theguardian.com" imageUrl="/images/journalism-15.png" />
+          <ResponsiveCardVariant2 title="Video & documentaries" href="https://www.theguardian.com" imageUrl="/images/journalism-16.png" />
+          <ResponsiveCardVariant2 title="Live events" href="https://www.theguardian.com" imageUrl="/images/journalism-17.png" />
+        </div>
         <div css={twoColumnResponsiveCardHolder}>
           <h3>International editions</h3>
           <ResponsiveCardVariant1
