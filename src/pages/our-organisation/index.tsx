@@ -26,7 +26,7 @@ import {
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
 
-// placeholder values for the background gradient until values are agreed upon for each breakpoint
+// placeholder values for the our structure and reports background gradients
 const ourStructureBkg = {
   mobile: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
   tablet: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
@@ -37,6 +37,12 @@ const reportsBkg = {
   mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 20px), #052962 calc(100% - ${boxContainerPadding.mobile} - 20px))`,
   tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 20px), #052962 calc(100% - ${boxContainerPadding.tablet} - 20px))`,
   wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 20px), #052962 calc(100% - ${boxContainerPadding.wide} - 20px))`,
+};
+
+const guardianFoundationBkg = {
+  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
 };
 
 const HomePage = () => (
@@ -276,10 +282,7 @@ const HomePage = () => (
         </div>
       </>
     </BoxContainer>
-    <BoxContainer
-      theme="light"
-      background={{ backgroundColor: `${neutral[97]}` }}
-    >
+    <BoxContainer theme="light" background={guardianFoundationBkg}>
       <>
         <InnerText title="Guardian Foundation" theme="light">
           <p>

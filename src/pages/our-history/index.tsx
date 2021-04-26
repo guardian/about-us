@@ -16,6 +16,12 @@ import {
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 
+const scottTrustBkg = {
+  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+};
+
 const OurHistory = () => (
   <>
     <PageStyles />
@@ -60,7 +66,10 @@ const OurHistory = () => (
         </p>
       </>
     </FullWidthText>
-    <FullWidthImage smallImageUrl="/images/history-full-width-small.png" largeImageUrl="/images/history-full-width-large.png" />
+    <FullWidthImage
+      smallImageUrl="/images/history-full-width-small.png"
+      largeImageUrl="/images/history-full-width-large.png"
+    />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
@@ -88,10 +97,7 @@ const OurHistory = () => (
         </div>
       </>
     </BoxContainer>
-    <BoxContainer
-      theme="light"
-      background={{ backgroundColor: `${neutral[97]}` }}
-    >
+    <BoxContainer theme="light" background={scottTrustBkg}>
       <>
         <h2 css={headingCss}>The Scott Trust</h2>
         <div css={twoThenOneColumnResponsiveCardHolder}>
