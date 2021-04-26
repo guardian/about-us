@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { jsx } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
@@ -14,12 +14,17 @@ import {
   headingCss,
   oneThenThreeColumnResponsiveCardHolder,
   responsiveCardV2Holder,
-  threeColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
+
+const gotAStoryBkg = {
+  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+};
 
 const JournalismPage = () => (
   <>
@@ -59,7 +64,10 @@ const JournalismPage = () => (
         bringing about a more hopeful future.
       </p>
     </FullWidthText>
-    <FullWidthImage smallImageUrl="/images/journalism-full-width-small.png" largeImageUrl="/images/journalism-full-width-large.png" />
+    <FullWidthImage
+      smallImageUrl="/images/journalism-full-width-small.png"
+      largeImageUrl="/images/journalism-full-width-large.png"
+    />
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
@@ -145,15 +153,51 @@ const JournalismPage = () => (
           </p>
         </InnerText>
         <div css={responsiveCardV2Holder}>
-          <ResponsiveCardVariant2 title="Website" href="https://www.theguardian.com" imageUrl="/images/journalism-9.png" />
-          <ResponsiveCardVariant2 title="Apps" href="https://www.theguardian.com" imageUrl="/images/journalism-10.png" />
-          <ResponsiveCardVariant2 title="Newsletters" href="https://www.theguardian.com" imageUrl="/images/journalism-11.png" />
-          <ResponsiveCardVariant2 title="The Guardian newspaper" href="https://www.theguardian.com" imageUrl="/images/journalism-12.png" />
-          <ResponsiveCardVariant2 title="The Observer newspaper" href="https://www.theguardian.com" imageUrl="/images/journalism-13.png" />
-          <ResponsiveCardVariant2 title="The Guardian Weekly" href="https://www.theguardian.com" imageUrl="/images/journalism-14.png" />
-          <ResponsiveCardVariant2 title="Podcasts" href="https://www.theguardian.com" imageUrl="/images/journalism-15.png" />
-          <ResponsiveCardVariant2 title="Video & documentaries" href="https://www.theguardian.com" imageUrl="/images/journalism-16.png" />
-          <ResponsiveCardVariant2 title="Live events" href="https://www.theguardian.com" imageUrl="/images/journalism-17.png" />
+          <ResponsiveCardVariant2
+            title="Website"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-9.png"
+          />
+          <ResponsiveCardVariant2
+            title="Apps"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-10.png"
+          />
+          <ResponsiveCardVariant2
+            title="Newsletters"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-11.png"
+          />
+          <ResponsiveCardVariant2
+            title="The Guardian newspaper"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-12.png"
+          />
+          <ResponsiveCardVariant2
+            title="The Observer newspaper"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-13.png"
+          />
+          <ResponsiveCardVariant2
+            title="The Guardian Weekly"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-14.png"
+          />
+          <ResponsiveCardVariant2
+            title="Podcasts"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-15.png"
+          />
+          <ResponsiveCardVariant2
+            title="Video & documentaries"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-16.png"
+          />
+          <ResponsiveCardVariant2
+            title="Live events"
+            href="https://www.theguardian.com"
+            imageUrl="/images/journalism-17.png"
+          />
         </div>
         <div css={twoColumnResponsiveCardHolder}>
           <h3>International editions</h3>
@@ -202,10 +246,7 @@ const JournalismPage = () => (
         </div>
       </>
     </BoxContainer>
-    <BoxContainer
-      theme="light"
-      background={{ backgroundColor: `${neutral[97]}` }}
-    >
+    <BoxContainer theme="light" background={gotAStoryBkg}>
       <>
         <InnerText title="Got a story?" theme="light">
           <p>
