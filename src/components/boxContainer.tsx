@@ -18,6 +18,7 @@ interface BoxContainerProps {
   children: ReactElement;
   background: Background;
   theme: Theme;
+  paddingBottom?: boolean;
 }
 
 export const boxContainerPadding = {
@@ -32,14 +33,23 @@ const BoxContainer = (props: BoxContainerProps) => {
       ? props.background.backgroundColor
       : props.background.mobile};
     padding-top: ${boxContainerPadding.mobile};
+    padding-bottom: ${props.paddingBottom
+      ? boxContainerPadding.mobile
+      : "none"};
     ${minWidth.tablet} {
       padding-top: ${boxContainerPadding.tablet};
+      padding-bottom: ${props.paddingBottom
+        ? boxContainerPadding.tablet
+        : "none"};
       background: ${props.background.backgroundColor
         ? props.background.backgroundColor
         : props.background.tablet};
     }
     ${minWidth.wide} {
       padding-top: ${boxContainerPadding.wide};
+      padding-bottom: ${props.paddingBottom
+        ? boxContainerPadding.wide
+        : "none"};
       background: ${props.background.backgroundColor
         ? props.background.backgroundColor
         : props.background.wide};
