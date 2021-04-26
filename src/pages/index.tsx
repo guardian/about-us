@@ -21,6 +21,7 @@ import {
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
+import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
 
 const HomePage = () => (
   <>
@@ -168,6 +169,7 @@ const HomePage = () => (
         </div>
         <h3 css={readerFundedHeadingCss}>Make a contribution</h3>
         <ReaderFundedContributeCard />
+        <ReaderFundedPatronSupport />
       </>
     </BoxContainer>
     <BoxContainer
