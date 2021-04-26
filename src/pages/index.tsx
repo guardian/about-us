@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { jsx } from "@emotion/react";
+import { jsx, css } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../components/boxContainer";
 import ContactAndWorkForUs from "../components/contactAndWorkForUs";
@@ -23,8 +23,21 @@ import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
 import Thrasher from "../components/thrasher";
+import { LinkButton } from "@guardian/src-button";
+import { SvgArrowRightStraight } from "@guardian/src-icons";
+import { minWidth } from "../styles/breakpoints";
 
-const HomePage = () => (
+const LinkButtonCss = css`
+  margin-top: 41px;
+  ${minWidth.tablet} {
+    imargin-top: 48px;
+  }
+  ${minWidth.desktop} {
+    imargin-top: 57px;
+  }
+`;
+
+const HomePage = (): jsx.JSX.Element => (
   <>
     <PageStyles />
     <Header
@@ -119,6 +132,17 @@ const HomePage = () => (
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
+        <LinkButton
+          priority="primary"
+          size="default"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          cssOverrides={LinkButtonCss}
+          href="https://www.theguardian.com/uk"
+        >
+          More on our organisation
+        </LinkButton>
       </>
     </BoxContainer>
     <Thrasher />
@@ -215,6 +239,17 @@ const HomePage = () => (
             linkText="Guardian Australia"
           />
         </div>
+        <LinkButton
+          priority="primary"
+          size="default"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          cssOverrides={LinkButtonCss}
+          href="https://www.theguardian.com/uk"
+        >
+          More on journalism
+        </LinkButton>
       </>
     </BoxContainer>
     <LatestNews />
