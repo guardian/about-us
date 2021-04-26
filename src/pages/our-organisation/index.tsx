@@ -186,7 +186,7 @@ const HomePage = () => (
             </p>
           </>
         </InnerText>
-        <div css={threeColumnResponsiveCardHolder}>
+        <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
             imagePath="/images/organisation-11.png"
@@ -195,11 +195,6 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Our climate pledge"
             imagePath="/images/organisation-12.png"
-            linkUrl="https://www.theguardian.com/uk"
-          />
-          <ResponsiveCardVariant1
-            title="Sustainable business report"
-            imagePath="/images/organisation-13.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
