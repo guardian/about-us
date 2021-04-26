@@ -27,7 +27,6 @@ const h3Css = css`
 
 const pCss = css`
   color: ${neutral[100]};
-  text-decoration: none;
   ${body.small({ lineHeight: "loose" })}
   ${minWidth.tablet} {
     margin: 0;
@@ -38,10 +37,9 @@ const cardImageCss = css`
   width: 100%;
   padding-top: 47.25%;
   background-image: url("/images/front-page-10-mobile.png");
-  background-size: cover;
   flex: 0 0 40%;
   height: 100%;
-  margin: auto;
+  margin: auto -${space[3]}px auto auto;
   margin-right: -${space[3]}px;
   background-size: contain;
   background-position: right center;
@@ -49,7 +47,6 @@ const cardImageCss = css`
   ${minWidth.tablet} {
     height: 80%;
     background-image: url("/images/front-page-10-desktop.png");
-    background-size: contain;
     background-repeat: no-repeat;
   }
   ${minWidth.desktop} {
@@ -122,7 +119,7 @@ const ReaderFundedContributeCard = () => {
         <a
           className="gridItem1"
           css={aCss}
-          href="https://support.theguardian.com/uk/contribute"
+          href="https://support.theguardian.com/contribute"
         >
           <h3 css={h3Css}>Show your support as often as you like</h3>
         </a>
@@ -132,7 +129,7 @@ const ReaderFundedContributeCard = () => {
             icon={<SvgArrowRightStraight />}
             iconSide="right"
             nudgeIcon={true}
-            href="https://support.theguardian.com/uk/contribute"
+            href="https://support.theguardian.com/contribute"
             className="gridItem3"
           >
             Contribute
@@ -140,7 +137,7 @@ const ReaderFundedContributeCard = () => {
         </ThemeProvider>
       </div>
       <p className="gridItem2" css={pCss}>
-        Choose to give once from as little as $1, or set up a recurring
+        Choose to give once from $1, £1 or €1, or set up a recurring
         contribution to support us each month or year.
       </p>
       <ThemeProvider theme={buttonReaderRevenue}>
