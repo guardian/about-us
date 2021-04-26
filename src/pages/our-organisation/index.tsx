@@ -20,6 +20,11 @@ import {
   twoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import FullWidthImage from "../../components/fullWidthImage";
+import {
+  LeadershipProfile,
+  leadershipProfilesHolder,
+} from "../../components/leadershipProfile";
+import { DetailsAndImage } from "../../components/detailsAndImage";
 
 // placeholder values for the background gradient until values are agreed upon for each breakpoint
 const ourStructureBkg = {
@@ -74,7 +79,10 @@ const HomePage = () => (
         </p>
       </>
     </FullWidthText>
-    <FullWidthImage smallImageUrl="/images/organisation-full-width-small.png" largeImageUrl="/images/organisation-full-width-large.png" />
+    <FullWidthImage
+      smallImageUrl="/images/organisation-full-width-small.png"
+      largeImageUrl="/images/organisation-full-width-large.png"
+    />
     <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
       <>
         <InnerText title="Our structure" theme="light">
@@ -116,7 +124,35 @@ const HomePage = () => (
       </>
     </BoxContainer>
     <BoxContainer theme="light" background={{ backgroundColor: brand[400] }}>
-      <h2 css={headingCss}>Leadership</h2>
+      <>
+        <h2 css={headingCss}>Leadership</h2>
+        <div css={leadershipProfilesHolder}>
+          <LeadershipProfile
+            imageUrl="/images/organisation-6.png"
+            title={{
+              name: "Katharine Viner",
+              job: "editor-in-chief",
+              organisation: "Guardian News & Media",
+            }}
+            bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independance. She also sits on the board of the Scott Trust and Guardian Media Group and executive committee of Guardian News & Media. "
+          />
+          <LeadershipProfile
+            imageUrl="/images/organisation-7.png"
+            title={{
+              name: "Annette Thomas",
+              job: "chief executive",
+              organisation: "Guardian Media Group",
+            }}
+            bodyCopy="Annette Thomas was appointed chief executive of Guardian Media Group in 2020. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
+          />
+        </div>
+        <DetailsAndImage
+          imageUrl="/images/organisation-8.png"
+          title="GNM executive committee"
+          bodyCopy="Read more about the management team of Guardian News & Media"
+          readMoreUrl="https://www.theguardian.com/"
+        />
+      </>
     </BoxContainer>
     <BoxContainer theme="light" background={reportsBkg}>
       <>
@@ -215,6 +251,12 @@ const HomePage = () => (
             revenues.
           </p>
         </InnerText>
+        <DetailsAndImage
+          imageUrl="/images/organisation-17.png"
+          title="Reader funding"
+          bodyCopy="Readers can support the Guardian through a digital or print subscription, a recurring or single contribution or as a patron. Read more about our subscriptions:"
+          readMoreUrl="https://www.theguardian.com/"
+        />
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
