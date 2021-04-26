@@ -77,6 +77,7 @@ const HomePage = () => (
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
+      paddingBottom={true}
     >
       <>
         <InnerText title="Our Organisation" theme="light">
@@ -177,6 +178,7 @@ const HomePage = () => (
     <BoxContainer
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
+      paddingBottom={true}
     >
       <>
         <InnerText title="Journalism" theme="light">
