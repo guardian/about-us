@@ -1,6 +1,5 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import React from "react";
 import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import { brand, brandAlt, neutral } from "@guardian/src-foundations/palette";
@@ -36,7 +35,8 @@ const headerStyles = css`
     width: calc(100vw - 30px);
     height: 100vh;
     background-color: ${brand[400]};
-    transition: left 0.4s ${cssTransitionFunc};
+    opacity: 0;
+    transition: opacity 0.1s 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
     &:before {
       content: "";
       position: absolute;
@@ -47,7 +47,7 @@ const headerStyles = css`
       background-color: black;
       overflow-x: hidden;
       opacity: 0;
-      transition: opacity 0.4s ${cssTransitionFunc}, width 0.4s ${cssTransitionFunc};
+      transition: opacity 0.1s ${cssTransitionFunc}, width 0.4s ${cssTransitionFunc};
       }
     &:after {
       content: "";
@@ -63,6 +63,8 @@ const headerStyles = css`
 
   & input:checked ~ .top-and-bottom-nav {
     left: 0;
+    opacity: 1;
+    transition: opacity 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
   }
 
   & input:checked ~ .top-and-bottom-nav:before {
@@ -83,6 +85,9 @@ const headerStyles = css`
     text-decoration: none;
     margin-left: 50px;
   }
+  & nav:nth-of-type(1) {
+    margin-top: ${space[2]}px;
+  }
   & nav:nth-of-type(2) a {
     ${textSans.medium({ fontWeight: "regular" })};
   }
@@ -96,6 +101,7 @@ const headerStyles = css`
       transition: unset;
       width: unset;
       height: unset;
+      opacity: 1;
       padding-left: ${space[2]}px;
       border-top: 1px solid ${brand[600]};
       &: before, &: after {
@@ -134,6 +140,9 @@ const headerStyles = css`
     }
     & nav a.selected-nav-item: after {
       height: ${desktopMenuHighlightHeight}px;
+    }
+    & nav:nth-of-type(1) {
+      margin-top: 0;
     }
     & nav:nth-of-type(2) {
       position: absolute;
@@ -189,6 +198,7 @@ const headerStyles = css`
 `;
 
 const logoHolderStyle = css`
+  position: relative;
   &:after {
     content: "";
     display: block;
@@ -197,7 +207,7 @@ const logoHolderStyle = css`
     background-image: url("/images/menu-closed.svg");
     position: absolute;
     top: 22px;
-    right: 10px;
+    right: -48px;
   }
 
   ${minWidth.headerTablet} {
