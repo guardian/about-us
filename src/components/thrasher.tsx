@@ -43,7 +43,6 @@ const containerCss = css`
   }
   ${minWidth.desktop} {
     padding-bottom: 36px;
-    background-image: url("/images/thrasher-paper-bg-desktop.png");
     background-image: linear-gradient(
         to right,
         ${brandAlt[400]},
