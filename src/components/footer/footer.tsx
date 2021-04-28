@@ -8,6 +8,8 @@ import { LinkButton, buttonReaderRevenue } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { SyntheticEvent } from "react";
 import { ThemeProvider, css, jsx } from "@emotion/react";
+import { cmp } from "@guardian/consent-management-platform";
+import { getGeoLocation } from "./getLocationCookie";
 
 const TODAY = new Date();
 
@@ -197,63 +199,87 @@ const copyrightTextStyles = css`
   font-size: 12px;
 `;
 
+const privacyButtonCss = css`
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  display: inline-block;
+  padding: 6px 0;
+  color: ${neutral[100]};
+  ${textSans.medium()};
+  font-size: 16px;
+  line-height: 19.2px;
+  text-decoration: none;
+  :hover {
+    color: ${brandAlt[400]};
+    cursor: pointer;
+  }
+`;
+
 const fillEmailSignup = (_: SyntheticEvent<HTMLIFrameElement>) => {
   // Placeholder method to autofill user email when the iframe is hosted on the same hostname
   return;
 };
 
-export const Footer = () => {
-  return (
-    <footer>
-      <div>
-        <div css={footerColourStyles}>
-          <div css={footerSizeStyles}>
-            <div css={footerContentStyles}>
-              <div css={emailSignUpStyles}>
-                <iframe
-                  title="Guardian Email Sign-up Form"
-                  src={`https://www.theguardian.com/email/form/footer/today-uk`}
-                  scrolling="no"
-                  seamless={false}
-                  frameBorder="0"
-                  data-form-success-desc="We will send you our picks of the most important headlines tomorrow morning."
-                  data-node-uid="2"
-                  height="86px"
-                  onLoad={(emailForm) => fillEmailSignup(emailForm)}
-                  css={emailSignUpIframeStyles}
-                />
-              </div>
+const privacySettingsClickHandler = () => {
+  if (cmp.hasInitialised()) {
+    cmp.showPrivacyManager();
+  }
+};
 
-              <div css={footerMenuStyles}>
-                {footerLinks.map((linkList, i) => (
-                  <ul key={i} css={footerMenuUlStyles}>
-                    {linkList.map(({ title, link }) => (
-                      <li key={title} css={footerMenuLiStyles}>
+const countryCode = getGeoLocation() ?? "GB";
+cmp.init({ country: countryCode });
+
+const Footer = () => (
+  <footer>
+    <div>
+      <div css={footerColourStyles}>
+        <div css={footerSizeStyles}>
+          <div css={footerContentStyles}>
+            <div css={emailSignUpStyles}>
+              <iframe
+                title="Guardian Email Sign-up Form"
+                src={`https://www.theguardian.com/email/form/footer/today-uk`}
+                scrolling="no"
+                seamless={false}
+                frameBorder="0"
+                data-form-success-desc="We will send you our picks of the most important headlines tomorrow morning."
+                data-node-uid="2"
+                height="86px"
+                onLoad={(emailForm) => fillEmailSignup(emailForm)}
+                css={emailSignUpIframeStyles}
+              />
+            </div>
+
+            <div css={footerMenuStyles}>
+              {footerLinks.map((linkList, i) => (
+                <ul key={i} css={footerMenuUlStyles}>
+                  {linkList.map(({ title, link, titleUSA, privacyCmp }) => (
+                    <li key={title} css={footerMenuLiStyles}>
+                      {privacyCmp ? (
+                        <button
+                          css={privacyButtonCss}
+                          onClick={privacySettingsClickHandler}
+                        >
+                          {countryCode === "US" ? titleUSA : title}
+                        </button>
+                      ) : (
                         <a href={link} css={footerLinkStyles}>
                           {title}
                         </a>
-                      </li>
-                    ))}
-                  </ul>
-                ))}
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              ))}
 
-                <div css={supportStyles}>
-                  <div css={supportTitleStyles}>Support The&nbsp;Guardian</div>
-                  <ThemeProvider theme={buttonReaderRevenue}>
-                    <div css={supportButtonContainerStyles}>
-                      <LinkButton
-                        iconSide="right"
-                        icon={<SvgArrowRightStraight />}
-                        nudgeIcon={true}
-                        size="small"
-                        css={css`
-                          padding: 0 14px;
-                        `}
-                        href="https://support.theguardian.com/uk/contribute"
-                      >
-                        Contribute
-                      </LinkButton>
-                    </div>
+              <div css={supportStyles}>
+                <div css={supportTitleStyles}>Support The&nbsp;Guardian</div>
+                <ThemeProvider theme={buttonReaderRevenue}>
+                  <div css={supportButtonContainerStyles}>
                     <LinkButton
                       iconSide="right"
                       icon={<SvgArrowRightStraight />}
@@ -262,34 +288,48 @@ export const Footer = () => {
                       css={css`
                         padding: 0 14px;
                       `}
-                      href="https://support.theguardian.com/uk/subscribe"
+                      href="https://support.theguardian.com/uk/contribute"
                     >
-                      Subscribe
+                      Contribute
                     </LinkButton>
-                  </ThemeProvider>
-                </div>
+                  </div>
+                  <LinkButton
+                    iconSide="right"
+                    icon={<SvgArrowRightStraight />}
+                    nudgeIcon={true}
+                    size="small"
+                    css={css`
+                      padding: 0 14px;
+                    `}
+                    href="https://support.theguardian.com/uk/subscribe"
+                  >
+                    Subscribe
+                  </LinkButton>
+                </ThemeProvider>
               </div>
             </div>
+          </div>
 
-            <div css={copyrightStyles}>
-              <a href="#top" css={backToTopLinkStyles}>
-                <span css={backToTopLabelStyles}>Back to top</span>
-                <span css={backToTopButtonOutterContainerStyles}>
-                  <span css={backToTopButtonInnerContainerStyles}>
-                    <svg width="24" height="18" viewBox="0 0 24 18">
-                      <path d="M.4 15.3l10.5-8.4L12 6l1.1.9 10.5 8.4-.5.7L12 9.7.9 16l-.5-.7z" />
-                    </svg>
-                  </span>
+          <div css={copyrightStyles}>
+            <a href="#top" css={backToTopLinkStyles}>
+              <span css={backToTopLabelStyles}>Back to top</span>
+              <span css={backToTopButtonOutterContainerStyles}>
+                <span css={backToTopButtonInnerContainerStyles}>
+                  <svg width="24" height="18" viewBox="0 0 24 18">
+                    <path d="M.4 15.3l10.5-8.4L12 6l1.1.9 10.5 8.4-.5.7L12 9.7.9 16l-.5-.7z" />
+                  </svg>
                 </span>
-              </a>
-              <div css={copyrightTextStyles}>
-                © {TODAY.getFullYear()} Guardian News and Media Limited or its
-                affiliated companies. All&nbsp;rights&nbsp;reserved.
-              </div>
+              </span>
+            </a>
+            <div css={copyrightTextStyles}>
+              © {TODAY.getFullYear()} Guardian News and Media Limited or its
+              affiliated companies. All&nbsp;rights&nbsp;reserved.
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
+
+export default Footer;

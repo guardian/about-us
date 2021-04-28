@@ -4,7 +4,6 @@ import { jsx } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
-import { Footer } from "../../components/footer/footer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -19,6 +18,11 @@ import {
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
+import dynamic from 'next/dynamic';
+
+const Footer = dynamic(() => import("../../components/footer/footer"), {
+  ssr: false,
+});
 
 const gotAStoryBkg = {
   mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
