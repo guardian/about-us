@@ -114,22 +114,22 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="About the Scott Trust"
             imagePath="./images/organisation-2.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust board"
             imagePath="./images/organisation-3.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="./images/front-page-3.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-4.png"
+            linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="GMG Board"
             imagePath="./images/organisation-5.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gmg/2015/jul/23/gnm-board"
           />
         </div>
       </>
@@ -161,7 +161,7 @@ const HomePage = () => (
           imageUrl="./images/organisation-8.png"
           title="GNM executive committee"
           bodyCopy="Read more about the management team of Guardian News & Media"
-          readMoreUrl="https://www.theguardian.com/"
+          readMoreUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
         />
       </>
     </BoxContainer>
@@ -172,12 +172,12 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Financial reports"
             imagePath="./images/organisation-9.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gmg/2015/jul/27/guardian-media-group-annual-financial-reports"
           />
           <ResponsiveCardVariant1
             title="Corporate policies"
             imagePath="./images/organisation-10.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gmg/2018/mar/14/corporate-reports-and-policies"
           />
         </div>
       </>
@@ -201,12 +201,12 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
             imagePath="./images/organisation-11.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gnm-press-office/2019/oct/16/guardian-media-group-becomes-first-major-news-organisation-to-become-a-b-corporation-and-pledges-to-reach-net-zero-emissions-by-2030"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
             imagePath="./images/organisation-12.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/environment/ng-interactive/2020/oct/05/the-guardian-climate-pledge-2020-environment-emergency-carbon-emissions"
           />
         </div>
       </>
@@ -227,19 +227,19 @@ const HomePage = () => (
         </InnerText>
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
-            title="GMG as a B Corporation"
+            title="Diversity, equity and inclusion"
             imagePath="./images/organisation-14.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
-            title="Our climate pledge"
+            title="Employee engagement"
             imagePath="./images/organisation-15.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
-            title="Sustainable business report"
+            title="Work for us"
             imagePath="./images/organisation-16.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://workforus.theguardian.com/"
           />
         </div>
       </>
@@ -249,7 +249,7 @@ const HomePage = () => (
       background={{ backgroundColor: `${neutral[97]}` }}
     >
       <>
-        <InnerText title="Commercial" theme="light">
+        <InnerText title="Our revenue mix" theme="light">
           <p>
             GMG operates a diverse revenue model including reader revenues,
             advertising, jobs advertising, licencing and philanthropic funding.
@@ -261,23 +261,23 @@ const HomePage = () => (
           imageUrl="./images/organisation-17.png"
           title="Reader funding"
           bodyCopy="Readers can support the Guardian through a digital or print subscription, a recurring or single contribution or as a patron. Read more about our subscriptions:"
-          readMoreUrl="https://www.theguardian.com/"
+          readMoreUrl="https://support.theguardian.com/uk/subscribe?CMP=ppc_mem_&gclid=CjwKCAjw6fCCBhBNEiwAem5SOy61gdjmDXnbjnURNn2-xbO9vEeSd2xYypEw7Y4u9A-qu5-ZJ-ZehxoC41oQAvD_BwE"
         />
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
             imagePath="./images/organisation-18.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://advertising.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Guardian Jobs"
             imagePath="./images/organisation-19.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://jobs.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Philanthropic funding"
             imagePath="./images/organisation-20.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/info/2018/oct/02/philanthropic-partnerships-at-the-guardian"
           />
         </div>
       </>
@@ -297,7 +297,7 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Guardian Foundation"
             imagePath="./images/organisation-21.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://theguardianfoundation.org/"
             alwaysImgOnLeft={true}
           />
         </div>

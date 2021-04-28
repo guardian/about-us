@@ -83,19 +83,19 @@ const OurHistory = () => (
         <h2 css={headingCss}>Read more</h2>
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
-            title="Advertising"
+            title="History of the Guardian"
             imagePath="./images/history-2.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/1"
           />
           <ResponsiveCardVariant1
-            title="Guardian Jobs"
+            title="History of The Observer"
             imagePath="./images/history-3.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/2"
           />
           <ResponsiveCardVariant1
             title="GNM Archive"
             imagePath="./images/history-4.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/gnm-archive"
             alwaysImgOnLeft={true}
           />
         </div>
@@ -108,17 +108,17 @@ const OurHistory = () => (
           <ResponsiveCardVariant1
             title="Scott Trust values"
             imagePath="./images/front-page-4.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="Scott Trust timeline"
             imagePath="./images/history-7.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/a-history-of-the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="./images/history-8.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="/images/history-8.png"
+            linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
             alwaysImgOnLeft={true}
           />
         </div>
