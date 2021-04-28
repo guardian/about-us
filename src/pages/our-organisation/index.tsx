@@ -7,7 +7,6 @@ import BoxContainer, {
 } from "../../components/boxContainer";
 import { brand, neutral } from "@guardian/src-foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
-import { Footer } from "../../components/footer/footer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -25,6 +24,11 @@ import {
   leadershipProfilesHolder,
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
+import dynamic from 'next/dynamic';
+
+const Footer = dynamic(() => import("../../components/footer/footer"), {
+  ssr: false,
+});
 
 // placeholder values for the our structure and reports background gradients
 const ourStructureBkg = {
