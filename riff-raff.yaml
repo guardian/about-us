@@ -9,4 +9,3 @@ deployments:
       bucket: gu-about-us
       prefixStack: false
       cacheControl: no-cache
-      publicReadAcl: false
