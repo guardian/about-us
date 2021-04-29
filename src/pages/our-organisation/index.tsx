@@ -30,17 +30,18 @@ const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
 });
 
-// placeholder values for the our structure and reports background gradients
 const ourStructureBkg = {
-  mobile: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  tablet: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  wide: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+  mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,
+  tablet: `linear-gradient(to top, #052962 80px, ${neutral[97]} 80px)`,
+  desktop: `linear-gradient(to top, #052962 90px, ${neutral[97]} 90px)`,
+  wide: `linear-gradient(to top, #052962 85px, ${neutral[97]} 85px)`,
 };
 
 const reportsBkg = {
-  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 20px), #052962 calc(100% - ${boxContainerPadding.mobile} - 20px))`,
-  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 20px), #052962 calc(100% - ${boxContainerPadding.tablet} - 20px))`,
-  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 20px), #052962 calc(100% - ${boxContainerPadding.wide} - 20px))`,
+  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 41px), #052962 calc(100% - ${boxContainerPadding.mobile} - 41px))`,
+  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 80px), #052962 calc(100% - ${boxContainerPadding.tablet} - 80px))`,
+  desktop: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 90px), #052962 calc(100% - ${boxContainerPadding.tablet} - 90px))`,
+  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 85px), #052962 calc(100% - ${boxContainerPadding.wide} - 85px))`,
 };
 
 const guardianFoundationBkg = {

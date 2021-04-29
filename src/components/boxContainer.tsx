@@ -11,6 +11,7 @@ interface Background {
   backgroundColor?: string;
   mobile?: string;
   tablet?: string;
+  desktop?: string;
   wide?: string;
 }
 interface BoxContainerProps {
@@ -44,6 +45,11 @@ const BoxContainer = (props: BoxContainerProps) => {
       background: ${props.background.backgroundColor
         ? props.background.backgroundColor
         : props.background.tablet};
+    }
+    ${minWidth.desktop} {
+      background: ${props.background.backgroundColor
+        ? props.background.backgroundColor
+        : props.background.desktop};
     }
     ${minWidth.wide} {
       padding-top: ${boxContainerPadding.wide};
