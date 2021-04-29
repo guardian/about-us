@@ -75,7 +75,7 @@ const containerCss = css`
     margin-top: 49px;
   }
   ${minWidth.desktop} {
-    margin-top: 12px;
+    margin-top: ${space[3]}px;
   }
   ${minWidth.wide} {
     margin-top: 0;

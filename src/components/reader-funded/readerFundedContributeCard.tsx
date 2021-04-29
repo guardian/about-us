@@ -17,7 +17,6 @@ const h3Css = css`
   font-size: 22px;
   margin: 0;
   ${minWidth.tablet} {
-    ${headline.xsmall({ fontWeight: "bold" })}
     margin-bottom: 30px;
     font-size: 20px;
   }
@@ -43,7 +42,6 @@ const cardImageCss = css`
   flex: 0 0 40%;
   height: 100%;
   margin: 10.5px -${space[3]}px auto auto;
-  margin-right: -${space[3]}px;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;

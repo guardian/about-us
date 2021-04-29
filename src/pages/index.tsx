@@ -25,7 +25,7 @@ import Thrasher from "../components/thrasher";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const Footer = dynamic(() => import("../components/footer/footer"), {
   ssr: false,
@@ -198,7 +198,7 @@ const HomePage = (): jsx.JSX.Element => (
             href="https://support.theguardian.com/uk/subscribe"
           />
         </div>
-        <h3 css={readerFundedHeadingCss(false)}>Make a contribution</h3>
+        <h3 css={readerFundedHeadingCss()}>Make a contribution</h3>
         <ReaderFundedContributeCard />
         <ReaderFundedPatronSupport />
       </>

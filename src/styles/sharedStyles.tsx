@@ -179,9 +179,7 @@ export const readerFundedSubscribeCardHolderCss = css`
   }
 `;
 
-export const readerFundedHeadingCss = (
-  isSubscribeTitle: boolean | undefined
-) => css`
+export const readerFundedHeadingCss = (isSubscribeTitle?: boolean) => css`
   color: ${neutral[100]};
   ${headline.small({ fontWeight: "bold" })}
   border-top: 1px solid #90ABC4;
