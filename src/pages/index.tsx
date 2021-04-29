@@ -4,7 +4,6 @@ import { jsx, css } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../components/boxContainer";
 import ContactAndWorkForUs from "../components/contactAndWorkForUs";
-import { Footer } from "../components/footer/footer";
 import FullWidthText, { highlightedCss } from "../components/fullWidthText";
 import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
@@ -26,6 +25,11 @@ import Thrasher from "../components/thrasher";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
+import dynamic from 'next/dynamic';
+
+const Footer = dynamic(() => import("../components/footer/footer"), {
+  ssr: false,
+});
 
 const LinkButtonCss = css`
   margin-top: 41px;

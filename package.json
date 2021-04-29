@@ -23,10 +23,12 @@
   "homepage": "https://github.com/guardian/about-us#readme",
   "dependencies": {
     "@emotion/react": "^11.1.5",
+    "@guardian/consent-management-platform": "^6.11.3",
     "@guardian/src-button": "^3.5.0",
     "@guardian/src-foundations": "^3.5.0",
     "@guardian/src-icons": "^3.5.0",
     "next": "^10.0.8",
+    "next-transpile-modules": "^6.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

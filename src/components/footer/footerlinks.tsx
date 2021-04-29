@@ -1,8 +1,8 @@
 interface FooterLink {
   title: string;
-  // titleUSA?: string;
+  titleUSA?: string;
   link?: string;
-  // cmp?: boolean;
+  privacyCmp?: boolean;
 }
 
 const domain = "theguardian.com";
@@ -31,8 +31,8 @@ export const footerLinks: FooterLink[][] = [
     },
     {
       title: "Privacy settings",
-      //   titleUSA: "California resident – Do Not Sell",
-      //   cmp: true,
+      titleUSA: "California resident – Do Not Sell",
+      privacyCmp: true,
     },
     {
       title: "Privacy policy",
