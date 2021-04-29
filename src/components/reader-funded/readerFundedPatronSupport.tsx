@@ -74,6 +74,12 @@ const containerCss = css`
     gap: ${space[5]}px;
     margin-top: 49px;
   }
+  ${minWidth.desktop} {
+    margin-top: 12px;
+  }
+  ${minWidth.wide} {
+    margin-top: 0;
+  }
 `;
 
 const ReaderFundedPatronSupport = () => (
