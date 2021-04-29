@@ -26,17 +26,18 @@ import {
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
 
-// placeholder values for the our structure and reports background gradients
 const ourStructureBkg = {
-  mobile: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  tablet: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  wide: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+  mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,
+  tablet: `linear-gradient(to top, #052962 100px, ${neutral[97]} 100px)`,
+  desktop: `linear-gradient(to top, #052962 125px, ${neutral[97]} 125px)`,
+  wide: `linear-gradient(to top, #052962 125px, ${neutral[97]} 125px)`,
 };
 
 const reportsBkg = {
-  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 20px), #052962 calc(100% - ${boxContainerPadding.mobile} - 20px))`,
-  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 20px), #052962 calc(100% - ${boxContainerPadding.tablet} - 20px))`,
-  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 20px), #052962 calc(100% - ${boxContainerPadding.wide} - 20px))`,
+  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 41px), #052962 calc(100% - ${boxContainerPadding.mobile} - 41px))`,
+  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 100px), #052962 calc(100% - ${boxContainerPadding.tablet} - 100px))`,
+  desktop: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 125px), #052962 calc(100% - ${boxContainerPadding.tablet} - 125px))`,
+  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 125px), #052962 calc(100% - ${boxContainerPadding.wide} - 125px))`,
 };
 
 const guardianFoundationBkg = {
