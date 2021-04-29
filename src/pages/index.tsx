@@ -87,8 +87,8 @@ const HomePage = (): jsx.JSX.Element => (
       </p>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="/images/front-page-full-width-small.png"
-      largeImageUrl="/images/front-page-full-width-large.png"
+      smallImageUrl="./images/front-page-full-width-small.png"
+      largeImageUrl="./images/front-page-full-width-large.png"
     />
     <BoxContainer
       theme="light"
@@ -118,22 +118,22 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="/images/front-page-2.png"
+            imagePath="./images/front-page-2.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="/images/front-page-3.png"
+            imagePath="./images/front-page-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="/images/front-page-4.png"
+            imagePath="./images/front-page-4.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="/images/front-page-5.png"
+            imagePath="./images/front-page-5.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -172,8 +172,8 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={readerFundedSubscribeCardHolderCss}>
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-7-mobile.png",
-              tabletAndAbove: "/images/front-page-7-desktop.png",
+              mobile: "./images/front-page-7-mobile.png",
+              tabletAndAbove: "./images/front-page-7-desktop.png",
             }}
             title="Digital"
             bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
@@ -181,8 +181,8 @@ const HomePage = (): jsx.JSX.Element => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-8-mobile.png",
-              tabletAndAbove: "/images/front-page-8-desktop.png",
+              mobile: "./images/front-page-8-mobile.png",
+              tabletAndAbove: "./images/front-page-8-desktop.png",
             }}
             title="Print"
             bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
@@ -190,8 +190,8 @@ const HomePage = (): jsx.JSX.Element => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-9-mobile.png",
-              tabletAndAbove: "/images/front-page-9-desktop.png",
+              mobile: "./images/front-page-9-mobile.png",
+              tabletAndAbove: "./images/front-page-9-desktop.png",
             }}
             title="Guardian Weekly"
             bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
@@ -234,13 +234,13 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian US"
-            imagePath="/images/front-page-11.png"
+            imagePath="./images/front-page-11.png"
             linkUrl="https://www.theguardian.com/uk"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
-            imagePath="/images/front-page-12.png"
+            imagePath="./images/front-page-12.png"
             linkUrl="https://www.theguardian.com/uk"
             linkText="Guardian Australia"
           />

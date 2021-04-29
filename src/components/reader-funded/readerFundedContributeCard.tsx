@@ -36,7 +36,7 @@ const pCss = css`
 const cardImageCss = css`
   width: 100%;
   padding-top: 47.25%;
-  background-image: url("/images/front-page-10-mobile.png");
+  background-image: url("./images/front-page-10-mobile.png");
   flex: 0 0 40%;
   height: 100%;
   margin: auto -${space[3]}px auto auto;
@@ -46,12 +46,12 @@ const cardImageCss = css`
   background-repeat: no-repeat;
   ${minWidth.tablet} {
     height: 80%;
-    background-image: url("/images/front-page-10-desktop.png");
+    background-image: url("./images/front-page-10-desktop.png");
     background-repeat: no-repeat;
   }
   ${minWidth.desktop} {
     background-size: cover;
-    background-image: url("/images/front-page-10-desktop.png");
+    background-image: url("./images/front-page-10-desktop.png");
     padding-top: 60.25%;
   }
 `;
