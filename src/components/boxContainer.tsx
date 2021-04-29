@@ -34,14 +34,10 @@ const BoxContainer = (props: BoxContainerProps) => {
       ? props.background.backgroundColor
       : props.background.mobile};
     padding-top: ${boxContainerPadding.mobile};
-    padding-bottom: ${props.paddingBottom
-      ? boxContainerPadding.mobile
-      : "none"};
+    padding-bottom: ${props.paddingBottom ? boxContainerPadding.mobile : "0"};
     ${minWidth.tablet} {
       padding-top: ${boxContainerPadding.tablet};
-      padding-bottom: ${props.paddingBottom
-        ? boxContainerPadding.tablet
-        : "none"};
+      padding-bottom: ${props.paddingBottom ? boxContainerPadding.tablet : "0"};
       background: ${props.background.backgroundColor
         ? props.background.backgroundColor
         : props.background.tablet};
@@ -53,9 +49,7 @@ const BoxContainer = (props: BoxContainerProps) => {
     }
     ${minWidth.wide} {
       padding-top: ${boxContainerPadding.wide};
-      padding-bottom: ${props.paddingBottom
-        ? boxContainerPadding.wide
-        : "none"};
+      padding-bottom: ${props.paddingBottom ? boxContainerPadding.wide : "0"};
       background: ${props.background.backgroundColor
         ? props.background.backgroundColor
         : props.background.wide};
@@ -64,20 +58,20 @@ const BoxContainer = (props: BoxContainerProps) => {
 
   const boxContainerCss = css`
     max-width: 1300px;
-    margin: ${props.overlapTop ? "-40px" : 0} auto 0;
+    margin: ${props.overlapTop ? "-55px" : 0} auto 0;
     padding: 0 ${space[3]}px;
     ${minWidth.tablet} {
-      margin: ${props.overlapTop ? "-62px" : 0} auto 0;
+      margin: ${props.overlapTop ? "-81px" : 0} auto 0;
       width: ${namedBreakpoints.tablet}px;
       padding: 0;
     }
     ${minWidth.desktop} {
       padding: 0;
-      margin: ${props.overlapTop ? "-62px" : 0} auto 0;
+      margin: ${props.overlapTop ? "-92px" : 0} auto 0;
       width: ${namedBreakpoints.desktop}px;
     }
     ${minWidth.wide} {
-      margin: ${props.overlapTop ? "-84px" : 0} auto 0;
+      margin: ${props.overlapTop ? "-105px" : 0} auto 0;
       width: ${namedBreakpoints.wide}px;
     }
   `;

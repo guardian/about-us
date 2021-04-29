@@ -13,13 +13,15 @@ const aCss = css`
 
 const h3Css = css`
   color: ${brandAlt[400]};
-  ${headline.xxsmall()}
+  ${headline.xxsmall({ fontWeight: "bold" })}
+  font-size: 22px;
   margin: 0;
   ${minWidth.tablet} {
-    ${headline.xsmall()}
     margin-bottom: 30px;
+    font-size: 20px;
   }
   ${minWidth.wide} {
+    font-size: 24px;
     margin-bottom: ${space[9]}px;
     margin-right: ${space[5]}px;
   }
@@ -35,31 +37,32 @@ const pCss = css`
 
 const cardImageCss = css`
   width: 100%;
-  padding-top: 47.25%;
+  padding-top: 140.54%;
   background-image: url("./images/front-page-10-mobile.png");
   flex: 0 0 40%;
   height: 100%;
-  margin: auto -${space[3]}px auto auto;
-  margin-right: -${space[3]}px;
+  margin: 10.5px -${space[3]}px auto auto;
   background-size: contain;
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
   ${minWidth.tablet} {
     height: 80%;
+    margin: auto -12px auto auto;
+    padding-top: 47.25%;
+    background-position: right center;
     background-image: url("./images/front-page-10-desktop.png");
     background-repeat: no-repeat;
   }
   ${minWidth.desktop} {
     background-size: cover;
-    background-image: url("./images/front-page-10-desktop.png");
-    padding-top: 60.25%;
+    padding-top: 57.68%;
   }
 `;
 
 const containerCss = css`
   display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
   gap: 0 12px;
   border-top: 1px solid #90abc4;
   & .gridItem1 {
@@ -72,7 +75,7 @@ const containerCss = css`
     display: none;
   }
   & .gridItem4 {
-    grid-area: 1 / 2 / span 3 / span 1;
+    grid-area: 1 / 2 / span 4 / span 1;
   }
   & .gridItem6 {
     display: inline-flex;

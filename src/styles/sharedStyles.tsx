@@ -179,13 +179,13 @@ export const readerFundedSubscribeCardHolderCss = css`
   }
 `;
 
-export const readerFundedHeadingCss = css`
+export const readerFundedHeadingCss = (isSubscribeTitle?: boolean) => css`
   color: ${neutral[100]};
   ${headline.small({ fontWeight: "bold" })}
   border-top: 1px solid #90ABC4;
   margin: 41.5px 0 30px 0;
   ${minWidth.tablet} {
-    margin: 49px 0 21px 0;
+    margin: 49px 0 ${isSubscribeTitle ? 2 : space[5]}px 0;
     font-size: 34px;
   }
 `;
