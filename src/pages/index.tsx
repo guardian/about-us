@@ -30,10 +30,10 @@ import { minWidth } from "../styles/breakpoints";
 const LinkButtonCss = css`
   margin-top: 41px;
   ${minWidth.tablet} {
-    imargin-top: 48px;
+    margin-top: 48px;
   }
   ${minWidth.desktop} {
-    imargin-top: 57px;
+    margin-top: 57px;
   }
 `;
 
