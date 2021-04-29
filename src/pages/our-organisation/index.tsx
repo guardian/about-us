@@ -7,7 +7,6 @@ import BoxContainer, {
 } from "../../components/boxContainer";
 import { brand, neutral } from "@guardian/src-foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
-import { Footer } from "../../components/footer/footer";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -25,18 +24,24 @@ import {
   leadershipProfilesHolder,
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
+import dynamic from 'next/dynamic';
 
-// placeholder values for the our structure and reports background gradients
+const Footer = dynamic(() => import("../../components/footer/footer"), {
+  ssr: false,
+});
+
 const ourStructureBkg = {
-  mobile: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  tablet: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
-  wide: `linear-gradient(to top, #052962 20px, ${neutral[97]} 20px)`,
+  mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,
+  tablet: `linear-gradient(to top, #052962 80px, ${neutral[97]} 80px)`,
+  desktop: `linear-gradient(to top, #052962 90px, ${neutral[97]} 90px)`,
+  wide: `linear-gradient(to top, #052962 85px, ${neutral[97]} 85px)`,
 };
 
 const reportsBkg = {
-  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 20px), #052962 calc(100% - ${boxContainerPadding.mobile} - 20px))`,
-  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 20px), #052962 calc(100% - ${boxContainerPadding.tablet} - 20px))`,
-  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 20px), #052962 calc(100% - ${boxContainerPadding.wide} - 20px))`,
+  mobile: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.mobile} - 41px), #052962 calc(100% - ${boxContainerPadding.mobile} - 41px))`,
+  tablet: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 80px), #052962 calc(100% - ${boxContainerPadding.tablet} - 80px))`,
+  desktop: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.tablet} - 90px), #052962 calc(100% - ${boxContainerPadding.tablet} - 90px))`,
+  wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 85px), #052962 calc(100% - ${boxContainerPadding.wide} - 85px))`,
 };
 
 const guardianFoundationBkg = {
@@ -86,8 +91,8 @@ const HomePage = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="/images/organisation-full-width-small.png"
-      largeImageUrl="/images/organisation-full-width-large.png"
+      smallImageUrl="./images/organisation-full-width-small.png"
+      largeImageUrl="./images/organisation-full-width-large.png"
     />
     <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
       <>
@@ -108,22 +113,22 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="About the Scott Trust"
-            imagePath="/images/organisation-2.png"
+            imagePath="./images/organisation-2.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust board"
-            imagePath="/images/organisation-3.png"
+            imagePath="./images/organisation-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="/images/organisation-4.png"
+            imagePath="./images/organisation-4.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="GMG Board"
-            imagePath="/images/organisation-5.png"
+            imagePath="./images/organisation-5.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -134,7 +139,7 @@ const HomePage = () => (
         <h2 css={headingCss}>Leadership</h2>
         <div css={leadershipProfilesHolder}>
           <LeadershipProfile
-            imageUrl="/images/organisation-6.png"
+            imageUrl="./images/organisation-6.png"
             title={{
               name: "Katharine Viner",
               job: "editor-in-chief",
@@ -143,7 +148,7 @@ const HomePage = () => (
             bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independance. She also sits on the board of the Scott Trust and Guardian Media Group and executive committee of Guardian News & Media. "
           />
           <LeadershipProfile
-            imageUrl="/images/organisation-7.png"
+            imageUrl="./images/organisation-7.png"
             title={{
               name: "Annette Thomas",
               job: "chief executive",
@@ -153,7 +158,7 @@ const HomePage = () => (
           />
         </div>
         <DetailsAndImage
-          imageUrl="/images/organisation-8.png"
+          imageUrl="./images/organisation-8.png"
           title="GNM executive committee"
           bodyCopy="Read more about the management team of Guardian News & Media"
           readMoreUrl="https://www.theguardian.com/"
@@ -166,12 +171,12 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Financial reports"
-            imagePath="/images/organisation-9.png"
+            imagePath="./images/organisation-9.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Corporate policies"
-            imagePath="/images/organisation-10.png"
+            imagePath="./images/organisation-10.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -195,12 +200,12 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
-            imagePath="/images/organisation-11.png"
+            imagePath="./images/organisation-11.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
-            imagePath="/images/organisation-12.png"
+            imagePath="./images/organisation-12.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -223,17 +228,17 @@ const HomePage = () => (
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
-            imagePath="/images/organisation-14.png"
+            imagePath="./images/organisation-14.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
-            imagePath="/images/organisation-15.png"
+            imagePath="./images/organisation-15.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Sustainable business report"
-            imagePath="/images/organisation-16.png"
+            imagePath="./images/organisation-16.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -253,7 +258,7 @@ const HomePage = () => (
           </p>
         </InnerText>
         <DetailsAndImage
-          imageUrl="/images/organisation-17.png"
+          imageUrl="./images/organisation-17.png"
           title="Reader funding"
           bodyCopy="Readers can support the Guardian through a digital or print subscription, a recurring or single contribution or as a patron. Read more about our subscriptions:"
           readMoreUrl="https://www.theguardian.com/"
@@ -261,17 +266,17 @@ const HomePage = () => (
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
-            imagePath="/images/organisation-18.png"
+            imagePath="./images/organisation-18.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Guardian Jobs"
-            imagePath="/images/organisation-19.png"
+            imagePath="./images/organisation-19.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Philanthropic funding"
-            imagePath="/images/organisation-20.png"
+            imagePath="./images/organisation-20.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
@@ -291,7 +296,7 @@ const HomePage = () => (
         <div css={singleColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian Foundation"
-            imagePath="/images/organisation-21.png"
+            imagePath="./images/organisation-21.png"
             linkUrl="https://www.theguardian.com/uk"
             alwaysImgOnLeft={true}
           />

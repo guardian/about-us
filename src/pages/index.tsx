@@ -1,10 +1,9 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { jsx } from "@emotion/react";
+import { jsx, css } from "@emotion/react";
 import React from "react";
 import BoxContainer from "../components/boxContainer";
 import ContactAndWorkForUs from "../components/contactAndWorkForUs";
-import { Footer } from "../components/footer/footer";
 import FullWidthText, { highlightedCss } from "../components/fullWidthText";
 import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
@@ -23,8 +22,26 @@ import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
 import Thrasher from "../components/thrasher";
+import { LinkButton } from "@guardian/src-button";
+import { SvgArrowRightStraight } from "@guardian/src-icons";
+import { minWidth } from "../styles/breakpoints";
+import dynamic from "next/dynamic";
 
-const HomePage = () => (
+const Footer = dynamic(() => import("../components/footer/footer"), {
+  ssr: false,
+});
+
+const LinkButtonCss = css`
+  margin-top: 41px;
+  ${minWidth.tablet} {
+    margin-top: 48px;
+  }
+  ${minWidth.desktop} {
+    margin-top: 57px;
+  }
+`;
+
+const HomePage = (): jsx.JSX.Element => (
   <>
     <PageStyles />
     <Header
@@ -70,8 +87,8 @@ const HomePage = () => (
       </p>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="/images/front-page-full-width-small.png"
-      largeImageUrl="/images/front-page-full-width-large.png"
+      smallImageUrl="./images/front-page-full-width-small.png"
+      largeImageUrl="./images/front-page-full-width-large.png"
     />
     <BoxContainer
       theme="light"
@@ -101,25 +118,36 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="/images/front-page-2.png"
+            imagePath="./images/front-page-2.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="/images/front-page-3.png"
+            imagePath="./images/front-page-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="/images/front-page-4.png"
+            imagePath="./images/front-page-4.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="/images/front-page-5.png"
+            imagePath="./images/front-page-5.png"
             linkUrl="https://www.theguardian.com/uk"
           />
         </div>
+        <LinkButton
+          priority="primary"
+          size="default"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          cssOverrides={LinkButtonCss}
+          href="https://www.theguardian.com/uk"
+        >
+          More on our organisation
+        </LinkButton>
       </>
     </BoxContainer>
     <Thrasher />
@@ -140,12 +168,12 @@ const HomePage = () => (
             whichever way suits you best.
           </p>
         </InnerText>
-        <h3 css={readerFundedHeadingCss}>Subscribe</h3>
+        <h3 css={readerFundedHeadingCss(true)}>Subscribe</h3>
         <div css={readerFundedSubscribeCardHolderCss}>
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-7-mobile.png",
-              tabletAndAbove: "/images/front-page-7-desktop.png",
+              mobile: "./images/front-page-7-mobile.png",
+              tabletAndAbove: "./images/front-page-7-desktop.png",
             }}
             title="Digital"
             bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
@@ -153,8 +181,8 @@ const HomePage = () => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-8-mobile.png",
-              tabletAndAbove: "/images/front-page-8-desktop.png",
+              mobile: "./images/front-page-8-mobile.png",
+              tabletAndAbove: "./images/front-page-8-desktop.png",
             }}
             title="Print"
             bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
@@ -162,15 +190,15 @@ const HomePage = () => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "/images/front-page-9-mobile.png",
-              tabletAndAbove: "/images/front-page-9-desktop.png",
+              mobile: "./images/front-page-9-mobile.png",
+              tabletAndAbove: "./images/front-page-9-desktop.png",
             }}
             title="Guardian Weekly"
             bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
             href="https://support.theguardian.com/uk/subscribe"
           />
         </div>
-        <h3 css={readerFundedHeadingCss}>Make a contribution</h3>
+        <h3 css={readerFundedHeadingCss()}>Make a contribution</h3>
         <ReaderFundedContributeCard />
         <ReaderFundedPatronSupport />
       </>
@@ -206,17 +234,28 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian US"
-            imagePath="/images/front-page-11.png"
+            imagePath="./images/front-page-11.png"
             linkUrl="https://www.theguardian.com/uk"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
-            imagePath="/images/front-page-12.png"
+            imagePath="./images/front-page-12.png"
             linkUrl="https://www.theguardian.com/uk"
             linkText="Guardian Australia"
           />
         </div>
+        <LinkButton
+          priority="primary"
+          size="default"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          cssOverrides={LinkButtonCss}
+          href="https://www.theguardian.com/uk"
+        >
+          More on journalism
+        </LinkButton>
       </>
     </BoxContainer>
     <LatestNews />

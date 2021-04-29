@@ -22,22 +22,28 @@ interface ReaderFundedSubscribeCardProps {
 
 const h3Css = css`
   color: ${brandAlt[400]};
-  ${headline.xxsmall()}
+  ${headline.xxsmall({ fontWeight: "bold" })}
   font-size: 22px;
   margin: 0;
   ${minWidth.tablet} {
     font-size: 20px;
+    margin-top: ${space[1]}px;
+  }
+  ${minWidth.desktop} {
+    font-size: 24px;
+    margin-top: ${space[2]}px;
   }
 `;
 
 const pCss = css`
   color: ${neutral[100]};
   ${body.small({ lineHeight: "loose" })}
+  max-width: 385px;
 `;
 
 const cardContainerCss = css`
   display: grid;
-  grid-auto-columns: 1.8fr 1fr;
+  grid-auto-columns: 2fr 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "text image";
@@ -56,7 +62,6 @@ const cardContainerCss = css`
 const textAndLinkButtonCss = css`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex: 0 0 60%;
   padding-right: ${space[3]}px;
   grid-area: text;
@@ -78,18 +83,20 @@ const linkButtonCss = css`
 const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
   const cardImageCss = css`
     width: 100%;
-    padding-top: 47.25%;
+    padding-top: 140.54%;
     background-image: url(${props.imagePath.mobile});
     background-size: contain;
-    background-position: right center;
+    background-position: right top;
     background-repeat: no-repeat;
     height: 100%;
-    margin: auto -${space[3]}px auto auto;
+    margin: 10.5px -${space[3]}px auto auto;
     flex: 0 0 40%;
     ${minWidth.tablet} {
-      padding-top: 56.25%;
+      margin: auto;
+      padding-top: 61%;
       background-size: cover;
       background-image: url(${props.imagePath.tabletAndAbove});
+      border-bottom: 1px solid #90abc4;
     }
   `;
 
