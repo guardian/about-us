@@ -9,7 +9,6 @@ export const containerCss = (backgroundColor: string) => css`
 
 export const headingCss = css`
   ${titlepiece.small()};
-  max-width: 608px;
   font-size: 32px;
   line-height: 1.15;
   margin: 3px 0 18px 0;
