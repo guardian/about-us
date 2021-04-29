@@ -67,8 +67,8 @@ const OurHistory = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="/images/history-full-width-small.png"
-      largeImageUrl="/images/history-full-width-large.png"
+      smallImageUrl="./images/history-full-width-small.png"
+      largeImageUrl="./images/history-full-width-large.png"
     />
     <BoxContainer
       theme="light"
@@ -80,17 +80,17 @@ const OurHistory = () => (
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
-            imagePath="/images/history-2.png"
+            imagePath="./images/history-2.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Guardian Jobs"
-            imagePath="/images/history-3.png"
+            imagePath="./images/history-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="GNM Archive"
-            imagePath="/images/history-4.png"
+            imagePath="./images/history-4.png"
             linkUrl="https://www.theguardian.com/uk"
             alwaysImgOnLeft={true}
           />
@@ -103,17 +103,17 @@ const OurHistory = () => (
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Scott Trust values"
-            imagePath="/images/history-6.png"
+            imagePath="./images/history-6.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="Scott Trust timeline"
-            imagePath="/images/history-7.png"
+            imagePath="./images/history-7.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="/images/history-8.png"
+            imagePath="./images/history-8.png"
             linkUrl="https://www.theguardian.com/uk"
             alwaysImgOnLeft={true}
           />

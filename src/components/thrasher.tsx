@@ -36,7 +36,7 @@ const containerCss = css`
           ${brandAlt[400]} calc(12.44% + 2px),
           transparent 50%
         ),
-        url("/images/thrasher-paper-bg-tablet.png");
+        url("./images/thrasher-paper-bg-tablet.png");
       background-size: 100% 100%;
       margin-top: -4%;
     }
@@ -50,7 +50,7 @@ const containerCss = css`
         transparent calc(50% - 100px),
         transparent
       ),
-      url("/images/thrasher-paper-bg-desktop.png");
+      url("./images/thrasher-paper-bg-desktop.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left calc(50% + 520px) top;
@@ -92,7 +92,7 @@ const innerContainerCss = css`
         ${brandAlt[400]} 10%,
         transparent 50%
       ),
-      url("/images/thrasher-paper-bg-mobile.png");
+      url("./images/thrasher-paper-bg-mobile.png");
     background-size: 100% 100%;
   }
   ${minWidth.tablet} {
@@ -150,7 +150,7 @@ const birthdayCopyHolderCss = css`
       left: ${space[3]}px;
       width: 146px;
       height: 50px;
-      background: url("/images/thrasher-logo.svg");
+      background: url("./images/thrasher-logo.svg");
       background-size: 100% 100%;
     }
   }
@@ -163,7 +163,7 @@ const pAndLinkButtonHolderCss = css`
     display: block;
     width: 146px;
     height: 50px;
-    background: url("/images/thrasher-logo.svg");
+    background: url("./images/thrasher-logo.svg");
     background-size: 100% 100%;
   }
   ${minWidth.tablet} {
@@ -198,7 +198,7 @@ const Thrasher = () => (
   <div css={containerCss}>
     <div css={innerContainerCss}>
       <div css={birthdayCopyHolderCss}>
-        <img src="/images/thrasher-birthday-copy.svg" />
+        <img src="./images/thrasher-birthday-copy.svg" />
       </div>
       <div css={pAndLinkButtonHolderCss}>
         <p css={pCss}>
