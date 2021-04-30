@@ -235,13 +235,13 @@ const HomePage = (): jsx.JSX.Element => (
           <ResponsiveCardVariant1
             title="Guardian US"
             imagePath="./images/front-page-11.png"
-            linkUrl="https://www.theguardian.com/us"
+            linkUrl="https://www.theguardian.com/info/about-guardian-us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
             imagePath="./images/front-page-12.png"
-            linkUrl="https://www.theguardian.com/au"
+            linkUrl="https://www.theguardian.com/info/about-guardian-australia"
             linkText="Guardian Australia"
           />
         </div>
@@ -252,7 +252,7 @@ const HomePage = (): jsx.JSX.Element => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={LinkButtonCss}
-          href="https://www.theguardian.com/uk"
+          href="http://theguardian.com/about/journalism"
         >
           More on journalism
         </LinkButton>
