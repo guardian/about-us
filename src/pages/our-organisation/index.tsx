@@ -123,7 +123,7 @@ const HomePage = () => (
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="./images/organisation-4.png"
+            imagePath="./images/front-page-3.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
