@@ -107,7 +107,7 @@ const OurHistory = () => (
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Scott Trust values"
-            imagePath="./images/history-6.png"
+            imagePath="./images/front-page-4.png"
             linkUrl="https://www.theguardian.com/uk"
           />
           <ResponsiveCardVariant1
