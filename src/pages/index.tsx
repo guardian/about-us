@@ -73,18 +73,21 @@ const HomePage = (): jsx.JSX.Element => (
       author="Katharine Viner, editor-in-chief"
     />
     <FullWidthText theme="light">
-      <p>
-        Guardian Media Group is a global news organisation that delivers{" "}
-        <span css={highlightedCss}>fearless, investigative journalism</span> -
-        giving a voice to the powerless and holding power to account.
-        <br />
-        Our independent ownership structure means we are entirely free from
-        political and commercial influence.{" "}
-        <span css={highlightedCss}>
-          Only our values determine the stories we choose to cover
-        </span>{" "}
-        – relentlessly and courageously.
-      </p>
+      <>
+        <p>
+          Guardian Media Group is a global news organisation that delivers{" "}
+          <span css={highlightedCss}>fearless, investigative journalism</span> -
+          giving a voice to the powerless and holding power to account.
+        </p>
+        <p>
+          Our independent ownership structure means we are entirely free from
+          political and commercial influence.{" "}
+          <span css={highlightedCss}>
+            Only our values determine the stories we choose to cover
+          </span>{" "}
+          – relentlessly and courageously.
+        </p>
+      </>
     </FullWidthText>
     <FullWidthImage
       smallImageUrl="./images/front-page-full-width-small.png"
