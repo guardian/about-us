@@ -18,7 +18,7 @@ import {
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -208,13 +208,13 @@ const JournalismPage = () => (
           <ResponsiveCardVariant1
             title="Guardian US"
             imagePath="./images/front-page-11.png"
-            linkUrl="https://www.theguardian.com/us"
+            linkUrl="https://www.theguardian.com/info/about-guardian-us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
             imagePath="./images/front-page-12.png"
-            linkUrl="https://www.theguardian.com/au"
+            linkUrl="https://www.theguardian.com/info/about-guardian-australia"
             linkText="Guardian Australia"
           />
         </div>

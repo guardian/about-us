@@ -24,7 +24,7 @@ import {
   leadershipProfilesHolder,
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
