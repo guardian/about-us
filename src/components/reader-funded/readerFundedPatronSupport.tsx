@@ -23,16 +23,20 @@ const sectionContainerCss = css`
 `;
 
 const h3Css = css`
-  ${headline.xxsmall()}
-  margin: 0;
+  ${headline.xxsmall({ fontWeight: "bold" })}
+  margin: ${space[1]}px 0 0;
   ${minWidth.tablet} {
-    ${headline.xsmall()}
+    ${headline.xsmall({ fontWeight: "bold" })}
+  }
+  ${minWidth.desktop} {
+    margin: 6px 0 0;
   }
 `;
 
 const pCss = css`
-  ${body.small({ lineHeight: "loose" })}
-  margin: 15px 0 21px 0;
+  ${body.small({ lineHeight: "loose" })};
+  margin-top: ${space[3]}px;
+  margin-bottom: 22px;
 `;
 
 const linkButtonCss = css`
