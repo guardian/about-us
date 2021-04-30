@@ -31,7 +31,7 @@ const h3Css = css`
   }
   ${minWidth.desktop} {
     font-size: 24px;
-    margin-top: ${space[2]}px;
+    margin-top: 6px;
   }
 `;
 
@@ -39,6 +39,8 @@ const pCss = css`
   color: ${neutral[100]};
   ${body.small({ lineHeight: "loose" })}
   max-width: 385px;
+  margin-top: 12px;
+  margin-bottom: 22px;
 `;
 
 const cardContainerCss = css`

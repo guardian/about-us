@@ -52,7 +52,7 @@ const blockquoteCss = css`
     font-size: 55px;
   }
   ${minWidth.desktop} {
-    font-size: 72px;
+    font-size: 65px;
   }
   ${minWidth.wide} {
     font-size: 73px;
@@ -70,6 +70,8 @@ const quotationMarkCss = css`
   ${minWidth.desktop} {
     height: 52px;
     margin-right: 10px;
+    padding-top: 2px;
+    margin-bottom: -1px;
   }
   ${minWidth.wide} {
     height: 55px;

@@ -17,7 +17,7 @@ const h3Css = css`
   font-size: 22px;
   margin: 0;
   ${minWidth.tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-size: 20px;
   }
   ${minWidth.wide} {
