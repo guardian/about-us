@@ -35,7 +35,7 @@ const h3Css = css`
 
 const pCss = css`
   ${body.small({ lineHeight: "loose" })};
-  margin-top: 12px;
+  margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
 

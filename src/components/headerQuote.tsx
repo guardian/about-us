@@ -71,7 +71,7 @@ const quotationMarkCss = css`
     height: 52px;
     margin-right: 10px;
     padding-top: 2px;
-    margin-bottom: -1px;
+    margin-top: 1px;
   }
   ${minWidth.wide} {
     height: 55px;

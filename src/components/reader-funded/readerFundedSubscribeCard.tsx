@@ -39,7 +39,7 @@ const pCss = css`
   color: ${neutral[100]};
   ${body.small({ lineHeight: "loose" })}
   max-width: 385px;
-  margin-top: 12px;
+  margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
 
