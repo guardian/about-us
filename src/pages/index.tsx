@@ -252,7 +252,7 @@ const HomePage = (): jsx.JSX.Element => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={LinkButtonCss}
-          href="http://theguardian.com/about/journalism"
+          href="https://theguardian.com/about/journalism"
         >
           More on journalism
         </LinkButton>

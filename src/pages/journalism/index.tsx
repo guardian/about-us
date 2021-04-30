@@ -164,12 +164,12 @@ const JournalismPage = () => (
           />
           <ResponsiveCardVariant2
             title="Apps"
-            href="https://support.theguardian.com/subscribe/digital?gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB7Y2es2tg4YcxEqeySN96TeYl7KmVMrnkE5LKpCffr1Y6HJgkTNlMwaAqTIEALw_wcB"
+            href="https://support.theguardian.com/subscribe/digital"
             imageUrl="./images/journalism-10.png"
           />
           <ResponsiveCardVariant2
             title="Newsletters"
-            href="https://www.theguardian.com/email-newsletters?INTCMP=DOTCOM_NAV_NEWSLETTER_US"
+            href="https://www.theguardian.com/email-newsletters"
             imageUrl="./images/journalism-11.png"
           />
           <ResponsiveCardVariant2
