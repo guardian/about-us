@@ -69,7 +69,7 @@ const HomePage = (): jsx.JSX.Element => (
       ]}
     />
     <HeaderQuote
-      quote="Since 1821 the mission of The Guardian has been to use clarity and imagination to build hope."
+      quote="Since 1821 the mission of the Guardian has been to use clarity and imagination to build hope."
       author="Katharine Viner, editor-in-chief"
     />
     <FullWidthText theme="light">
@@ -226,7 +226,7 @@ const HomePage = (): jsx.JSX.Element => (
             </p>
             <p>
               Our teams in the UK, US and Australia produce theguardian.com,
-              Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
+              Guardian Australia, Guardian US, Guardian Weekly, and the Guardian
               and Observer newspapers in the UK.
             </p>
           </>

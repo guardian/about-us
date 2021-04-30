@@ -145,7 +145,7 @@ const HomePage = () => (
               job: "editor-in-chief",
               organisation: "Guardian News & Media",
             }}
-            bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independance. She also sits on the board of the Scott Trust and Guardian Media Group and executive committee of Guardian News & Media. "
+            bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independence. She also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
           />
           <LeadershipProfile
             imageUrl="./images/organisation-7.png"
@@ -154,7 +154,7 @@ const HomePage = () => (
               job: "chief executive",
               organisation: "Guardian Media Group",
             }}
-            bodyCopy="Annette Thomas was appointed chief executive of Guardian Media Group in 2020. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
+            bodyCopy="Annette Thomas was appointed chief executive of Guardian Media Group in 2020. She reports into the Guardian Media Group board. As chief executive she also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
           />
         </div>
         <DetailsAndImage
@@ -167,7 +167,7 @@ const HomePage = () => (
     </BoxContainer>
     <BoxContainer theme="light" background={reportsBkg}>
       <>
-        <h2 css={headingCss}>GMG financial and corporate reports</h2>
+        <h2 css={headingCss}>GMG financial reports and corporate policies</h2>
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Financial reports"
@@ -252,7 +252,7 @@ const HomePage = () => (
         <InnerText title="Our revenue mix" theme="light">
           <p>
             GMG operates a diverse revenue model including reader revenues,
-            advertising, jobs advertising, licencing and philanthropic funding.
+            advertising, jobs advertising, licensing and philanthropic funding.
             Revenue from readers now accounts for over 50% of GMG's annual
             revenues.
           </p>

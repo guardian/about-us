@@ -217,7 +217,7 @@ const Thrasher = () => (
           cssOverrides={linkButtonCssOverides}
           href="https://www.theguardian.com/p/h883d"
         >
-          More on the Guardian 200
+          Read more
         </LinkButton>
       </div>
     </div>
