@@ -91,7 +91,7 @@ const JournalismPage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="./images/journalism-2.png"
+            imagePath="./images/front-page-2.png"
             linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
           />
           <ResponsiveCardVariant1
