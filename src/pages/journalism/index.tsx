@@ -18,7 +18,7 @@ import {
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -59,7 +59,7 @@ const JournalismPage = () => (
     />
     <FullWidthText theme="dark" title="Journalism">
       <p>
-        The Guardian has a global reputation of holding power to account and
+        The Guardian has a global reputation for holding power to account and
         championing the voices of those less heard. Our Covid-19 investigations
         exposed governmental and social failings, as did our earlier work on the
         Snowden disclosures, the Windrush scandal, Cambridge Analytica and the
@@ -80,9 +80,9 @@ const JournalismPage = () => (
       <>
         <InnerText title="Our values and mission for journalism" theme="light">
           <p>
-            The Scott Trust, which owns the Guardian was established in 1936 to
+            The Scott Trust, which owns the Guardian, was established in 1936 to
             secure the financial and editorial independence of the Guardian in
-            perpetuity and to safeguard the journalistic freedom and liberal
+            perpetuity, and to safeguard the journalistic freedom and liberal
             values of the Guardian free from commercial or political
             interference. To this day our independence and values drive Guardian
             journalism.
@@ -150,10 +150,10 @@ const JournalismPage = () => (
       <>
         <InnerText title="Guardian journalism" theme="light">
           <p>
-            The Guardian's purposeful journalism spans several formats to serve
-            our global audience, including print and digital products,
-            multimedia journalism, email round-ups and a dedicated programme of
-            live discussions, debates and interviews.
+            The Guardian’s purposeful journalism, serving our global audience,
+            includes print and digital products, podcasts, video, infographics,
+            email newsletters and a dedicated programme of live discussions,
+            debates and interviews.
           </p>
         </InnerText>
         <div css={responsiveCardV2Holder}>
