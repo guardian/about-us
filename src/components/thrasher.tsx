@@ -215,7 +215,7 @@ const Thrasher = () => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={linkButtonCssOverides}
-          href="https://www.theguardian.com/uk"
+          href="https://www.theguardian.com/p/h883d"
         >
           More on the Guardian 200
         </LinkButton>

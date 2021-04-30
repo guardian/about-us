@@ -229,12 +229,12 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Diversity, equity and inclusion"
             imagePath="./images/organisation-14.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/about/2021/apr/30/diversity-equity-and-inclusion"
           />
           <ResponsiveCardVariant1
             title="Employee engagement"
             imagePath="./images/organisation-15.png"
-            linkUrl="https://www.theguardian.com/uk"
+            linkUrl="https://www.theguardian.com/about/2021/apr/30/employee-engagement"
           />
           <ResponsiveCardVariant1
             title="Work for us"
