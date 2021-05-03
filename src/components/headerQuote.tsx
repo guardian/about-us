@@ -61,18 +61,21 @@ const blockquoteCss = css`
 
 const quotationMarkCss = css`
   height: 26px;
-  width: auto;
+  width: 39px;
   margin-right: 6px;
   ${minWidth.tablet} {
     height: 40px;
+    width: 60px;
     margin-right: ${space[2]}px;
   }
   ${minWidth.desktop} {
     height: 52px;
+    width: 78px;
     margin-right: 10px;
   }
   ${minWidth.wide} {
     height: 55px;
+    width: 83px;
     position: absolute;
     left: 140px;
     top: 110px;
