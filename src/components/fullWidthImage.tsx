@@ -19,7 +19,7 @@ const FullWidthImage = ({
   largeImageAspectRatio = 46,
 }: FullWidthImageProps) => {
   const imageHolderCss = css`
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
   `;
 
@@ -37,7 +37,7 @@ const FullWidthImage = ({
   `;
 
   return (
-    <div css={css`background-color: ${neutral[86]};`} aria-hidden="true">
+    <div css={css`background-color: ${neutral[7]};`} aria-hidden="true">
       <div css={imageHolderCss}>
         <div css={imageCss}></div>
       </div>

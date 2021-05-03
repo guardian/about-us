@@ -91,8 +91,8 @@ const HomePage = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/organisation-full-width-small.png"
-      largeImageUrl="./images/organisation-full-width-large.png"
+      smallImageUrl="./images/organisation-full-width-small.jpg"
+      largeImageUrl="./images/organisation-full-width-large.jpg"
     />
     <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
       <>
@@ -123,7 +123,7 @@ const HomePage = () => (
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="./images/organisation-4.png"
+            imagePath="./images/front-page-3.png"
             linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1

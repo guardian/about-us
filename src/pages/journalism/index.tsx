@@ -69,8 +69,8 @@ const JournalismPage = () => (
       </p>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/journalism-full-width-small.png"
-      largeImageUrl="./images/journalism-full-width-large.png"
+      smallImageUrl="./images/journalism-full-width-small.jpg"
+      largeImageUrl="./images/journalism-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"

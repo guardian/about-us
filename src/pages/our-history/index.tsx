@@ -71,8 +71,8 @@ const OurHistory = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/history-full-width-small.png"
-      largeImageUrl="./images/history-full-width-large.png"
+      smallImageUrl="./images/history-full-width-small.jpg"
+      largeImageUrl="./images/history-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"

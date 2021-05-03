@@ -90,8 +90,8 @@ const HomePage = (): jsx.JSX.Element => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/front-page-full-width-small.png"
-      largeImageUrl="./images/front-page-full-width-large.png"
+      smallImageUrl="./images/front-page-full-width-small.jpg"
+      largeImageUrl="./images/front-page-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"
