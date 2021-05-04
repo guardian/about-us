@@ -109,7 +109,7 @@ const LatestNews = () => (
   <div css={containerCss}>
     <div css={innerContainerCss}>
       <div css={imageContainerCss}>
-        <img src="./images/front-page-13.png" />
+        <img src="./images/front-page-13.jpg" />
       </div>
       <article>
         <h2>Latest News</h2>

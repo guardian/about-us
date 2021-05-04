@@ -36,7 +36,7 @@ const containerCss = css`
           ${brandAlt[400]} calc(12.44% + 2px),
           transparent 50%
         ),
-        url("./images/thrasher-paper-bg-tablet.png");
+        url("./images/thrasher-paper-bg-tablet.jpg");
       background-size: 100% 100%;
       margin-top: -4%;
     }
@@ -50,7 +50,7 @@ const containerCss = css`
         transparent calc(50% - 100px),
         transparent
       ),
-      url("./images/thrasher-paper-bg-desktop.png");
+      url("./images/thrasher-paper-bg-desktop.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left calc(50% + 520px) top;
@@ -92,7 +92,7 @@ const innerContainerCss = css`
         ${brandAlt[400]} 10%,
         transparent 50%
       ),
-      url("./images/thrasher-paper-bg-mobile.png");
+      url("./images/thrasher-paper-bg-mobile.jpg");
     background-size: 100% 100%;
   }
   ${minWidth.tablet} {

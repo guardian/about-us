@@ -113,22 +113,22 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="About the Scott Trust"
-            imagePath="./images/organisation-2.png"
+            imagePath="./images/organisation-2.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust board"
-            imagePath="./images/organisation-3.png"
+            imagePath="./images/organisation-3.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="./images/front-page-3.png"
+            imagePath="./images/front-page-3.jpg"
             linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="GMG Board"
-            imagePath="./images/organisation-5.png"
+            imagePath="./images/organisation-5.jpg"
             linkUrl="https://www.theguardian.com/gmg/2015/jul/23/gnm-board"
           />
         </div>
@@ -139,7 +139,7 @@ const HomePage = () => (
         <h2 css={headingCss}>Leadership</h2>
         <div css={leadershipProfilesHolder}>
           <LeadershipProfile
-            imageUrl="./images/organisation-6.png"
+            imageUrl="./images/organisation-6.jpg"
             title={{
               name: "Katharine Viner",
               job: "editor-in-chief",
@@ -148,7 +148,7 @@ const HomePage = () => (
             bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independence. She also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
           />
           <LeadershipProfile
-            imageUrl="./images/organisation-7.png"
+            imageUrl="./images/organisation-7.jpg"
             title={{
               name: "Annette Thomas",
               job: "chief executive",
@@ -158,7 +158,7 @@ const HomePage = () => (
           />
         </div>
         <DetailsAndImage
-          imageUrl="./images/organisation-8.png"
+          imageUrl="./images/organisation-8.jpg"
           title="GNM executive committee"
           bodyCopy="Read more about the management team of Guardian News & Media"
           readMoreUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
@@ -171,12 +171,12 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Financial reports"
-            imagePath="./images/organisation-9.png"
+            imagePath="./images/organisation-9.jpg"
             linkUrl="https://www.theguardian.com/gmg/2015/jul/27/guardian-media-group-annual-financial-reports"
           />
           <ResponsiveCardVariant1
             title="Corporate policies"
-            imagePath="./images/organisation-10.png"
+            imagePath="./images/organisation-10.jpg"
             linkUrl="https://www.theguardian.com/gmg/2018/mar/14/corporate-reports-and-policies"
           />
         </div>
@@ -200,12 +200,12 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
-            imagePath="./images/organisation-11.png"
+            imagePath="./images/organisation-11.jpg"
             linkUrl="https://www.theguardian.com/gnm-press-office/2019/oct/16/guardian-media-group-becomes-first-major-news-organisation-to-become-a-b-corporation-and-pledges-to-reach-net-zero-emissions-by-2030"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
-            imagePath="./images/organisation-12.png"
+            imagePath="./images/organisation-12.jpg"
             linkUrl="https://www.theguardian.com/environment/ng-interactive/2020/oct/05/the-guardian-climate-pledge-2020-environment-emergency-carbon-emissions"
           />
         </div>
@@ -228,17 +228,17 @@ const HomePage = () => (
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Diversity, equity and inclusion"
-            imagePath="./images/organisation-14.png"
+            imagePath="./images/organisation-14.jpg"
             linkUrl="https://www.theguardian.com/about/2021/apr/30/diversity-equity-and-inclusion"
           />
           <ResponsiveCardVariant1
             title="Employee engagement"
-            imagePath="./images/organisation-15.png"
+            imagePath="./images/organisation-15.jpg"
             linkUrl="https://www.theguardian.com/about/2021/apr/30/employee-engagement"
           />
           <ResponsiveCardVariant1
             title="Work for us"
-            imagePath="./images/organisation-16.png"
+            imagePath="./images/organisation-16.jpg"
             linkUrl="https://workforus.theguardian.com/"
           />
         </div>
@@ -258,7 +258,7 @@ const HomePage = () => (
           </p>
         </InnerText>
         <DetailsAndImage
-          imageUrl="./images/organisation-17.png"
+          imageUrl="./images/organisation-17.jpg"
           title="Reader funding"
           bodyCopy="Readers can support the Guardian through a digital or print subscription, a recurring or single contribution or as a patron. Read more about our subscriptions:"
           readMoreUrl="https://support.theguardian.com/uk/subscribe?CMP=ppc_mem_&gclid=CjwKCAjw6fCCBhBNEiwAem5SOy61gdjmDXnbjnURNn2-xbO9vEeSd2xYypEw7Y4u9A-qu5-ZJ-ZehxoC41oQAvD_BwE"
@@ -266,17 +266,17 @@ const HomePage = () => (
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
-            imagePath="./images/organisation-18.png"
+            imagePath="./images/organisation-18.jpg"
             linkUrl="https://advertising.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Guardian Jobs"
-            imagePath="./images/organisation-19.png"
+            imagePath="./images/organisation-19.jpg"
             linkUrl="https://jobs.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Philanthropic funding"
-            imagePath="./images/organisation-20.png"
+            imagePath="./images/organisation-20.jpg"
             linkUrl="https://www.theguardian.com/info/2018/oct/02/philanthropic-partnerships-at-the-guardian"
           />
         </div>
@@ -296,7 +296,7 @@ const HomePage = () => (
         <div css={singleColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian Foundation"
-            imagePath="./images/organisation-21.png"
+            imagePath="./images/organisation-21.jpg"
             linkUrl="https://theguardianfoundation.org/"
             alwaysImgOnLeft={true}
           />
