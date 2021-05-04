@@ -20,6 +20,7 @@ const ResponsiveCardVariant2 = (props: ResponsiveCardVariant2Props) => {
   const imageCss = css`
     width: 100%;
     height: auto;
+    display: block;
   `;
 
   const linkCss = css`

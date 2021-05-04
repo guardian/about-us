@@ -138,7 +138,7 @@ const birthdayCopyHolderCss = css`
     black 219px,
     transparent 220px
   );
-  padding: 0 ${space[6]}px;
+  padding: 0 ${space[3]}px;
   height: max-content;
   ${minWidth.tablet} {
     margin-top: ${space[3]}px;
@@ -157,7 +157,7 @@ const birthdayCopyHolderCss = css`
 `;
 
 const pAndLinkButtonHolderCss = css`
-  margin: 16px ${space[6]}px 0;
+  margin: 16px ${space[3]}px 0;
   &:after {
     content: "";
     display: block;
