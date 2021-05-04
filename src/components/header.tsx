@@ -57,7 +57,7 @@ const headerStyles = css`
       right: -21px;
       width: ${mobileOpenCloseBtnSize}px;
       height: ${mobileOpenCloseBtnSize}px;
-      background-image: url("/images/menu-opened.svg");
+      background-image: url("/about/images/menu-opened.svg");
     }
   }
 
@@ -204,7 +204,7 @@ const logoHolderStyle = css`
     display: block;
     width: ${mobileOpenCloseBtnSize}px;
     height: ${mobileOpenCloseBtnSize}px;
-    background-image: url("/images/menu-closed.svg");
+    background-image: url("/about/images/menu-closed.svg");
     position: absolute;
     top: 22px;
     right: -48px;

@@ -34,22 +34,22 @@ const OurHistory = () => (
         {
           title: "About us",
           isSelected: false,
-          link: "/",
+          link: "/about/",
         },
         {
           title: "Our organisation",
           isSelected: false,
-          link: "/our-organisation",
+          link: "/about/organisation",
         },
         {
           title: "Our history",
           isSelected: true,
-          link: "/our-history",
+          link: "/about/history",
         },
         {
           title: "Journalism",
           isSelected: false,
-          link: "/journalism",
+          link: "/about/journalism",
         },
       ]}
     />
@@ -71,8 +71,8 @@ const OurHistory = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/history-full-width-small.jpg"
-      largeImageUrl="./images/history-full-width-large.jpg"
+      smallImageUrl="/about/images/history-full-width-small.jpg"
+      largeImageUrl="/about/images/history-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"
@@ -84,17 +84,17 @@ const OurHistory = () => (
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="History of the Guardian"
-            imagePath="./images/history-2.jpg"
+            imagePath="/about/images/history-2.jpg"
             linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/1"
           />
           <ResponsiveCardVariant1
             title="History of The Observer"
-            imagePath="./images/history-3.jpg"
+            imagePath="/about/images/history-3.jpg"
             linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/2"
           />
           <ResponsiveCardVariant1
             title="GNM Archive"
-            imagePath="./images/history-4.jpg"
+            imagePath="/about/images/history-4.jpg"
             linkUrl="https://www.theguardian.com/gnm-archive"
             alwaysImgOnLeft={true}
           />
@@ -107,17 +107,17 @@ const OurHistory = () => (
         <div css={twoThenOneColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Scott Trust values"
-            imagePath="./images/front-page-4.jpg"
+            imagePath="/about/images/front-page-4.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="Scott Trust timeline"
-            imagePath="./images/history-7.jpg"
+            imagePath="/about/images/history-7.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/a-history-of-the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="/images/history-8.jpg"
+            imagePath="/about/images/history-8.jpg"
             linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
             alwaysImgOnLeft={true}
           />
