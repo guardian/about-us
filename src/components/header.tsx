@@ -27,6 +27,7 @@ const headerStyles = css`
   text-align: right;
   position: relative;
   z-index: 10;
+  border-bottom: 1px solid ${brand[600]};
   & .top-and-bottom-nav {
     position: fixed;
     top: 0;
@@ -94,7 +95,6 @@ const headerStyles = css`
 
   ${minWidth.headerTablet} {
     padding: 0;
-    border-bottom: 1px solid ${brand[600]};
     & .top-and-bottom-nav {
       position: static;
       background-color: transparent;

@@ -135,7 +135,7 @@ const HomePage = (): jsx.JSX.Element => (
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
-            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            title="CP Scott’s centenary essay"
             imagePath="/about/images/front-page-5.jpg"
             linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
           />

@@ -200,7 +200,7 @@ export const responsiveCardV2Holder = css`
   & > * {
     margin-top: ${space[3]}px;
     width: 50%;
-    width: calc(50% - 10px);
+    width: calc(50% - 6px);
   }
   ${minWidth.tablet} {
     & > * {

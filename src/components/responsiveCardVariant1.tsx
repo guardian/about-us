@@ -54,7 +54,9 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
           width: 100%;
 
           `}
-      display: inline;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       height: 100%;
       padding: ${space[3]}px;
       & a:last-of-type {
@@ -62,6 +64,9 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
         width: max-content;
         margin-top: ${space[6]}px;
       }
+    }
+    ${minWidth.desktop} {
+      padding: ${space[3]}px ${space[3]}px ${space[4]}px;
     }
   `;
 
@@ -71,6 +76,7 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
 
   const titleCss = css`
     ${headline.xxxsmall({ fontWeight: "bold" })};
+    font-size: 16px;
     color: ${brand[400]};
     margin: 0;
     min-height: 3em;
