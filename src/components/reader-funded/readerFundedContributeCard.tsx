@@ -38,7 +38,7 @@ const pCss = css`
 const cardImageCss = css`
   width: 100%;
   padding-top: 140.54%;
-  background-image: url("./images/front-page-10-mobile.png");
+  background-image: url("/about/images/front-page-10-mobile.png");
   flex: 0 0 40%;
   height: 100%;
   margin: 10.5px -${space[3]}px auto auto;
@@ -50,7 +50,7 @@ const cardImageCss = css`
     margin: auto -12px auto auto;
     padding-top: 47.25%;
     background-position: right center;
-    background-image: url("./images/front-page-10-desktop.png");
+    background-image: url("/about/images/front-page-10-desktop.png");
     background-repeat: no-repeat;
   }
   ${minWidth.desktop} {

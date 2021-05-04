@@ -49,22 +49,22 @@ const HomePage = (): jsx.JSX.Element => (
         {
           title: "About us",
           isSelected: true,
-          link: "/",
+          link: "/about/",
         },
         {
           title: "Our organisation",
           isSelected: false,
-          link: "/our-organisation",
+          link: "/about/organisation",
         },
         {
           title: "Our history",
           isSelected: false,
-          link: "/our-history",
+          link: "/about/history",
         },
         {
           title: "Journalism",
           isSelected: false,
-          link: "/journalism",
+          link: "/about/journalism",
         },
       ]}
     />
@@ -90,8 +90,8 @@ const HomePage = (): jsx.JSX.Element => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/front-page-full-width-small.jpg"
-      largeImageUrl="./images/front-page-full-width-large.jpg"
+      smallImageUrl="/about/images/front-page-full-width-small.jpg"
+      largeImageUrl="/about/images/front-page-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"
@@ -121,22 +121,22 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="./images/front-page-2.jpg"
+            imagePath="/about/images/front-page-2.jpg"
             linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="./images/front-page-3.jpg"
+            imagePath="/about/images/front-page-3.jpg"
             linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="./images/front-page-4.jpg"
+            imagePath="/about/images/front-page-4.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="./images/front-page-5.jpg"
+            imagePath="/about/images/front-page-5.jpg"
             linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
           />
         </div>
@@ -175,8 +175,8 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={readerFundedSubscribeCardHolderCss}>
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "./images/front-page-7-mobile.png",
-              tabletAndAbove: "./images/front-page-7-desktop.png",
+              mobile: "/about/images/front-page-7-mobile.png",
+              tabletAndAbove: "/about/images/front-page-7-desktop.png",
             }}
             title="Digital"
             bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
@@ -184,8 +184,8 @@ const HomePage = (): jsx.JSX.Element => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "./images/front-page-8-mobile.png",
-              tabletAndAbove: "./images/front-page-8-desktop.png",
+              mobile: "/about/images/front-page-8-mobile.png",
+              tabletAndAbove: "/about/images/front-page-8-desktop.png",
             }}
             title="Print"
             bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
@@ -193,8 +193,8 @@ const HomePage = (): jsx.JSX.Element => (
           />
           <ReaderFundedSubscribeCard
             imagePath={{
-              mobile: "./images/front-page-9-mobile.png",
-              tabletAndAbove: "./images/front-page-9-desktop.png",
+              mobile: "/about/images/front-page-9-mobile.png",
+              tabletAndAbove: "/about/images/front-page-9-desktop.png",
             }}
             title="Guardian Weekly"
             bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
@@ -237,13 +237,13 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian US"
-            imagePath="./images/front-page-11.jpg"
+            imagePath="/about/images/front-page-11.jpg"
             linkUrl="https://www.theguardian.com/info/about-guardian-us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
-            imagePath="./images/front-page-12.jpg"
+            imagePath="/about/images/front-page-12.jpg"
             linkUrl="https://www.theguardian.com/info/about-guardian-australia"
             linkText="Guardian Australia"
           />
