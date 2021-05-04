@@ -90,8 +90,8 @@ const HomePage = (): jsx.JSX.Element => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/front-page-full-width-small.png"
-      largeImageUrl="./images/front-page-full-width-large.png"
+      smallImageUrl="./images/front-page-full-width-small.jpg"
+      largeImageUrl="./images/front-page-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"
@@ -121,22 +121,22 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="./images/front-page-2.png"
+            imagePath="./images/front-page-2.jpg"
             linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="./images/front-page-3.png"
+            imagePath="./images/front-page-3.jpg"
             linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="./images/front-page-4.png"
+            imagePath="./images/front-page-4.jpg"
             linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="./images/front-page-5.png"
+            imagePath="./images/front-page-5.jpg"
             linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
           />
         </div>
@@ -237,13 +237,13 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian US"
-            imagePath="./images/front-page-11.png"
+            imagePath="./images/front-page-11.jpg"
             linkUrl="https://www.theguardian.com/info/about-guardian-us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
-            imagePath="./images/front-page-12.png"
+            imagePath="./images/front-page-12.jpg"
             linkUrl="https://www.theguardian.com/info/about-guardian-australia"
             linkText="Guardian Australia"
           />

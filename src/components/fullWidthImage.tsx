@@ -1,7 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import { neutral } from "@guardian/src-foundations/palette";
 import { minWidth } from "../styles/breakpoints";
 
 interface FullWidthImageProps {
@@ -19,7 +18,7 @@ const FullWidthImage = ({
   largeImageAspectRatio = 46,
 }: FullWidthImageProps) => {
   const imageHolderCss = css`
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
   `;
 
@@ -37,7 +36,7 @@ const FullWidthImage = ({
   `;
 
   return (
-    <div css={css`background-color: ${neutral[86]};`} aria-hidden="true">
+    <div css={css`background-color: #041838;`} aria-hidden="true">
       <div css={imageHolderCss}>
         <div css={imageCss}></div>
       </div>
