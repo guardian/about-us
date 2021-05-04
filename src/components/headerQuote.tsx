@@ -85,7 +85,7 @@ const quotationMarkCss = css`
 `;
 
 const quoteDivCss = css`
-  padding: 27px ${space[6]}px;
+  padding: 27px ${space[6]}px 44px;
   position: relative;
   ${minWidth.tablet} {
     padding: 45px ${space[5]}px;

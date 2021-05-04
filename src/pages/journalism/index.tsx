@@ -97,16 +97,16 @@ const JournalismPage = () => (
           />
           <ResponsiveCardVariant1
             title="How the Guardian covered 2020"
-            imagePath="/about/images/journalism-3.jpg"
+            imagePath="/about/images/journalism-4.jpg"
             linkUrl="https://www.theguardian.com/info/ng-interactive/2020/dec/21/the-guardian-in-2020"
           />
           <ResponsiveCardVariant1
             title="How the Guardian is editorially independent"
-            imagePath="/about/images/journalism-4.jpg"
+            imagePath="/about/images/journalism-3.jpg"
             linkUrl="https://www.theguardian.com/about/2017/nov/17/who-owns-the-guardian-our-unique-independent-structure"
           />
           <ResponsiveCardVariant1
-            title="CP Scott’s centenary essay - a blueprint for independent journalism"
+            title="CP Scott’s centenary essay"
             imagePath="/about/images/front-page-5.jpg"
             linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
           />
@@ -121,7 +121,7 @@ const JournalismPage = () => (
         <h2 css={headingCss}>Editors</h2>
         <div css={oneThenThreeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
-            title="Katharine Viner, editor-in-chief, Guardian News & Media"
+            title="Katharine Viner, editor-in-chief, GNM"
             imagePath="/about/images/journalism-5.jpg"
             linkUrl="https://www.theguardian.com/profile/katharineviner"
             alwaysImgOnLeft={true}
@@ -137,7 +137,7 @@ const JournalismPage = () => (
             linkUrl="https://www.theguardian.com/profile/lenore-taylor"
           />
           <ResponsiveCardVariant1
-            title="Paul Webster, editor of the Observer"
+            title="Paul Webster, editor of The Observer"
             imagePath="/about/images/journalism-8.jpg"
             linkUrl="https://www.theguardian.com/profile/paul-webster"
           />
@@ -234,7 +234,7 @@ const JournalismPage = () => (
             linkUrl="https://www.theguardian.com/info/2015/aug/05/the-guardians-editorial-code"
           />
           <ResponsiveCardVariant1
-            title="About our readers’ editor who manages complaints"
+            title="About our readers’ editor"
             imagePath="/about/images/journalism-21.jpg"
             linkUrl="https://www.theguardian.com/info/2013/sep/23/guardian-readers-editor"
           />
