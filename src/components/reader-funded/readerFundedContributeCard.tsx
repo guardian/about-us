@@ -155,6 +155,7 @@ const containerCss = css`
       width: -webkit-max-content;
       width: -moz-max-content;
       width: max-content;
+      width: fit-content;
     }
   }
 `;

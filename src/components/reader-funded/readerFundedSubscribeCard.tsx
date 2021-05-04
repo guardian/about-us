@@ -44,15 +44,20 @@ const pCss = css`
 `;
 
 const cardContainerCss = css`
+  display: -ms-grid;
   display: grid;
-  grid-auto-columns: 2fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "text image";
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
       "."
