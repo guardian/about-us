@@ -193,10 +193,13 @@ const HomePage = () => (
             <p>
               In 2019, we became the first major news organisation to certify as
               a B Corporation, and made a climate pledge to our readers
-              committing to reach net zero carbon emissions by 2030. In 2020 we
-              announced we will no longer accept advertising from oil and gas
-              companies, becoming the first major global news organisation to
-              stop accepting money from companies that extract fossil fuels.
+              committing to reach net zero carbon emissions by 2030.
+            </p>
+            <p>
+              In 2020 we announced we will no longer accept advertising from oil
+              and gas companies, becoming the first major global news
+              organisation to stop accepting money from companies that extract
+              fossil fuels.
             </p>
           </>
         </InnerText>
@@ -259,7 +262,7 @@ const HomePage = () => (
             We are increasingly global with growing commercial operations in the
             US and Australia. Revenue from readers now accounts for over 50% of
             GMG's annual revenue, with more than half of reader revenue coming
-            from readers outside the UK
+            from readers outside the UK.
           </p>
         </InnerText>
         <DetailsAndImage
