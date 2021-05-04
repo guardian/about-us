@@ -54,9 +54,7 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
           width: 100%;
 
           `}
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: inline;
       height: 100%;
       padding: ${space[3]}px;
       & a:last-of-type {

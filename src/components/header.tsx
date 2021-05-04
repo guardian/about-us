@@ -98,9 +98,9 @@ const headerStyles = css`
     & .top-and-bottom-nav {
       position: static;
       background-color: transparent;
-      transition: unset;
-      width: unset;
-      height: unset;
+      transition: none;
+      width: auto;
+      height: auto;
       opacity: 1;
       padding-left: ${space[2]}px;
       border-top: 1px solid ${brand[600]};
