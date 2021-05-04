@@ -24,7 +24,7 @@ import {
   leadershipProfilesHolder,
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -91,8 +91,8 @@ const HomePage = () => (
       </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/organisation-full-width-small.png"
-      largeImageUrl="./images/organisation-full-width-large.png"
+      smallImageUrl="./images/organisation-full-width-small.jpg"
+      largeImageUrl="./images/organisation-full-width-large.jpg"
     />
     <BoxContainer theme="light" background={ourStructureBkg} overlapTop={true}>
       <>
@@ -113,23 +113,23 @@ const HomePage = () => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="About the Scott Trust"
-            imagePath="./images/organisation-2.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-2.jpg"
+            linkUrl="https://www.theguardian.com/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust board"
-            imagePath="./images/organisation-3.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-3.jpg"
+            linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
           />
           <ResponsiveCardVariant1
             title="About Guardian Media Group"
-            imagePath="./images/organisation-4.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-3.jpg"
+            linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="GMG Board"
-            imagePath="./images/organisation-5.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-5.jpg"
+            linkUrl="https://www.theguardian.com/gmg/2015/jul/23/gnm-board"
           />
         </div>
       </>
@@ -139,45 +139,45 @@ const HomePage = () => (
         <h2 css={headingCss}>Leadership</h2>
         <div css={leadershipProfilesHolder}>
           <LeadershipProfile
-            imageUrl="./images/organisation-6.png"
+            imageUrl="./images/organisation-6.jpg"
             title={{
               name: "Katharine Viner",
               job: "editor-in-chief",
               organisation: "Guardian News & Media",
             }}
-            bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independance. She also sits on the board of the Scott Trust and Guardian Media Group and executive committee of Guardian News & Media. "
+            bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independence. She also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
           />
           <LeadershipProfile
-            imageUrl="./images/organisation-7.png"
+            imageUrl="./images/organisation-7.jpg"
             title={{
               name: "Annette Thomas",
               job: "chief executive",
               organisation: "Guardian Media Group",
             }}
-            bodyCopy="Annette Thomas was appointed chief executive of Guardian Media Group in 2020. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
+            bodyCopy="Annette Thomas is the chief executive of Guardian Media Group. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
           />
         </div>
         <DetailsAndImage
-          imageUrl="./images/organisation-8.png"
+          imageUrl="./images/organisation-8.jpg"
           title="GNM executive committee"
           bodyCopy="Read more about the management team of Guardian News & Media"
-          readMoreUrl="https://www.theguardian.com/"
+          readMoreUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
         />
       </>
     </BoxContainer>
     <BoxContainer theme="light" background={reportsBkg}>
       <>
-        <h2 css={headingCss}>GMG financial and corporate reports</h2>
+        <h2 css={headingCss}>GMG financial reports and corporate policies</h2>
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Financial reports"
-            imagePath="./images/organisation-9.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-9.jpg"
+            linkUrl="https://www.theguardian.com/gmg/2015/jul/27/guardian-media-group-annual-financial-reports"
           />
           <ResponsiveCardVariant1
             title="Corporate policies"
-            imagePath="./images/organisation-10.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-10.jpg"
+            linkUrl="https://www.theguardian.com/gmg/2018/mar/14/corporate-reports-and-policies"
           />
         </div>
       </>
@@ -195,18 +195,24 @@ const HomePage = () => (
               a B Corporation, and made a climate pledge to our readers
               committing to reach net zero carbon emissions by 2030.
             </p>
+            <p>
+              In 2020 we announced we will no longer accept advertising from oil
+              and gas companies, becoming the first major global news
+              organisation to stop accepting money from companies that extract
+              fossil fuels.
+            </p>
           </>
         </InnerText>
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
-            imagePath="./images/organisation-11.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-11.jpg"
+            linkUrl="https://www.theguardian.com/gnm-press-office/2019/oct/16/guardian-media-group-becomes-first-major-news-organisation-to-become-a-b-corporation-and-pledges-to-reach-net-zero-emissions-by-2030"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
-            imagePath="./images/organisation-12.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-12.jpg"
+            linkUrl="https://www.theguardian.com/environment/ng-interactive/2020/oct/05/the-guardian-climate-pledge-2020-environment-emergency-carbon-emissions"
           />
         </div>
       </>
@@ -218,28 +224,28 @@ const HomePage = () => (
       <>
         <InnerText title="Our people" theme="light">
           <p>
-            The majority of our staff, around 90% of our workforce, are employed
-            in the UK, and we have growing operations in the US and Australia.
-            We value and respect all differences in all people, seen and unseen,
-            and aspire to an open, supportive and inclusive culture which makes
-            the Guardian a good place to work for everyone.
+            We value and respect all differences in people, seen and unseen, and
+            aspire to an open, supportive and inclusive culture which makes the
+            Guardian a good place to work for everyone. We have a global
+            workforce, with THE MAJORITY OF our staff in the UK and growing
+            operations in Australia and the US.
           </p>
         </InnerText>
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
-            title="GMG as a B Corporation"
-            imagePath="./images/organisation-14.png"
-            linkUrl="https://www.theguardian.com/uk"
+            title="Diversity, equity and inclusion"
+            imagePath="./images/organisation-14.jpg"
+            linkUrl="https://www.theguardian.com/about/2021/apr/30/diversity-equity-and-inclusion"
           />
           <ResponsiveCardVariant1
-            title="Our climate pledge"
-            imagePath="./images/organisation-15.png"
-            linkUrl="https://www.theguardian.com/uk"
+            title="Employee engagement"
+            imagePath="./images/organisation-15.jpg"
+            linkUrl="https://www.theguardian.com/about/2021/apr/30/employee-engagement"
           />
           <ResponsiveCardVariant1
-            title="Sustainable business report"
-            imagePath="./images/organisation-16.png"
-            linkUrl="https://www.theguardian.com/uk"
+            title="Work for us"
+            imagePath="./images/organisation-16.jpg"
+            linkUrl="https://workforus.theguardian.com/"
           />
         </div>
       </>
@@ -249,35 +255,37 @@ const HomePage = () => (
       background={{ backgroundColor: `${neutral[97]}` }}
     >
       <>
-        <InnerText title="Commercial" theme="light">
+        <InnerText title="Our revenue mix" theme="light">
           <p>
             GMG operates a diverse revenue model including reader revenues,
-            advertising, jobs advertising, licencing and philanthropic funding.
-            Revenue from readers now accounts for over 50% of GMG's annual
-            revenues.
+            advertising, jobs advertising, licensing and philanthropic funding.
+            We are increasingly global with growing commercial operations in the
+            US and Australia. Revenue from readers now accounts for over 50% of
+            GMG's annual revenue, with more than half of reader revenue coming
+            from readers outside the UK.
           </p>
         </InnerText>
         <DetailsAndImage
-          imageUrl="./images/organisation-17.png"
+          imageUrl="./images/organisation-17.jpg"
           title="Reader funding"
           bodyCopy="Readers can support the Guardian through a digital or print subscription, a recurring or single contribution or as a patron. Read more about our subscriptions:"
-          readMoreUrl="https://www.theguardian.com/"
+          readMoreUrl="https://support.theguardian.com/uk/subscribe?CMP=ppc_mem_&gclid=CjwKCAjw6fCCBhBNEiwAem5SOy61gdjmDXnbjnURNn2-xbO9vEeSd2xYypEw7Y4u9A-qu5-ZJ-ZehxoC41oQAvD_BwE"
         />
         <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Advertising"
-            imagePath="./images/organisation-18.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-18.jpg"
+            linkUrl="https://advertising.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Guardian Jobs"
-            imagePath="./images/organisation-19.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-19.jpg"
+            linkUrl="https://jobs.theguardian.com/"
           />
           <ResponsiveCardVariant1
             title="Philanthropic funding"
-            imagePath="./images/organisation-20.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-20.jpg"
+            linkUrl="https://www.theguardian.com/info/2018/oct/02/philanthropic-partnerships-at-the-guardian"
           />
         </div>
       </>
@@ -296,8 +304,8 @@ const HomePage = () => (
         <div css={singleColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian Foundation"
-            imagePath="./images/organisation-21.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/organisation-21.jpg"
+            linkUrl="https://theguardianfoundation.org/"
             alwaysImgOnLeft={true}
           />
         </div>

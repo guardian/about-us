@@ -99,7 +99,7 @@ const ReaderFundedPatronSupport = () => (
       bodyText="Read more about how to leave a legacy gift for the Guardian, and how
         to write us a cheque."
       buttonText="Read more"
-      buttonLink="tbc"
+      buttonLink="https://www.theguardian.com/media/2021/apr/26/how-support-send-guardian-cheque-patrons-legacy-will-gift"
     />
   </div>
 );

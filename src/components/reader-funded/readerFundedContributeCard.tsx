@@ -149,7 +149,7 @@ const ReaderFundedContributeCard = () => {
           icon={<SvgArrowRightStraight />}
           iconSide="right"
           nudgeIcon={true}
-          href="https://support.theguardian.com/uk/contribute"
+          href="https://support.theguardian.com/contribute"
           className="gridItem6"
         >
           Contribute

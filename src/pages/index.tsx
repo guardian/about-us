@@ -69,26 +69,29 @@ const HomePage = (): jsx.JSX.Element => (
       ]}
     />
     <HeaderQuote
-      quote="Since 1821 the mission of The Guardian has been to use clarity and imagination to build hope."
+      quote="Since 1821 the mission of the Guardian has been to use clarity and imagination to build hope."
       author="Katharine Viner, editor-in-chief"
     />
     <FullWidthText theme="light">
-      <p>
-        Guardian Media Group is a global news organisation that delivers{" "}
-        <span css={highlightedCss}>fearless, investigative journalism</span> -
-        giving a voice to the powerless and holding power to account.
-        <br />
-        Our independent ownership structure means we are entirely free from
-        political and commercial influence.{" "}
-        <span css={highlightedCss}>
-          Only our values determine the stories we choose to cover
-        </span>{" "}
-        – relentlessly and courageously.
-      </p>
+      <>
+        <p>
+          Guardian Media Group is a global news organisation that delivers{" "}
+          <span css={highlightedCss}>fearless, investigative journalism</span> -
+          giving a voice to the powerless and holding power to account.
+        </p>
+        <p>
+          Our independent ownership structure means we are entirely free from
+          political and commercial influence.{" "}
+          <span css={highlightedCss}>
+            Only our values determine the stories we choose to cover
+          </span>{" "}
+          – relentlessly and courageously.
+        </p>
+      </>
     </FullWidthText>
     <FullWidthImage
-      smallImageUrl="./images/front-page-full-width-small.png"
-      largeImageUrl="./images/front-page-full-width-large.png"
+      smallImageUrl="./images/front-page-full-width-small.jpg"
+      largeImageUrl="./images/front-page-full-width-large.jpg"
     />
     <BoxContainer
       theme="light"
@@ -118,23 +121,23 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="A mission for journalism: an essay by our editor"
-            imagePath="./images/front-page-2.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-2.jpg"
+            linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
           />
           <ResponsiveCardVariant1
             title="Guardian Media Group"
-            imagePath="./images/front-page-3.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-3.jpg"
+            linkUrl="https://www.theguardian.com/gmg"
           />
           <ResponsiveCardVariant1
             title="The Scott Trust and our values"
-            imagePath="./images/front-page-4.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-4.jpg"
+            linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
           />
           <ResponsiveCardVariant1
             title="CP Scott’s centenary essay - a blueprint for independent journalism"
-            imagePath="./images/front-page-5.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-5.jpg"
+            linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
           />
         </div>
         <LinkButton
@@ -177,7 +180,7 @@ const HomePage = (): jsx.JSX.Element => (
             }}
             title="Digital"
             bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
-            href="https://support.theguardian.com/uk/subscribe"
+            href="https://support.theguardian.com/subscribe/digital"
           />
           <ReaderFundedSubscribeCard
             imagePath={{
@@ -186,7 +189,7 @@ const HomePage = (): jsx.JSX.Element => (
             }}
             title="Print"
             bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
-            href="https://support.theguardian.com/uk/subscribe"
+            href="https://support.theguardian.com/subscribe/paper"
           />
           <ReaderFundedSubscribeCard
             imagePath={{
@@ -195,7 +198,7 @@ const HomePage = (): jsx.JSX.Element => (
             }}
             title="Guardian Weekly"
             bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
-            href="https://support.theguardian.com/uk/subscribe"
+            href="https://support.theguardian.com/subscribe/weekly"
           />
         </div>
         <h3 css={readerFundedHeadingCss()}>Make a contribution</h3>
@@ -226,7 +229,7 @@ const HomePage = (): jsx.JSX.Element => (
             </p>
             <p>
               Our teams in the UK, US and Australia produce theguardian.com,
-              Guardian Australia, Guardian US, Guardian Weekly, and The Guardian
+              Guardian Australia, Guardian US, Guardian Weekly, and the Guardian
               and Observer newspapers in the UK.
             </p>
           </>
@@ -234,14 +237,14 @@ const HomePage = (): jsx.JSX.Element => (
         <div css={twoColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="Guardian US"
-            imagePath="./images/front-page-11.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-11.jpg"
+            linkUrl="https://www.theguardian.com/info/about-guardian-us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
-            imagePath="./images/front-page-12.png"
-            linkUrl="https://www.theguardian.com/uk"
+            imagePath="./images/front-page-12.jpg"
+            linkUrl="https://www.theguardian.com/info/about-guardian-australia"
             linkText="Guardian Australia"
           />
         </div>
@@ -252,7 +255,7 @@ const HomePage = (): jsx.JSX.Element => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={LinkButtonCss}
-          href="https://www.theguardian.com/uk"
+          href="https://theguardian.com/about/journalism"
         >
           More on journalism
         </LinkButton>

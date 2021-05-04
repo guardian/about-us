@@ -36,7 +36,7 @@ const containerCss = css`
           ${brandAlt[400]} calc(12.44% + 2px),
           transparent 50%
         ),
-        url("./images/thrasher-paper-bg-tablet.png");
+        url("./images/thrasher-paper-bg-tablet.jpg");
       background-size: 100% 100%;
       margin-top: -4%;
     }
@@ -50,7 +50,7 @@ const containerCss = css`
         transparent calc(50% - 100px),
         transparent
       ),
-      url("./images/thrasher-paper-bg-desktop.png");
+      url("./images/thrasher-paper-bg-desktop.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left calc(50% + 520px) top;
@@ -64,9 +64,9 @@ const containerCss = css`
         transparent 35px,
         black 36px,
         transparent 37px,
-        transparent calc(100% - 37px),
-        black calc(100% - 36px),
-        transparent calc(100% - 35px)
+        transparent 397px,
+        black 398px,
+        transparent 399px
       );
     }
     &:after {
@@ -92,7 +92,7 @@ const innerContainerCss = css`
         ${brandAlt[400]} 10%,
         transparent 50%
       ),
-      url("./images/thrasher-paper-bg-mobile.png");
+      url("./images/thrasher-paper-bg-mobile.jpg");
     background-size: 100% 100%;
   }
   ${minWidth.tablet} {
@@ -125,18 +125,18 @@ const birthdayCopyHolderCss = css`
   background: linear-gradient(
     to bottom,
     transparent,
-    transparent 20.2%,
-    black calc(20.2% + 1px),
-    transparent calc(20.2% + 2px),
-    transparent 44.6%,
-    black calc(44.6% + 1px),
-    transparent calc(44.6% + 2px),
-    transparent 69%,
-    black calc(69% + 1px),
-    transparent calc(69% + 2px),
-    transparent 93.4%,
-    black calc(93.4% + 1px),
-    transparent calc(93.4% + 2px)
+    transparent 47px,
+    black 48px,
+    transparent 49px,
+    transparent 104px,
+    black 105px,
+    transparent 106px,
+    transparent 161px,
+    black 162px,
+    transparent 163px,
+    transparent 218px,
+    black 219px,
+    transparent 220px
   );
   padding: 0 ${space[6]}px;
   height: max-content;
@@ -215,9 +215,9 @@ const Thrasher = () => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={linkButtonCssOverides}
-          href="https://www.theguardian.com/uk"
+          href="https://www.theguardian.com/p/h883d"
         >
-          More on the Guardian 200
+          Read more
         </LinkButton>
       </div>
     </div>

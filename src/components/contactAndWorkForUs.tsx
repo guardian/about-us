@@ -79,12 +79,12 @@ const ContactAndWorkForUs = () => {
       <div css={contactAndWorkForUsCss}>
         <ContactSectionItem
           title="Contact us"
-          body="Find out how to get in touch with The Guardian."
+          body="Find out how to get in touch with the Guardian."
           href="https://www.theguardian.com/help/contact-us"
         />
         <ContactSectionItem
           title="Work for us"
-          body="Search for jobs at The Guardian and apply. "
+          body="Search for jobs at the Guardian and apply. "
           href="https://workforus.theguardian.com/"
         />
       </div>
