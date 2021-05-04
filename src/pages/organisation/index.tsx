@@ -53,7 +53,6 @@ const guardianFoundationBkg = {
 const HomePage = () => (
   <>
     <PageStyles />
-
     <Header
       navSections={[
         {
@@ -78,7 +77,6 @@ const HomePage = () => (
         },
       ]}
     />
-
     <FullWidthText theme="dark" title="Our organisation">
       <>
         <p>
