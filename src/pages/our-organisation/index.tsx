@@ -154,7 +154,7 @@ const HomePage = () => (
               job: "chief executive",
               organisation: "Guardian Media Group",
             }}
-            bodyCopy="Annette Thomas was appointed chief executive of Guardian Media Group in 2020. She reports into the Guardian Media Group board. As chief executive she also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
+            bodyCopy="Annette Thomas is the chief executive of Guardian Media Group. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
           />
         </div>
         <DetailsAndImage
@@ -195,6 +195,12 @@ const HomePage = () => (
               a B Corporation, and made a climate pledge to our readers
               committing to reach net zero carbon emissions by 2030.
             </p>
+            <p>
+              In 2020 we announced we will no longer accept advertising from oil
+              and gas companies, becoming the first major global news
+              organisation to stop accepting money from companies that extract
+              fossil fuels.
+            </p>
           </>
         </InnerText>
         <div css={twoColumnResponsiveCardHolder}>
@@ -218,11 +224,11 @@ const HomePage = () => (
       <>
         <InnerText title="Our people" theme="light">
           <p>
-            The majority of our staff, around 90% of our workforce, are employed
-            in the UK, and we have growing operations in the US and Australia.
-            We value and respect all differences in all people, seen and unseen,
-            and aspire to an open, supportive and inclusive culture which makes
-            the Guardian a good place to work for everyone.
+            We value and respect all differences in people, seen and unseen, and
+            aspire to an open, supportive and inclusive culture which makes the
+            Guardian a good place to work for everyone. We have a global
+            workforce, with THE MAJORITY OF our staff in the UK and growing
+            operations in Australia and the US.
           </p>
         </InnerText>
         <div css={threeColumnResponsiveCardHolder}>
@@ -253,8 +259,10 @@ const HomePage = () => (
           <p>
             GMG operates a diverse revenue model including reader revenues,
             advertising, jobs advertising, licensing and philanthropic funding.
-            Revenue from readers now accounts for over 50% of GMG's annual
-            revenues.
+            We are increasingly global with growing commercial operations in the
+            US and Australia. Revenue from readers now accounts for over 50% of
+            GMG's annual revenue, with more than half of reader revenue coming
+            from readers outside the UK.
           </p>
         </InnerText>
         <DetailsAndImage
