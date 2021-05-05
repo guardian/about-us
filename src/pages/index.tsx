@@ -147,7 +147,7 @@ const HomePage = (): jsx.JSX.Element => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={LinkButtonCss}
-          href="https://www.theguardian.com/uk"
+          href="https://www.theguardian.com/about/organisation"
         >
           More on our organisation
         </LinkButton>
@@ -238,13 +238,13 @@ const HomePage = (): jsx.JSX.Element => (
           <ResponsiveCardVariant1
             title="Guardian US"
             imagePath="/about/images/front-page-11.jpg"
-            linkUrl="https://www.theguardian.com/info/about-guardian-us"
+            linkUrl="https://www.theguardian.com/us"
             linkText="Visit Guardian US"
           />
           <ResponsiveCardVariant1
             title="Guardian Australia"
             imagePath="/about/images/front-page-12.jpg"
-            linkUrl="https://www.theguardian.com/info/about-guardian-australia"
+            linkUrl="https://www.theguardian.com/au"
             linkText="Guardian Australia"
           />
         </div>
