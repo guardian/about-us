@@ -16,6 +16,7 @@ import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import dynamic from 'next/dynamic';
 import Head from "next/head";
+import 'ophan-tracker-js';
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
