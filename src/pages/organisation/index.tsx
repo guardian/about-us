@@ -25,6 +25,7 @@ import {
 } from "../../components/leadershipProfile";
 import { DetailsAndImage } from "../../components/detailsAndImage";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -52,6 +53,9 @@ const guardianFoundationBkg = {
 
 const HomePage = () => (
   <>
+    <Head>
+      <title>About our organisation | The Guardian</title>
+    </Head>
     <PageStyles />
     <Header
       navSections={[

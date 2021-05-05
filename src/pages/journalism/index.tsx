@@ -19,6 +19,7 @@ import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import ResponsiveCardVariant2 from "../../components/responsiveCardVariant2";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -32,6 +33,9 @@ const gotAStoryBkg = {
 
 const JournalismPage = () => (
   <>
+    <Head>
+      <title>About our journalism | The Guardian</title>
+    </Head>
     <PageStyles />
     <Header
       navSections={[
