@@ -26,7 +26,6 @@ import {
 import { DetailsAndImage } from "../../components/detailsAndImage";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import 'ophan-tracker-js';
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,

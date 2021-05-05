@@ -10,6 +10,7 @@ import { SyntheticEvent } from "react";
 import { ThemeProvider, css, jsx } from "@emotion/react";
 import { cmp } from "@guardian/consent-management-platform";
 import { getGeoLocation } from "./getLocationCookie";
+import 'ophan-tracker-js';
 
 const TODAY = new Date();
 

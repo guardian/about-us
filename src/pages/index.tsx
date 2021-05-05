@@ -27,7 +27,6 @@ import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
 import dynamic from "next/dynamic";
 import Head from 'next/head';
-import 'ophan-tracker-js';
 
 const Footer = dynamic(() => import("../components/footer/footer"), {
   ssr: false,
