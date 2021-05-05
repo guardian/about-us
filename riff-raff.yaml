@@ -8,5 +8,4 @@ deployments:
     parameters:
       bucket: gu-about-us
       prefixStack: false
-      cacheControl: public, max-age=60
-      surrogateControl: max-age=900
+      cacheControl: public, max-age=900
