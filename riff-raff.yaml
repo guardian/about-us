@@ -8,4 +8,4 @@ deployments:
     parameters:
       bucket: gu-about-us
       prefixStack: false
-      cacheControl: no-cache
+      cacheControl: public, max-age=300
