@@ -15,6 +15,7 @@ import {
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import dynamic from 'next/dynamic';
+import Head from "next/head";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -28,6 +29,9 @@ const scottTrustBkg = {
 
 const OurHistory = () => (
   <>
+    <Head>
+      <title>About our history | The Guardian</title>
+    </Head>
     <PageStyles />
     <Header
       navSections={[

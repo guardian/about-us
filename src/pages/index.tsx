@@ -26,6 +26,7 @@ import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
 import dynamic from "next/dynamic";
+import Head from 'next/head';
 
 const Footer = dynamic(() => import("../components/footer/footer"), {
   ssr: false,
@@ -43,6 +44,9 @@ const LinkButtonCss = css`
 
 const HomePage = (): jsx.JSX.Element => (
   <>
+    <Head>
+      <title>About us | The Guardian</title>
+    </Head>
     <PageStyles />
     <Header
       navSections={[
