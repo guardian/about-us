@@ -147,7 +147,7 @@ const HomePage = (): jsx.JSX.Element => (
           iconSide="right"
           nudgeIcon={true}
           cssOverrides={LinkButtonCss}
-          href="https://www.theguardian.com/uk"
+          href="https://www.theguardian.com/about/organisation"
         >
           More on our organisation
         </LinkButton>
