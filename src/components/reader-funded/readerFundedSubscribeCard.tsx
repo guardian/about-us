@@ -45,13 +45,14 @@ const pCss = css`
 
 const cardContainerCss = css`
   display: grid;
+  display: -ms-grid;
   grid-auto-columns: 2fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
   grid-template-areas: "text image";
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
@@ -67,6 +68,7 @@ const textAndLinkButtonCss = css`
   flex: 0 0 60%;
   padding-right: ${space[3]}px;
   grid-area: text;
+  justify-content: space-between;
   ${minWidth.tablet} {
     padding-right: 0;
     border-top: none;
