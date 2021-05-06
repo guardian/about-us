@@ -163,6 +163,7 @@ export const singleColumnResponsiveCardHolder = css`
 
 export const readerFundedSubscribeCardHolderCss = css`
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 41px;
@@ -172,6 +173,7 @@ export const readerFundedSubscribeCardHolderCss = css`
     ".";
   ${minWidth.tablet} {
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
