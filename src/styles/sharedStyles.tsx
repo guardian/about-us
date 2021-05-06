@@ -162,12 +162,10 @@ export const singleColumnResponsiveCardHolder = css`
 `;
 
 export const readerFundedSubscribeCardHolderCss = css`
-  border-top: 1px solid ${neutral[86]};
-  margin: 40px 0 0;
   display: flex;
   flex-direction: column;
-  & > * {
-    margin-top: ${space[3]}px;
+  & > *:not(:last-child) {
+    margin-bottom: 41px;
   }
   ${minWidth.tablet} {
     flex-direction: row;
@@ -176,7 +174,6 @@ export const readerFundedSubscribeCardHolderCss = css`
     & > * {
       width: 33.3%;
       width: calc(33.3% - 13px);
-      margin-top: ${space[5]}px;
     }
   }
 `;

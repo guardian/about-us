@@ -44,20 +44,12 @@ const pCss = css`
 `;
 
 const cardContainerCss = css`
-  display: grid;
-  display: -ms-grid;
-  grid-auto-columns: 2fr 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "text image";
+  display: flex;
+  flex-direction: row-reverse;
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "."
-      ".";
+    display: flex;
+    flex-direction: column;
     border-top: none;
   }
 `;
@@ -67,11 +59,9 @@ const textAndLinkButtonCss = css`
   flex-direction: column;
   flex: 0 0 60%;
   padding-right: ${space[3]}px;
-  grid-area: text;
   ${minWidth.tablet} {
     padding-right: 0;
     border-top: none;
-    grid-area: auto;
   }
 `;
 
@@ -86,7 +76,7 @@ const linkButtonCss = css`
 const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
   const cardImageCss = css`
     width: 100%;
-    padding-top: 140.54%;
+    padding-top: 50%;
     background-image: url(${props.imagePath.mobile});
     background-size: contain;
     background-position: right top;
