@@ -57,7 +57,6 @@ const cardContainerCss = css`
 const textAndLinkButtonCss = css`
   display: flex;
   flex-direction: column;
-  flex: 0 0 60%;
   padding-right: ${space[3]}px;
   ${minWidth.tablet} {
     padding-right: 0;
@@ -81,11 +80,9 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
-    height: 100%;
     margin: 10.5px -${space[3]}px auto auto;
-    flex: 0 0 40%;
     ${minWidth.tablet} {
-      margin: auto;
+      margin: 0 auto;
       padding-top: 61%;
       background-size: cover;
       background-image: url(${props.imagePath.tabletAndAbove});
