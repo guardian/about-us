@@ -206,7 +206,7 @@ const HomePage = (): jsx.JSX.Element => (
           />
         </div>
         <h3 css={readerFundedHeadingCss()}>Make a contribution</h3>
-        <ReaderFundedContributeCard />
+        {/* <ReaderFundedContributeCard /> */}
         <ReaderFundedPatronSupport />
       </>
     </BoxContainer>
