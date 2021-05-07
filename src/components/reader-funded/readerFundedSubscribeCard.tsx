@@ -121,7 +121,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
             href={props.href}
             css={linkButtonCss}
           >
-            Read More
+            Read more
           </LinkButton>
         </ThemeProvider>
       </div>
