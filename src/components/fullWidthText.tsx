@@ -21,6 +21,7 @@ interface FullWidthTextProps {
 
 export const highlightedCss = css`
   background-color: ${brandAlt[400]};
+  padding: 0 2px 2px 2px;
 `;
 
 const FullWidthText = (props: FullWidthTextProps) => {
