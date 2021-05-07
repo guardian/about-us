@@ -231,7 +231,7 @@ const HomePage = () => (
             We value and respect all differences in people, seen and unseen, and
             aspire to an open, supportive and inclusive culture which makes the
             Guardian a good place to work for everyone. We have a global
-            workforce, with THE MAJORITY OF our staff in the UK and growing
+            workforce, with the majority of our staff in the UK and growing
             operations in Australia and the US.
           </p>
         </InnerText>
