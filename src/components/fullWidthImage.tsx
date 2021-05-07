@@ -19,6 +19,7 @@ const FullWidthImage = ({
 }: FullWidthImageProps) => {
   const imageHolderCss = css`
     max-width: 1920px;
+    max-height: 720px;
     margin: 0 auto;
   `;
 
