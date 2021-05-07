@@ -54,7 +54,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     margin-right: ${space[5]}px;
   `;
   const titleCss = css`
-    ${headline.xxxsmall({ fontWeight: "bold" })};
+    ${headline.xxxsmall()};
     color: ${brand[400]};
     border-top: 1px solid ${neutral[86]};
     display: inline-block;
@@ -77,7 +77,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     <figure css={containerCss}>
       <img src={props.imageUrl} css={profileImgCss} />
       <figcaption css={titleCss}>
-        {props.title.name},<br />
+        <strong>{props.title.name},</strong><br />
         {props.title.job},<br />
         {props.title.organisation}
       </figcaption>
