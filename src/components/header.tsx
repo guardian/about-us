@@ -229,11 +229,25 @@ const hiddenCheckboxStyle = css`
   width: ${mobileOpenCloseBtnSize}px;
   height: ${mobileOpenCloseBtnSize}px;
   position: absolute;
-  right: 10px;
-  bottom: 5px;
+  right: 6px;
+  bottom: 2px;
   z-index: 10;
+  &:checked {
+    position: fixed;
+    right: 6px;
+    top: 19px;
+    bottom: auto;
+  }
   ${minWidth.headerTablet} {
     display: none;
+  }
+`;
+
+const mobileNavYOverflow = css`
+  height: 100vh;
+  overflow-y: auto;
+  ${minWidth.headerTablet} {
+    height: auto;
   }
 `;
 
@@ -244,27 +258,31 @@ const Header = (props: HeaderProps) => (
     </div>
     <input type="checkbox" css={hiddenCheckboxStyle} />
     <div className="top-and-bottom-nav">
-      <nav>
-        {props.navSections.map((navItem, navItemIndex) => (
-          <a
-            href={navItem.link}
-            {...(navItem.isSelected ? { className: "selected-nav-item" } : {})}
-            key={`nav-${navItemIndex}`}
-          >
-            {navItem.title}
+      <div css={mobileNavYOverflow}>
+        <nav>
+          {props.navSections.map((navItem, navItemIndex) => (
+            <a
+              href={navItem.link}
+              {...(navItem.isSelected
+                ? { className: "selected-nav-item" }
+                : {})}
+              key={`nav-${navItemIndex}`}
+            >
+              {navItem.title}
+            </a>
+          ))}
+        </nav>
+        <nav>
+          <a href="https://www.theguardian.com/gnm-press-office">
+            Guardian press office
           </a>
-        ))}
-      </nav>
-      <nav>
-        <a href="https://www.theguardian.com/gnm-press-office">
-          Guardian press office
-        </a>
-        <a href="https://www.theguardian.com/the-guardian-foundation">
-          Guardian foundation
-        </a>
-        <a href="https://workforus.theguardian.com/">Work for us</a>
-        <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
-      </nav>
+          <a href="https://www.theguardian.com/the-guardian-foundation">
+            Guardian foundation
+          </a>
+          <a href="https://workforus.theguardian.com/">Work for us</a>
+          <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
+        </nav>
+      </div>
     </div>
   </header>
 );
