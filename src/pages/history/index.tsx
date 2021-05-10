@@ -14,7 +14,7 @@ import {
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 import Head from "next/head";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
@@ -57,7 +57,7 @@ const OurHistory = () => (
         },
       ]}
     />
-    <FullWidthText theme="dark" title="Our History">
+    <FullWidthText theme="dark" title="Our history">
       <>
         <p>
           The Manchester Guardian was founded to promote the liberal interest in
