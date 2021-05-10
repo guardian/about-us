@@ -20,6 +20,9 @@ const sectionContainerCss = css`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
+  ${minWidth.tablet} {
+    width: calc(50% - 10px);
+  }
 `;
 
 const h3Css = css`
@@ -45,7 +48,7 @@ const linkButtonCss = css`
 
 const PatronSupportSection = (props: PatronSupportSectionProps) => {
   return (
-    <div css={sectionContainerCss}>
+    <div css={sectionContainerCss} className="patronSupportSection">
       <div className={"text"}>
         <h3 css={h3Css}>{props.title}</h3>
         <p css={pCss}>{props.bodyText}</p>
@@ -71,11 +74,16 @@ const PatronSupportSection = (props: PatronSupportSectionProps) => {
 const containerCss = css`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 41px;
-  gap: 41px;
+  & .patronSupportSection + .patronSupportSection {
+    margin-top: 41px;
+  }
   ${minWidth.tablet} {
     flex-direction: row;
-    gap: ${space[5]}px;
+    & .patronSupportSection + .patronSupportSection {
+      margin-top: 0;
+    }
     margin-top: 49px;
   }
   ${minWidth.desktop} {

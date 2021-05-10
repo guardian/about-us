@@ -162,20 +162,19 @@ export const singleColumnResponsiveCardHolder = css`
 `;
 
 export const readerFundedSubscribeCardHolderCss = css`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 41px;
-  grid-template-areas:
-    "."
-    "."
-    ".";
+  display: flex;
+  flex-direction: column;
+  & > *:not(:last-child) {
+    margin-bottom: 41px;
+  }
   ${minWidth.tablet} {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    grid-template-areas: ". . .";
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+    }
   }
 `;
 
