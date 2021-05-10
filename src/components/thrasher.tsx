@@ -64,9 +64,9 @@ const containerCss = css`
         transparent 35px,
         black 36px,
         transparent 37px,
-        transparent 397px,
-        black 398px,
-        transparent 399px
+        transparent 395px,
+        black 396px,
+        transparent 397px
       );
     }
     &:after {
@@ -74,7 +74,7 @@ const containerCss = css`
     }
   }
   ${minWidth.wide} {
-    background-position: left calc(50% + 360px) top;
+    background-position: left calc(50% + 450px) top;
   }
 `;
 
@@ -146,7 +146,7 @@ const birthdayCopyHolderCss = css`
     &:after {
       content: "";
       position: absolute;
-      bottom: ${space[3]}px;
+      bottom: ${space[2]}px;
       left: ${space[3]}px;
       width: 146px;
       height: 50px;
