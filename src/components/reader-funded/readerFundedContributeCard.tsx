@@ -40,20 +40,13 @@ const pCss = css`
 
 const cardImageDesktopCss = css`
   display: none;
-  width: 100%;
-  padding-top: 140.54%;
-  background-image: url("/about/images/front-page-10-mobile.png");
-  height: 100%;
-  margin: 10.5px -${space[3]}px auto auto;
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
   ${minWidth.tablet} {
     display: block;
     height: 80%;
     width: 33%;
     margin: auto -12px auto auto;
     padding-top: 20%;
+    background-size: contain;
     background-position: right center;
     background-image: url("/about/images/front-page-10-desktop.png");
     background-repeat: no-repeat;
