@@ -47,12 +47,13 @@ const innerContainerCss = css`
       fontWeight: "regular",
       lineHeight: "loose",
     })};
-    margin: ${space[9]}px 0;
+    margin: ${space[6]}px 0;
     &:before {
       content: "";
       display: block;
-      width: 50%;
+      width: 30%;
       height: 1px;
+      margin-bottom: ${space[1]}px;
       background-color: ${neutral[7]};
     }
   }
@@ -60,13 +61,16 @@ const innerContainerCss = css`
   ${minWidth.tablet} {
     max-width: ${namedBreakpoints.tablet}px;
     & article {
-      width: 50%;
+      width: 40%;
+      margin-top: 10px;
+      margin-bottom: ${space[3]}px;
     }
     & article h2 {
       font-size: 35px;
       margin: 0;
     }
     & article p {
+      font-size: 15px;
       margin: ${space[6]}px 0 ${space[5]}px;
     }
   }
@@ -74,9 +78,12 @@ const innerContainerCss = css`
     max-width: ${namedBreakpoints.desktop}px;
     & article {
       width: calc(50% - 77px);
+      padding-right: 75px;
+      margin-top: 0;
     }
     & article p {
       margin: ${space[6]}px 0;
+      font-size: 17px;
     }
     & article h2 {
       font-size: 50px;
@@ -87,6 +94,7 @@ const innerContainerCss = css`
     & article {
       width: calc(50% - 82px);
       padding-right: 185px;
+      margin-top: ${space[9]}px;
     }
   }
 `;
@@ -97,8 +105,14 @@ const imageContainerCss = css`
     height: auto;
   }
   ${minWidth.tablet} {
-    width: calc(50% - 50px);
+    width: calc(60% - 40px);
     max-width: 543px;
+    & img {
+      height: 100%;
+    }
+  }
+  ${minWidth.desktop} {
+    width: calc(50% - 40px);
   }
   ${minWidth.wide} {
     width: calc(50% - 82px);
