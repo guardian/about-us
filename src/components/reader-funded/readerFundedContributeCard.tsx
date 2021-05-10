@@ -61,7 +61,7 @@ const cardImageMobileCss = css`
   padding-top: 50%;
   background-image: url("/about/images/front-page-10-mobile.png");
   height: 100%;
-  margin: 10.5px -${space[3]}px auto auto;
+  margin: 11px -${space[3]}px auto auto;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
@@ -71,14 +71,13 @@ const cardImageMobileCss = css`
   }
 `;
 
-const containerCss = css`
+const innerContainerCss = css`
   display: flex;
   flex-direction: column;
   padding-right: ${space[3]}px;
   ${minWidth.tablet} {
     padding-right: 0;
     flex-direction: row;
-    border-top: none;
     width: 100%;
   }
 `;
@@ -103,25 +102,21 @@ const titleAndButtonDesktop = css`
   }
 `;
 
-const mobileFlexContainerCss = css`
+const outerContainerCss = css`
   display: flex;
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
-    display: "block";
+    display: block;
     border-top: none;
   }
 `;
 
 const ReaderFundedContributeCard = () => {
   return (
-    <div css={mobileFlexContainerCss}>
-      <div css={containerCss}>
-        <div className="gridItem5" css={titleAndButtonDesktop}>
-          <a
-            className="gridItem1"
-            css={aCss}
-            href="https://support.theguardian.com/contribute"
-          >
+    <div css={outerContainerCss}>
+      <div css={innerContainerCss}>
+        <div css={titleAndButtonDesktop}>
+          <a css={aCss} href="https://support.theguardian.com/contribute">
             <h3 css={h3Css}>Show your support as often as you like</h3>
           </a>
           <ThemeProvider theme={buttonReaderRevenue}>
@@ -137,7 +132,7 @@ const ReaderFundedContributeCard = () => {
             </LinkButton>
           </ThemeProvider>
         </div>
-        <p className="gridItem2" css={pCss}>
+        <p css={pCss}>
           Choose to give once from $1, £1 or €1, or set up a recurring
           contribution to support us each month or year.
         </p>
@@ -153,9 +148,9 @@ const ReaderFundedContributeCard = () => {
             Contribute
           </LinkButton>
         </ThemeProvider>
-        <div css={cardImageDesktopCss} className="gridItem4" />
+        <div css={cardImageDesktopCss} />
       </div>
-      <div css={cardImageMobileCss} className="gridItem4" />
+      <div css={cardImageMobileCss} />
     </div>
   );
 };

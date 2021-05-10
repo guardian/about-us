@@ -48,7 +48,6 @@ const cardContainerCss = css`
   flex-direction: row-reverse;
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
-    display: flex;
     flex-direction: column;
     border-top: none;
   }
