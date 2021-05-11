@@ -6,8 +6,8 @@ About pages for theguardian.com.
 
 - [Next](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org)
-- [Emotion](https://emotion.sh)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Emotion](https://emotion.sh/)
 
 #### One-off setup
 
