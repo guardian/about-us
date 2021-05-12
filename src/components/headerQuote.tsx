@@ -72,7 +72,7 @@ const quotationMarkCss = css`
     height: 52px;
     width: 78px;
     margin-right: 10px;
-    padding-top: 2px;
+    padding-top: 3px;
     margin-top: 1px;
   }
   ${minWidth.wide} {
@@ -80,24 +80,24 @@ const quotationMarkCss = css`
     width: 83px;
     position: absolute;
     left: 140px;
-    top: 110px;
+    top: 75px;
   }
 `;
 
 const quoteDivCss = css`
-  padding: 27px ${space[6]}px 44px;
+  padding: 27px ${space[6]}px 50px;
   position: relative;
   ${minWidth.tablet} {
-    padding: 45px ${space[5]}px;
+    padding: 40px ${space[5]}px 60px;
     margin: 0 auto;
     width: ${namedBreakpoints.tablet}px;
   }
   ${minWidth.desktop} {
-    padding: 95px 80px;
+    padding: 60px 80px 101px;
     width: ${namedBreakpoints.desktop}px;
   }
   ${minWidth.wide} {
-    padding: 95px 72px 95px 239px;
+    padding: 60px 72px 101px 239px;
     width: ${namedBreakpoints.wide}px;
   }
 `;
@@ -111,11 +111,11 @@ const citeCss = css`
   })}
   ${minWidth.tablet} {
     font-size: 30px;
-    margin-top: ${space[3]}px;
+    margin-top: ${space[2]}px;
   }
   ${minWidth.desktop} {
     font-size: 35px;
-    margin-top: ${space[5]}px;
+    margin-top: ${space[3]}px;
   }
 `;
 

@@ -44,19 +44,11 @@ const pCss = css`
 `;
 
 const cardContainerCss = css`
-  display: grid;
-  grid-auto-columns: 2fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "text image";
+  display: flex;
+  flex-direction: row-reverse;
   border-top: 1px solid #90abc4;
   ${minWidth.tablet} {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "."
-      ".";
+    flex-direction: column;
     border-top: none;
   }
 `;
@@ -64,13 +56,10 @@ const cardContainerCss = css`
 const textAndLinkButtonCss = css`
   display: flex;
   flex-direction: column;
-  flex: 0 0 60%;
   padding-right: ${space[3]}px;
-  grid-area: text;
   ${minWidth.tablet} {
     padding-right: 0;
     border-top: none;
-    grid-area: auto;
   }
 `;
 
@@ -85,16 +74,14 @@ const linkButtonCss = css`
 const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
   const cardImageCss = css`
     width: 100%;
-    padding-top: 140.54%;
+    padding-top: 50%;
     background-image: url(${props.imagePath.mobile});
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
-    height: 100%;
     margin: 10.5px -${space[3]}px auto auto;
-    flex: 0 0 40%;
     ${minWidth.tablet} {
-      margin: auto;
+      margin: 0 auto;
       padding-top: 61%;
       background-size: cover;
       background-image: url(${props.imagePath.tabletAndAbove});
@@ -121,7 +108,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
             href={props.href}
             css={linkButtonCss}
           >
-            Read More
+            Read more
           </LinkButton>
         </ThemeProvider>
       </div>

@@ -1,9 +1,12 @@
 let assetPrefix = "";
+let basePath = "/about";
+
 if (process.env.TEAMCITY_BRANCH === "main") {
   assetPrefix = "/about";
 } else if (process.env.TEAMCITY_BRANCH) {
   assetPrefix =
     "https://gu-about-us.s3-eu-west-1.amazonaws.com/CODE/gu-about-us-upload/about";
+  basePath = "/CODE/gu-about-us-upload/about";
 }
 
 const withTM = require("next-transpile-modules")([
@@ -13,5 +16,5 @@ const withTM = require("next-transpile-modules")([
 
 module.exports = withTM({
   assetPrefix,
-  basePath: "/about",
+  basePath,
 });
