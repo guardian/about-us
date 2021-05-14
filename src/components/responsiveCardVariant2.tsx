@@ -27,9 +27,7 @@ const ResponsiveCardVariant2 = (props: ResponsiveCardVariant2Props) => {
     text-decoration: none;
     display: block;
     width: 100%;
-    padding: ${space[2]}px;
     ${minWidth.tablet} {
-      padding: ${space[3]}px;
     }
   `;
   const titleCss = css`
@@ -37,9 +35,12 @@ const ResponsiveCardVariant2 = (props: ResponsiveCardVariant2Props) => {
     font-size: 16px;
     color: ${brand[400]};
     margin: 0;
-    height: 3em;
+    height: calc(3em + ${space[2]}px);
+    padding: ${space[2]}px;
     ${minWidth.tablet} {
       font-size: 18px;
+      padding: ${space[3]}px;
+      height: calc(3em + ${space[3]}px);
     }
     ${minWidth.desktop} {
       font-size: 24px;
@@ -48,8 +49,8 @@ const ResponsiveCardVariant2 = (props: ResponsiveCardVariant2Props) => {
 
   return (
     <div css={containerCss}>
-      <img src={props.imageUrl} css={imageCss} />
       <a href={props.href} css={linkCss}>
+        <img src={props.imageUrl} css={imageCss} />
         <h2 css={titleCss}>{props.title}</h2>
       </a>
     </div>

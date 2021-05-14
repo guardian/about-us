@@ -200,6 +200,10 @@ export const responsiveCardV2Holder = css`
     margin-top: ${space[3]}px;
     width: 50%;
     width: calc(50% - 6px);
+    & :hover {
+      background-color: #e5e5e5;
+      transition: 0.3s ease-in-out;
+    }
   }
   ${minWidth.tablet} {
     & > * {
