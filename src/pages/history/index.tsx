@@ -16,6 +16,7 @@ import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import UnfinishedBusinessThrasher from "../../components/unfinishedBusinessThrasher";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -82,6 +83,7 @@ const OurHistory = () => (
       theme="light"
       background={{ backgroundColor: `${neutral[97]}` }}
       overlapTop={true}
+      paddingBottom={true}
     >
       <>
         <h2 css={headingCss}>Read more</h2>
@@ -105,6 +107,7 @@ const OurHistory = () => (
         </div>
       </>
     </BoxContainer>
+    <UnfinishedBusinessThrasher />
     <BoxContainer theme="light" background={scottTrustBkg}>
       <>
         <h2 css={headingCss}>The Scott Trust</h2>
