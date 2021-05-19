@@ -33,6 +33,8 @@ tags
 tags.lock
 tags.temp
 
+# DS_STORE
+.DS_Store
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
