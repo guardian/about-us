@@ -194,7 +194,7 @@ const linkButtonCssOverides = css`
   }
 `;
 
-const Thrasher = () => (
+const BirthdayThrasher = () => (
   <div css={containerCss}>
     <div css={innerContainerCss}>
       <div css={birthdayCopyHolderCss}>
@@ -224,4 +224,4 @@ const Thrasher = () => (
   </div>
 );
 
-export default Thrasher;
+export default BirthdayThrasher;

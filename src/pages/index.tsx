@@ -21,7 +21,7 @@ import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
-import Thrasher from "../components/thrasher";
+import BirthdayThrasher from "../components/birthdayThrasher";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
@@ -157,7 +157,7 @@ const HomePage = (): jsx.JSX.Element => (
         </LinkButton>
       </>
     </BoxContainer>
-    <Thrasher />
+    <BirthdayThrasher />
     <BoxContainer
       theme="dark"
       background={{ backgroundColor: `${neutral[97]}` }}
