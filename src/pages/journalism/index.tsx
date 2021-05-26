@@ -100,9 +100,9 @@ const JournalismPage = () => (
             linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
           />
           <ResponsiveCardVariant1
-            title="How the Guardian covered 2020"
+            title="Times change but the Guardian's values don't"
             imagePath="/about/images/journalism-4.jpg"
-            linkUrl="https://www.theguardian.com/info/ng-interactive/2020/dec/21/the-guardian-in-2020"
+            linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
           />
           <ResponsiveCardVariant1
             title="How the Guardian is editorially independent"
