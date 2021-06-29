@@ -50,16 +50,30 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     vertical-align: top;
     width: 94px;
     height: 94px;
+    ${minWidth.wide} {
+      width: 135px;
+      height: 135px;
+    }
     border-radius: 50%;
     margin-right: ${space[5]}px;
   `;
   const titleCss = css`
     ${headline.xxxsmall()};
+    font-size: 16px;
+    ${minWidth.tablet} {
+      font-size: 18px;
+    }
+    ${minWidth.wide} {
+      font-size: 24px;
+    }
     color: ${brand[400]};
     border-top: 1px solid ${neutral[86]};
     display: inline-block;
     vertical-align: top;
     width: calc(100% - 114px);
+    ${minWidth.wide} {
+      width: calc(100% - 165px);
+    }
     padding-top: ${space[1]}px;
     margin: ${space[5]}px 0 0 auto;
   `;
