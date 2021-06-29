@@ -45,6 +45,7 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
     ${minWidth.tablet} {
       width: 50%;
       width: calc(50% - 10px);
+      margin: 0;
     }
     ${minWidth.wide} {
       width: calc(50% - 29px);

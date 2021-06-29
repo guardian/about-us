@@ -18,7 +18,7 @@ export const headingCss = css`
   }
   ${minWidth.desktop} {
     font-size: 50px;
-    margin: 8px 0 27px 0;
+    margin: 0 0 27px;
   }
 `;
 
