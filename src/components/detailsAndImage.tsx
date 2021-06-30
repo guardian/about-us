@@ -45,6 +45,7 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
     ${minWidth.tablet} {
       width: 50%;
       width: calc(50% - 10px);
+      margin: 0;
     }
     ${minWidth.wide} {
       width: calc(50% - 29px);
@@ -54,6 +55,13 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
     ${headline.xxxsmall({ fontWeight: "bold" })};
     color: ${brand[400]};
     margin: 0 0 ${space[3]}px;
+    font-size: 16px;
+    ${minWidth.tablet} {
+      font-size: 18px;
+    }
+    ${minWidth.desktop} {
+      font-size: 24px;
+    }
   `;
   const bodyCopyCss = css`
     ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
@@ -65,7 +73,7 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
 
   return (
     <figure css={containerCss}>
-      <img src={props.imageUrl} css={profileImgCss} />
+      <img src={props.imageUrl} css={profileImgCss} loading="lazy" />
       <figcaption css={figcationCss}>
         <h2 css={titleCss}>{props.title}</h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>

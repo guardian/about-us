@@ -367,14 +367,17 @@ const UnfinishedBusinessThrasher = () => {
           <img
             src="/about/images/unfinished-business-part1.svg"
             css={titlePart1Css}
+            loading="lazy"
           />
           <img
             src="/about/images/unfinished-business-part2.svg"
             css={titlePart2Css}
+            loading="lazy"
           />
           <img
             src="/about/images/unfinished-business-part3.svg"
             css={titlePart3Css}
+            loading="lazy"
           />
           <p css={pCss}>
             From a regional weekly that sold 1,000 copies to a global media

@@ -45,23 +45,37 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
   const containerCss = css`
     margin: 0;
   `;
+  const imageAndTitleContainer = css`
+    display: flex;
+    align-items: center;
+  `;
   const profileImgCss = css`
-    display: inline-block;
-    vertical-align: top;
     width: 94px;
     height: 94px;
+    ${minWidth.wide} {
+      width: 135px;
+      height: 135px;
+    }
     border-radius: 50%;
     margin-right: ${space[5]}px;
   `;
   const titleCss = css`
     ${headline.xxxsmall()};
+    font-size: 16px;
+    ${minWidth.tablet} {
+      font-size: 18px;
+    }
+    ${minWidth.wide} {
+      font-size: 24px;
+    }
     color: ${brand[400]};
     border-top: 1px solid ${neutral[86]};
-    display: inline-block;
-    vertical-align: top;
     width: calc(100% - 114px);
+    ${minWidth.wide} {
+      width: calc(100% - 165px);
+    }
     padding-top: ${space[1]}px;
-    margin: ${space[5]}px 0 0 auto;
+    margin: 0;
   `;
   const bodyCopyCss = css`
     width: 100%;
@@ -75,12 +89,15 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
   `;
   return (
     <figure css={containerCss}>
-      <img src={props.imageUrl} css={profileImgCss} />
-      <figcaption css={titleCss}>
-        <strong>{props.title.name},</strong><br />
-        {props.title.job},<br />
-        {props.title.organisation}
-      </figcaption>
+      <div css={imageAndTitleContainer}>
+        <img src={props.imageUrl} css={profileImgCss} loading="lazy" />
+        <figcaption css={titleCss}>
+          <strong>{props.title.name},</strong>
+          <br />
+          {props.title.job},<br />
+          {props.title.organisation}
+        </figcaption>
+      </div>
       <p css={bodyCopyCss}>{props.bodyCopy}</p>
     </figure>
   );

@@ -91,7 +91,7 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
   return (
     <article css={articleCss}>
       <div css={imageHolderCss}>
-        <img src={props.imagePath} css={imageCss} />
+        <img src={props.imagePath} css={imageCss} loading="lazy" />
       </div>
       <div css={titleAndLinkCss}>
         <a href={props.linkUrl} css={titleLinkCss}>
