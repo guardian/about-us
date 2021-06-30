@@ -198,7 +198,7 @@ const BirthdayThrasher = () => (
   <div css={containerCss}>
     <div css={innerContainerCss}>
       <div css={birthdayCopyHolderCss}>
-        <img src="/about/images/thrasher-birthday-copy.svg" />
+        <img src="/about/images/thrasher-birthday-copy.svg" loading="lazy" />
       </div>
       <div css={pAndLinkButtonHolderCss}>
         <p css={pCss}>

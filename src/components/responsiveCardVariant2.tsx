@@ -46,7 +46,7 @@ const ResponsiveCardVariant2 = (props: ResponsiveCardVariant2Props) => {
 
   return (
     <a href={props.href} css={containerCss}>
-      <img src={props.imageUrl} css={imageCss} />
+      <img src={props.imageUrl} css={imageCss} loading="lazy" />
       <h2 css={titleCss}>{props.title}</h2>
     </a>
   );

@@ -90,7 +90,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
   return (
     <figure css={containerCss}>
       <div css={imageAndTitleContainer}>
-        <img src={props.imageUrl} css={profileImgCss} />
+        <img src={props.imageUrl} css={profileImgCss} loading="lazy" />
         <figcaption css={titleCss}>
           <strong>{props.title.name},</strong>
           <br />

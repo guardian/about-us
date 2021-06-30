@@ -73,7 +73,7 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
 
   return (
     <figure css={containerCss}>
-      <img src={props.imageUrl} css={profileImgCss} />
+      <img src={props.imageUrl} css={profileImgCss} loading="lazy" />
       <figcaption css={figcationCss}>
         <h2 css={titleCss}>{props.title}</h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>
