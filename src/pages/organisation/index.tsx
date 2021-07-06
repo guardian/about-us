@@ -154,11 +154,11 @@ const HomePage = () => (
           <LeadershipProfile
             imageUrl="/about/images/organisation-7.jpg"
             title={{
-              name: "Annette Thomas",
+              name: "Keith Underwood",
               job: "chief executive",
               organisation: "Guardian Media Group",
             }}
-            bodyCopy="Annette Thomas is the chief executive of Guardian Media Group. As chief executive she also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
+            bodyCopy="Keith Underwood is the interim chief executive of Guardian Media Group, alongside his position as chief financial and operating officer. As chief executive he also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
           />
         </div>
         <DetailsAndImage
