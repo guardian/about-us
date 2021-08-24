@@ -207,11 +207,16 @@ const HomePage = () => (
             </p>
           </>
         </InnerText>
-        <div css={twoColumnResponsiveCardHolder}>
+        <div css={threeColumnResponsiveCardHolder}>
           <ResponsiveCardVariant1
             title="GMG as a B Corporation"
             imagePath="/about/images/organisation-11.jpg"
             linkUrl="https://www.theguardian.com/gnm-press-office/2019/oct/16/guardian-media-group-becomes-first-major-news-organisation-to-become-a-b-corporation-and-pledges-to-reach-net-zero-emissions-by-2030"
+          />
+          <ResponsiveCardVariant1
+            title="Positive impact and sustainability report"
+            imagePath="/about/images/organisation-13.jpg"
+            linkUrl="add-link"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
@@ -243,7 +248,7 @@ const HomePage = () => (
           />
           <ResponsiveCardVariant1
             title="Employee engagement"
-            imagePath="/about/images/organisation-15.jpg"
+            imagePath="/about/images/organisation-workplace.jpg"
             linkUrl="https://www.theguardian.com/about/2021/apr/30/employee-engagement"
           />
           <ResponsiveCardVariant1
