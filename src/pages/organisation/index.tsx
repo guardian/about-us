@@ -216,7 +216,7 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Positive impact and sustainability report"
             imagePath="/about/images/organisation-13.jpg"
-            linkUrl="https://uploads.guim.co.uk/2021/08/25/Positive_Impact_Sustainability_Report_1920.pdf"
+            linkUrl="https://www.theguardian.com/gmg/2021/aug/25/positive-impact-and-sustainability-report"
           />
           <ResponsiveCardVariant1
             title="Our climate pledge"
