@@ -221,7 +221,7 @@ const HomePage = () => (
           <ResponsiveCardVariant1
             title="Our climate pledge"
             imagePath="/about/images/organisation-12.jpg"
-            linkUrl="https://www.theguardian.com/environment/ng-interactive/2020/oct/05/the-guardian-climate-pledge-2020-environment-emergency-carbon-emissions"
+            linkUrl="https://www.theguardian.com/environment/2021/oct/25/the-guardians-climate-pledge"
           />
         </div>
       </>
