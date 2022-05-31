@@ -37,7 +37,8 @@ const headerStyles = css`
     height: 100vh;
     background-color: ${brand[400]};
     opacity: 0;
-    transition: opacity 0.1s 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
+    transition: opacity 0.1s 0.4s ${cssTransitionFunc},
+      left 0.4s ${cssTransitionFunc};
     &:before {
       content: "";
       position: absolute;
@@ -48,8 +49,9 @@ const headerStyles = css`
       background-color: black;
       overflow-x: hidden;
       opacity: 0;
-      transition: opacity 0.1s ${cssTransitionFunc}, width 0.4s ${cssTransitionFunc};
-      }
+      transition: opacity 0.1s ${cssTransitionFunc},
+        width 0.4s ${cssTransitionFunc};
+    }
     &:after {
       content: "";
       display: block;
@@ -65,7 +67,8 @@ const headerStyles = css`
   & input:checked ~ .top-and-bottom-nav {
     left: 0;
     opacity: 1;
-    transition: opacity 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
+    transition: opacity 0.4s ${cssTransitionFunc},
+      left 0.4s ${cssTransitionFunc};
   }
 
   & input:checked ~ .top-and-bottom-nav:before {
@@ -108,7 +111,8 @@ const headerStyles = css`
       height: auto;
       opacity: 1;
       padding-left: ${space[2]}px;
-      &: before, &: after {
+      &::before,
+      &::after {
         display: none;
       }
     }
@@ -120,21 +124,22 @@ const headerStyles = css`
       padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
       border-bottom: 0;
       position: relative;
-      &:after {
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 0;
         background-color: ${brandAlt[400]};
-        transition: height .3s ease-in-out;
+        transition: height 0.3s ease-in-out;
       }
-      &:hover:after, &:focus:after {
+      &:hover::after,
+      &:focus::after {
         height: ${desktopMenuHighlightHeight}px;
       }
-      & + a:before {
-        content: '';
+      & + a::before {
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -142,7 +147,8 @@ const headerStyles = css`
         border-left: 1px solid ${brand[600]};
       }
     }
-    & nav a.selected-nav-item: after {
+
+    & nav a.selected-nav-item::after {
       height: ${desktopMenuHighlightHeight}px;
     }
     & nav.main {
@@ -159,7 +165,8 @@ const headerStyles = css`
         padding: ${space[2]}px;
         border-bottom: 0;
         transition: color 250ms ease-out;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: ${brandAlt[400]};
         }
       }
@@ -186,8 +193,8 @@ const headerStyles = css`
       & a {
         padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
       }
-      & a:before {
-        content: '';
+      & a::before {
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -208,7 +215,7 @@ const headerStyles = css`
 
 const logoHolderStyle = css`
   position: relative;
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: ${mobileOpenCloseBtnSize}px;
@@ -220,7 +227,7 @@ const logoHolderStyle = css`
   }
 
   ${minWidth.headerTablet} {
-    &:after {
+    &::after {
       display: none;
     }
   }
