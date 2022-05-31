@@ -8,5 +8,5 @@ deployments:
     parameters:
       bucket: gu-about-us
       prefixStack: false
-      publicReadAcl: false
+      publicReadAcl: true
       cacheControl: public, max-age=300, stale-while-revalidate=60
