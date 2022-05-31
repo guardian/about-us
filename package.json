@@ -23,6 +23,10 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@guardian/consent-management-platform": "^6.11.3",
+    "@guardian/eslint-plugin-source-foundations": "^4.0.2",
+    "@guardian/eslint-plugin-source-react-components": "^4.1.0",
+    "@guardian/source-foundations": "^4.2.1",
+    "@guardian/source-react-components": "^4.4.0",
     "@guardian/src-button": "^3.5.0",
     "@guardian/src-foundations": "^3.5.0",
     "@guardian/src-icons": "^3.5.0",
