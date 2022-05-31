@@ -72,6 +72,19 @@ const HomePage = (): jsx.JSX.Element => (
         },
       ]}
     />
+    <h1
+      // This is a copy of `visuallyHidden` taken from @guardian/source-foundations
+      css={css`
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+      `}
+    >
+      About us
+    </h1>
     <HeaderQuote
       quote="Since 1821 the mission of the Guardian has been to use clarity and imagination to build hope."
       author="Katharine Viner, editor-in-chief"
