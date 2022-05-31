@@ -53,7 +53,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
     p + p {
       margin-top: 0.75em;
     }
-    h2 {
+    h1 {
       ${titlepiece.small({ fontWeight: "regular" })};
       margin: 0 0 0.5em;
       line-height: 1;
@@ -70,7 +70,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
           lineHeight: "loose",
         })};
       }
-      h2 {
+      h1 {
         ${titlepiece.medium({ fontWeight: "regular" })};
         line-height: 1;
       }
@@ -84,7 +84,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
       p {
         font-size: 35px;
       }
-      h2 {
+      h1 {
         ${titlepiece.large({ fontWeight: "regular" })};
         line-height: 1;
       }
@@ -101,7 +101,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
   return (
     <div css={containerCss}>
       <div css={fullWidthTextCss}>
-        {props.title && <h2>{props.title}</h2>}
+        {props.title && <h1>{props.title}</h1>}
         {props.children}
       </div>
     </div>
