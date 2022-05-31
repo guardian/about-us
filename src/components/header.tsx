@@ -37,7 +37,8 @@ const headerStyles = css`
     height: 100vh;
     background-color: ${brand[400]};
     opacity: 0;
-    transition: opacity 0.1s 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
+    transition: opacity 0.1s 0.4s ${cssTransitionFunc},
+      left 0.4s ${cssTransitionFunc};
     &:before {
       content: "";
       position: absolute;
@@ -48,8 +49,9 @@ const headerStyles = css`
       background-color: black;
       overflow-x: hidden;
       opacity: 0;
-      transition: opacity 0.1s ${cssTransitionFunc}, width 0.4s ${cssTransitionFunc};
-      }
+      transition: opacity 0.1s ${cssTransitionFunc},
+        width 0.4s ${cssTransitionFunc};
+    }
     &:after {
       content: "";
       display: block;
@@ -65,7 +67,8 @@ const headerStyles = css`
   & input:checked ~ .top-and-bottom-nav {
     left: 0;
     opacity: 1;
-    transition: opacity 0.4s ${cssTransitionFunc}, left 0.4s ${cssTransitionFunc};
+    transition: opacity 0.4s ${cssTransitionFunc},
+      left 0.4s ${cssTransitionFunc};
   }
 
   & input:checked ~ .top-and-bottom-nav:before {
@@ -86,11 +89,16 @@ const headerStyles = css`
     text-decoration: none;
     margin-left: 50px;
   }
-  & nav:nth-of-type(1) {
+  & nav.main {
     margin-top: ${space[2]}px;
+    order: 1;
   }
-  & nav:nth-of-type(2) a {
-    ${textSans.medium({ fontWeight: "regular" })};
+  & nav.top {
+    order: 2;
+    
+    a {
+      ${textSans.medium({ fontWeight: "regular" })};
+    }
   }
 
   ${minWidth.headerTablet} {
@@ -103,8 +111,8 @@ const headerStyles = css`
       height: auto;
       opacity: 1;
       padding-left: ${space[2]}px;
-      border-top: 1px solid ${brand[600]};
-      &: before, &: after {
+      &::before,
+      &::after {
         display: none;
       }
     }
@@ -116,21 +124,22 @@ const headerStyles = css`
       padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
       border-bottom: 0;
       position: relative;
-      &:after {
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 0;
         background-color: ${brandAlt[400]};
-        transition: height .3s ease-in-out;
+        transition: height 0.3s ease-in-out;
       }
-      &:hover:after {
+      &:hover::after,
+      &:focus::after {
         height: ${desktopMenuHighlightHeight}px;
       }
-      & + a:before {
-        content: '';
+      & + a::before {
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -138,13 +147,15 @@ const headerStyles = css`
         border-left: 1px solid ${brand[600]};
       }
     }
-    & nav a.selected-nav-item: after {
+
+    & nav a.selected-nav-item::after {
       height: ${desktopMenuHighlightHeight}px;
     }
-    & nav:nth-of-type(1) {
+    & nav.main {
       margin-top: 0;
+      border-top: 1px solid ${brand[600]};
     }
-    & nav:nth-of-type(2) {
+    & nav.top {
       position: absolute;
       top: 0;
       left: 0;
@@ -154,7 +165,8 @@ const headerStyles = css`
         padding: ${space[2]}px;
         border-bottom: 0;
         transition: color 250ms ease-out;
-        &:hover {
+        &:hover,
+        &:focus {
           color: ${brandAlt[400]};
         }
       }
@@ -165,20 +177,24 @@ const headerStyles = css`
       max-width: 980px;
       margin: 0 auto;
       padding-left: 0;
+    }
+
+    & nav.main {
       border-left: 1px solid ${brand[600]};
       border-right: 1px solid ${brand[600]};
     }
-    & nav:first-of-type a:first-of-type {
+
+    & nav.main a:first-of-type {
       padding-left: ${space[5]}px;
     }
-    & nav:nth-of-type(2) {
+    & nav.top {
       left: 50%;
       transform: translateX(-490px);
       & a {
         padding: ${space[2]}px ${space[5]}px ${space[2]}px ${space[2]}px;
       }
-      & a:before {
-        content: '';
+      & a::before {
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -191,7 +207,7 @@ const headerStyles = css`
     & .top-and-bottom-nav {
       max-width: 1300px;
     }
-    & nav:nth-of-type(2) {
+    & nav.top {
       transform: translateX(-650px);
     }
   }
@@ -199,7 +215,7 @@ const headerStyles = css`
 
 const logoHolderStyle = css`
   position: relative;
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: ${mobileOpenCloseBtnSize}px;
@@ -211,7 +227,7 @@ const logoHolderStyle = css`
   }
 
   ${minWidth.headerTablet} {
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -244,6 +260,9 @@ const hiddenCheckboxStyle = css`
 `;
 
 const mobileNavYOverflow = css`
+  display: flex;
+  flex-flow: column;
+
   height: 100vh;
   overflow-y: auto;
   ${minWidth.headerTablet} {
@@ -253,13 +272,23 @@ const mobileNavYOverflow = css`
 
 const Header = (props: HeaderProps) => (
   <header css={headerStyles}>
+    <input type="checkbox" css={hiddenCheckboxStyle} />
     <div css={logoHolderStyle}>
       <GLogo />
     </div>
-    <input type="checkbox" css={hiddenCheckboxStyle} />
     <div className="top-and-bottom-nav">
       <div css={mobileNavYOverflow}>
-        <nav>
+        <nav className="top">
+          <a href="https://www.theguardian.com/gnm-press-office">
+            Guardian press office
+          </a>
+          <a href="https://www.theguardian.com/the-guardian-foundation">
+            Guardian foundation
+          </a>
+          <a href="https://workforus.theguardian.com/">Work for us</a>
+          <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
+        </nav>
+        <nav className="main">
           {props.navSections.map((navItem, navItemIndex) => (
             <a
               href={navItem.link}
@@ -271,16 +300,6 @@ const Header = (props: HeaderProps) => (
               {navItem.title}
             </a>
           ))}
-        </nav>
-        <nav>
-          <a href="https://www.theguardian.com/gnm-press-office">
-            Guardian press office
-          </a>
-          <a href="https://www.theguardian.com/the-guardian-foundation">
-            Guardian foundation
-          </a>
-          <a href="https://workforus.theguardian.com/">Work for us</a>
-          <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
         </nav>
       </div>
     </div>
