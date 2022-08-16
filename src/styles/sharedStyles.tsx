@@ -1,6 +1,10 @@
 import { css } from "@emotion/react";
 import { neutral, space } from "@guardian/src-foundations";
-import { headline, titlepiece } from "@guardian/src-foundations/typography";
+import {
+  headline,
+  textSans,
+  titlepiece,
+} from "@guardian/src-foundations/typography";
 import { minWidth } from "./breakpoints";
 
 export const containerCss = (backgroundColor: string) => css`
@@ -19,6 +23,29 @@ export const headingCss = css`
   ${minWidth.desktop} {
     font-size: 50px;
     margin: 0 0 27px;
+  }
+`;
+
+export const skipToContentStyles = css`
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  ${textSans.medium()}
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: normal;
+    width: auto;
   }
 `;
 
