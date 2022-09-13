@@ -62,7 +62,7 @@ const OurHistory = () => (
         },
       ]}
     />
-    <main id="main" tabIndex={-1}>
+    <main id="main">
       <FullWidthText theme="dark" title="Our history">
         <>
           <p>
