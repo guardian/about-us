@@ -76,7 +76,7 @@ const HomePage = (): jsx.JSX.Element => (
         },
       ]}
     />
-    <main id="main" tabIndex={-1}>
+    <main id="main" >
       <h1
         // This is a copy of `visuallyHidden` taken from @guardian/source-foundations
         css={css`

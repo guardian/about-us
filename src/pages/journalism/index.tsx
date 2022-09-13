@@ -65,7 +65,7 @@ const JournalismPage = () => (
         },
       ]}
     />
-    <main id="main" tabIndex={-1}>
+    <main id="main">
       <FullWidthText theme="dark" title="Journalism">
         <p>
           The Guardian has a global reputation for holding power to account and

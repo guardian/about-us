@@ -85,7 +85,7 @@ const HomePage = () => (
         },
       ]}
     />
-    <main id="main" tabIndex={-1}>
+    <main id="main">
       <FullWidthText theme="dark" title="Our organisation">
         <>
           <p>
