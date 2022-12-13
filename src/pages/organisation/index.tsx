@@ -157,7 +157,7 @@ const HomePage = () => (
               imageUrl="/about/images/organisation-6.jpg"
               title={{
                 name: "Katharine Viner",
-                job: "editor-in-chief",
+                job: "Editor-in-chief",
                 organisation: "Guardian News & Media",
               }}
               bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independence. She also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
@@ -165,11 +165,11 @@ const HomePage = () => (
             <LeadershipProfile
               imageUrl="/about/images/organisation-7.jpg"
               title={{
-                name: "Keith Underwood",
-                job: "chief executive",
+                name: "Anna Bateson",
+                job: "Chief executive",
                 organisation: "Guardian Media Group",
               }}
-              bodyCopy="Keith Underwood is the interim chief executive of Guardian Media Group, alongside his position as chief financial and operating officer. As chief executive he also sits on the boards of the Scott Trust, Guardian Media Group and the executive committee of Guardian News & Media."
+              bodyCopy="Anna Bateson is the chief executive of Guardian Media Group (GMG), a role she took up in September 2022. Anna worked at the Guardian from 2016 onward, first as VP for platforms and partnerships and then from 2017-2020 as chief customer officer, and briefly as interim chief executive. Prior to the Guardian, Anna worked at a number of tech and media organisations, including YouTube, Google, ITV, MTV and Bloomberg, and was most recently CEO at a VC-backed e-commerce beauty business."
             />
           </div>
           <DetailsAndImage
