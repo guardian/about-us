@@ -180,7 +180,11 @@ const HomePage = (): jsx.JSX.Element => (
       >
         <>
           <InnerText title="We're reader funded" theme="dark">
-            <p>
+            <p
+              css={css`
+                max-width: 850px;
+              `}
+            >
               The Guardian’s independent, high-impact journalism is powered by
               its global readership. In 2020 alone, more than 1.5 million
               readers supported us financially. It’s thanks to this generosity
