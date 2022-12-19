@@ -22,7 +22,6 @@ import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
-import BirthdayThrasher from "../components/birthdayThrasher";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
@@ -76,7 +75,7 @@ const HomePage = (): jsx.JSX.Element => (
         },
       ]}
     />
-    <main id="main" >
+    <main id="main">
       <h1
         // This is a copy of `visuallyHidden` taken from @guardian/source-foundations
         css={css`
@@ -175,7 +174,6 @@ const HomePage = (): jsx.JSX.Element => (
           </LinkButton>
         </>
       </BoxContainer>
-      <BirthdayThrasher />
       <BoxContainer
         theme="dark"
         background={{ backgroundColor: `${neutral[97]}` }}
