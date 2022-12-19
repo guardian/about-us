@@ -12,30 +12,19 @@ const aCss = css`
 `;
 
 const h3Css = css`
-  color: ${brandAlt[400]};
-  ${headline.xxsmall({ fontWeight: "bold" })}
-  font-size: 22px;
+  color: ${neutral[100]};
+  ${body.medium({ fontWeight: "bold" })};
+  font-size: 24px;
   margin: 0;
-  max-width: 385px;
+
   ${minWidth.tablet} {
-    margin-bottom: 22px;
-    font-size: 20px;
-  }
-  ${minWidth.wide} {
     font-size: 24px;
-    margin-bottom: ${space[9]}px;
-    margin-right: ${space[5]}px;
   }
 `;
 
 const pCss = css`
   color: ${neutral[100]};
-  max-width: 385px;
   ${body.small({ lineHeight: "loose" })}
-  ${minWidth.tablet} {
-    margin: 0 ${space[5]}px;
-    width: 33%;
-  }
 `;
 
 const cardImageDesktopCss = css`
@@ -43,7 +32,7 @@ const cardImageDesktopCss = css`
   ${minWidth.tablet} {
     display: block;
     height: 80%;
-    width: 33%;
+    width: 50%;
     margin: auto -12px auto auto;
     padding-top: 20%;
     background-size: contain;
@@ -84,8 +73,10 @@ const innerContainerCss = css`
 
 const linkbuttonDesktop = css`
   display: none;
+
   ${minWidth.tablet} {
     display: inline-flex;
+    width: max-content;
   }
 `;
 
@@ -93,12 +84,6 @@ const linkbuttonMobile = css`
   display: inline-flex;
   ${minWidth.tablet} {
     display: none;
-  }
-`;
-
-const titleAndButtonDesktop = css`
-  ${minWidth.tablet} {
-    width: 33%;
   }
 `;
 
@@ -115,10 +100,14 @@ const ReaderFundedContributeCard = () => {
   return (
     <div css={outerContainerCss}>
       <div css={innerContainerCss}>
-        <div css={titleAndButtonDesktop}>
+        <div>
           <a css={aCss} href="https://support.theguardian.com/contribute">
             <h3 css={h3Css}>Show your support as often as you like</h3>
           </a>
+          <p css={pCss}>
+            Choose to give once from $1, £1 or €1, or set up a recurring
+            contribution to support us each month or year.
+          </p>
           <ThemeProvider theme={buttonReaderRevenue}>
             <LinkButton
               size="small"
@@ -132,10 +121,6 @@ const ReaderFundedContributeCard = () => {
             </LinkButton>
           </ThemeProvider>
         </div>
-        <p css={pCss}>
-          Choose to give once from $1, £1 or €1, or set up a recurring
-          contribution to support us each month or year.
-        </p>
         <ThemeProvider theme={buttonReaderRevenue}>
           <LinkButton
             size="small"
@@ -145,7 +130,7 @@ const ReaderFundedContributeCard = () => {
             href="https://support.theguardian.com/contribute"
             css={linkbuttonMobile}
           >
-            Contribute
+            Support us
           </LinkButton>
         </ThemeProvider>
         <div css={cardImageDesktopCss} />
