@@ -199,8 +199,8 @@ export const readerFundedSubscribeCardHolderCss = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 33.3%;
-      width: calc(33.3% - 13px);
+      width: 50%;
+      width: calc(50% - 13px);
     }
   }
 `;

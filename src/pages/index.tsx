@@ -199,19 +199,10 @@ const HomePage = (): jsx.JSX.Element => (
           <div css={readerFundedSubscribeCardHolderCss}>
             <ReaderFundedSubscribeCard
               imagePath={{
-                mobile: "/about/images/front-page-7-mobile.png",
-                tabletAndAbove: "/about/images/front-page-7-desktop.png",
-              }}
-              title="Digital"
-              bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
-              href="https://support.theguardian.com/subscribe/digital"
-            />
-            <ReaderFundedSubscribeCard
-              imagePath={{
                 mobile: "/about/images/front-page-8-mobile.png",
                 tabletAndAbove: "/about/images/front-page-8-desktop.png",
               }}
-              title="Print"
+              title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
             />
