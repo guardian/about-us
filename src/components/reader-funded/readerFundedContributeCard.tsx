@@ -19,19 +19,10 @@ const h3MobileCss = css`
   ${body.medium({ fontWeight: "bold" })};
   font-size: 24px;
   margin: 0;
+  border-top: 1px solid #90abc4;
 
-  &:before {
-    content: "";
-    border-top: 1px solid #90abc4;
-    display: block;
-  }
-
-  ${from.mobileMedium} {
-    border-top: 1px solid #90abc4;
-    &:before {
-      border-top: none;
-      display: none;
-    }
+  ${until.mobileLandscape} {
+    padding-right: calc(100% - 220px);
   }
 
   ${from.tablet} {
@@ -100,10 +91,11 @@ const cardImageMobileCss = css`
   background-position: right top;
   background-repeat: no-repeat;
   margin-bottom: -41.5px;
-  margin-top: ${space[3]}px;
+  margin-top: -30px;
 
   ${from.mobileLandscape} {
     background-image: url("/about/images/support-the-guardian-desktop.png");
+    margin-top: ${space[3]}px;
   }
 
   ${from.tablet} {
