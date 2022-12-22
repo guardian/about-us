@@ -286,7 +286,7 @@ const HomePage = () => (
             </p>
           </InnerText>
           <DetailsAndImage
-            imageUrl="/about/images/reader-funding-desktop.png"
+            imageUrl="/about/images/reader-funding.png"
             title="Reader funding"
             bodyCopy="Guardian readers can show their financial support for our journalism by giving a single amount as often as they like, or by setting up a recurring payment every month or year. To support at a higher level, they can join our Patrons programme."
             readMoreUrl="https://support.theguardian.com/uk/subscribe?CMP=ppc_mem_&gclid=CjwKCAjw6fCCBhBNEiwAem5SOy61gdjmDXnbjnURNn2-xbO9vEeSd2xYypEw7Y4u9A-qu5-ZJ-ZehxoC41oQAvD_BwE"

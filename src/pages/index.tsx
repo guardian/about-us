@@ -204,8 +204,7 @@ const HomePage = (): jsx.JSX.Element => (
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
               imagePath={{
-                // TODO
-                mobile: "/about/images/newspaper-desktop.png",
+                mobile: "/about/images/newspaper-mobile.png",
                 tabletAndAbove: "/about/images/newspaper-desktop.png",
               }}
             />
@@ -214,8 +213,7 @@ const HomePage = (): jsx.JSX.Element => (
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
               href="https://support.theguardian.com/subscribe/weekly"
               imagePath={{
-                // TODO
-                mobile: "/about/images/guardian-weekly-desktop.png",
+                mobile: "/about/images/guardian-weekly-mobile.png",
                 tabletAndAbove: "/about/images/guardian-weekly-desktop.png",
               }}
             />

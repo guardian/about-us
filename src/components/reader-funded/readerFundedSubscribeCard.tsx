@@ -5,9 +5,8 @@ import { buttonBrand, LinkButton } from "@guardian/src-button";
 import { body, headline } from "@guardian/src-foundations/typography";
 import { neutral } from "@guardian/src-foundations/palette";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
-import { minWidth } from "../../styles/breakpoints";
 import { space } from "@guardian/src-foundations";
-import { between } from "@guardian/src-foundations/mq";
+import { between, from } from "@guardian/src-foundations/mq";
 
 interface ImagePath {
   mobile: string;
@@ -27,11 +26,11 @@ const h3Css = css`
   font-weight: normal;
   font-size: 22px;
   margin: 0;
-  ${minWidth.tablet} {
+  ${from.tablet} {
     font-size: 20px;
     margin-top: ${space[1]}px;
   }
-  ${minWidth.desktop} {
+  ${from.desktop} {
     font-size: 24px;
     margin-top: 6px;
   }
@@ -48,7 +47,7 @@ const cardContainerCss = css`
   display: flex;
   flex-direction: row-reverse;
   border-top: 1px solid #90abc4;
-  ${minWidth.tablet} {
+  ${from.tablet} {
     flex-direction: column;
     border-top: none;
   }
@@ -58,8 +57,17 @@ const textAndLinkButtonCss = css`
   display: grid;
   grid-template-rows: 1fr min-content;
   padding-right: ${space[3]}px;
+  max-width: 200px;
 
-  ${minWidth.tablet} {
+  ${from.mobileMedium} {
+    max-width: 250px;
+  }
+
+  ${from.mobileMedium} {
+    max-width: initial;
+  }
+
+  ${from.tablet} {
     padding-right: 0;
     border-top: none;
   }
@@ -86,7 +94,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     background-position: right top;
     background-repeat: no-repeat;
     margin: 10.5px -${space[3]}px auto auto;
-    ${minWidth.tablet} {
+    ${from.tablet} {
       margin: 0 auto;
       padding-top: 31%;
       background-size: contain;
