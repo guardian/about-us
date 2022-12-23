@@ -248,12 +248,10 @@ export const responsiveCardV2Holder = css`
   justify-content: space-between;
   & > * {
     margin-top: ${space[3]}px;
-    width: 50%;
     width: calc(50% - 6px);
   }
   ${minWidth.tablet} {
     & > * {
-      width: 33.3%;
       width: calc(33.3% - 13px);
       margin-top: ${space[5]}px;
     }
