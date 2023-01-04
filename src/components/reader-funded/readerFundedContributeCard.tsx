@@ -21,6 +21,7 @@ const h3MobileCss = css`
   margin: 0;
   border-top: 1px solid #90abc4;
 
+
   ${until.mobileLandscape} {
     padding-right: calc(100% - 220px);
   }
@@ -45,9 +46,8 @@ const pCss = css`
   color: ${neutral[100]};
   ${headline.xxxsmall({ fontWeight: "regular" })};
   margin: ${space[1]}px 0 ${space[6]}px;
-  max-width: 200px;
 
-  ${from.mobileMedium} {
+  ${from.mobileLandscape} {
     max-width: 300px;
   }
 
@@ -67,7 +67,7 @@ const cardImageDesktopCss = css`
     display: block;
     height: 100%;
     width: 60%;
-    margin: -20px 0 -80px;
+    margin: -26px 0 -80px;
     padding-top: 35%;
     background-size: contain;
     background-position: center center;
@@ -82,20 +82,22 @@ const cardImageDesktopCss = css`
 `;
 
 const cardImageMobileCss = css`
-  width: 40%;
-  padding-top: 30%;
+  width: 70%;
+  padding-top: 59%;
   align-self: flex-end;
   background-image: url("/about/images/support-the-guardian-mobile.png");
   height: 100%;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
-  margin-bottom: -41.5px;
-  margin-top: -30px;
+  margin: ${space[6]}px auto -${space[4]}px;
 
   ${from.mobileLandscape} {
+    width: 40%;
+    padding-top: 30%;
     background-image: url("/about/images/support-the-guardian-desktop.png");
     margin-top: ${space[3]}px;
+    margin-bottom: -41.5px;
   }
 
   ${from.tablet} {
@@ -116,6 +118,11 @@ const desktopContainerCss = css`
 
 const mobileContainerCss = css`
   display: flex;
+
+  ${until.mobileLandscape} {
+    flex-direction: column;
+  }
+
   ${from.tablet} {
     border-top: 1px solid #90abc4;
     display: block;

@@ -15,7 +15,7 @@ interface DetailsAndImageProps {
   readMoreBtnCopy?: string;
 }
 
-const containerCss = css`
+const containerCss = (sectionTitle: string) => css`
   margin: 40px 0 0;
   padding-top: ${space[3]}px;
   border-top: 1px solid ${neutral[86]};
@@ -24,6 +24,16 @@ const containerCss = css`
     justify-content: space-between;
     flex-direction: row-reverse;
   }
+  
+  ${sectionTitle === "Reader funding" &&
+  `
+    border-top: none;
+    padding-top: 0;
+
+    ${from.tablet} {
+      border-top: 1px solid ${neutral[86]};
+    }
+  `}
 `;
 
 const profileImgCss = (sectionTitle: string) => css`
@@ -31,7 +41,6 @@ const profileImgCss = (sectionTitle: string) => css`
   width: 100%;
   height: auto;
   ${from.tablet} {
-    width: 50%;
     width: calc(50% - 10px);
   }
   ${from.wide} {
@@ -67,7 +76,7 @@ const figcationCss = css`
   }
 `;
 
-const titleCss = css`
+const titleCss = (sectionTitle: string) => css`
   ${headline.xxxsmall({ fontWeight: "bold" })};
   color: ${brand[400]};
   margin: 0 0 ${space[3]}px;
@@ -78,6 +87,19 @@ const titleCss = css`
   ${from.desktop} {
     font-size: 24px;
   }
+
+  ${sectionTitle === "Reader funding" &&
+  `
+    font-size: 24px;
+
+    ${from.tablet} {
+      font-size: 24px;
+    }
+
+    ${from.wide} {
+      font-size: 24px;
+    }    
+  `}
 `;
 
 const bodyCopyCss = css`
@@ -90,14 +112,14 @@ const bodyCopyCss = css`
 
 export const DetailsAndImage = (props: DetailsAndImageProps) => {
   return (
-    <figure css={containerCss}>
+    <figure css={containerCss(props.title)}>
       <img
         src={props.imageUrl}
         css={profileImgCss(props.title)}
         loading="lazy"
       />
       <figcaption css={figcationCss}>
-        <h2 css={titleCss}>{props.title}</h2>
+        <h2 css={titleCss(props.title)}>{props.title}</h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>
         <LinkButton
           priority="tertiary"

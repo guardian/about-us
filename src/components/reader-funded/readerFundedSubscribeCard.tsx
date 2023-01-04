@@ -6,21 +6,16 @@ import { body, headline } from "@guardian/src-foundations/typography";
 import { neutral } from "@guardian/src-foundations/palette";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { space } from "@guardian/src-foundations";
-import { between, from } from "@guardian/src-foundations/mq";
-
-interface ImagePath {
-  mobile: string;
-  tabletAndAbove: string;
-}
+import { between, from, until } from "@guardian/src-foundations/mq";
 
 interface ReaderFundedSubscribeCardProps {
-  imagePath: ImagePath;
+  imagePath: string;
   title: string;
   bodyText: string;
   href: string;
 }
 
-const h3Css = css`
+const title = css`
   color: ${neutral[100]};
   ${headline.xxsmall()};
   font-weight: normal;
@@ -36,14 +31,14 @@ const h3Css = css`
   }
 `;
 
-const pCss = css`
+const bodyCopy = css`
   color: ${neutral[100]};
   ${body.small({ lineHeight: "loose" })}
   margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
 
-const cardContainerCss = css`
+const container = css`
   display: flex;
   flex-direction: row-reverse;
   border-top: 1px solid #90abc4;
@@ -53,19 +48,10 @@ const cardContainerCss = css`
   }
 `;
 
-const textAndLinkButtonCss = css`
+const copyContainer = css`
   display: grid;
   grid-template-rows: 1fr min-content;
   padding-right: ${space[3]}px;
-  max-width: 200px;
-
-  ${from.mobileMedium} {
-    max-width: 250px;
-  }
-
-  ${from.mobileMedium} {
-    max-width: initial;
-  }
 
   ${from.tablet} {
     padding-right: 0;
@@ -77,7 +63,7 @@ const textAndLinkButtonCss = css`
   }
 `;
 
-const aCss = css`
+const link = css`
   text-decoration: none;
 `;
 
@@ -86,31 +72,31 @@ const linkButtonCss = css`
 `;
 
 const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
-  const cardImageCss = css`
-    width: 100%;
-    padding-top: 50%;
-    background-image: url(${props.imagePath.mobile});
-    background-size: contain;
-    background-position: right top;
-    background-repeat: no-repeat;
-    margin: 10.5px -${space[3]}px auto auto;
+  const image = css`
+    ${until.tablet} {
+      display: none;
+    }
+
     ${from.tablet} {
+      width: 100%;
       margin: 0 auto;
       padding-top: 31%;
       background-size: contain;
-      background-image: url(${props.imagePath.tabletAndAbove});
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-image: url(${props.imagePath});
     }
   `;
 
   return (
-    <div css={cardContainerCss}>
-      <div css={cardImageCss} />
-      <div css={textAndLinkButtonCss}>
+    <div css={container}>
+      <div css={image} />
+      <div css={copyContainer}>
         <div>
-          <a css={aCss} href={props.href}>
-            <h3 css={h3Css}>{props.title}</h3>
+          <a css={link} href={props.href}>
+            <h3 css={title}>{props.title}</h3>
           </a>
-          <p css={pCss}>{props.bodyText}</p>
+          <p css={bodyCopy}>{props.bodyText}</p>
         </div>
         <ThemeProvider theme={buttonBrand}>
           <LinkButton
