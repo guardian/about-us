@@ -1,9 +1,11 @@
 import { getGeoLocation } from "../components/footer/getLocationCookie";
+import type { CountryCode } from '@guardian/libs';
+
 
 interface CountryGroup {
   name: string;
   currency: string;
-  isoCountries: string[];
+  isoCountries: CountryCode[];
   currencyGlyph: string;
 }
 

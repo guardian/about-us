@@ -37,6 +37,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@guardian/libs": "^11.1.1",
     "@guardian/node-riffraff-artifact": "^0.1.9",
     "@types/node": "^14.14.33",
     "@types/prettier": "^2.2.2",
