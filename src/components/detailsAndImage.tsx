@@ -24,15 +24,15 @@ const containerCss = css`
     justify-content: space-between;
     flex-direction: row-reverse;
   }
-  `;
+`;
 
 const readerFundingContainerCss = css`
-    border-top: none;
-    padding-top: 0;
+  border-top: none;
+  padding-top: 0;
 
-    ${from.tablet} {
-      border-top: 1px solid ${neutral[86]};
-    }
+  ${from.tablet} {
+    border-top: 1px solid ${neutral[86]};
+  }
 `;
 
 const profileImgCss = css`
@@ -88,16 +88,16 @@ const titleCss = css`
 `;
 
 const readerFundingTitleCss = css`
+  font-size: 24px;
+
+  ${from.tablet} {
     font-size: 24px;
+  }
 
-    ${from.tablet} {
-      font-size: 24px;
-    }
-
-    ${from.wide} {
-      font-size: 24px;
-    }    
-  `
+  ${from.wide} {
+    font-size: 24px;
+  }    
+`;
 
 const bodyCopyCss = css`
   ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
