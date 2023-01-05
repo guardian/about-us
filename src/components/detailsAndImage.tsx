@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { css, jsx, SerializedStyles } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 import { LinkButton } from "@guardian/src-button";
 import { brand, neutral, space } from "@guardian/src-foundations";
 import { from } from "@guardian/src-foundations/mq";
