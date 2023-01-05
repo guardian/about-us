@@ -17,6 +17,8 @@ import {
   readerFundedSubscribeCardHolderCss,
   readerFundedHeadingCss,
   skipToContentStyles,
+  supportReaderFundedHeadingCss,
+  printReaderFundedHeadingCss,
 } from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
@@ -195,9 +197,9 @@ const HomePage = (): jsx.JSX.Element => (
               work today, in whichever way suits you best.
             </p>
           </InnerText>
-          <h3 css={readerFundedHeadingCss("support")}>Support the Guardian</h3>
+          <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>Support the Guardian</h3>
           <ReaderFundedContributeCard />
-          <h3 css={readerFundedHeadingCss("print")}>Print Subscriptions</h3>
+          <h3 css={[readerFundedHeadingCss, printReaderFundedHeadingCss]}>Print Subscriptions</h3>
           <div css={readerFundedSubscribeCardHolderCss}>
             <ReaderFundedSubscribeCard
               title="Newspaper"

@@ -15,7 +15,7 @@ interface DetailsAndImageProps {
   readMoreBtnCopy?: string;
 }
 
-const containerCss = (sectionTitle: string) => css`
+const containerCss = css`
   margin: 40px 0 0;
   padding-top: ${space[3]}px;
   border-top: 1px solid ${neutral[86]};
@@ -24,19 +24,18 @@ const containerCss = (sectionTitle: string) => css`
     justify-content: space-between;
     flex-direction: row-reverse;
   }
-  
-  ${sectionTitle === "Reader funding" &&
-  `
+  `;
+
+const readerFundingContainerCss = css`
     border-top: none;
     padding-top: 0;
 
     ${from.tablet} {
       border-top: 1px solid ${neutral[86]};
     }
-  `}
 `;
 
-const profileImgCss = (sectionTitle: string) => css`
+const profileImgCss = css`
   display: block;
   width: 100%;
   height: auto;
@@ -46,20 +45,19 @@ const profileImgCss = (sectionTitle: string) => css`
   ${from.wide} {
     width: calc(50% - 29px);
   }
+`;
 
-  ${sectionTitle === "Reader funding" &&
-  `
-    width: 70%;
-    margin: auto;
+const readerFundingProfileImgCss = css`
+  width: 70%;
+  margin: auto;
 
-    ${from.tablet} {
-      margin-bottom: -43px;
-    }
+  ${from.tablet} {
+    margin-bottom: -43px;
+  }
 
-    ${from.wide} {
-      width: calc(50% - 29px);
-    }    
-  `}
+  ${from.wide} {
+    width: calc(50% - 29px);
+  }    
 `;
 
 const figcationCss = css`
@@ -76,7 +74,7 @@ const figcationCss = css`
   }
 `;
 
-const titleCss = (sectionTitle: string) => css`
+const titleCss = css`
   ${headline.xxxsmall({ fontWeight: "bold" })};
   color: ${brand[400]};
   margin: 0 0 ${space[3]}px;
@@ -87,9 +85,9 @@ const titleCss = (sectionTitle: string) => css`
   ${from.desktop} {
     font-size: 24px;
   }
+`;
 
-  ${sectionTitle === "Reader funding" &&
-  `
+const readerFundingTitleCss = css`
     font-size: 24px;
 
     ${from.tablet} {
@@ -99,8 +97,7 @@ const titleCss = (sectionTitle: string) => css`
     ${from.wide} {
       font-size: 24px;
     }    
-  `}
-`;
+  `
 
 const bodyCopyCss = css`
   ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
@@ -111,15 +108,16 @@ const bodyCopyCss = css`
 `;
 
 export const DetailsAndImage = (props: DetailsAndImageProps) => {
+  const isReaderFunding = props.title === 'Reader Funding';
   return (
-    <figure css={containerCss(props.title)}>
+    <figure css={[containerCss, isReaderFunding && readerFundingContainerCss]}>
       <img
         src={props.imageUrl}
-        css={profileImgCss(props.title)}
+        css={[profileImgCss, isReaderFunding && readerFundingProfileImgCss]}
         loading="lazy"
       />
       <figcaption css={figcationCss}>
-        <h2 css={titleCss(props.title)}>{props.title}</h2>
+        <h2 css={[titleCss, isReaderFunding && readerFundingTitleCss]}>{props.title}</h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>
         <LinkButton
           priority="tertiary"

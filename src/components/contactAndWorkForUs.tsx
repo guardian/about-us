@@ -2,7 +2,6 @@
 /** @jsx jsx */
 import { background, brand, neutral, space } from "@guardian/src-foundations";
 import { body, headline } from "@guardian/src-foundations/typography";
-import { containerCss } from "../styles/sharedStyles";
 import { css, jsx } from "@emotion/react";
 import { LinkButton } from "@guardian/src-button";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
@@ -52,6 +51,10 @@ const ContactSectionItem = (props: ContactSectionItemProps) => (
   </div>
 );
 
+const backgroundCss = css`
+  background-color: ${background.primary};
+`;
+
 const contactAndWorkForUsCss = css`
   display: flex;
   flex-direction: column;
@@ -75,7 +78,7 @@ const contactAndWorkForUsCss = css`
 
 const ContactAndWorkForUs = () => {
   return (
-    <div css={containerCss(background.primary)}>
+    <div css={backgroundCss}>
       <div css={contactAndWorkForUsCss}>
         <ContactSectionItem
           title="Contact us"

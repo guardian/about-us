@@ -7,9 +7,6 @@ import {
 } from "@guardian/src-foundations/typography";
 import { minWidth } from "./breakpoints";
 
-export const containerCss = (backgroundColor: string) => css`
-  background-color: ${backgroundColor};
-`;
 
 export const headingCss = css`
   ${titlepiece.small()};
@@ -206,7 +203,7 @@ export const readerFundedSubscribeCardHolderCss = css`
   }
 `;
 
-export const readerFundedHeadingCss = (sectionHeading: string) => css`
+export const readerFundedHeadingCss = css`
   color: ${neutral[100]};
   ${headline.xsmall({ fontWeight: "bold" })}
   border-top: 1px solid #90ABC4;
@@ -216,17 +213,15 @@ export const readerFundedHeadingCss = (sectionHeading: string) => css`
     margin: 49px 0 ${space[5]}px 0;
     font-size: 34px;
   }
+`;
 
-  ${sectionHeading === "print" &&
-  `
+export const printReaderFundedHeadingCss = css`
   ${minWidth.tablet} {
     margin-bottom: 2px;
-    };
-    
-  `}
+  };
+`;
 
-  ${sectionHeading === "support" &&
-  `
+export const supportReaderFundedHeadingCss =  css`
   font-size: 32px;
   color: ${brandAlt[400]};
   padding-top: ${space[2]}px;
@@ -234,9 +229,7 @@ export const readerFundedHeadingCss = (sectionHeading: string) => css`
   ${minWidth.tablet} {
     margin-bottom: ${space[3]}px;
     font-size: 42px;
-    };
-    
-  `}
+  };
 `;
 
 export const responsiveCardV2Holder = css`
