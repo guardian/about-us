@@ -11,6 +11,7 @@ if (process.env.TEAMCITY_BRANCH === "main") {
 
 const withTM = require("next-transpile-modules")([
   "@guardian/consent-management-platform",
+  "@guardian/libs",
   "ophan-tracker-js",
 ]); // pass the modules you would like to see transpiled
 
