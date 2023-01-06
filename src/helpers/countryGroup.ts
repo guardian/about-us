@@ -297,7 +297,7 @@ export const getCountryGroup = (): CountryGroup | null => {
   }
 
   const countryGroup = countryGroups.filter((countryGroup) =>
-    countryGroup.isoCountries.includes(countryCode)
+    countryGroup.isoCountries.includes(countryCode as CountryCode)
   );
 
   return countryGroup[0] ?? null;
