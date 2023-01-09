@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { neutral, space } from "@guardian/src-foundations";
+import { brandAlt, neutral, space } from "@guardian/src-foundations";
 import {
   headline,
   textSans,
@@ -7,9 +7,6 @@ import {
 } from "@guardian/src-foundations/typography";
 import { minWidth } from "./breakpoints";
 
-export const containerCss = (backgroundColor: string) => css`
-  background-color: ${backgroundColor};
-`;
 
 export const headingCss = css`
   ${titlepiece.small()};
@@ -199,21 +196,40 @@ export const readerFundedSubscribeCardHolderCss = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 33.3%;
-      width: calc(33.3% - 13px);
+      width: 50%;
+      width: calc(50% - 13px);
+      margin-bottom: 0;
     }
   }
 `;
 
-export const readerFundedHeadingCss = (isSubscribeTitle?: boolean) => css`
+export const readerFundedHeadingCss = css`
   color: ${neutral[100]};
-  ${headline.small({ fontWeight: "bold" })}
+  ${headline.xsmall({ fontWeight: "bold" })}
   border-top: 1px solid #90ABC4;
   margin: 41.5px 0 30px 0;
+
   ${minWidth.tablet} {
-    margin: 49px 0 ${isSubscribeTitle ? 2 : space[5]}px 0;
+    margin: 49px 0 ${space[5]}px 0;
     font-size: 34px;
   }
+`;
+
+export const printReaderFundedHeadingCss = css`
+  ${minWidth.tablet} {
+    margin-bottom: 2px;
+  };
+`;
+
+export const supportReaderFundedHeadingCss =  css`
+  font-size: 32px;
+  color: ${brandAlt[400]};
+  padding-top: ${space[2]}px;
+  
+  ${minWidth.tablet} {
+    margin-bottom: ${space[3]}px;
+    font-size: 42px;
+  };
 `;
 
 export const responsiveCardV2Holder = css`
@@ -225,12 +241,10 @@ export const responsiveCardV2Holder = css`
   justify-content: space-between;
   & > * {
     margin-top: ${space[3]}px;
-    width: 50%;
     width: calc(50% - 6px);
   }
   ${minWidth.tablet} {
     & > * {
-      width: 33.3%;
       width: calc(33.3% - 13px);
       margin-top: ${space[5]}px;
     }

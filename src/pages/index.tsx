@@ -17,12 +17,13 @@ import {
   readerFundedSubscribeCardHolderCss,
   readerFundedHeadingCss,
   skipToContentStyles,
+  supportReaderFundedHeadingCss,
+  printReaderFundedHeadingCss,
 } from "../styles/sharedStyles";
 import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
-import BirthdayThrasher from "../components/birthdayThrasher";
 import { LinkButton } from "@guardian/src-button";
 import { SvgArrowRightStraight } from "@guardian/src-icons";
 import { minWidth } from "../styles/breakpoints";
@@ -76,7 +77,7 @@ const HomePage = (): jsx.JSX.Element => (
         },
       ]}
     />
-    <main id="main" >
+    <main id="main">
       <h1
         // This is a copy of `visuallyHidden` taken from @guardian/source-foundations
         css={css`
@@ -175,14 +176,17 @@ const HomePage = (): jsx.JSX.Element => (
           </LinkButton>
         </>
       </BoxContainer>
-      <BirthdayThrasher />
       <BoxContainer
         theme="dark"
         background={{ backgroundColor: `${neutral[97]}` }}
       >
         <>
           <InnerText title="We're reader funded" theme="dark">
-            <p>
+            <p
+              css={css`
+                max-width: 850px;
+              `}
+            >
               The Guardian’s independent, high-impact journalism is powered by
               its global readership. In 2020 alone, more than 1.5 million
               readers supported us financially. It’s thanks to this generosity
@@ -193,38 +197,21 @@ const HomePage = (): jsx.JSX.Element => (
               work today, in whichever way suits you best.
             </p>
           </InnerText>
-          <h3 css={readerFundedHeadingCss(true)}>Subscribe</h3>
+          <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>Support the Guardian</h3>
+          <ReaderFundedContributeCard />
+          <h3 css={[readerFundedHeadingCss, printReaderFundedHeadingCss]}>Print Subscriptions</h3>
           <div css={readerFundedSubscribeCardHolderCss}>
             <ReaderFundedSubscribeCard
-              imagePath={{
-                mobile: "/about/images/front-page-7-mobile.png",
-                tabletAndAbove: "/about/images/front-page-7-desktop.png",
-              }}
-              title="Digital"
-              bodyText="Enjoy the richest experience of Guardian reporting. Ad-free reading across all your devices, plus premium access to two innovative, award-winning apps."
-              href="https://support.theguardian.com/subscribe/digital"
-            />
-            <ReaderFundedSubscribeCard
-              imagePath={{
-                mobile: "/about/images/front-page-8-mobile.png",
-                tabletAndAbove: "/about/images/front-page-8-desktop.png",
-              }}
-              title="Print"
+              title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
-            />
+              imagePath= "/about/images/newspaper-desktop.png" />
             <ReaderFundedSubscribeCard
-              imagePath={{
-                mobile: "/about/images/front-page-9-mobile.png",
-                tabletAndAbove: "/about/images/front-page-9-desktop.png",
-              }}
               title="Guardian Weekly"
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
               href="https://support.theguardian.com/subscribe/weekly"
-            />
+              imagePath="/about/images/guardian-weekly-desktop.png" />
           </div>
-          <h3 css={readerFundedHeadingCss()}>Make a contribution</h3>
-          <ReaderFundedContributeCard />
           <ReaderFundedPatronSupport />
         </>
       </BoxContainer>
