@@ -120,7 +120,6 @@ const HomePage = (): jsx.JSX.Element => (
         theme="light"
         background={{ backgroundColor: `${neutral[97]}` }}
         overlapTop={true}
-        paddingBottom={true}
       >
         <>
           <InnerText title="Our Organisation" theme="light">
@@ -205,7 +204,7 @@ const HomePage = (): jsx.JSX.Element => (
               title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
-              imagePath= "/about/images/newspaper-desktop.png" />
+              imagePath="/about/images/newspaper-desktop.png" />
             <ReaderFundedSubscribeCard
               title="Guardian Weekly"
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."

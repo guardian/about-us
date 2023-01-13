@@ -216,12 +216,15 @@ export const readerFundedHeadingCss = css`
 `;
 
 export const printReaderFundedHeadingCss = css`
+  font-size: 20px;
+
   ${minWidth.tablet} {
+    font-size: 24px;
     margin-bottom: 2px;
   };
 `;
 
-export const supportReaderFundedHeadingCss =  css`
+export const supportReaderFundedHeadingCss = css`
   font-size: 32px;
   color: ${brandAlt[400]};
   padding-top: ${space[2]}px;

@@ -46,7 +46,7 @@ const InnerText = (props: InnerTextProps) => {
     }
     ${minWidth.desktop} {
       font-size: 50px;
-      margin: 0 0 27px 0;
+      margin: 20px 0 27px 0;
     }
   `;
 
