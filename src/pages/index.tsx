@@ -180,7 +180,7 @@ const HomePage = (): jsx.JSX.Element => (
         background={{ backgroundColor: `${neutral[97]}` }}
       >
         <>
-          <InnerText title="We're reader funded" theme="dark">
+          <InnerText title="We’re reader funded" theme="dark">
             <p
               css={css`
                 max-width: 850px;
