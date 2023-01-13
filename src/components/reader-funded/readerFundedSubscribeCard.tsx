@@ -80,7 +80,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
 
   return (
     <div css={container}>
-      <img src={props.imagePath} css={image} />
+      <img src={props.imagePath} css={image} alt="" />
       <div css={copyContainer}>
         <div>
           <a css={link} href={props.href}>
