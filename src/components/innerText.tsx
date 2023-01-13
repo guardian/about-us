@@ -39,7 +39,7 @@ const InnerText = (props: InnerTextProps) => {
     max-width: 608px;
     font-size: 32px;
     line-height: 1.15;
-    margin: 0 0 18px 0;
+    margin: 10px 0 18px 0;
     color: ${props.theme == "dark" ? neutral[100] : "inherit"};
     ${minWidth.tablet} {
       font-size: 42px;
