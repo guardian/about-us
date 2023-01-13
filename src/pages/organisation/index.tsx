@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { jsx } from "@emotion/react";
+import { css, jsx } from "@emotion/react";
 import React from "react";
 import BoxContainer, {
   boxContainerPadding,
@@ -31,6 +31,10 @@ import Head from "next/head";
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
 });
+
+const marginTop = css`
+  margin-top: 0;
+`
 
 const ourStructureBkg = {
   mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,
@@ -291,7 +295,7 @@ const HomePage = () => (
             bodyCopy="Guardian readers can show their financial support for our journalism by giving a single amount as often as they like, or by setting up a recurring payment every month or year. To support at a higher level, they can join our Patrons programme."
             readMoreUrl="https://www.theguardian.com/media/2022/dec/09/what-do-you-get-when-you-support-the-guardian-supporter-subscribe-contribute"
           />
-          <div css={threeColumnResponsiveCardHolder}>
+          <div css={[threeColumnResponsiveCardHolder, marginTop]}>
             <ResponsiveCardVariant1
               title="Advertising"
               imagePath="/about/images/organisation-18.jpg"

@@ -28,7 +28,6 @@ const containerCss = css`
 
 const readerFundingContainerCss = css`
   border-top: none;
-  padding-top: 0;
 
   ${from.tablet} {
     border-top: 1px solid ${neutral[86]};
@@ -52,15 +51,20 @@ const readerFundingProfileImgCss = css`
   margin: auto;
 
   ${from.tablet} {
-    margin-bottom: -43px;
+    margin-bottom: -38px;
+  }
+
+  ${from.desktop} {
+    margin-bottom: -44px;
   }
 
   ${from.wide} {
     width: calc(50% - 29px);
+    margin-bottom: -51px;
   }    
 `;
 
-const figcationCss = css`
+const figcaptionCss = css`
   display: block;
   width: 100%;
   margin: ${space[2]}px 0 0;
@@ -108,7 +112,8 @@ const bodyCopyCss = css`
 `;
 
 export const DetailsAndImage = (props: DetailsAndImageProps) => {
-  const isReaderFunding = props.title === 'Reader Funding';
+  const isReaderFunding = props.title === 'Reader funding';
+
   return (
     <figure css={[containerCss, isReaderFunding && readerFundingContainerCss]}>
       <img
@@ -116,7 +121,7 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
         css={[profileImgCss, isReaderFunding && readerFundingProfileImgCss]}
         loading="lazy"
       />
-      <figcaption css={figcationCss}>
+      <figcaption css={figcaptionCss}>
         <h2 css={[titleCss, isReaderFunding && readerFundingTitleCss]}>{props.title}</h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>
         <LinkButton

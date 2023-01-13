@@ -76,21 +76,11 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     ${until.tablet} {
       display: none;
     }
-
-    ${from.tablet} {
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 31%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-image: url(${props.imagePath});
-    }
   `;
 
   return (
     <div css={container}>
-      <div css={image} />
+      <img src={props.imagePath} css={image} alt="" />
       <div css={copyContainer}>
         <div>
           <a css={link} href={props.href}>
