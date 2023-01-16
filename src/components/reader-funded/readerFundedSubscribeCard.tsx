@@ -76,6 +76,15 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
     ${until.tablet} {
       display: none;
     }
+
+    ${from.tablet} {
+      object-fit: contain;
+      max-height: 120px
+    }
+
+    ${from.desktop} {
+      max-height: 130px
+    }
   `;
 
   return (
