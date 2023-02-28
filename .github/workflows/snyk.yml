@@ -9,7 +9,7 @@ on:
 
 jobs:
   security:
-    uses: guardian/.github/.github/workflows/sbt-node-snyk.yml@main
+    uses: guardian/.github/.github/workflows/sbt-node-snyk.yml@2b60386db029f20e6f936b4b081881ea74af0077
     with:
       DEBUG: true
       ORG: guardian-dotcom-n2y
