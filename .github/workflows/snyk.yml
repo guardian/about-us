@@ -1,18 +1,18 @@
-# This action runs snyk monitor on every push to main
-name: Snyk
-
+name: DCR Snyk
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
+    schedule:
+        - cron: '0 6 * * *'
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+permissions:
+  contents: read
 jobs:
-  security:
-    uses: guardian/.github/.github/workflows/sbt-node-snyk.yml@main
-    with:
-      DEBUG: true
-      ORG: guardian-dotcom-n2y
-      SKIP_NODE: false
-    secrets:
-       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    security:
+        uses: guardian/.github/.github/workflows/sbt-node-snyk.yml@main
+        with:
+            ORG: guardian-dotcom-n2y
+            SKIP_SBT: true
+        secrets:
+            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
