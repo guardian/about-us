@@ -18,4 +18,5 @@ const withTM = require("next-transpile-modules")([
 module.exports = withTM({
   assetPrefix,
   basePath,
+  webpack5: false,
 });
