@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import React from "react";
 import { space } from "@guardian/src-foundations";
 import { brand, neutral } from "@guardian/src-foundations/palette";
 import { headline } from "@guardian/src-foundations/typography";

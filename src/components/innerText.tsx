@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import React from "react";
 import { minWidth } from "../styles/breakpoints";
 import { ReactElement } from "react";
 import { body, titlepiece } from "@guardian/src-foundations/typography";

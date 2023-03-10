@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx, ThemeProvider } from "@emotion/react";
+import React from "react";
 import { buttonBrand, LinkButton } from "@guardian/src-button";
 import { body, headline } from "@guardian/src-foundations/typography";
 import { neutral } from "@guardian/src-foundations/palette";
@@ -79,11 +80,11 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
 
     ${from.tablet} {
       object-fit: contain;
-      max-height: 120px
+      max-height: 120px;
     }
 
     ${from.desktop} {
-      max-height: 130px
+      max-height: 130px;
     }
   `;
 

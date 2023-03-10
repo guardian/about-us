@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import React from "react";
 import { LinkButton } from "@guardian/src-button";
 import { space } from "@guardian/src-foundations";
 import { neutral, news } from "@guardian/src-foundations/palette";

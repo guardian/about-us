@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import React from "react";
 import { GLogo } from "./gLogo";
 import { brand, brandAlt, neutral } from "@guardian/src-foundations/palette";
 import { headline, textSans } from "@guardian/src-foundations/typography";
@@ -95,7 +96,7 @@ const headerStyles = css`
   }
   & nav.top {
     order: 2;
-    
+
     a {
       ${textSans.medium({ fontWeight: "regular" })};
     }

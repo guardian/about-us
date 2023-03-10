@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import React from "react";
 import { minWidth } from "../styles/breakpoints";
 
 export const GLogo = () => (

@@ -1,4 +1,4 @@
-let assetPrefix = "";
+let assetPrefix = undefined;
 let basePath = "/about";
 
 if (process.env.TEAMCITY_BRANCH === "main") {
@@ -9,14 +9,20 @@ if (process.env.TEAMCITY_BRANCH === "main") {
   basePath = "/CODE/gu-about-us-upload/about";
 }
 
-const withTM = require("next-transpile-modules")([
-  "@guardian/consent-management-platform",
-  "@guardian/libs",
-  "ophan-tracker-js",
-]); // pass the modules you would like to see transpiled
-
-module.exports = withTM({
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   assetPrefix,
   basePath,
-  webpack5: false,
-});
+  transpilePackages: [
+    "@guardian/consent-management-platform",
+    "@guardian/libs",
+    "ophan-tracker-js",
+  ],
+  compiler: {
+    emotion: { sourceMap: true },
+  },
+};
+
+module.exports = nextConfig;

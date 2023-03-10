@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
+import React from "react";
 import { space } from "@guardian/src-foundations";
 import { body, headline } from "@guardian/src-foundations/typography";
 import {

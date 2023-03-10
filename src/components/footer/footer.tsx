@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { brand, brandAlt, neutral } from "@guardian/src-foundations";
+import React from "react";
 import { footerLinks } from "./footerlinks";
 import { from } from "@guardian/src-foundations/mq";
 import { headline, textSans } from "@guardian/src-foundations/typography";
@@ -10,7 +11,7 @@ import { SyntheticEvent } from "react";
 import { ThemeProvider, css, jsx } from "@emotion/react";
 import { cmp } from "@guardian/consent-management-platform";
 import { getGeoLocation } from "./getLocationCookie";
-import 'ophan-tracker-js';
+import "ophan-tracker-js";
 
 const TODAY = new Date();
 

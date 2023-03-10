@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import React from "react";
 import { LinkButton } from "@guardian/src-button";
 import { brand, neutral, space } from "@guardian/src-foundations";
 import { from } from "@guardian/src-foundations/mq";
@@ -61,7 +62,7 @@ const readerFundingProfileImgCss = css`
   ${from.wide} {
     width: calc(50% - 29px);
     margin-bottom: -51px;
-  }    
+  }
 `;
 
 const figcaptionCss = css`
@@ -100,7 +101,7 @@ const readerFundingTitleCss = css`
 
   ${from.wide} {
     font-size: 24px;
-  }    
+  }
 `;
 
 const bodyCopyCss = css`
@@ -112,7 +113,7 @@ const bodyCopyCss = css`
 `;
 
 export const DetailsAndImage = (props: DetailsAndImageProps) => {
-  const isReaderFunding = props.title === 'Reader funding';
+  const isReaderFunding = props.title === "Reader funding";
 
   return (
     <figure css={[containerCss, isReaderFunding && readerFundingContainerCss]}>
@@ -122,7 +123,9 @@ export const DetailsAndImage = (props: DetailsAndImageProps) => {
         loading="lazy"
       />
       <figcaption css={figcaptionCss}>
-        <h2 css={[titleCss, isReaderFunding && readerFundingTitleCss]}>{props.title}</h2>
+        <h2 css={[titleCss, isReaderFunding && readerFundingTitleCss]}>
+          {props.title}
+        </h2>
         <p css={bodyCopyCss}>{props.bodyCopy}</p>
         <LinkButton
           priority="tertiary"

@@ -1,6 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import React from "react";
 import { minWidth } from "../styles/breakpoints";
 
 interface FullWidthImageProps {
@@ -37,7 +38,12 @@ const FullWidthImage = ({
   `;
 
   return (
-    <div css={css`background-color: #041838;`} aria-hidden="true">
+    <div
+      css={css`
+        background-color: #041838;
+      `}
+      aria-hidden="true"
+    >
       <div css={imageHolderCss}>
         <div css={imageCss}></div>
       </div>
