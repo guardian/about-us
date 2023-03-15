@@ -1,8 +1,13 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
-import { brand, neutral, space } from "@guardian/src-foundations";
-import { body, headline } from "@guardian/src-foundations/typography";
+import {
+  brand,
+  body,
+  headline,
+  neutral,
+  space,
+} from "@guardian/source-foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface LeadershipProfileProps {

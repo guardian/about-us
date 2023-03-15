@@ -1,12 +1,13 @@
 import { css } from "@emotion/react";
-import { brandAlt, neutral, space } from "@guardian/src-foundations";
 import {
+  brandAlt,
   headline,
+  neutral,
+  space,
   textSans,
   titlepiece,
-} from "@guardian/src-foundations/typography";
+} from "@guardian/source-foundations";
 import { minWidth } from "./breakpoints";
-
 
 export const headingCss = css`
   ${titlepiece.small()};
@@ -221,18 +222,18 @@ export const printReaderFundedHeadingCss = css`
   ${minWidth.tablet} {
     font-size: 24px;
     margin-bottom: 2px;
-  };
+  } ;
 `;
 
 export const supportReaderFundedHeadingCss = css`
   font-size: 32px;
   color: ${brandAlt[400]};
   padding-top: ${space[2]}px;
-  
+
   ${minWidth.tablet} {
     margin-bottom: ${space[3]}px;
     font-size: 42px;
-  };
+  } ;
 `;
 
 export const responsiveCardV2Holder = css`

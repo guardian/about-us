@@ -7,7 +7,7 @@ import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
-import { neutral } from "@guardian/src-foundations/palette";
+import { neutral } from "@guardian/source-foundations";
 import {
   headingCss,
   skipToContentStyles,

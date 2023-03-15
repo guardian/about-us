@@ -1,9 +1,7 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import { space } from "@guardian/src-foundations";
-import { brand, neutral } from "@guardian/src-foundations/palette";
-import { headline } from "@guardian/src-foundations/typography";
+import { brand, headline, neutral, space } from "@guardian/source-foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface ResponsiveCardVariant2Props {

@@ -1,10 +1,12 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx, ThemeProvider } from "@emotion/react";
-import { buttonBrand, LinkButton } from "@guardian/src-button";
-import { neutral, space } from "@guardian/src-foundations";
-import { body, headline } from "@guardian/src-foundations/typography";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
+import {
+  buttonThemeBrand,
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
+import { body, headline, neutral, space } from "@guardian/source-foundations";
 import { minWidth } from "../../styles/breakpoints";
 
 interface PatronSupportSectionProps {
@@ -53,7 +55,7 @@ const PatronSupportSection = (props: PatronSupportSectionProps) => {
         <h3 css={h3Css}>{props.title}</h3>
         <p css={pCss}>{props.bodyText}</p>
       </div>
-      <ThemeProvider theme={buttonBrand}>
+      <ThemeProvider theme={buttonThemeBrand}>
         <LinkButton
           size="small"
           icon={<SvgArrowRightStraight />}

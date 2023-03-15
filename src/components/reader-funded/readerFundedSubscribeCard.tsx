@@ -1,12 +1,20 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx, ThemeProvider } from "@emotion/react";
-import { buttonBrand, LinkButton } from "@guardian/src-button";
-import { body, headline } from "@guardian/src-foundations/typography";
-import { neutral } from "@guardian/src-foundations/palette";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
-import { space } from "@guardian/src-foundations";
-import { between, from, until } from "@guardian/src-foundations/mq";
+import {
+  buttonThemeBrand,
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
+import {
+  between,
+  body,
+  from,
+  headline,
+  neutral,
+  space,
+  until,
+} from "@guardian/source-foundations";
 
 interface ReaderFundedSubscribeCardProps {
   imagePath: string;
@@ -79,11 +87,11 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
 
     ${from.tablet} {
       object-fit: contain;
-      max-height: 120px
+      max-height: 120px;
     }
 
     ${from.desktop} {
-      max-height: 130px
+      max-height: 130px;
     }
   `;
 
@@ -97,7 +105,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
           </a>
           <p css={bodyCopy}>{props.bodyText}</p>
         </div>
-        <ThemeProvider theme={buttonBrand}>
+        <ThemeProvider theme={buttonThemeBrand}>
           <LinkButton
             size="small"
             icon={<SvgArrowRightStraight />}

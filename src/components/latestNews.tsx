@@ -1,11 +1,17 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import { LinkButton } from "@guardian/src-button";
-import { space } from "@guardian/src-foundations";
-import { neutral, news } from "@guardian/src-foundations/palette";
-import { headline, titlepiece } from "@guardian/src-foundations/typography";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
+import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
+import {
+  headline,
+  neutral,
+  news,
+  space,
+  titlepiece,
+} from "@guardian/source-foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const containerCss = css`

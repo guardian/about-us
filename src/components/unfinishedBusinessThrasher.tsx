@@ -1,19 +1,22 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
-import { space } from "@guardian/src-foundations";
-import { body, headline } from "@guardian/src-foundations/typography";
 import {
   brand,
+  headline,
   lifestyle,
   neutral,
   news,
   opinion,
+  space,
   sport,
-} from "@guardian/src-foundations/palette";
-import { minWidth, namedBreakpoints } from "../styles/breakpoints";
-import { LinkButton } from "@guardian/src-button";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
+} from "@guardian/source-foundations";
+
+import { minWidth } from "../styles/breakpoints";
+import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
 
 const UnfinishedBusinessThrasher = () => {
   const containerCss = css`

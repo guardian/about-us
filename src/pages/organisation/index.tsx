@@ -5,7 +5,7 @@ import React from "react";
 import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";
-import { brand, neutral } from "@guardian/src-foundations";
+import { brand, neutral } from "@guardian/source-foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
@@ -34,7 +34,7 @@ const Footer = dynamic(() => import("../../components/footer/footer"), {
 
 const marginTop = css`
   margin-top: 0;
-`
+`;
 
 const ourStructureBkg = {
   mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,

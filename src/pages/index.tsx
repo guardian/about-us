@@ -9,7 +9,7 @@ import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
 import InnerText from "../components/innerText";
 import LatestNews from "../components/latestNews";
-import { neutral } from "@guardian/src-foundations";
+import { neutral } from "@guardian/source-foundations";
 import { PageStyles } from "../components/pageStyles";
 import ReaderFundedSubscribeCard from "../components/reader-funded/readerFundedSubscribeCard";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
@@ -24,8 +24,10 @@ import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
-import { LinkButton } from "@guardian/src-button";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
+import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
 import { minWidth } from "../styles/breakpoints";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -196,20 +198,26 @@ const HomePage = (): jsx.JSX.Element => (
               work today, in whichever way suits you best.
             </p>
           </InnerText>
-          <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>Support the Guardian</h3>
+          <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>
+            Support the Guardian
+          </h3>
           <ReaderFundedContributeCard />
-          <h3 css={[readerFundedHeadingCss, printReaderFundedHeadingCss]}>Print Subscriptions</h3>
+          <h3 css={[readerFundedHeadingCss, printReaderFundedHeadingCss]}>
+            Print Subscriptions
+          </h3>
           <div css={readerFundedSubscribeCardHolderCss}>
             <ReaderFundedSubscribeCard
               title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
-              imagePath="/about/images/newspaper-desktop.png" />
+              imagePath="/about/images/newspaper-desktop.png"
+            />
             <ReaderFundedSubscribeCard
               title="Guardian Weekly"
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
               href="https://support.theguardian.com/subscribe/weekly"
-              imagePath="/about/images/guardian-weekly-desktop.png" />
+              imagePath="/about/images/guardian-weekly-desktop.png"
+            />
           </div>
           <ReaderFundedPatronSupport />
         </>
