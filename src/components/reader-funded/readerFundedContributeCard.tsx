@@ -1,11 +1,19 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
 import { css, jsx, ThemeProvider } from "@emotion/react";
-import { buttonReaderRevenue, LinkButton } from "@guardian/src-button";
-import { neutral, space } from "@guardian/src-foundations";
-import { from, until } from "@guardian/src-foundations/mq";
-import { body, headline } from "@guardian/src-foundations/typography";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
+import {
+  buttonThemeReaderRevenue,
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
+import {
+  neutral,
+  space,
+  from,
+  until,
+  body,
+  headline,
+} from "@guardian/source-foundations";
 import { useEffect, useState } from "react";
 import { getCountryGroup } from "../../helpers/countryGroup";
 import React from "react";
@@ -20,7 +28,6 @@ const h3MobileCss = css`
   font-size: 24px;
   margin: 0;
   border-top: 1px solid #90abc4;
-
 
   ${until.mobileLandscape} {
     padding-right: calc(100% - 220px);
@@ -156,7 +163,7 @@ const ReaderFundedContributeCard = () => {
               Choose to give once from just {currencyGlyph}1, or set up a
               recurring amount to power our reporting every month or year.
             </p>
-            <ThemeProvider theme={buttonReaderRevenue}>
+            <ThemeProvider theme={buttonThemeReaderRevenue}>
               <LinkButton
                 size="small"
                 icon={<SvgArrowRightStraight />}

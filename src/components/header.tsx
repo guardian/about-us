@@ -2,9 +2,14 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import { GLogo } from "./gLogo";
-import { brand, brandAlt, neutral } from "@guardian/src-foundations/palette";
-import { headline, textSans } from "@guardian/src-foundations/typography";
-import { space } from "@guardian/src-foundations";
+import {
+  space,
+  headline,
+  textSans,
+  brand,
+  brandAlt,
+  neutral,
+} from "@guardian/source-foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface NavSection {
@@ -95,7 +100,7 @@ const headerStyles = css`
   }
   & nav.top {
     order: 2;
-    
+
     a {
       ${textSans.medium({ fontWeight: "regular" })};
     }

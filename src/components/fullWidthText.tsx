@@ -2,12 +2,13 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import {
-  background,
   brandAlt,
+  headline,
   neutral,
+  palette,
   space,
-} from "@guardian/src-foundations";
-import { headline, titlepiece } from "@guardian/src-foundations/typography";
+  titlepiece,
+} from "@guardian/source-foundations";
 import { ReactElement } from "react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
@@ -27,14 +28,14 @@ export const highlightedCss = css`
 const FullWidthText = (props: FullWidthTextProps) => {
   const containerCss = css`
     background-color: ${props.theme === "light"
-      ? background.primary
-      : background.ctaPrimary};
+      ? palette.neutral[100]
+      : palette.brand[400]};
   `;
 
   const fullWidthTextCss = css`
     background-color: ${props.theme === "light"
-      ? background.primary
-      : background.ctaPrimary};
+      ? palette.neutral[100]
+      : palette.brand[400]};
     color: ${props.theme === "light" ? neutral[7] : neutral[100]};
     display: block;
     max-width: 1300px;

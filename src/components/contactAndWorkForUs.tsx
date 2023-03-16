@@ -1,11 +1,18 @@
 /** @jsxRuntime classic /
 /** @jsx jsx */
-import { background, brand, neutral, space } from "@guardian/src-foundations";
-import { body, headline } from "@guardian/src-foundations/typography";
+import {
+  body,
+  brand,
+  headline,
+  neutral,
+  space,
+} from "@guardian/source-foundations";
 import { css, jsx } from "@emotion/react";
-import { LinkButton } from "@guardian/src-button";
+import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
-import { SvgArrowRightStraight } from "@guardian/src-icons";
 
 const contactSectionItemCss = css`
   width: 100%;
@@ -52,7 +59,7 @@ const ContactSectionItem = (props: ContactSectionItemProps) => (
 );
 
 const backgroundCss = css`
-  background-color: ${background.primary};
+  background-color: ${neutral[100]};
 `;
 
 const contactAndWorkForUsCss = css`

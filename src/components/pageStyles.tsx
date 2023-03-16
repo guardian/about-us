@@ -1,7 +1,7 @@
 import React from "react";
 import { css, Global } from "@emotion/react";
 import { fonts } from "../styles/fonts";
-import { resets } from "@guardian/src-foundations/utils";
+import { resets } from "@guardian/source-foundations";
 
 export const PageStyles = () => (
   <Global

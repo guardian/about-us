@@ -2,12 +2,13 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import {
-  background,
+  brand,
   brandAlt,
+  headline,
   neutral,
   space,
-} from "@guardian/src-foundations";
-import { headline, titlepiece } from "@guardian/src-foundations/typography";
+  titlepiece,
+} from "@guardian/source-foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 interface HeaderQuoteProps {
@@ -15,9 +16,8 @@ interface HeaderQuoteProps {
   author: string;
 }
 
-
 const backgroundCss = css`
-  background-color: ${background.ctaPrimary};
+  background-color: ${brand[400]};
 `;
 
 const headerQuoteCss = css`
@@ -31,7 +31,7 @@ const triangleCss = css`
   top: 100%;
   left: ${space[6]}px;
   border-style: solid;
-  border-color: transparent ${background.ctaPrimary} transparent transparent;
+  border-color: transparent ${brand[400]} transparent transparent;
   border-width: 0 42.3px 37.14px 0;
   ${minWidth.tablet} {
     border-width: 0 64px 56.14px 0;
