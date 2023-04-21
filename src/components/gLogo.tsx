@@ -1,5 +1,3 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 

@@ -9,16 +9,20 @@ if (process.env.TEAMCITY_BRANCH === "main") {
   basePath = "/CODE/gu-about-us-upload/about";
 }
 
-const withTM = require("next-transpile-modules")([
-  "@guardian/consent-management-platform",
-  "@guardian/libs",
-  "@guardian/source-foundations",
-  "@guardian/source-react-components",
-  "ophan-tracker-js",
-]); // pass the modules you would like to see transpiled
-
-module.exports = withTM({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   assetPrefix,
   basePath,
-  webpack5: false,
-});
+  compiler: {
+    emotion: true
+  },
+  transpilePackages: [
+    "@guardian/consent-management-platform",
+    "@guardian/libs",
+    "@guardian/source-foundations",
+    "@guardian/source-react-components",
+    "ophan-tracker-js",
+  ]
+};
+
+module.exports = nextConfig;

@@ -1,5 +1,3 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
 import {
   brand,

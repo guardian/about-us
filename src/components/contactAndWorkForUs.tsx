@@ -1,5 +1,4 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
+
 import {
   body,
   brand,

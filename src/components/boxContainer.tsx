@@ -1,5 +1,4 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
+
 import { jsx, css } from "@emotion/react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { ReactElement } from "react";
