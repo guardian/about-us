@@ -1,4 +1,4 @@
-import { jsx, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 
 interface FullWidthImageProps {

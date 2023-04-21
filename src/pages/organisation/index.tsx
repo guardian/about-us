@@ -1,6 +1,4 @@
-
-import { css, jsx } from "@emotion/react";
-import React from "react";
+import { css } from "@emotion/react";
 import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";

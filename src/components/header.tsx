@@ -1,4 +1,4 @@
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import {
   space,

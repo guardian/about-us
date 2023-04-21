@@ -1,5 +1,4 @@
-
-import { jsx, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { ReactElement } from "react";
 import { neutral, space, sport } from "@guardian/source-foundations";
