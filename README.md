@@ -1,12 +1,11 @@
 # About Us
-![Screenshot](public/images/thrasher-logo.svg)
 
 About pages for theguardian.com.
 
 ## Technologies
 
 - [Next](https://nextjs.org/)
-- [React](https://reactjs.org/)
+- [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Emotion](https://emotion.sh/)
 
@@ -45,3 +44,11 @@ As of writing this readme, routing for the CODE section of the bucket has not be
 - [our organisation](https://gu-about-us.s3-eu-west-1.amazonaws.com/CODE/gu-about-us-upload/about/organisation.html)
 - [our history](https://gu-about-us.s3-eu-west-1.amazonaws.com/CODE/gu-about-us-upload/about/history.html)
 - [journalism](https://gu-about-us.s3-eu-west-1.amazonaws.com/CODE/gu-about-us-upload/about/journalism.html)
+
+## Known issues
+
+### Dev server: "Prop `className` did not match" error in the browser console
+
+This issue was raised in the migration to React 18 and Next 13. There's no clear
+resolution. The issue does not affect production, or the functionality of the
+dev server.
