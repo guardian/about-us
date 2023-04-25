@@ -1,5 +1,3 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
 import {
   brand,
   brandAlt,

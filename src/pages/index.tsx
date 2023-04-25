@@ -1,7 +1,4 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
-import { jsx, css } from "@emotion/react";
-import React from "react";
+import { css } from "@emotion/react";
 import BoxContainer from "../components/boxContainer";
 import ContactAndWorkForUs from "../components/contactAndWorkForUs";
 import FullWidthText, { highlightedCss } from "../components/fullWidthText";
@@ -46,7 +43,7 @@ const LinkButtonCss = css`
   }
 `;
 
-const HomePage = (): jsx.JSX.Element => (
+const HomePage = () => (
   <>
     <Head>
       <title>About us | The Guardian</title>

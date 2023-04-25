@@ -1,6 +1,4 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import { brand, neutral, headline, space } from "@guardian/source-foundations";
 import { minWidth } from "../styles/breakpoints";
 import {

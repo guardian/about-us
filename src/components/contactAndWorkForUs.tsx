@@ -1,5 +1,3 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
 import {
   body,
   brand,
@@ -7,7 +5,7 @@ import {
   neutral,
   space,
 } from "@guardian/source-foundations";
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,

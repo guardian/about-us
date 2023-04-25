@@ -1,6 +1,4 @@
-/** @jsxRuntime classic /
-/** @jsx jsx */
-import { css, jsx, ThemeProvider } from "@emotion/react";
+import { css, ThemeProvider } from "@emotion/react";
 import {
   buttonThemeBrand,
   LinkButton,
