@@ -13,9 +13,9 @@ if (process.env.TEAMCITY_BRANCH === "main") {
 const nextConfig = {
   assetPrefix,
   basePath,
-  compiler: {
-    emotion: true
-  },
+  // compiler: {
+  //   emotion: true
+  // },
   transpilePackages: [
     "@guardian/consent-management-platform",
     "@guardian/libs",
