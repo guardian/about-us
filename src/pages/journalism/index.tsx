@@ -134,9 +134,9 @@ const JournalismPage = () => (
               alwaysImgOnLeft={true}
             />
             <ResponsiveCardVariant1
-              title="John Mulholland, editor of Guardian US"
+              title="Betsy Reed, editor of Guardian US"
               imagePath="/about/images/journalism-6.jpg"
-              linkUrl="https://www.theguardian.com/profile/johnmulholland"
+              linkUrl="https://www.theguardian.com/profile/betsy-reed"
             />
             <ResponsiveCardVariant1
               title="Lenore Taylor, editor of Guardian Australia"
