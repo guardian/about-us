@@ -1,0 +1,41 @@
+name: "Build"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-region: eu-west-1
+          role-to-assume: ${{ secrets.GU_RIFF_RAFF_ROLE_ARN }}
+
+      - run: npm ci
+      - run: npm run build
+      - run: |
+          mkdir about
+          mv out/* about
+          mv about out
+
+      - uses: guardian/actions-riff-raff@v2
+        with:
+          app: "about-us"
+          configPath: riff-raff.yaml
+          contentDirectories: |
+            gu-about-us-upload:
+              - out
