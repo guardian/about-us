@@ -1,3 +1,6 @@
+allowedStages:
+  - CODE
+  - PROD
 regions:
   - eu-west-1
 stacks:

@@ -16,6 +16,8 @@ const nextConfig = {
   compiler: {
     emotion: true
   },
+  distDir: 'out/about',
+  output: 'export',
   transpilePackages: [
     "@guardian/consent-management-platform",
     "@guardian/libs",
