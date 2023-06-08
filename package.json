@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next build",
+    "build": "next build",
     "node-riffraff-artifact": "node-riffraff-artifact"
   },
   "repository": {

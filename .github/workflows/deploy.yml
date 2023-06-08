@@ -27,10 +27,6 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: |
-          mkdir about
-          mv out/* about
-          mv about out
 
       - uses: guardian/actions-riff-raff@v2
         with:
