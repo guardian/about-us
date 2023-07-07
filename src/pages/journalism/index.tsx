@@ -238,7 +238,7 @@ const JournalismPage = () => (
             <ResponsiveCardVariant1
               title="Editorial guidelines for journalists"
               imagePath="/about/images/journalism-20.jpg"
-              linkUrl="https://www.theguardian.com/info/2015/aug/05/the-guardians-editorial-code"
+              linkUrl="https://www.theguardian.com/about/2023/jul/07/guardian-editorial-code-of-practice-and-guidance-2023"
             />
             <ResponsiveCardVariant1
               title="About our readers’ editor"
