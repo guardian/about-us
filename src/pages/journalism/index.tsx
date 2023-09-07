@@ -217,13 +217,25 @@ const JournalismPage = () => (
               title="Guardian US"
               imagePath="/about/images/front-page-11.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Visit Guardian US"
+              linkText="Guardian US"
             />
             <ResponsiveCardVariant1
               title="Guardian Australia"
               imagePath="/about/images/front-page-12.jpg"
               linkUrl="https://www.theguardian.com/au"
               linkText="Guardian Australia"
+            />
+            <ResponsiveCardVariant1
+              title="Guardian Europe"
+              imagePath="/about/images/front-page-13.jpg"
+              linkUrl="https://www.theguardian.com/europe"
+              linkText="Guardian Europe"
+            />
+            <ResponsiveCardVariant1
+              title="Guardian International"
+              imagePath="/about/images/front-page-14.jpg"
+              linkUrl="https://www.theguardian.com/international"
+              linkText="Guardian International"
             />
           </div>
         </>
