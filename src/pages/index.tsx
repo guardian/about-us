@@ -249,28 +249,28 @@ const HomePage = () => (
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="Visit Guardian US"
+              title="Guardian US"
               imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Guardian US"
+              linkText="Visit Guardian US"
             />
             <ResponsiveCardVariant1
-              title="Visit Guardian Australia"
+              title="Guardian Australia"
               imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
-              linkText="Guardian Australia"
+              linkText="Visit Guardian Australia"
             />
             <ResponsiveCardVariant1
-              title="Visit Guardian Europe"
+              title="Guardian Europe"
               imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
-              linkText="Guardian Europe"
+              linkText="Visit Guardian Europe"
             />
             <ResponsiveCardVariant1
-              title="Visit Guardian International"
+              title="Guardian International"
               imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
-              linkText="Guardian International"
+              linkText="Visit Guardian International"
             />
           </div>
           <LinkButton
