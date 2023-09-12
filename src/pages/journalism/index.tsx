@@ -215,25 +215,25 @@ const JournalismPage = () => (
             <h3>International editions</h3>
             <ResponsiveCardVariant1
               title="Visit Guardian US"
-              imagePath="/about/images/front-page-11.jpg"
+              imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
               linkText="Guardian US"
             />
             <ResponsiveCardVariant1
               title="Visit Guardian Australia"
-              imagePath="/about/images/front-page-12.jpg"
+              imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
               linkText="Guardian Australia"
             />
             <ResponsiveCardVariant1
               title="Visit Guardian Europe"
-              imagePath="/about/images/front-page-13.jpg"
+              imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
               linkText="Guardian Europe"
             />
             <ResponsiveCardVariant1
               title="Visit Guardian International"
-              imagePath="/about/images/front-page-14.jpg"
+              imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
               linkText="Guardian International"
             />
