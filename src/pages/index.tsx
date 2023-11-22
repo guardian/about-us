@@ -121,7 +121,7 @@ const HomePage = () => (
         overlapTop={true}
       >
         <>
-          <InnerText title="Our Organisation" theme="light">
+          <InnerText title="Our organisation" theme="light">
             <>
               <p>
                 The Guardian is owned by Guardian Media Group, which has only
@@ -141,9 +141,9 @@ const HomePage = () => (
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="A mission for journalism: an essay by our editor"
+              title="Times change but the Guardian’s values don’t: an essay by our editor"
               imagePath="/about/images/front-page-2.jpg"
-              linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
+              linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
             <ResponsiveCardVariant1
               title="Guardian Media Group"
@@ -186,8 +186,8 @@ const HomePage = () => (
               `}
             >
               The Guardian’s independent, high-impact journalism is powered by
-              its global readership. In 2020 alone, more than 1.5 million
-              readers supported us financially. It’s thanks to this generosity
+              its global readership. The Guardian has over 1 million recurring digital supporters
+              from more than 180 countries around the world. It’s thanks to this generosity
               that we can provide quality, trustworthy reporting that’s open for
               everyone to read. With no shareholders or billionaire owner, we
               can investigate and challenge without fear or favour, and amplify
@@ -236,9 +236,10 @@ const HomePage = () => (
                 infographics and visuals.
               </p>
               <p>
-                Our Covid-19 investigations exposed governmental and social
-                failings, as did the Snowden Files, Panama Papers, Cambridge
-                Analytica Files and the Windrush revelations in the UK.
+                Our investigations have exposed governmental and social failings,
+                including Windrush revelations in the UK, Covid-19, Cambridge
+                Analytica, the Snowden Files, the Panama, Paradise and Pandora
+                Papers, and the Pegasus Project.
               </p>
               <p>
                 Our teams in the UK, US and Australia produce theguardian.com,
