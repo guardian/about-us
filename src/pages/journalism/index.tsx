@@ -45,7 +45,7 @@ const JournalismPage = () => (
           link: "/about/",
         },
         {
-          title: "Our organisation",
+          title: "Guardian Media Group",
           isSelected: false,
           link: "/about/organisation",
         },

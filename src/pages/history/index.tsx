@@ -5,15 +5,16 @@ import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
-  headingCss,
-  skipToContentStyles,
-  twoThenOneColumnResponsiveCardHolder,
+    headingCss, singleColumnResponsiveCardHolder,
+    skipToContentStyles,
+    twoThenOneColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import UnfinishedBusinessThrasher from "../../components/unfinishedBusinessThrasher";
+import InnerText from "../../components/innerText";
 
 const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
@@ -23,6 +24,12 @@ const scottTrustBkg = {
   mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
   tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
   wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+};
+
+const guardianFoundationBkg = {
+    mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
+    tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
+    wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
 };
 
 const OurHistory = () => (
@@ -42,7 +49,7 @@ const OurHistory = () => (
           link: "/about/",
         },
         {
-          title: "Our organisation",
+          title: "Guardian Media Group",
           isSelected: false,
           link: "/about/organisation",
         },
@@ -127,6 +134,27 @@ const OurHistory = () => (
               title="CP Scott’s centenary essay"
               imagePath="/about/images/history-8.jpg"
               linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+              alwaysImgOnLeft={true}
+            />
+          </div>
+        </>
+      </BoxContainer>
+      <BoxContainer theme="light" background={guardianFoundationBkg}>
+        <>
+          <InnerText title="Guardian Foundation" theme="light">
+            <p>
+              Through the Scott Trust, our independent charity the Guardian
+              Foundation supports media under threat, promotes diversity in the
+              media and empowers children and young people to engage with the
+              news. The charity envisions a world in which all people can tell
+              their stories, access the truth and hold power to account.
+            </p>
+          </InnerText>
+          <div css={singleColumnResponsiveCardHolder}>
+            <ResponsiveCardVariant1
+              title="Guardian Foundation"
+              imagePath="/about/images/organisation-21.jpg"
+              linkUrl="https://theguardianfoundation.org/"
               alwaysImgOnLeft={true}
             />
           </div>

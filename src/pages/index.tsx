@@ -60,7 +60,7 @@ const HomePage = () => (
           link: "/about/",
         },
         {
-          title: "Our organisation",
+          title: "Guardian Media Group",
           isSelected: false,
           link: "/about/organisation",
         },
@@ -136,6 +136,11 @@ const HomePage = () => (
                 Today more than half of our revenue comes directly from our
                 readers, helping to support Guardian journalism and keep it open
                 for everyone.
+              </p>
+              <p>
+                In short, the Guardian isn’t owned or controlled by advertisers or
+                billionaires. It’s owned by a Trust, and it runs on trust. Let’s
+                keep building that trust together.
               </p>
             </>
           </InnerText>
