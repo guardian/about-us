@@ -220,8 +220,8 @@ const HomePage = () => (
             />
             <ResponsiveCardVariant1
               title="Our climate commitments"
-              imagePath="/about/images/organisation-12.jpg"
-              linkUrl="https://www.theguardian.com/environment/2021/oct/25/the-guardians-climate-pledge"
+              imagePath="https://i.guim.co.uk/img/media/dafa06e9ae17cb72856c9534afc4940af7d750f0/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
+              linkUrl="https://www.theguardian.com/media/2022/oct/10/the-guardians-climate-pledge-2022"
             />
           </div>
         </>

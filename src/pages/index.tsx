@@ -147,7 +147,7 @@ const HomePage = () => (
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="Times change but the Guardian’s values don’t: an essay by our editor"
-              imagePath="/about/images/front-page-2.jpg"
+              imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
             <ResponsiveCardVariant1
