@@ -5,7 +5,9 @@ import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
-    headingCss, singleColumnResponsiveCardHolder,
+    headingCss,
+    singleColumnResponsiveCardHolder,
+    twoColumnResponsiveCardHolder,
     skipToContentStyles,
     twoThenOneColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
@@ -87,6 +89,43 @@ const OurHistory = () => (
         smallImageUrl="/about/images/history-full-width-small.jpg"
         largeImageUrl="/about/images/history-full-width-large.jpg"
       />
+      <BoxContainer theme="light" background={scottTrustBkg}>
+        <>
+          <h2 css={headingCss}>The Scott Trust</h2>
+          <div css={twoColumnResponsiveCardHolder}>
+            <ResponsiveCardVariant1
+              title="About the Scott Trust"
+              imagePath="https://i.guim.co.uk/img/media/7dfe3625a4a7a732a305ec56273692fbb5c1fa7b/0_0_5000_3000/master/5000.jpg?width=460&dpr=2&s=none"
+              linkUrl="https://www.theguardian.com/the-scott-trust"
+            />
+            <ResponsiveCardVariant1
+              title="The Scott Trust board"
+              imagePath="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/9/14/1442227868728/fb9c0d08-ab97-4ad1-af73-a99d23d99d2b-1020x612.jpeg?width=620&dpr=2&s=none"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
+            />
+            <ResponsiveCardVariant1
+              title="Annual reports and letter from the chair"
+              imagePath="/about/images/history-8.jpg"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
+            />
+            <ResponsiveCardVariant1
+              title="The Scott Trust values"
+              imagePath="/about/images/front-page-4.jpg"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
+            />
+            <ResponsiveCardVariant1
+              title="Scott Trust timeline"
+              imagePath="/about/images/history-7.jpg"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
+            />
+            <ResponsiveCardVariant1
+              title="CP Scott’s centenary essay"
+              imagePath="https://i.guim.co.uk/img/media/f1e4961ebcf53adaa7f182dd84b01f81a1bef7fa/0_0_5000_3000/master/5000.jpg?width=620&dpr=2&s=none"
+              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+            />
+          </div>
+        </>
+      </BoxContainer>
       <BoxContainer
         theme="light"
         background={{ backgroundColor: `${neutral[97]}` }}
@@ -116,32 +155,9 @@ const OurHistory = () => (
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
-      <BoxContainer theme="light" background={scottTrustBkg}>
-        <>
-          <h2 css={headingCss}>The Scott Trust</h2>
-          <div css={twoThenOneColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="Scott Trust values"
-              imagePath="/about/images/front-page-4.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="Scott Trust timeline"
-              imagePath="/about/images/history-7.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/a-history-of-the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="/about/images/history-8.jpg"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
-              alwaysImgOnLeft={true}
-            />
-          </div>
-        </>
-      </BoxContainer>
       <BoxContainer theme="light" background={guardianFoundationBkg}>
         <>
-          <InnerText title="Guardian Foundation" theme="light">
+          <InnerText title="The Guardian Foundation" theme="light">
             <p>
               Through the Scott Trust, our independent charity the Guardian
               Foundation supports media under threat, promotes diversity in the

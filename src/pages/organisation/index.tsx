@@ -11,7 +11,6 @@ import { PageStyles } from "../../components/pageStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import {
   headingCss,
-  singleColumnResponsiveCardHolder,
   skipToContentStyles,
   threeColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
