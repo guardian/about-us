@@ -65,10 +65,10 @@ const JournalismPage = () => (
       <FullWidthText theme="dark" title="Journalism">
         <p>
           The Guardian has a global reputation for holding power to account and
-          championing the voices of those less heard. Our Covid-19
-          investigations exposed governmental and social failings, as did our
-          earlier work on the Snowden disclosures, the Windrush scandal,
-          Cambridge Analytica and the Panama Papers. We are passionate about the
+          championing the voices of those less heard. Our investigations have exposed
+          governmental and social failings, including Windrush revelations in the UK,
+          Covid-19, Cambridge Analytica, the Snowden Files, the Panama, Paradise and
+          Pandora Papers, and the Pegasus Project. We are passionate about the
           climate emergency, social justice, fairness and progress. We remain
           dedicated to truth and to bringing about a more hopeful future.
         </p>
@@ -104,7 +104,7 @@ const JournalismPage = () => (
             />
             <ResponsiveCardVariant1
               title="Times change but the Guardian's values don't"
-              imagePath="/about/images/journalism-4.jpg"
+              imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
             <ResponsiveCardVariant1
