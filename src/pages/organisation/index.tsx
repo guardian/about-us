@@ -50,7 +50,7 @@ const reportsBkg = {
 const HomePage = () => (
   <>
     <Head>
-      <title>About our organisation | The Guardian</title>
+      <title>Guardian Media Group | The Guardian</title>
     </Head>
     <PageStyles />
     <a href="#main" css={skipToContentStyles}>
@@ -69,7 +69,7 @@ const HomePage = () => (
           link: "/about/organisation",
         },
         {
-          title: "Our history",
+          title: "The Scott Trust",
           isSelected: false,
           link: "/about/history",
         },

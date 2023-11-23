@@ -35,7 +35,7 @@ const guardianFoundationBkg = {
 const OurHistory = () => (
   <>
     <Head>
-      <title>About our history | The Guardian</title>
+      <title>The Scott Trust | The Guardian</title>
     </Head>
     <PageStyles />
     <a href="#main" css={skipToContentStyles}>
@@ -54,7 +54,7 @@ const OurHistory = () => (
           link: "/about/organisation",
         },
         {
-          title: "Our history",
+          title: "The Scott Trust",
           isSelected: true,
           link: "/about/history",
         },
@@ -66,7 +66,7 @@ const OurHistory = () => (
       ]}
     />
     <main id="main">
-      <FullWidthText theme="dark" title="Our history">
+      <FullWidthText theme="dark" title="The Scott Trust">
         <>
           <p>
             The Manchester Guardian was founded to promote the liberal interest

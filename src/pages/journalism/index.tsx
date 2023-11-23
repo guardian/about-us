@@ -50,7 +50,7 @@ const JournalismPage = () => (
           link: "/about/organisation",
         },
         {
-          title: "Our history",
+          title: "The Scott Trust",
           isSelected: false,
           link: "/about/history",
         },
