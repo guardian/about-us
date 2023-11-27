@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "node-riffraff-artifact": "node-riffraff-artifact"
+    "build": "next build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +32,6 @@
     "@guardian/eslint-plugin-source-foundations": "^13.0.0",
     "@guardian/eslint-plugin-source-react-components": "^17.0.0",
     "@guardian/libs": "^15.0.0",
-    "@guardian/node-riffraff-artifact": "^0.1.9",
     "@types/node": "^14.14.33",
     "@types/prettier": "^2.2.2",
     "@types/react": "^18.2.0",
