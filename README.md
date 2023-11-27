@@ -29,7 +29,7 @@ $ npm run dev
 
 ### Deployment pipeline
 
-There is a CI/CD process setup using teamcity and node-riffraff-artifact. A push/merge into the `main` branch will work it's way over to the following s3 bucket:
+There is a CI/CD process via the `Build and deploy` Github workflow. A push/merge into the `main` branch will work it's way over to the following s3 bucket:
 `s3://gu-about-us/PROD/gu-about-us-upload/about/`. You can also manually deploy any branch to the CODE environment which will work it's way over to here:
 `s3://gu-about-us/CODE/gu-about-us-upload/about/`.
 
