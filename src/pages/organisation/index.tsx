@@ -219,8 +219,8 @@ const HomePage = () => (
             />
             <ResponsiveCardVariant1
               title="Our climate commitments"
-              imagePath="https://i.guim.co.uk/img/media/dafa06e9ae17cb72856c9534afc4940af7d750f0/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
-              linkUrl="https://www.theguardian.com/media/2022/oct/10/the-guardians-climate-pledge-2022"
+              imagePath="https://i.guim.co.uk/img/media/4238de7bd948c2563120a1785c7f9993baa3fa4c/0_0_1800_1080/master/1800.jpg?width=630&dpr=1&s=none"
+              linkUrl="https://www.theguardian.com/environment/2023/nov/28/guardian-environment-pledge-2023"
             />
           </div>
         </>
