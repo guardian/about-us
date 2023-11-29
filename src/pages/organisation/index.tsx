@@ -11,7 +11,6 @@ import { PageStyles } from "../../components/pageStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import {
   headingCss,
-  singleColumnResponsiveCardHolder,
   skipToContentStyles,
   threeColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
@@ -47,16 +46,10 @@ const reportsBkg = {
   wide: `linear-gradient(to top, #F6F6F6 calc(100% - ${boxContainerPadding.wide} - 85px), #052962 calc(100% - ${boxContainerPadding.wide} - 85px))`,
 };
 
-const guardianFoundationBkg = {
-  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
-  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
-  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
-};
-
 const HomePage = () => (
   <>
     <Head>
-      <title>About our organisation | The Guardian</title>
+      <title>Guardian Media Group | The Guardian</title>
     </Head>
     <PageStyles />
     <a href="#main" css={skipToContentStyles}>
@@ -70,12 +63,12 @@ const HomePage = () => (
           link: "/about/",
         },
         {
-          title: "Our organisation",
+          title: "Guardian Media Group",
           isSelected: true,
           link: "/about/organisation",
         },
         {
-          title: "Our history",
+          title: "The Scott Trust",
           isSelected: false,
           link: "/about/history",
         },
@@ -87,7 +80,7 @@ const HomePage = () => (
       ]}
     />
     <main id="main">
-      <FullWidthText theme="dark" title="Our organisation">
+      <FullWidthText theme="dark" title="Guardian Media Group">
         <>
           <p>
             Guardian Media Group has only one shareholder - The Scott Trust. The
@@ -117,7 +110,7 @@ const HomePage = () => (
               <p>
                 Guardian Media Group (GMG) owns Guardian News &amp; Media (GNM)
                 - the publisher of the Guardian and Observer newspapers in the
-                UK, theguardian.com and Guardian US and Australia.
+                UK, theguardian.com and Guardian US and Guardian Australia.
               </p>
               <p>
                 The Scott Trust, named after our longest serving editor, CP
@@ -158,16 +151,16 @@ const HomePage = () => (
               imageUrl="/about/images/organisation-6.jpg"
               title={{
                 name: "Katharine Viner",
-                job: "Editor-in-chief",
+                job: "editor-in-chief",
                 organisation: "Guardian News & Media",
               }}
-              bodyCopy="Katharine Viner is the editor-in-chief of Guardian News & Media. The editor-in-chief reports only to the Scott Trust and has complete editorial independence. She also sits on the boards of the Scott Trust and Guardian Media Group, and the executive committee of Guardian News & Media."
+              bodyCopy="Katharine Viner is editor-in-chief of the Guardian, a position she has held since June 2015. Prior to this, Katharine was deputy editor 2008-2015, launched the award-winning Guardian Australia in 2013, and was also editor of Guardian US, based in New York. Since becoming editor, she has put the Guardian’s purpose at the heart of its journalism and led the development of the Guardian’s successful reader contribution strategy. Under Katharine’s leadership, the Guardian became the first news organisation in the world to win both an Oscar and a Bafta."
             />
             <LeadershipProfile
               imageUrl="/about/images/organisation-7.jpg"
               title={{
                 name: "Anna Bateson",
-                job: "Chief executive",
+                job: "chief executive",
                 organisation: "Guardian Media Group",
               }}
               bodyCopy="Anna Bateson is the chief executive of Guardian Media Group (GMG), a role she took up in September 2022. Anna worked at the Guardian from 2016 onward, first as VP for platforms and partnerships and then from 2017-2020 as chief customer officer, and briefly as interim chief executive. Prior to the Guardian, Anna worked at a number of tech and media organisations, including YouTube, Google, ITV, MTV and Bloomberg, and was most recently CEO at a VC-backed e-commerce beauty business."
@@ -203,19 +196,13 @@ const HomePage = () => (
           <InnerText title="Sustainability" theme="light">
             <>
               <p>
-                As an organisation we recognise that the escalating climate
-                crisis is the defining issue of our times.
+                Being a purposeful and sustainable business is central to the Guardian’s strategy, bringing together many aspects of our work and the decisions we take together.
               </p>
               <p>
-                In 2019, we became the first major news organisation to certify
-                as a B Corporation, and made a climate pledge to our readers
-                committing to reach net zero carbon emissions by 2030.
+                In 2019, we became the first major news organisation to certify as a B Corporation. In 2023, we successfully renewed our certification, increasing our overall score and making progress in almost every category.
               </p>
               <p>
-                In 2020 we announced we will no longer accept advertising from
-                oil and gas companies, becoming the first major global news
-                organisation to stop accepting money from companies that extract
-                fossil fuels.
+                We are committed to reaching our goal of eliminating two thirds of our emissions by 2030 and report on this annually.
               </p>
             </>
           </InnerText>
@@ -223,17 +210,17 @@ const HomePage = () => (
             <ResponsiveCardVariant1
               title="GMG as a B Corporation"
               imagePath="/about/images/organisation-11.jpg"
-              linkUrl="https://www.theguardian.com/gnm-press-office/2019/oct/16/guardian-media-group-becomes-first-major-news-organisation-to-become-a-b-corporation-and-pledges-to-reach-net-zero-emissions-by-2030"
+              linkUrl="https://www.bcorporation.net/en-us/find-a-b-corp/company/guardian-media-group/"
             />
             <ResponsiveCardVariant1
               title="Positive impact and sustainability report"
               imagePath="/about/images/organisation-13.jpg"
-              linkUrl="https://www.theguardian.com/gmg/2021/aug/25/positive-impact-and-sustainability-report"
+              linkUrl="https://www.theguardian.com/gmg/2018/mar/14/corporate-reports-and-policies"
             />
             <ResponsiveCardVariant1
-              title="Our climate pledge"
-              imagePath="/about/images/organisation-12.jpg"
-              linkUrl="https://www.theguardian.com/environment/2021/oct/25/the-guardians-climate-pledge"
+              title="Our climate commitments"
+              imagePath="https://i.guim.co.uk/img/media/4238de7bd948c2563120a1785c7f9993baa3fa4c/0_0_1800_1080/master/1800.jpg?width=630&dpr=1&s=none"
+              linkUrl="https://www.theguardian.com/environment/2023/nov/28/guardian-environment-pledge-2023"
             />
           </div>
         </>
@@ -307,27 +294,6 @@ const HomePage = () => (
               title="Philanthropic funding"
               imagePath="/about/images/organisation-20.jpg"
               linkUrl="https://www.theguardian.com/info/2018/oct/02/philanthropic-partnerships-at-the-guardian"
-            />
-          </div>
-        </>
-      </BoxContainer>
-      <BoxContainer theme="light" background={guardianFoundationBkg}>
-        <>
-          <InnerText title="Guardian Foundation" theme="light">
-            <p>
-              Through the Scott Trust, our independent charity the Guardian
-              Foundation supports media under threat, promotes diversity in the
-              media and empowers children and young people to engage with the
-              news. The charity envisions a world in which all people can tell
-              their stories, access the truth and hold power to account.
-            </p>
-          </InnerText>
-          <div css={singleColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="Guardian Foundation"
-              imagePath="/about/images/organisation-21.jpg"
-              linkUrl="https://theguardianfoundation.org/"
-              alwaysImgOnLeft={true}
             />
           </div>
         </>
