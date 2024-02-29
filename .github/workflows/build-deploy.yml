@@ -12,6 +12,8 @@ jobs:
     permissions:
       contents: read
       id-token: write
+      pull-requests: write # Required for riff-raff action
+
     steps:
       - uses: actions/checkout@v3
 
@@ -20,16 +22,13 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
 
-      - uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-region: eu-west-1
-          role-to-assume: ${{ secrets.GU_RIFF_RAFF_ROLE_ARN }}
-
       - run: npm ci
       - run: npm run build
 
-      - uses: guardian/actions-riff-raff@v2
+      - uses: guardian/actions-riff-raff@v4
         with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          roleArn: ${{ secrets.GU_RIFF_RAFF_ROLE_ARN }}
           app: "about-us"
           buildNumberOffset: 35
           configPath: riff-raff.yaml          
