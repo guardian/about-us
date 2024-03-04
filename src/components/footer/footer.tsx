@@ -17,6 +17,7 @@ import { ThemeProvider, css, jsx } from "@emotion/react";
 import { cmp } from "@guardian/consent-management-platform";
 import { getGeoLocation } from "./getLocationCookie";
 import "ophan-tracker-js";
+import type { CountryCode } from '@guardian/libs';
 
 const TODAY = new Date();
 
@@ -238,7 +239,7 @@ const privacySettingsClickHandler = () => {
 };
 
 const countryCode = getGeoLocation() ?? "GB";
-cmp.init({ country: countryCode });
+cmp.init({ country: countryCode as CountryCode });
 
 const Footer = () => (
   <footer>
