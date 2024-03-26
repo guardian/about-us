@@ -1,3 +1,4 @@
+import type { CountryCode } from '@guardian/libs';
 import {
   brand,
   brandAlt,
@@ -14,10 +15,11 @@ import {
 } from "@guardian/source-react-components";
 import { SyntheticEvent } from "react";
 import { ThemeProvider, css, jsx } from "@emotion/react";
-import { cmp } from "@guardian/consent-management-platform";
+
 import { getGeoLocation } from "./getLocationCookie";
 import "ophan-tracker-js";
-import type { CountryCode } from '@guardian/libs';
+
+import { cmp  } from "@guardian/libs";
 
 const TODAY = new Date();
 
