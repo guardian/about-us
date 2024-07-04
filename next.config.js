@@ -22,7 +22,7 @@ const nextConfig = {
     "@guardian/libs",
     "@guardian/source-foundations",
     "@guardian/source-react-components",
-    "ophan-tracker-js",
+    "@guardian/ophan-tracker-js",
   ]
 };
 
