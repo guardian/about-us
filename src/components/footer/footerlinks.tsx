@@ -65,6 +65,10 @@ export const footerLinks: FooterLink[][] = [
       link: `https://uploads.guim.co.uk/2022/07/20/STL_Modern_Slavery_Statement_2022.pdf`,
     },
     {
+      title: "Tax strategy",
+      link: `https://uploads.guim.co.uk/2024/08/27/TAX_STRATEGY_FOR_THE_YEAR_ENDED_31_MARCH_2025.pdf`,
+    },
+    {
       title: "Digital newspaper archive",
       link: `https://theguardian.newspapers.com/`,
     },
