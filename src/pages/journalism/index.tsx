@@ -65,12 +65,13 @@ const JournalismPage = () => (
       <FullWidthText theme="dark" title="Journalism">
         <p>
           The Guardian has a global reputation for holding power to account and
-          championing the voices of those less heard. Our investigations have exposed
-          governmental and social failings, including Windrush revelations in the UK,
-          Covid-19, Cambridge Analytica, the Snowden Files, the Panama, Paradise and
-          Pandora Papers, and the Pegasus Project. We are passionate about the
-          climate emergency, social justice, fairness and progress. We remain
-          dedicated to truth and to bringing about a more hopeful future.
+          championing the voices of those less heard. Our investigations have
+          exposed governmental and social failings, including Windrush
+          revelations in the UK, Covid-19, Cambridge Analytica, the Snowden
+          Files, the Panama, Paradise and Pandora Papers, and the Pegasus
+          Project. We are passionate about the climate emergency, social
+          justice, fairness and progress. We remain dedicated to truth and to
+          bringing about a more hopeful future.
         </p>
       </FullWidthText>
       <FullWidthImage
@@ -144,9 +145,9 @@ const JournalismPage = () => (
               linkUrl="https://www.theguardian.com/profile/lenore-taylor"
             />
             <ResponsiveCardVariant1
-              title="Paul Webster, editor of The Observer"
+              title="Lucy Rock, editor of The Observer"
               imagePath="/about/images/journalism-8.jpg"
-              linkUrl="https://www.theguardian.com/profile/paul-webster"
+              linkUrl="https://www.theguardian.com/profile/lucyrock"
             />
           </div>
         </>
