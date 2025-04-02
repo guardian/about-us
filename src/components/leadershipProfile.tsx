@@ -61,6 +61,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     }
     border-radius: 50%;
     margin-right: ${space[5]}px;
+    object-fit: cover;
   `;
   const titleCss = css`
     ${headline.xxxsmall()};
