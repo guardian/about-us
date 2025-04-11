@@ -108,14 +108,17 @@ const HomePage = () => (
           <InnerText title="Our structure" theme="light">
             <>
               <p>
-                Guardian Media Group (GMG) owns Guardian News &amp; Media (GNM)
-                - the publisher of the Guardian and Observer newspapers in the
-                UK, theguardian.com and Guardian US and Guardian Australia.
+                Guardian Media Group is amongst the world's leading media
+                organisations. Its core business is Guardian News &amp; Media
+                (GNM), publisher of theguardian.com, one of the largest
+                English-speaking quality news websites in the world.
               </p>
               <p>
-                The Scott Trust, named after our longest serving editor, CP
-                Scott, exists to secure the financial and editorial independence
-                of the Guardian in perpetuity.
+                In the UK, Guardian Media Group publishes the Guardian newspaper
+                six days a week, first published in 1821. Today, the Guardian
+                serves readers around the world through five thriving editions,
+                and traffic from outside the UK represents around two-thirds of
+                the Guardian's total digital audience.
               </p>
             </>
           </InnerText>
@@ -196,13 +199,19 @@ const HomePage = () => (
           <InnerText title="Sustainability" theme="light">
             <>
               <p>
-                Being a purposeful and sustainable business is central to the Guardian’s strategy, bringing together many aspects of our work and the decisions we take together.
+                Being a purposeful and sustainable business is central to the
+                Guardian’s strategy, bringing together many aspects of our work
+                and the decisions we take together.
               </p>
               <p>
-                In 2019, we became the first major news organisation to certify as a B Corporation. In 2023, we successfully renewed our certification, increasing our overall score and making progress in almost every category.
+                In 2019, we became the first major news organisation to certify
+                as a B Corporation. In 2023, we successfully renewed our
+                certification, increasing our overall score and making progress
+                in almost every category.
               </p>
               <p>
-                We are committed to reaching our goal of eliminating two thirds of our emissions by 2030 and report on this annually.
+                We are committed to reaching our goal of eliminating two thirds
+                of our emissions by 2030 and report on this annually.
               </p>
             </>
           </InnerText>
