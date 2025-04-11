@@ -5,11 +5,10 @@ import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
-    headingCss,
-    singleColumnResponsiveCardHolder,
-    twoColumnResponsiveCardHolder,
-    skipToContentStyles,
-    twoThenOneColumnResponsiveCardHolder,
+  headingCss,
+  singleColumnResponsiveCardHolder,
+  twoColumnResponsiveCardHolder,
+  skipToContentStyles,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
@@ -29,9 +28,9 @@ const scottTrustBkg = {
 };
 
 const guardianFoundationBkg = {
-    mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
-    tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
-    wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
 };
 
 const OurHistory = () => (
@@ -134,22 +133,16 @@ const OurHistory = () => (
       >
         <>
           <h2 css={headingCss}>Read more</h2>
-          <div css={twoThenOneColumnResponsiveCardHolder}>
+          <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="History of the Guardian"
               imagePath="/about/images/history-2.jpg"
               linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/1"
             />
             <ResponsiveCardVariant1
-              title="History of The Observer"
-              imagePath="/about/images/history-3.jpg"
-              linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/2"
-            />
-            <ResponsiveCardVariant1
               title="GNM Archive"
               imagePath="/about/images/history-4.jpg"
               linkUrl="https://www.theguardian.com/gnm-archive"
-              alwaysImgOnLeft={true}
             />
           </div>
         </>
