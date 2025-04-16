@@ -120,7 +120,7 @@ export const threeColumnResponsiveCardHolder = css`
   }
 `;
 
-export const oneThenThreeColumnResponsiveCardHolder = css`
+export const oneThenTwoColumnResponsiveCardHolder = css`
   border-top: 1px solid ${neutral[86]};
   margin: 40px 0 0;
   display: flex;
@@ -133,8 +133,8 @@ export const oneThenThreeColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 33.3%;
-      width: calc(33.3% - 13px);
+      width: 50%;
+      width: calc(50% - 13px);
       margin-top: ${space[5]}px;
       &:first-of-type {
         width: 100%;
@@ -222,7 +222,7 @@ export const printReaderFundedHeadingCss = css`
   ${minWidth.tablet} {
     font-size: 24px;
     margin-bottom: 2px;
-  } ;
+  }
 `;
 
 export const supportReaderFundedHeadingCss = css`
@@ -233,7 +233,7 @@ export const supportReaderFundedHeadingCss = css`
   ${minWidth.tablet} {
     margin-bottom: ${space[3]}px;
     font-size: 42px;
-  } ;
+  }
 `;
 
 export const responsiveCardV2Holder = css`

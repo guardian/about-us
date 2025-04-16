@@ -7,7 +7,7 @@ import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
   headingCss,
-  oneThenThreeColumnResponsiveCardHolder,
+  oneThenTwoColumnResponsiveCardHolder,
   responsiveCardV2Holder,
   skipToContentStyles,
   twoColumnResponsiveCardHolder,
@@ -127,7 +127,7 @@ const JournalismPage = () => (
       >
         <>
           <h2 css={headingCss}>Editors</h2>
-          <div css={oneThenThreeColumnResponsiveCardHolder}>
+          <div css={oneThenTwoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="Katharine Viner, editor-in-chief, GNM"
               imagePath="/about/images/journalism-5.jpg"
@@ -143,11 +143,6 @@ const JournalismPage = () => (
               title="Lenore Taylor, editor of Guardian Australia"
               imagePath="/about/images/journalism-7.jpg"
               linkUrl="https://www.theguardian.com/profile/lenore-taylor"
-            />
-            <ResponsiveCardVariant1
-              title="Lucy Rock, editor of The Observer"
-              imagePath="/about/images/journalism-8.jpg"
-              linkUrl="https://www.theguardian.com/profile/lucyrock"
             />
           </div>
         </>
