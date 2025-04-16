@@ -108,16 +108,6 @@ const JournalismPage = () => (
               imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
-            <ResponsiveCardVariant1
-              title="How the Guardian is editorially independent"
-              imagePath="/about/images/journalism-3.jpg"
-              linkUrl="https://www.theguardian.com/about/2017/nov/17/who-owns-the-guardian-our-unique-independent-structure"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="/about/images/front-page-5.jpg"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
-            />
           </div>
         </>
       </BoxContainer>
