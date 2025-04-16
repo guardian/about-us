@@ -70,17 +70,31 @@ const OurHistory = () => (
       <FullWidthText theme="dark" title="The Scott Trust">
         <>
           <p>
-            The Manchester Guardian was founded to promote the liberal interest
-            in the aftermath of the 1819 Peterloo Massacre, and was first
-            published on 5 May 1821. The Guardian achieved national and
-            international recognition under the editorship of CP Scott, who held
-            the post for 57 years from 1872.
+            The Scott Trust has been the sole shareholder in Guardian Media
+            Group since 1936, when John Russell Scott renounced his family’s
+            stake in the Guardian and transferred ownership to a group of
+            trustees. The shareholders of the Scott Trust take no dividend from
+            the business. All of GMG’s profits are reinvested in journalism and
+            do not benefit a proprietor or shareholders.
           </p>
           <p>
-            In May 1921, CP Scott wrote a leading article to mark the centenary
-            of the paper setting out the values of the Guardian: honesty,
-            cleanness [integrity], courage, fairness, a sense of duty to the
-            reader and a sense of duty to the community.
+            The Scott Trust’s ownership of the Guardian ensures our
+            editor-in-chief and journalists are shielded from any undue
+            influences, whether commercial, political or financial. This is a
+            powerful and liberating model for journalism. It ensures that
+            editorial decisions — what we say and how we say it — are decisions
+            for the editor-in-chief.
+          </p>
+          <p>
+            While the Guardian has grown over this period to serve tens of
+            millions of regular readers all over the world, with newsrooms in
+            the UK, US and Australia, the Scott Trust’s founding purpose has
+            remained the same:{" "}
+            <em>
+              “to secure the financial and editorial independence of the
+              Guardian in perpetuity”
+            </em>
+            .
           </p>
         </>
       </FullWidthText>
@@ -93,29 +107,19 @@ const OurHistory = () => (
           <h2 css={headingCss}>The Scott Trust</h2>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="About the Scott Trust"
-              imagePath="https://i.guim.co.uk/img/media/7dfe3625a4a7a732a305ec56273692fbb5c1fa7b/0_0_5000_3000/master/5000.jpg?width=460&dpr=2&s=none"
-              linkUrl="https://www.theguardian.com/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
               title="The Scott Trust board"
-              imagePath="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/9/14/1442227868728/fb9c0d08-ab97-4ad1-af73-a99d23d99d2b-1020x612.jpeg?width=620&dpr=2&s=none"
+              imagePath="/about/images/organisation-3.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
             />
             <ResponsiveCardVariant1
               title="Annual reports and letter from the chair"
-              imagePath="/about/images/history-8.jpg"
+              imagePath="/about/images/organisation-9.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
             <ResponsiveCardVariant1
               title="The Scott Trust values"
               imagePath="/about/images/front-page-4.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="Scott Trust timeline"
-              imagePath="/about/images/history-7.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
             <ResponsiveCardVariant1
               title="CP Scott’s centenary essay"
