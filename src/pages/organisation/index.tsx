@@ -122,28 +122,6 @@ const HomePage = () => (
               </p>
             </>
           </InnerText>
-          <div css={twoColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="About the Scott Trust"
-              imagePath="/about/images/organisation-2.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="The Scott Trust board"
-              imagePath="/about/images/organisation-3.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
-            />
-            <ResponsiveCardVariant1
-              title="About Guardian Media Group"
-              imagePath="/about/images/front-page-3.jpg"
-              linkUrl="https://www.theguardian.com/gmg"
-            />
-            <ResponsiveCardVariant1
-              title="GMG Board"
-              imagePath="/about/images/organisation-5.jpg"
-              linkUrl="https://www.theguardian.com/gmg/2015/jul/23/gnm-board"
-            />
-          </div>
         </>
       </BoxContainer>
       <BoxContainer theme="light" background={{ backgroundColor: brand[400] }}>
@@ -169,12 +147,18 @@ const HomePage = () => (
               bodyCopy="Anna Bateson is the chief executive of Guardian Media Group (GMG), a role she took up in September 2022. Anna worked at the Guardian from 2016 onward, first as VP for platforms and partnerships and then from 2017-2020 as chief customer officer, and briefly as interim chief executive. Prior to the Guardian, Anna worked at a number of tech and media organisations, including YouTube, Google, ITV, MTV and Bloomberg, and was most recently CEO at a VC-backed e-commerce beauty business."
             />
           </div>
-          <DetailsAndImage
-            imageUrl="/about/images/organisation-8.jpg"
-            title="GNM executive committee"
-            bodyCopy="Read more about the management team of Guardian News & Media"
-            readMoreUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
-          />
+          <div css={twoColumnResponsiveCardHolder}>
+            <ResponsiveCardVariant1
+              title="GNM executive committee"
+              imagePath="/about/images/organisation-8.jpg"
+              linkUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
+            />
+            <ResponsiveCardVariant1
+              title="GMG Board"
+              imagePath="/about/images/organisation-5.jpg"
+              linkUrl="https://www.theguardian.com/gmg/2015/jul/23/gnm-board"
+            />
+          </div>
         </>
       </BoxContainer>
       <BoxContainer theme="light" background={reportsBkg}>
