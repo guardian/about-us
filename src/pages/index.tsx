@@ -124,23 +124,56 @@ const HomePage = () => (
           <InnerText title="Our organisation" theme="light">
             <>
               <p>
-                The Guardian is owned by Guardian Media Group, which has only
-                one shareholder - the Scott Trust.
+                The Guardian’s agenda-setting journalism is underpinned by an
+                independent ownership structure that is different from other
+                global news organisations. It guarantees our journalism and our
+                editor stay independent from any outside influence, whether
+                financial, political or commercial.
               </p>
               <p>
-                The Scott Trust, named after our longest serving editor, CP
-                Scott, exists to secure the financial and editorial independence
-                of the Guardian in perpetuity.
+                In 1936, John Russell Scott — the proprietor of the Manchester
+                Guardian, as it was then known — transferred his family’s stake
+                in the newspaper to a group of trustees. The Scott Trust became
+                the owner of the newspaper, putting in place the independent
+                ownership structure that supports the Guardian to this day.
               </p>
               <p>
-                Today more than half of our revenue comes directly from our
-                readers, helping to support Guardian journalism and keep it open
-                for everyone.
+                This independent ownership structure is made up of three key
+                organisations:
               </p>
               <p>
-                In short, the Guardian isn’t owned or controlled by advertisers
-                or billionaires. It’s owned by a Trust, and it runs on trust.
-                Let’s keep building that trust together.
+                <ul>
+                  <li>
+                    <strong>The Scott Trust</strong>, the sole shareholder of
+                    Guardian Media Group. The purpose — and privilege — of the
+                    Trust is to secure the financial and editorial independence
+                    of the Guardian in perpetuity.
+                  </li>
+                  <li>
+                    <strong>The Scott Trust Endowment</strong>, a fund built up
+                    following the prudent sale of assets with the core purpose
+                    of investing to provide financial returns to support
+                    Guardian journalism in perpetuity.
+                  </li>
+                  <li>
+                    <strong>Guardian Media Group</strong>, the owner of Guardian
+                    News &amp; Media (GNM) and publisher of the Guardian
+                    newspaper and website.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                This exceptional, if not unique, form of governance for a news
+                publisher ensures that all surplus financial returns are
+                reinvested into our high quality journalism for a global
+                audience rather than benefiting a proprietor or shareholders.
+              </p>
+              <p>
+                A summary of the governance structure is available{" "}
+                <a href="https://drive.google.com/file/d/1C99fs-HKHyCpENm5ry2Ccc6zxcihj2KP/view">
+                  here
+                </a>
+                .
               </p>
             </>
           </InnerText>
