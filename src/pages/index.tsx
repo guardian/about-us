@@ -141,27 +141,25 @@ const HomePage = () => (
                 This independent ownership structure is made up of three key
                 organisations:
               </p>
-              <p>
-                <ul>
-                  <li>
-                    <strong>The Scott Trust</strong>, the sole shareholder of
-                    Guardian Media Group. The purpose — and privilege — of the
-                    Trust is to secure the financial and editorial independence
-                    of the Guardian in perpetuity.
-                  </li>
-                  <li>
-                    <strong>The Scott Trust Endowment</strong>, a fund built up
-                    following the prudent sale of assets with the core purpose
-                    of investing to provide financial returns to support
-                    Guardian journalism in perpetuity.
-                  </li>
-                  <li>
-                    <strong>Guardian Media Group</strong>, the owner of Guardian
-                    News &amp; Media (GNM) and publisher of the Guardian
-                    newspaper and website.
-                  </li>
-                </ul>
-              </p>
+              <ul>
+                <li>
+                  <strong>The Scott Trust</strong>, the sole shareholder of
+                  Guardian Media Group. The purpose — and privilege — of the
+                  Trust is to secure the financial and editorial independence of
+                  the Guardian in perpetuity.
+                </li>
+                <li>
+                  <strong>The Scott Trust Endowment</strong>, a fund built up
+                  following the prudent sale of assets with the core purpose of
+                  investing to provide financial returns to support Guardian
+                  journalism in perpetuity.
+                </li>
+                <li>
+                  <strong>Guardian Media Group</strong>, the owner of Guardian
+                  News &amp; Media (GNM) and publisher of the Guardian newspaper
+                  and website.
+                </li>
+              </ul>
               <p>
                 This exceptional, if not unique, form of governance for a news
                 publisher ensures that all surplus financial returns are
