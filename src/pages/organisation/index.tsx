@@ -105,20 +105,20 @@ const HomePage = () => (
         overlapTop={true}
       >
         <>
-          <InnerText title="Our structure" theme="light">
+          <InnerText title="Our organisation" theme="light">
             <>
               <p>
-                Guardian Media Group is amongst the world's leading media
+                Guardian Media Group is amongst the world’s leading media
                 organisations. Its core business is Guardian News &amp; Media
                 (GNM), publisher of theguardian.com, one of the largest
                 English-speaking quality news websites in the world.
               </p>
               <p>
-                In the UK, Guardian Media Group publishes the Guardian newspaper
-                six days a week, first published in 1821. Today, the Guardian
-                serves readers around the world through five thriving editions,
-                and traffic from outside the UK represents around two-thirds of
-                the Guardian's total digital audience.
+                The Guardian was first published in 1821. Today, the Guardian
+                serves readers around the world through five thriving digital
+                editions, and audiences from outside of the UK represent more
+                than two-thirds of the Guardian’s total digital audience. It
+                also prints the Guardian newspaper six days a week in the UK.
               </p>
             </>
           </InnerText>
