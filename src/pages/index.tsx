@@ -138,9 +138,9 @@ const HomePage = () => (
                 for everyone.
               </p>
               <p>
-                In short, the Guardian isn’t owned or controlled by advertisers or
-                billionaires. It’s owned by a Trust, and it runs on trust. Let’s
-                keep building that trust together.
+                In short, the Guardian isn’t owned or controlled by advertisers
+                or billionaires. It’s owned by a Trust, and it runs on trust.
+                Let’s keep building that trust together.
               </p>
             </>
           </InnerText>
@@ -191,13 +191,14 @@ const HomePage = () => (
               `}
             >
               The Guardian’s independent, high-impact journalism is powered by
-              its global readership. The Guardian has over 1 million recurring digital supporters
-              from more than 180 countries around the world. It’s thanks to this generosity
-              that we can provide quality, trustworthy reporting that’s open for
-              everyone to read. With no shareholders or billionaire owner, we
-              can investigate and challenge without fear or favour, and amplify
-              stories that need to be told. You can show your support for our
-              work today, in whichever way suits you best.
+              its global readership. The Guardian has over 1 million recurring
+              digital supporters from more than 180 countries around the world.
+              It’s thanks to this generosity that we can provide quality,
+              trustworthy reporting that’s open for everyone to read. With no
+              shareholders or billionaire owner, we can investigate and
+              challenge without fear or favour, and amplify stories that need to
+              be told. You can show your support for our work today, in
+              whichever way suits you best.
             </p>
           </InnerText>
           <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>
@@ -241,42 +242,48 @@ const HomePage = () => (
                 infographics and visuals.
               </p>
               <p>
-                Our investigations have exposed governmental and social failings,
-                including Windrush revelations in the UK, Covid-19, Cambridge
-                Analytica, the Snowden Files, the Panama, Paradise and Pandora
-                Papers, and the Pegasus Project.
+                Our investigations have exposed governmental and social
+                failings, including Windrush revelations in the UK, Covid-19,
+                Cambridge Analytica, the Snowden Files, the Panama, Paradise and
+                Pandora Papers, and the Pegasus Project.
               </p>
               <p>
                 Our teams in the UK, US and Australia produce theguardian.com,
                 Guardian Australia, Guardian US, Guardian Weekly, and the
-                Guardian and Observer newspapers in the UK.
+                Guardian newspaper in the UK.
               </p>
             </>
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="Guardian US"
+              title="UK edition"
+              imagePath="/about/images/UK_920x552.jpg"
+              linkUrl="https://www.theguardian.com/uk"
+              linkText="Visit UK edition"
+            />
+            <ResponsiveCardVariant1
+              title="US edition"
               imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Visit Guardian US"
+              linkText="Visit US edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Australia"
+              title="Australia edition"
               imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Guardian Australia"
+              linkText="Visit Australia edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Europe"
+              title="Europe edition"
               imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Guardian Europe"
+              linkText="Visit Europe edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian International"
+              title="International edition"
               imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
-              linkText="Visit Guardian International"
+              linkText="Visit International edition"
             />
           </div>
           <LinkButton
