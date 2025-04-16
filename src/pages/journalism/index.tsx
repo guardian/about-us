@@ -208,30 +208,36 @@ const JournalismPage = () => (
             />
           </div>
           <div css={twoColumnResponsiveCardHolder}>
-            <h3>International editions</h3>
+            <h3>Editions</h3>
             <ResponsiveCardVariant1
-              title="Guardian US"
+              title="UK edition"
+              imagePath="/about/images/UK_920x552.jpg"
+              linkUrl="https://www.theguardian.com/uk"
+              linkText="Visit UK edition"
+            />
+            <ResponsiveCardVariant1
+              title="US edition"
               imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Visit Guardian US"
+              linkText="Visit US edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Australia"
+              title="Australia edition"
               imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Guardian Australia"
+              linkText="Visit Australia edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Europe"
+              title="Europe edition"
               imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Guardian Europe"
+              linkText="Visit Europe edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian International"
+              title="International edition"
               imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
-              linkText="Visit Guardian International"
+              linkText="Visit International edition"
             />
           </div>
         </>
