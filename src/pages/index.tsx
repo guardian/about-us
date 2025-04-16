@@ -179,24 +179,14 @@ const HomePage = () => (
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="Times change but the Guardian’s values don’t: an essay by our editor"
+              title="Times change but the Guardian’s values don’t"
               imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
             <ResponsiveCardVariant1
-              title="Guardian Media Group"
-              imagePath="/about/images/front-page-3.jpg"
-              linkUrl="https://www.theguardian.com/gmg"
-            />
-            <ResponsiveCardVariant1
-              title="The Scott Trust and our values"
-              imagePath="/about/images/front-page-4.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="/about/images/front-page-5.jpg"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+              title="A mission for journalism: an essay by our editor"
+              imagePath="/about/images/front-page-2.jpg"
+              linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
             />
           </div>
           <LinkButton
