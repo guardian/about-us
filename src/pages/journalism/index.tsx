@@ -162,9 +162,9 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-10.jpg"
             />
             <ResponsiveCardVariant2
-              title="Newsletters"
-              href="https://www.theguardian.com/email-newsletters"
-              imageUrl="/about/images/journalism-11.jpg"
+              title="Feast"
+              href="https://apps.apple.com/us/app/guardian-feast-cook-explore/id6468674686?mt=8"
+              imageUrl="/about/images/journalism-26.jpg"
             />
             <ResponsiveCardVariant2
               title="The Guardian newspaper"
@@ -172,14 +172,14 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-12.jpg"
             />
             <ResponsiveCardVariant2
-              title="The Observer newspaper"
-              href="https://www.theguardian.com/gnm-archive/2002/jun/06/2"
-              imageUrl="/about/images/journalism-13.jpg"
-            />
-            <ResponsiveCardVariant2
               title="The Guardian Weekly"
               href="https://www.theguardian.com/weekly"
               imageUrl="/about/images/journalism-14.jpg"
+            />
+            <ResponsiveCardVariant2
+              title="Newsletters"
+              href="https://www.theguardian.com/email-newsletters"
+              imageUrl="/about/images/journalism-11.jpg"
             />
             <ResponsiveCardVariant2
               title="Podcasts"
