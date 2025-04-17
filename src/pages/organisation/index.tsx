@@ -149,7 +149,7 @@ const HomePage = () => (
           </div>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="GNM executive committee"
+              title="Executive committee"
               imagePath="/about/images/organisation-8.jpg"
               linkUrl="https://www.theguardian.com/gnm-press-office/gnm-executive-committee"
             />
