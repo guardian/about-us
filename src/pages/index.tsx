@@ -274,12 +274,15 @@ const HomePage = () => (
             </>
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
+            {/* 
+            TODO: reinstate this when we have the correct image
             <ResponsiveCardVariant1
               title="UK edition"
               imagePath="/about/images/UK_920x552.jpg"
               linkUrl="https://www.theguardian.com/uk"
               linkText="Visit UK edition"
-            />
+            /> 
+            */}
             <ResponsiveCardVariant1
               title="US edition"
               imagePath="/about/images/USA_920x552.jpg"
