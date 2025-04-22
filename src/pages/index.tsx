@@ -124,46 +124,67 @@ const HomePage = () => (
           <InnerText title="Our organisation" theme="light">
             <>
               <p>
-                The Guardian is owned by Guardian Media Group, which has only
-                one shareholder - the Scott Trust.
+                The Guardian’s agenda-setting journalism is underpinned by an
+                independent ownership structure that is different from other
+                global news organisations. It guarantees our journalism and our
+                editor stay independent from any outside influence, whether
+                financial, political or commercial.
               </p>
               <p>
-                The Scott Trust, named after our longest serving editor, CP
-                Scott, exists to secure the financial and editorial independence
-                of the Guardian in perpetuity.
+                In 1936, John Russell Scott — the proprietor of the Manchester
+                Guardian, as it was then known — transferred his family’s stake
+                in the newspaper to a group of trustees. The Scott Trust became
+                the owner of the newspaper, putting in place the independent
+                ownership structure that supports the Guardian to this day.
               </p>
               <p>
-                Today more than half of our revenue comes directly from our
-                readers, helping to support Guardian journalism and keep it open
-                for everyone.
+                This independent ownership structure is made up of three key
+                organisations:
+              </p>
+              <ul>
+                <li>
+                  <strong>The Scott Trust</strong>, the sole shareholder of
+                  Guardian Media Group. The purpose — and privilege — of the
+                  Trust is to secure the financial and editorial independence of
+                  the Guardian in perpetuity.
+                </li>
+                <li>
+                  <strong>The Scott Trust Endowment</strong>, a fund built up
+                  following the prudent sale of assets with the core purpose of
+                  investing to provide financial returns to support Guardian
+                  journalism in perpetuity.
+                </li>
+                <li>
+                  <strong>Guardian Media Group</strong>, the owner of Guardian
+                  News &amp; Media (GNM) and publisher of the Guardian newspaper
+                  and website.
+                </li>
+              </ul>
+              <p>
+                This exceptional, if not unique, form of governance for a news
+                publisher ensures that all surplus financial returns are
+                reinvested into our high quality journalism for a global
+                audience rather than benefiting a proprietor or shareholders.
               </p>
               <p>
-                In short, the Guardian isn’t owned or controlled by advertisers or
-                billionaires. It’s owned by a Trust, and it runs on trust. Let’s
-                keep building that trust together.
+                A summary of the governance structure is available{" "}
+                <a href="https://drive.google.com/file/d/1C99fs-HKHyCpENm5ry2Ccc6zxcihj2KP/view">
+                  here
+                </a>
+                .
               </p>
             </>
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
-              title="Times change but the Guardian’s values don’t: an essay by our editor"
+              title="Times change but the Guardian’s values don’t"
               imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
             <ResponsiveCardVariant1
-              title="Guardian Media Group"
-              imagePath="/about/images/front-page-3.jpg"
-              linkUrl="https://www.theguardian.com/gmg"
-            />
-            <ResponsiveCardVariant1
-              title="The Scott Trust and our values"
-              imagePath="/about/images/front-page-4.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="/about/images/front-page-5.jpg"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+              title="A mission for journalism: an essay by our editor"
+              imagePath="/about/images/front-page-2.jpg"
+              linkUrl="https://www.theguardian.com/news/2017/nov/16/a-mission-for-journalism-in-a-time-of-crisis"
             />
           </div>
           <LinkButton
@@ -191,13 +212,14 @@ const HomePage = () => (
               `}
             >
               The Guardian’s independent, high-impact journalism is powered by
-              its global readership. The Guardian has over 1 million recurring digital supporters
-              from more than 180 countries around the world. It’s thanks to this generosity
-              that we can provide quality, trustworthy reporting that’s open for
-              everyone to read. With no shareholders or billionaire owner, we
-              can investigate and challenge without fear or favour, and amplify
-              stories that need to be told. You can show your support for our
-              work today, in whichever way suits you best.
+              its global readership. The Guardian has over 1 million recurring
+              digital supporters from more than 180 countries around the world.
+              It’s thanks to this generosity that we can provide quality,
+              trustworthy reporting that’s open for everyone to read. With no
+              shareholders or billionaire owner, we can investigate and
+              challenge without fear or favour, and amplify stories that need to
+              be told. You can show your support for our work today, in
+              whichever way suits you best.
             </p>
           </InnerText>
           <h3 css={[readerFundedHeadingCss, supportReaderFundedHeadingCss]}>
@@ -212,13 +234,11 @@ const HomePage = () => (
               title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
-              imagePath="/about/images/newspaper-desktop.png"
             />
             <ReaderFundedSubscribeCard
               title="Guardian Weekly"
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
               href="https://support.theguardian.com/subscribe/weekly"
-              imagePath="/about/images/guardian-weekly-desktop.png"
             />
           </div>
           <ReaderFundedPatronSupport />
@@ -241,42 +261,51 @@ const HomePage = () => (
                 infographics and visuals.
               </p>
               <p>
-                Our investigations have exposed governmental and social failings,
-                including Windrush revelations in the UK, Covid-19, Cambridge
-                Analytica, the Snowden Files, the Panama, Paradise and Pandora
-                Papers, and the Pegasus Project.
+                Our investigations have exposed governmental and social
+                failings, including Windrush revelations in the UK, Covid-19,
+                Cambridge Analytica, the Snowden Files, the Panama, Paradise and
+                Pandora Papers, and the Pegasus Project.
               </p>
               <p>
                 Our teams in the UK, US and Australia produce theguardian.com,
                 Guardian Australia, Guardian US, Guardian Weekly, and the
-                Guardian and Observer newspapers in the UK.
+                Guardian newspaper in the UK.
               </p>
             </>
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
+            {/* 
+            TODO: reinstate this when we have the correct image
             <ResponsiveCardVariant1
-              title="Guardian US"
+              title="UK edition"
+              imagePath="/about/images/UK_920x552.jpg"
+              linkUrl="https://www.theguardian.com/uk"
+              linkText="Visit UK edition"
+            /> 
+            */}
+            <ResponsiveCardVariant1
+              title="US edition"
               imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Visit Guardian US"
+              linkText="Visit US edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Australia"
+              title="Australia edition"
               imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Guardian Australia"
+              linkText="Visit Australia edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Europe"
+              title="Europe edition"
               imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Guardian Europe"
+              linkText="Visit Europe edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian International"
+              title="International edition"
               imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
-              linkText="Visit Guardian International"
+              linkText="Visit International edition"
             />
           </div>
           <LinkButton

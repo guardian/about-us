@@ -7,7 +7,7 @@ import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
   headingCss,
-  oneThenThreeColumnResponsiveCardHolder,
+  oneThenTwoColumnResponsiveCardHolder,
   responsiveCardV2Holder,
   skipToContentStyles,
   twoColumnResponsiveCardHolder,
@@ -108,16 +108,6 @@ const JournalismPage = () => (
               imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
               linkUrl="https://www.theguardian.com/media/2021/may/05/guardian-200-anniversary-covid-pandemic-journalism-editor-mission"
             />
-            <ResponsiveCardVariant1
-              title="How the Guardian is editorially independent"
-              imagePath="/about/images/journalism-3.jpg"
-              linkUrl="https://www.theguardian.com/about/2017/nov/17/who-owns-the-guardian-our-unique-independent-structure"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="/about/images/front-page-5.jpg"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
-            />
           </div>
         </>
       </BoxContainer>
@@ -127,7 +117,7 @@ const JournalismPage = () => (
       >
         <>
           <h2 css={headingCss}>Editors</h2>
-          <div css={oneThenThreeColumnResponsiveCardHolder}>
+          <div css={oneThenTwoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="Katharine Viner, editor-in-chief, GNM"
               imagePath="/about/images/journalism-5.jpg"
@@ -143,11 +133,6 @@ const JournalismPage = () => (
               title="Lenore Taylor, editor of Guardian Australia"
               imagePath="/about/images/journalism-7.jpg"
               linkUrl="https://www.theguardian.com/profile/lenore-taylor"
-            />
-            <ResponsiveCardVariant1
-              title="Lucy Rock, editor of The Observer"
-              imagePath="/about/images/journalism-8.jpg"
-              linkUrl="https://www.theguardian.com/profile/lucyrock"
             />
           </div>
         </>
@@ -177,9 +162,9 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-10.jpg"
             />
             <ResponsiveCardVariant2
-              title="Newsletters"
-              href="https://www.theguardian.com/email-newsletters"
-              imageUrl="/about/images/journalism-11.jpg"
+              title="Feast"
+              href="https://apps.apple.com/us/app/guardian-feast-cook-explore/id6468674686?mt=8"
+              imageUrl="/about/images/journalism-26.jpg"
             />
             <ResponsiveCardVariant2
               title="The Guardian newspaper"
@@ -187,14 +172,14 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-12.jpg"
             />
             <ResponsiveCardVariant2
-              title="The Observer newspaper"
-              href="https://www.theguardian.com/gnm-archive/2002/jun/06/2"
-              imageUrl="/about/images/journalism-13.jpg"
-            />
-            <ResponsiveCardVariant2
               title="The Guardian Weekly"
               href="https://www.theguardian.com/weekly"
               imageUrl="/about/images/journalism-14.jpg"
+            />
+            <ResponsiveCardVariant2
+              title="Newsletters"
+              href="https://www.theguardian.com/email-newsletters"
+              imageUrl="/about/images/journalism-11.jpg"
             />
             <ResponsiveCardVariant2
               title="Podcasts"
@@ -213,30 +198,39 @@ const JournalismPage = () => (
             />
           </div>
           <div css={twoColumnResponsiveCardHolder}>
-            <h3>International editions</h3>
+            <h3>Editions</h3>
+            {/*
+            TODO: reinstate this when we have the correct image
+             <ResponsiveCardVariant1
+              title="UK edition"
+              imagePath="/about/images/UK_920x552.jpg"
+              linkUrl="https://www.theguardian.com/uk"
+              linkText="Visit UK edition"
+            /> 
+            */}
             <ResponsiveCardVariant1
-              title="Guardian US"
+              title="US edition"
               imagePath="/about/images/USA_920x552.jpg"
               linkUrl="https://www.theguardian.com/us"
-              linkText="Visit Guardian US"
+              linkText="Visit US edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Australia"
+              title="Australia edition"
               imagePath="/about/images/australia_920x552.jpg"
               linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Guardian Australia"
+              linkText="Visit Australia edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian Europe"
+              title="Europe edition"
               imagePath="/about/images/europe_920x552.jpg"
               linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Guardian Europe"
+              linkText="Visit Europe edition"
             />
             <ResponsiveCardVariant1
-              title="Guardian International"
+              title="International edition"
               imagePath="/about/images/world_920x552.jpg"
               linkUrl="https://www.theguardian.com/international"
-              linkText="Visit Guardian International"
+              linkText="Visit International edition"
             />
           </div>
         </>

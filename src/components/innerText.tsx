@@ -15,7 +15,8 @@ interface InnerTextProps {
 const InnerText = (props: InnerTextProps) => {
   const innerTextCss = css`
     color: ${props.theme === "light" ? neutral[7] : neutral[100]};
-    p {
+    p,
+    li {
       margin: 0;
       font-family: ${serif};
       ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
