@@ -234,11 +234,13 @@ const HomePage = () => (
               title="Newspaper"
               bodyText="Convenient and money-saving, get a newspaper delivered to your door, or pick it up from your local shop. Choose your subscription, from daily to weekend-only."
               href="https://support.theguardian.com/subscribe/paper"
+              imagePath="/about/images/newspaper-desktop.png"
             />
             <ReaderFundedSubscribeCard
               title="Guardian Weekly"
               bodyText="Explore the stories that shaped the week with our magazine, delivered worldwide. From top news picks to insightful opinion pieces and engaging long reads."
               href="https://support.theguardian.com/subscribe/weekly"
+              imagePath="/about/images/guardian-weekly-desktop.png"
             />
           </div>
           <ReaderFundedPatronSupport />
@@ -274,14 +276,14 @@ const HomePage = () => (
             </>
           </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
-            {/* 
+            {/*
             TODO: reinstate this when we have the correct image
             <ResponsiveCardVariant1
               title="UK edition"
               imagePath="/about/images/UK_920x552.jpg"
               linkUrl="https://www.theguardian.com/uk"
               linkText="Visit UK edition"
-            /> 
+            />
             */}
             <ResponsiveCardVariant1
               title="US edition"

@@ -15,8 +15,7 @@ import {
 } from "@guardian/source-foundations";
 
 interface ReaderFundedSubscribeCardProps {
-  // TODO: make this prop mandatory when we have new images for this card
-  imagePath?: string;
+  imagePath: string;
   title: string;
   bodyText: string;
   href: string;
@@ -62,7 +61,7 @@ const copyContainer = css`
 
   ${from.tablet} {
     padding-right: 0;
-    border-top: none;
+    border-top: 1px solid #90abc4
   }
 
   ${between.desktop.and.wide} {
@@ -96,7 +95,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
 
   return (
     <div css={container}>
-      {props.imagePath && <img src={props.imagePath} css={image} alt="" />}
+      <img src={props.imagePath} css={image} alt="" />
       <div css={copyContainer}>
         <div>
           <a css={link} href={props.href}>
