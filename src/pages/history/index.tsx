@@ -102,29 +102,55 @@ const OurHistory = () => (
         smallImageUrl="/about/images/history-full-width-small.jpg"
         largeImageUrl="/about/images/history-full-width-large.jpg"
       />
-      <BoxContainer theme="light" background={scottTrustBkg}>
+      <BoxContainer theme="light" background={scottTrustBkg} overlapTop={true}>
         <>
-          <h2 css={headingCss}>The Scott Trust</h2>
+          <InnerText theme="light" title="Purpose">
+            <>
+              <p>
+                The core purpose of the Scott Trust is to secure the financial
+                and editorial independence of the Guardian in perpetuity. Its
+                secondary purpose is to champion and promote the causes of
+                freedom of the press and access to liberal journalism in the UK
+                and around the world.
+              </p>
+              <p>
+                The Guardian seeks to be self-sustaining financially but the
+                security of the Scott Trust allows it to look beyond the here
+                and now, towards future-facing investments and initiatives that
+                safeguard Guardian journalism for generations to come.
+              </p>
+              <p>
+                The Trust is ultimately accountable for any issues that may
+                materially impact the preservation of the financial position and
+                independence of the Guardian. This includes the reputation of
+                the Guardian and the promotion of liberal and progressive
+                journalism.
+              </p>
+              <p>
+                Through the Guardian Foundation, the Trust also supports a
+                number of programmes around the world that support the freedom
+                of the press and the future of liberal journalism.
+              </p>
+              <p>
+                Read more about Scott Trust initiatives to promote liberal
+                journalism and support the next generation of reporters{" "}
+                <a href="https://www.theguardian.com/info/2025/apr/15/scott-trust-initiatives">
+                  here
+                </a>
+                .
+              </p>
+            </>
+          </InnerText>
           <div css={twoColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="The Scott Trust board"
-              imagePath="/about/images/organisation-3.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
-            />
             <ResponsiveCardVariant1
               title="Annual reports and letter from the chair"
               imagePath="/about/images/organisation-9.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
             <ResponsiveCardVariant1
-              title="The Scott Trust values"
-              imagePath="/about/images/front-page-4.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
-            />
-            <ResponsiveCardVariant1
-              title="CP Scott’s centenary essay"
-              imagePath="https://i.guim.co.uk/img/media/f1e4961ebcf53adaa7f182dd84b01f81a1bef7fa/0_0_5000_3000/master/5000.jpg?width=620&dpr=2&s=none"
-              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+              title="The Scott Trust board"
+              imagePath="/about/images/organisation-3.jpg"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
             />
           </div>
         </>
