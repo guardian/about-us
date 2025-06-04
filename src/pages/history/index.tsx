@@ -298,6 +298,30 @@ const OurHistory = () => (
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
+      <BoxContainer theme="light" background={scottTrustBkg}>
+        <>
+          <InnerText title="The Scott Trust Endowment" theme="light">
+            <p>
+              The Scott Trust built up a substantial endowment fund through
+              prudent sale of assets which have since been invested for
+              long-term growth. These funds are managed by the Scott Trust
+              Endowment.
+            </p>
+          </InnerText>
+          <div css={twoColumnResponsiveCardHolder}>
+            <ResponsiveCardVariant1
+              title="Read more about The Scott Trust Endowment"
+              imagePath="https://i.guim.co.uk/img/media/6614f6286da1a57ba2e41c953993718cbf09e473/0_0_5000_3000/master/5000.jpg?width=920&dpr=1&s=none"
+              linkUrl="https://www.theguardian.com/info/2025/apr/15/the-scott-trust-endowment"
+            />
+            <ResponsiveCardVariant1
+              title="The Scott Trust Endowment board"
+              imagePath="/about/images/organisation-3.jpg"
+              linkUrl="https://www.theguardian.com/info/2025/apr/15/the-scott-trust-endowment-board"
+            />
+          </div>
+        </>
+      </BoxContainer>
       <BoxContainer theme="light" background={guardianFoundationBkg}>
         <>
           <InnerText title="The Guardian Foundation" theme="light">
