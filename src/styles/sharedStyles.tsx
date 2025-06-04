@@ -254,3 +254,27 @@ export const responsiveCardV2Holder = css`
     }
   }
 `;
+
+export const oneTopTwoBottomCardHolder = css`
+  border-top: 1px solid ${neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      width: 50%;
+      width: calc(50% - 10px);
+      margin-top: ${space[5]}px;
+      &:first-child {
+        width: 100%;
+        margin-bottom: ${space[3]}px;
+      }
+    }
+  }
+`;
