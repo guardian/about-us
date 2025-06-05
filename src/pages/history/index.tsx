@@ -250,7 +250,7 @@ const OurHistory = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: neutral[97] }}
         overlapTop={true}
         paddingBottom={true}
       >
