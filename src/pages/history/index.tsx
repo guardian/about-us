@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
@@ -12,6 +13,11 @@ import {
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
+import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source-react-components";
+import { minWidth } from "../../styles/breakpoints";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import UnfinishedBusinessThrasher from "../../components/unfinishedBusinessThrasher";
@@ -32,6 +38,16 @@ const guardianFoundationBkg = {
   tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
   wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
 };
+
+const LinkButtonCss = css`
+  margin-top: 41px;
+  ${minWidth.tablet} {
+    margin-top: 48px;
+  }
+  ${minWidth.desktop} {
+    margin-top: 57px;
+  }
+`;
 
 const OurHistory = () => (
   <>
@@ -157,7 +173,7 @@ const OurHistory = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: neutral[97] }}
         overlapTop={true}
         paddingBottom={true}
       >
@@ -230,6 +246,55 @@ const OurHistory = () => (
               linkUrl="https://www.theguardian.com/gnm-archive"
             />
           </div>
+        </>
+      </BoxContainer>
+      <BoxContainer
+        theme="light"
+        background={{ backgroundColor: neutral[97] }}
+        overlapTop={true}
+        paddingBottom={true}
+      >
+        <>
+          <InnerText theme="light" title="Values">
+            <>
+              <p>
+                The Manchester Guardian was founded in the liberal interest to
+                support reform in the early 19th century. The ethos of public
+                service has been part of the DNA of the Guardian ever since.
+              </p>
+              <p>
+                In his 1921 centenary editorial, editor CP Scott established its
+                enduring principles: honesty, integrity, courage, fairness, and
+                a sense of duty to readers and community. His famous declaration
+                that "Comment is free, but facts are sacred" and emphasis on
+                giving voice to both supporters and opponents remain at the
+                heart of the present-day news organisation.
+              </p>
+              <p>
+                Change in over a century is inevitable — the Scott Trust
+                continues to renew and reinvent based on its responsibilities.
+              </p>
+              <p>
+                These principles are maintained through a voluntary payment
+                model, keeping information free from a paywall, and global
+                expansion to serve a community not defined by geography, but by
+                a shared hope for the future. They also inform a rigorous
+                self-regulation through an independent readers' editor who
+                addresses public concerns about its journalism.
+              </p>
+            </>
+          </InnerText>
+          <LinkButton
+            priority="primary"
+            size="default"
+            icon={<SvgArrowRightStraight />}
+            iconSide="right"
+            nudgeIcon={true}
+            cssOverrides={LinkButtonCss}
+            href="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust"
+          >
+            More on our values
+          </LinkButton>
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
