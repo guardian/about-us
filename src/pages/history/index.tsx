@@ -5,10 +5,10 @@ import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
 import { neutral } from "@guardian/source-foundations";
 import {
-  headingCss,
   singleColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
   skipToContentStyles,
+  oneTopTwoBottomCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
@@ -162,8 +162,63 @@ const OurHistory = () => (
         paddingBottom={true}
       >
         <>
-          <h2 css={headingCss}>Read more</h2>
-          <div css={twoColumnResponsiveCardHolder}>
+          <InnerText theme="light" title="History">
+            <>
+              <p>
+                The Manchester Guardian was founded in 1821 following the
+                Peterloo Massacre and gained prominence under long-serving
+                editor and owner CP Scott's leadership.
+              </p>
+              <p>
+                After the deaths of CP Scott and his son Ted in 1932, his
+                surviving son, John, faced a financial crisis that risked the
+                future of the Manchester Guardian as an independent liberal
+                newspaper.
+              </p>
+              <p>
+                To preserve it, John transferred ownership worth over £1 million
+                to the Scott Trust in 1936, requiring only that the paper
+                maintain its founding principles.
+              </p>
+              <p>
+                The Trust Deed of 19 June 1936 echoed the long-standing
+                injunction to those who take up responsibility for the paper. It
+                stated that the company must be carried on as nearly as may be
+                upon the same principles as they have heretofore been
+                conducted”. This remains the sole instruction given to any
+                incoming Guardian editor by the Trust.
+              </p>
+              <p>
+                The Trust was reconstituted in 1948 and then became The Scott
+                Trust Limited in 2008, backed by an endowment fund to ensure the
+                Guardian's financial stability and editorial independence.
+              </p>
+              <p>
+                In 2021 the Scott Trust undertook a review of governance
+                arrangements, in light of the many changes the media industry
+                had experienced during the previous decade. The review clarified
+                the roles of the Scott Trust and Guardian Media Group boards,
+                ensuring they are better positioned to support the Guardian’s
+                purpose and mission, editorially and commercially, as it looks
+                to the future. The{" "}
+                <a href="https://uploads.guim.co.uk/2021/12/06/Conclusions_of_the_Scott_Trust%E2%80%99s_2021_governance_review.pdf">
+                  conclusions can be read here
+                </a>
+                . A summary of today’s governance structure is available{" "}
+                <a href="https://drive.google.com/file/d/1C99fs-HKHyCpENm5ry2Ccc6zxcihj2KP/view?usp=sharing">
+                  here
+                </a>
+                .
+              </p>
+            </>
+          </InnerText>
+          <div css={oneTopTwoBottomCardHolder}>
+            <ResponsiveCardVariant1
+              title="CP Scott’s centenary essay"
+              imagePath="https://i.guim.co.uk/img/media/f1e4961ebcf53adaa7f182dd84b01f81a1bef7fa/0_0_5000_3000/master/5000.jpg?width=620&dpr=2&s=none"
+              linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
+              alwaysImgOnLeft={true}
+            />
             <ResponsiveCardVariant1
               title="History of the Guardian"
               imagePath="/about/images/history-2.jpg"
