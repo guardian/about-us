@@ -3,7 +3,7 @@ import {
   buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import {
   between,
   body,
@@ -12,7 +12,7 @@ import {
   neutral,
   space,
   until,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 
 interface ReaderFundedSubscribeCardProps {
   imagePath: string;

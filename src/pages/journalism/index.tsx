@@ -4,7 +4,7 @@ import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
-import { neutral } from "@guardian/source-foundations";
+import { neutral } from "@guardian/source/foundations";
 import {
   headingCss,
   oneThenTwoColumnResponsiveCardHolder,

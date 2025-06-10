@@ -1,10 +1,10 @@
 import { css } from "@emotion/react";
-import { brand, neutral, headline, space } from "@guardian/source-foundations";
+import { brand, neutral, headline, space } from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 
 interface ResponsiveCardVariant1Props {
   title: string;

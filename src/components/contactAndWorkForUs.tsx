@@ -1,15 +1,15 @@
 import {
-  body,
-  brand,
-  headline,
+  article17,
+  headlineBold24,
   neutral,
+  palette,
   space,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const contactSectionItemCss = css`
@@ -23,13 +23,13 @@ const contactSectionItemCss = css`
 `;
 
 const contactSectionItemH3Css = css`
-  color: ${brand[400]};
-  ${headline.xsmall({ fontWeight: "bold" })};
+  color: ${palette.brand[400]};
+  ${headlineBold24}
   margin: 0;
 `;
 
 const contactSectionItemPCss = css`
-  ${body.medium({ fontWeight: "regular" })};
+  ${article17}
   color: ${neutral[7]};
 `;
 

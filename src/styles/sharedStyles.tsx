@@ -6,7 +6,7 @@ import {
   space,
   textSans,
   titlepiece,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { minWidth } from "./breakpoints";
 
 export const headingCss = css`

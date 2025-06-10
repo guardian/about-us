@@ -6,7 +6,7 @@ import {
   palette,
   space,
   titlepiece,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { ReactElement } from "react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import { neutral, space, sport } from "@guardian/source-foundations";
+import { neutral, space, sport } from "@guardian/source/foundations";
 
 type Theme = "light" | "dark";
 

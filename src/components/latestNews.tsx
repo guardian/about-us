@@ -2,14 +2,14 @@ import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import {
   headline,
   neutral,
   news,
   space,
   titlepiece,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const containerCss = css`

@@ -3,7 +3,7 @@ import {
   buttonThemeReaderRevenue,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import {
   neutral,
   space,
@@ -11,7 +11,7 @@ import {
   until,
   body,
   headline,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { useEffect, useState } from "react";
 import { getCountryGroup } from "../../helpers/countryGroup";
 import React from "react";

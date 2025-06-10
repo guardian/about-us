@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import { body, neutral, titlepiece } from "@guardian/source-foundations";
+import { body, neutral, titlepiece } from "@guardian/source/foundations";
 import { serif } from "../styles/fonts";
 
 type Theme = "light" | "dark";

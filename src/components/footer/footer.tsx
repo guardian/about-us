@@ -6,13 +6,13 @@ import {
   from,
   neutral,
   textSans,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { footerLinks } from "./footerlinks";
 import {
   LinkButton,
   buttonThemeReaderRevenue,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import { SyntheticEvent } from "react";
 import { ThemeProvider, css, jsx } from "@emotion/react";
 

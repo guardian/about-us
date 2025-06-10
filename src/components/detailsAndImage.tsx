@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import {
   body,
   headline,
@@ -11,7 +11,7 @@ import {
   neutral,
   space,
   from,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 
 interface DetailsAndImageProps {
   title: string;

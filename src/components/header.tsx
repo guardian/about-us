@@ -7,7 +7,7 @@ import {
   brand,
   brandAlt,
   neutral,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface NavSection {

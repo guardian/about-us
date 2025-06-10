@@ -6,7 +6,7 @@ import {
   neutral,
   space,
   titlepiece,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 interface HeaderQuoteProps {

@@ -4,7 +4,7 @@ import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
-import { neutral } from "@guardian/source-foundations";
+import { neutral } from "@guardian/source/foundations";
 import {
   singleColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
@@ -16,7 +16,7 @@ import FullWidthImage from "../../components/fullWidthImage";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import { minWidth } from "../../styles/breakpoints";
 import dynamic from "next/dynamic";
 import Head from "next/head";

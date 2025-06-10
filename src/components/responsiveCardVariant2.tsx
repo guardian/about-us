@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { brand, headline, neutral, space } from "@guardian/source-foundations";
+import { brand, headline, neutral, space } from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface ResponsiveCardVariant2Props {

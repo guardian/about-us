@@ -8,13 +8,13 @@ import {
   opinion,
   space,
   sport,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 
 import { minWidth } from "../styles/breakpoints";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 
 const UnfinishedBusinessThrasher = () => {
   const containerCss = css`

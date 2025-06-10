@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";
-import { brand, neutral } from "@guardian/source-foundations";
+import { brand, neutral } from "@guardian/source/foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";

@@ -3,8 +3,8 @@ import {
   buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
-import { body, headline, neutral, space } from "@guardian/source-foundations";
+} from "@guardian/source/react-components";
+import { body, headline, neutral, space } from "@guardian/source/foundations";
 import { minWidth } from "../../styles/breakpoints";
 
 interface PatronSupportSectionProps {

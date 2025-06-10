@@ -5,7 +5,7 @@ import {
   headline,
   neutral,
   space,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface LeadershipProfileProps {
