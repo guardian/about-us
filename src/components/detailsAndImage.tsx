@@ -5,12 +5,12 @@ import {
   SvgArrowRightStraight,
 } from "@guardian/source/react-components";
 import {
-  body,
-  headline,
-  brand,
   neutral,
   space,
   from,
+  article17,
+  headlineBold17,
+  palette,
 } from "@guardian/source/foundations";
 
 interface DetailsAndImageProps {
@@ -85,8 +85,8 @@ const figcaptionCss = css`
 `;
 
 const titleCss = css`
-  ${headline.xxxsmall({ fontWeight: "bold" })};
-  color: ${brand[400]};
+  ${headlineBold17};
+  color: ${palette.brand[400]};
   margin: 0 0 ${space[3]}px;
   font-size: 16px;
   ${from.tablet} {
@@ -110,7 +110,7 @@ const readerFundingTitleCss = css`
 `;
 
 const bodyCopyCss = css`
-  ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
+  ${article17}
   margin: ${space[3]}px 0 ${space[5]}px;
   ${from.tablet} {
     font-size: 17px;

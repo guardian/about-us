@@ -1,11 +1,13 @@
 import { css } from "@emotion/react";
 import {
   brandAlt,
-  headline,
+  headlineMedium20,
+  headlineMedium28,
   neutral,
   palette,
   space,
-  titlepiece,
+  titlepiece42,
+  titlepiece50,
 } from "@guardian/source/foundations";
 import { ReactElement } from "react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
@@ -43,17 +45,16 @@ const FullWidthText = (props: FullWidthTextProps) => {
     padding-left: ${space[6]}px;
     padding-right: ${space[6]}px;
     p {
-      ${headline.xxsmall({
-        fontWeight: "regular",
-        lineHeight: "loose",
-      })};
+      ${headlineMedium20}
+      line-height: 1.4;
       margin: 0;
     }
     p + p {
       margin-top: 0.75em;
     }
     h1 {
-      ${titlepiece.small({ fontWeight: "regular" })};
+      ${titlepiece42}
+      font-weight: 400;
       margin: 0 0 0.5em;
       line-height: 1;
     }
@@ -64,13 +65,13 @@ const FullWidthText = (props: FullWidthTextProps) => {
       padding-right: ${space[5]}px;
       width: ${namedBreakpoints.tablet}px;
       p {
-        ${headline.small({
-          fontWeight: "regular",
-          lineHeight: "loose",
-        })};
+        ${headlineMedium28}
+        font-weight: 400;
+        line-height: 1.4;
       }
       h1 {
-        ${titlepiece.medium({ fontWeight: "regular" })};
+        ${titlepiece50}
+        font-weight: 400;
         line-height: 1;
       }
     }
@@ -84,7 +85,8 @@ const FullWidthText = (props: FullWidthTextProps) => {
         font-size: 35px;
       }
       h1 {
-        ${titlepiece.large({ fontWeight: "regular" })};
+        ${titlepiece50}
+        font-weight: 400;
         line-height: 1;
       }
     }

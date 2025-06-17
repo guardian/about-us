@@ -1,11 +1,11 @@
 import type { CountryCode } from "@guardian/libs";
 import {
-  brand,
-  brandAlt,
-  headline,
   from,
-  neutral,
-  textSans,
+  headlineBold24,
+  textSans17,
+  textSansBold15,
+  textSans14,
+  palette,
 } from "@guardian/source/foundations";
 import { footerLinks } from "./footerlinks";
 import {
@@ -24,8 +24,8 @@ import { cmp } from "@guardian/libs";
 const TODAY = new Date();
 
 const footerColourStyles = css`
-  background-color: ${brand[400]};
-  color: ${neutral[100]};
+  background-color: ${palette.brand[400]};
+  color: ${palette.neutral[100]};
 `;
 
 const footerSizeStyles = css`
@@ -112,13 +112,13 @@ const footerMenuLiStyles = css`
 const footerLinkStyles = css`
   display: inline-block;
   padding: 6px 0;
-  color: ${neutral[100]};
-  ${textSans.medium()};
+  color: ${palette.neutral[100]};
+  ${textSans17};
   font-size: 16px;
   line-height: 19.2px;
   text-decoration: none;
   :hover {
-    color: ${brandAlt[400]};
+    color: ${palette.brandAlt[400]};
     cursor: pointer;
   }
 `;
@@ -137,8 +137,8 @@ const supportStyles = css`
 `;
 
 const supportTitleStyles = css`
-  color: ${brandAlt[400]};
-  ${headline.xsmall({ fontWeight: "bold" })};
+  color: ${palette.brandAlt[400]};
+  ${headlineBold24};
   line-height: 24px;
   margin-top: 3px;
   margin-bottom: 12px;
@@ -163,12 +163,12 @@ const copyrightStyles = css`
 
 const backToTopLinkStyles = css`
   font-size: 16px;
-  color: ${neutral[100]};
+  color: ${palette.neutral[100]};
   font-weight: bold;
   padding: 0 5px;
-  background-color: ${brand[400]};
+  background-color: ${palette.brand[400]};
   :hover {
-    color: ${brandAlt[400]};
+    color: ${palette.brandAlt[400]};
   }
   position: absolute;
   right: 20px;
@@ -176,7 +176,7 @@ const backToTopLinkStyles = css`
 `;
 
 const backToTopLabelStyles = css`
-  ${textSans.small({ fontWeight: "bold" })};
+  ${textSansBold15};
   font-size: 16px;
   display: inline-block;
   padding-right: 5px;
@@ -194,13 +194,13 @@ const backToTopButtonOutterContainerStyles = css`
 
 const backToTopButtonInnerContainerStyles = css`
   position: absolute;
-  fill: ${brand[400]};
+  fill: ${palette.brand[400]};
   top: 9px;
   left: 9px;
 `;
 
 const copyrightTextStyles = css`
-  ${textSans.xsmall()};
+  ${textSans14};
 
   ${from.tablet} {
     padding-top: 6px;
@@ -218,13 +218,13 @@ const privacyButtonCss = css`
   outline: none;
   display: inline-block;
   padding: 6px 0;
-  color: ${neutral[100]};
-  ${textSans.medium()};
+  color: ${palette.neutral[100]};
+  ${textSans17};
   font-size: 16px;
   line-height: 19.2px;
   text-decoration: none;
   :hover {
-    color: ${brandAlt[400]};
+    color: ${palette.brandAlt[400]};
     cursor: pointer;
   }
 `;
@@ -295,7 +295,7 @@ const Footer = () => (
                       icon={<SvgArrowRightStraight />}
                       nudgeIcon={true}
                       size="small"
-                      css={css`
+                      cssOverrides={css`
                         padding: 0 14px;
                       `}
                       href="https://support.theguardian.com/uk/contribute"
@@ -308,7 +308,7 @@ const Footer = () => (
                     icon={<SvgArrowRightStraight />}
                     nudgeIcon={true}
                     size="small"
-                    css={css`
+                    cssOverrides={css`
                       padding: 0 14px;
                     `}
                     href="https://support.theguardian.com/uk/subscribe"
