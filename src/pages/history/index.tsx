@@ -27,12 +27,6 @@ const Footer = dynamic(() => import("../../components/footer/footer"), {
   ssr: false,
 });
 
-const scottTrustBkg = {
-  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
-  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
-  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
-};
-
 const guardianFoundationBkg = {
   mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
   tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
@@ -118,7 +112,7 @@ const OurHistory = () => (
         smallImageUrl="/about/images/history-full-width-small.jpg"
         largeImageUrl="/about/images/history-full-width-large.jpg"
       />
-      <BoxContainer theme="light" background={scottTrustBkg} overlapTop={true}>
+      <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }} overlapTop={true}>
         <>
           <InnerText theme="light" title="Purpose">
             <>
@@ -174,8 +168,6 @@ const OurHistory = () => (
       <BoxContainer
         theme="light"
         background={{ backgroundColor: neutral[97] }}
-        overlapTop={true}
-        paddingBottom={true}
       >
         <>
           <InnerText theme="light" title="History">
@@ -251,7 +243,6 @@ const OurHistory = () => (
       <BoxContainer
         theme="light"
         background={{ backgroundColor: neutral[97] }}
-        overlapTop={true}
         paddingBottom={true}
       >
         <>
@@ -298,7 +289,7 @@ const OurHistory = () => (
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
-      <BoxContainer theme="light" background={scottTrustBkg}>
+      <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }}>
         <>
           <InnerText title="The Scott Trust Endowment" theme="light">
             <p>
