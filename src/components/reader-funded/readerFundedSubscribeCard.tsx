@@ -5,11 +5,11 @@ import {
   SvgArrowRightStraight,
 } from "@guardian/source/react-components";
 import {
+  article15,
   between,
-  body,
   from,
-  headline,
-  neutral,
+  headlineMedium20,
+  palette,
   space,
   until,
 } from "@guardian/source/foundations";
@@ -22,8 +22,8 @@ interface ReaderFundedSubscribeCardProps {
 }
 
 const title = css`
-  color: ${neutral[100]};
-  ${headline.xxsmall()};
+  color: ${palette.neutral[100]};
+  ${headlineMedium20}
   font-weight: normal;
   font-size: 22px;
   margin: 0;
@@ -38,8 +38,8 @@ const title = css`
 `;
 
 const bodyCopy = css`
-  color: ${neutral[100]};
-  ${body.small({ lineHeight: "loose" })}
+  color: ${palette.neutral[100]};
+  ${article15}
   margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
@@ -110,7 +110,7 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
             iconSide="right"
             nudgeIcon={true}
             href={props.href}
-            css={linkButtonCss}
+            cssOverrides={linkButtonCss}
             priority="tertiary"
           >
             Read more

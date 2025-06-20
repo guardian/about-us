@@ -113,7 +113,7 @@ const footerLinkStyles = css`
   display: inline-block;
   padding: 6px 0;
   color: ${palette.neutral[100]};
-  ${textSans17};
+  ${textSans17}
   font-size: 16px;
   line-height: 19.2px;
   text-decoration: none;
@@ -138,7 +138,7 @@ const supportStyles = css`
 
 const supportTitleStyles = css`
   color: ${palette.brandAlt[400]};
-  ${headlineBold24};
+  ${headlineBold24}
   line-height: 24px;
   margin-top: 3px;
   margin-bottom: 12px;
@@ -176,7 +176,7 @@ const backToTopLinkStyles = css`
 `;
 
 const backToTopLabelStyles = css`
-  ${textSansBold15};
+  ${textSansBold15}
   font-size: 16px;
   display: inline-block;
   padding-right: 5px;
@@ -200,7 +200,7 @@ const backToTopButtonInnerContainerStyles = css`
 `;
 
 const copyrightTextStyles = css`
-  ${textSans14};
+  ${textSans14}
 
   ${from.tablet} {
     padding-top: 6px;

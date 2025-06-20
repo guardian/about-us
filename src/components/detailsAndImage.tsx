@@ -85,7 +85,7 @@ const figcaptionCss = css`
 `;
 
 const titleCss = css`
-  ${headlineBold17};
+  ${headlineBold17}
   color: ${palette.brand[400]};
   margin: 0 0 ${space[3]}px;
   font-size: 16px;

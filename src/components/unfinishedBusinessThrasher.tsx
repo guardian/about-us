@@ -1,13 +1,9 @@
 import { css, keyframes } from "@emotion/react";
 import {
-  brand,
-  headline,
-  lifestyle,
-  neutral,
-  news,
-  opinion,
+  headlineBold17,
+  headlineBold24,
+  palette,
   space,
-  sport,
 } from "@guardian/source/foundations";
 
 import { minWidth } from "../styles/breakpoints";
@@ -60,13 +56,13 @@ const UnfinishedBusinessThrasher = () => {
       to bottom,
       transparent,
       transparent 57px,
-      ${neutral[7]} 58px,
+      ${palette.neutral[7]} 58px,
       transparent 59px,
       transparent 114px,
-      ${neutral[7]} 115px,
+      ${palette.neutral[7]} 115px,
       transparent 116px,
       transparent 170px,
-      ${neutral[7]} 171px,
+      ${palette.neutral[7]} 171px,
       transparent 172px
     );
     ${minWidth.tablet} {
@@ -77,10 +73,10 @@ const UnfinishedBusinessThrasher = () => {
         to bottom,
         transparent,
         transparent 49px,
-        ${neutral[7]} 50px,
+        ${palette.neutral[7]} 50px,
         transparent 51px,
         transparent 99px,
-        ${neutral[7]} 100px,
+        ${palette.neutral[7]} 100px,
         transparent 101px
       );
     }
@@ -89,10 +85,10 @@ const UnfinishedBusinessThrasher = () => {
         to bottom,
         transparent,
         transparent 60px,
-        ${neutral[7]} 61px,
+        ${palette.neutral[7]} 61px,
         transparent 62px,
         transparent 120px,
-        ${neutral[7]} 121px,
+        ${palette.neutral[7]} 121px,
         transparent 122px
       );
     }
@@ -101,16 +97,16 @@ const UnfinishedBusinessThrasher = () => {
         to bottom,
         transparent,
         transparent 78px,
-        ${neutral[7]} 79px,
+        ${palette.neutral[7]} 79px,
         transparent 80px,
         transparent 159px,
-        ${neutral[7]} 160px,
+        ${palette.neutral[7]} 160px,
         transparent 161px
       );
     }
   `;
   const pCss = css`
-    ${headline.xxxsmall({ fontWeight: "bold" })};
+    ${headlineBold17}
     line-height: 1.4;
     margin: ${space[6]}px 0;
     padding: 0;
@@ -138,7 +134,7 @@ const UnfinishedBusinessThrasher = () => {
     list-style: none;
     padding: ${space[12]}px ${space[3]}px;
     margin: 0;
-    ${headline.xsmall({ fontWeight: "bold" })};
+    ${headlineBold24}
     font-size: 26px;
     line-height: 30px;
     position: relative;
@@ -148,7 +144,7 @@ const UnfinishedBusinessThrasher = () => {
       bottom: 0;
       left: 0;
       width: 1px;
-      background-color: ${neutral[7]};
+      background-color: ${palette.neutral[7]};
     }
     & li {
       color: #d7cfc3;
@@ -164,7 +160,7 @@ const UnfinishedBusinessThrasher = () => {
       }
     }
     & li:nth-of-type(1) {
-      animation: ${bounce(brand[400])} 9.1s ease infinite;
+      animation: ${bounce(palette.brand[400])} 9.1s ease infinite;
       animation-delay: 0.1s;
       &:before {
         left: ${space[3] + 4}px;
@@ -183,7 +179,7 @@ const UnfinishedBusinessThrasher = () => {
       }
     }
     & li:nth-of-type(2) {
-      animation: ${bounce(news[400])} 9.1s ease infinite;
+      animation: ${bounce(palette.news[400])} 9.1s ease infinite;
       animation-delay: 1.5s;
       margin-left: ${space[3]}px;
       &:before {
@@ -203,7 +199,7 @@ const UnfinishedBusinessThrasher = () => {
       }
     }
     & li:nth-of-type(3) {
-      animation: ${bounce(lifestyle[300])} 9.1s ease infinite;
+      animation: ${bounce(palette.lifestyle[300])} 9.1s ease infinite;
       animation-delay: 3s;
       margin-left: ${space[3] * 2}px;
       &:before {
@@ -243,7 +239,7 @@ const UnfinishedBusinessThrasher = () => {
       }
     }
     & li:nth-of-type(5) {
-      animation: ${bounce(sport[500])} 9.1s ease infinite;
+      animation: ${bounce(palette.sport[500])} 9.1s ease infinite;
       animation-delay: 6s;
       margin-left: ${space[3] * 4}px;
       &:before {
@@ -263,7 +259,7 @@ const UnfinishedBusinessThrasher = () => {
       }
     }
     & li:nth-of-type(6) {
-      animation: ${bounce(opinion[400])} 9.1s ease infinite;
+      animation: ${bounce(palette.opinion[400])} 9.1s ease infinite;
       animation-delay: 7.5s;
       margin-left: ${space[3] * 5}px;
       &:before {

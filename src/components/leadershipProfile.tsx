@@ -1,9 +1,8 @@
 import { css } from "@emotion/react";
 import {
-  brand,
-  body,
-  headline,
-  neutral,
+  article17,
+  headlineMedium17,
+  palette,
   space,
 } from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
@@ -64,7 +63,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     object-fit: cover;
   `;
   const titleCss = css`
-    ${headline.xxxsmall()};
+    ${headlineMedium17}
     font-size: 16px;
     ${minWidth.tablet} {
       font-size: 18px;
@@ -72,8 +71,8 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
     ${minWidth.wide} {
       font-size: 24px;
     }
-    color: ${brand[400]};
-    border-top: 1px solid ${neutral[86]};
+    color: ${palette.brand[400]};
+    border-top: 1px solid ${palette.neutral[86]};
     width: calc(100% - 114px);
     ${minWidth.wide} {
       width: calc(100% - 165px);
@@ -83,13 +82,10 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
   `;
   const bodyCopyCss = css`
     width: 100%;
-    border-top: 1px solid ${neutral[86]};
+    border-top: 1px solid ${palette.neutral[86]};
     padding-top: ${space[1]}px;
     margin: ${space[3]}px 0 0;
-    ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
-    ${minWidth.tablet} {
-      font-size: 17px;
-    }
+    ${article17}
   `;
   return (
     <figure css={containerCss}>

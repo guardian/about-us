@@ -4,16 +4,15 @@ import {
   SvgArrowRightStraight,
 } from "@guardian/source/react-components";
 import {
-  headline,
-  neutral,
-  news,
+  headlineMedium17,
+  palette,
   space,
-  titlepiece,
+  titlepiece42,
 } from "@guardian/source/foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const containerCss = css`
-  background-color: ${news[400]};
+  background-color: ${palette.news[400]};
   padding: ${space[5]}px ${space[3]}px;
 
   ${minWidth.tablet} {
@@ -28,7 +27,7 @@ const containerCss = css`
 `;
 
 const innerContainerCss = css`
-  background: ${neutral[100]};
+  background: ${palette.neutral[100]};
   margin: 0 auto;
   max-width: 1300px;
   padding: ${space[3]}px;
@@ -41,16 +40,15 @@ const innerContainerCss = css`
   }
 
   & article h2 {
-    ${titlepiece.small()};
+    ${titlepiece42}
     font-size: 32px;
     margin: 32px 0 0;
   }
 
   & article p {
-    ${headline.xxxsmall({
-      fontWeight: "regular",
-      lineHeight: "loose",
-    })};
+    ${headlineMedium17}
+    font-weight: 400;
+    line-height: 1.4;
     margin: ${space[6]}px 0;
     &:before {
       content: "";
@@ -58,7 +56,7 @@ const innerContainerCss = css`
       width: 30%;
       height: 1px;
       margin-bottom: ${space[1]}px;
-      background-color: ${neutral[7]};
+      background-color: ${palette.neutral[7]};
     }
   }
 

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { minWidth } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import { body, neutral, titlepiece } from "@guardian/source/foundations";
+import { article17, palette, titlepiece42 } from "@guardian/source/foundations";
 import { serif } from "../styles/fonts";
 
 type Theme = "light" | "dark";
@@ -14,12 +14,12 @@ interface InnerTextProps {
 
 const InnerText = (props: InnerTextProps) => {
   const innerTextCss = css`
-    color: ${props.theme === "light" ? neutral[7] : neutral[100]};
+    color: ${props.theme === "light" ? palette.neutral[7] : palette.neutral[100]};
     p,
     li {
       margin: 0;
       font-family: ${serif};
-      ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
+      ${article17}
       ${minWidth.tablet} {
         font-size: 20px;
       }
@@ -33,12 +33,12 @@ const InnerText = (props: InnerTextProps) => {
   `;
 
   const h2Css = css`
-    ${titlepiece.small()};
+    ${titlepiece42}
     max-width: 608px;
     font-size: 32px;
     line-height: 1.15;
     margin: 10px 0 18px 0;
-    color: ${props.theme == "dark" ? neutral[100] : "inherit"};
+    color: ${props.theme == "dark" ? palette.neutral[100] : "inherit"};
     ${minWidth.tablet} {
       font-size: 42px;
     }
