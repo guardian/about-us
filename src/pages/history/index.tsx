@@ -4,7 +4,7 @@ import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
-import { neutral } from "@guardian/source/foundations";
+import { palette } from "@guardian/source/foundations";
 import {
   singleColumnResponsiveCardHolder,
   twoColumnResponsiveCardHolder,
@@ -28,9 +28,9 @@ const Footer = dynamic(() => import("../../components/footer/footer"), {
 });
 
 const guardianFoundationBkg = {
-  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
-  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
-  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+  mobile: `linear-gradient(to top, ${palette.neutral[100]} 42px, ${palette.neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${palette.neutral[100]} 49px, ${palette.neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${palette.neutral[100]} 58px, ${palette.neutral[97]} 58px)`,
 };
 
 const LinkButtonCss = css`
@@ -112,7 +112,7 @@ const OurHistory = () => (
         smallImageUrl="/about/images/history-full-width-small.jpg"
         largeImageUrl="/about/images/history-full-width-large.jpg"
       />
-      <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }} overlapTop={true}>
+      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }} overlapTop={true}>
         <>
           <InnerText theme="light" title="Purpose">
             <>
@@ -167,7 +167,7 @@ const OurHistory = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: neutral[97] }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <InnerText theme="light" title="History">
@@ -242,7 +242,7 @@ const OurHistory = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: neutral[97] }}
+        background={{ backgroundColor: palette.neutral[97] }}
         paddingBottom={true}
       >
         <>
@@ -289,7 +289,7 @@ const OurHistory = () => (
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
-      <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }}>
+      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }}>
         <>
           <InnerText title="The Scott Trust Endowment" theme="light">
             <p>

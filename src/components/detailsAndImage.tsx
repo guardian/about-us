@@ -5,7 +5,6 @@ import {
   SvgArrowRightStraight,
 } from "@guardian/source/react-components";
 import {
-  neutral,
   space,
   from,
   article17,
@@ -24,7 +23,7 @@ interface DetailsAndImageProps {
 const containerCss = css`
   margin: 40px 0 0;
   padding-top: ${space[3]}px;
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   ${from.tablet} {
     display: flex;
     justify-content: space-between;
@@ -36,7 +35,7 @@ const readerFundingContainerCss = css`
   border-top: none;
 
   ${from.tablet} {
-    border-top: 1px solid ${neutral[86]};
+    border-top: 1px solid ${palette.neutral[86]};
   }
 `;
 

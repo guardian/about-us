@@ -2,7 +2,6 @@ import { css } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import {
   space,
-  neutral,
   palette,
   headlineBold24,
   textSans17,
@@ -87,7 +86,7 @@ const headerStyles = css`
     line-height: 1.4;
     padding-bottom: ${space[5]}px;
     border-bottom: 1px solid ${palette.brand[600]};
-    color: ${neutral[100]};
+    color: ${palette.neutral[100]};
     display: block;
     text-decoration: none;
     margin-left: 50px;

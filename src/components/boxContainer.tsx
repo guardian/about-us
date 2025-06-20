@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 import { ReactElement } from "react";
-import { neutral, space, sport } from "@guardian/source/foundations";
+import { palette, space } from "@guardian/source/foundations";
 
 type Theme = "light" | "dark";
 
@@ -76,8 +76,8 @@ const BoxContainer = (props: BoxContainerProps) => {
 
   const boxContentsCss = css`
     padding: ${space[1]}px ${space[3]}px 41px ${space[3]}px;
-    background: ${props.theme === "light" ? neutral[100] : sport[300]};
-    border: ${props.theme === "light" ? `1px solid ${neutral[86]}` : "none"};
+    background: ${props.theme === "light" ? palette.neutral[100] : palette.sport[300]};
+    border: ${props.theme === "light" ? `1px solid ${palette.neutral[86]}` : "none"};
     ${minWidth.tablet} {
       padding: ${space[1]}px ${space[5]}px ${space[12]}px ${space[5]}px;
     }

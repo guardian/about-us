@@ -1,7 +1,6 @@
 import {
   article17,
   headlineBold24,
-  neutral,
   palette,
   space,
 } from "@guardian/source/foundations";
@@ -14,7 +13,7 @@ import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const contactSectionItemCss = css`
   width: 100%;
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin-bottom: ${space[9]}px;
   ${minWidth.tablet} {
     width: 220px;
@@ -30,7 +29,7 @@ const contactSectionItemH3Css = css`
 
 const contactSectionItemPCss = css`
   ${article17}
-  color: ${neutral[7]};
+  color: ${palette.neutral[7]};
 `;
 
 interface ContactSectionItemProps {
@@ -57,7 +56,7 @@ const ContactSectionItem = (props: ContactSectionItemProps) => (
 );
 
 const backgroundCss = css`
-  background-color: ${neutral[100]};
+  background-color: ${palette.neutral[100]};
 `;
 
 const contactAndWorkForUsCss = css`

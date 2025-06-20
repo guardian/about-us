@@ -1,9 +1,7 @@
 import { css } from "@emotion/react";
 import {
-  brandAlt,
   headlineMedium20,
   headlineMedium28,
-  neutral,
   palette,
   space,
   titlepiece42,
@@ -21,7 +19,7 @@ interface FullWidthTextProps {
 }
 
 export const highlightedCss = css`
-  background-color: ${brandAlt[400]};
+  background-color: ${palette.brandAlt[400]};
   padding-bottom: 2px;
 `;
 
@@ -36,7 +34,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
     background-color: ${props.theme === "light"
       ? palette.neutral[100]
       : palette.brand[400]};
-    color: ${props.theme === "light" ? neutral[7] : neutral[100]};
+    color: ${props.theme === "light" ? palette.neutral[7] : palette.neutral[100]};
     display: block;
     max-width: 1300px;
     margin: 0 auto;
