@@ -1,10 +1,16 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
+  themeButtonBrand,
 } from "@guardian/source/react-components";
-import { article15, headlineBold20, headlineBold24, palette, space } from "@guardian/source/foundations";
+import {
+  article15,
+  headlineBold20,
+  headlineBold24,
+  palette,
+  space,
+} from "@guardian/source/foundations";
 import { minWidth } from "../../styles/breakpoints";
 
 interface PatronSupportSectionProps {
@@ -53,20 +59,19 @@ const PatronSupportSection = (props: PatronSupportSectionProps) => {
         <h3 css={h3Css}>{props.title}</h3>
         <p css={pCss}>{props.bodyText}</p>
       </div>
-      <ThemeProvider theme={buttonThemeBrand}>
-        <LinkButton
-          size="small"
-          icon={<SvgArrowRightStraight />}
-          iconSide="right"
-          nudgeIcon={true}
-          href={props.buttonLink}
-          priority="tertiary"
-          className="button"
-          cssOverrides={linkButtonCss}
-        >
-          {props.buttonText}
-        </LinkButton>
-      </ThemeProvider>
+      <LinkButton
+        size="small"
+        icon={<SvgArrowRightStraight />}
+        iconSide="right"
+        nudgeIcon={true}
+        href={props.buttonLink}
+        priority="tertiary"
+        className="button"
+        cssOverrides={linkButtonCss}
+        theme={themeButtonBrand}
+      >
+        {props.buttonText}
+      </LinkButton>
     </div>
   );
 };

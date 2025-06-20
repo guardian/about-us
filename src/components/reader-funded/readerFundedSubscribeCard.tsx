@@ -1,8 +1,8 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
+  themeButtonBrand,
 } from "@guardian/source/react-components";
 import {
   article15,
@@ -103,19 +103,18 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
           </a>
           <p css={bodyCopy}>{props.bodyText}</p>
         </div>
-        <ThemeProvider theme={buttonThemeBrand}>
-          <LinkButton
-            size="small"
-            icon={<SvgArrowRightStraight />}
-            iconSide="right"
-            nudgeIcon={true}
-            href={props.href}
-            cssOverrides={linkButtonCss}
-            priority="tertiary"
-          >
-            Read more
-          </LinkButton>
-        </ThemeProvider>
+        <LinkButton
+          size="small"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          href={props.href}
+          cssOverrides={linkButtonCss}
+          priority="tertiary"
+          theme={themeButtonBrand}
+        >
+          Read more
+        </LinkButton>
       </div>
     </div>
   );

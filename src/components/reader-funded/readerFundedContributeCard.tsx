@@ -1,8 +1,8 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeReaderRevenue,
   LinkButton,
   SvgArrowRightStraight,
+  themeButtonReaderRevenue,
 } from "@guardian/source/react-components";
 import {
   space,
@@ -164,17 +164,16 @@ const ReaderFundedContributeCard = () => {
               Choose to give once from just {currencyGlyph}1, or set up a
               recurring amount to power our reporting every month or year.
             </p>
-            <ThemeProvider theme={buttonThemeReaderRevenue}>
-              <LinkButton
-                size="small"
-                icon={<SvgArrowRightStraight />}
-                iconSide="right"
-                nudgeIcon={true}
-                href="https://support.theguardian.com/contribute"
-              >
-                Support us
-              </LinkButton>
-            </ThemeProvider>
+            <LinkButton
+              size="small"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://support.theguardian.com/contribute"
+              theme={themeButtonReaderRevenue}
+            >
+              Support us
+            </LinkButton>
           </div>
           <div css={cardImageDesktopCss} />
         </div>
