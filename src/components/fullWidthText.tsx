@@ -6,6 +6,7 @@ import {
   space,
   titlepiece42,
   titlepiece50,
+  titlepiece70,
 } from "@guardian/source/foundations";
 import { ReactElement } from "react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
@@ -44,6 +45,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
     padding-right: ${space[6]}px;
     p {
       ${headlineMedium20}
+      font-weight: 400;
       line-height: 1.4;
       margin: 0;
     }
@@ -83,7 +85,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
         font-size: 35px;
       }
       h1 {
-        ${titlepiece50}
+        ${titlepiece70}
         font-weight: 400;
         line-height: 1;
       }

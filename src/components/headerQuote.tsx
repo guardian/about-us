@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import {
-  headlineMedium20,
+  headlineMediumItalic20,
   palette,
   space,
   titlepiece42,
@@ -105,7 +105,7 @@ const quoteDivCss = css`
 const citeCss = css`
   display: block;
   margin-top: ${space[2]}px;
-  ${headlineMedium20}
+  ${headlineMediumItalic20}
   font-weight: 400;
   ${minWidth.tablet} {
     font-size: 30px;
