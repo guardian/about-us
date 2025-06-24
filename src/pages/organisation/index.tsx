@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";
-import { brand, neutral } from "@guardian/source-foundations";
+import { palette } from "@guardian/source/foundations";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
@@ -33,10 +33,10 @@ const marginTop = css`
 `;
 
 const ourStructureBkg = {
-  mobile: `linear-gradient(to top, #052962 41px, ${neutral[97]} 41px)`,
-  tablet: `linear-gradient(to top, #052962 80px, ${neutral[97]} 80px)`,
-  desktop: `linear-gradient(to top, #052962 90px, ${neutral[97]} 90px)`,
-  wide: `linear-gradient(to top, #052962 85px, ${neutral[97]} 85px)`,
+  mobile: `linear-gradient(to top, #052962 41px, ${palette.neutral[97]} 41px)`,
+  tablet: `linear-gradient(to top, #052962 80px, ${palette.neutral[97]} 80px)`,
+  desktop: `linear-gradient(to top, #052962 90px, ${palette.neutral[97]} 90px)`,
+  wide: `linear-gradient(to top, #052962 85px, ${palette.neutral[97]} 85px)`,
 };
 
 const reportsBkg = {
@@ -124,7 +124,7 @@ const HomePage = () => (
           </InnerText>
         </>
       </BoxContainer>
-      <BoxContainer theme="light" background={{ backgroundColor: brand[400] }}>
+      <BoxContainer theme="light" background={{ backgroundColor: palette.brand[400] }}>
         <>
           <h2 css={headingCss}>Leadership</h2>
           <div css={leadershipProfilesHolder}>
@@ -178,7 +178,7 @@ const HomePage = () => (
           </div>
         </>
       </BoxContainer>
-      <BoxContainer theme="light" background={{ backgroundColor: neutral[97] }}>
+      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }}>
         <>
           <InnerText title="Sustainability" theme="light">
             <>
@@ -220,7 +220,7 @@ const HomePage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <InnerText title="Our people" theme="light">
@@ -253,7 +253,7 @@ const HomePage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <InnerText title="Supporting the Guardian" theme="light">

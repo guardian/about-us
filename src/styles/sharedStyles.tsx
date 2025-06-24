@@ -1,20 +1,20 @@
 import { css } from "@emotion/react";
 import {
-  brandAlt,
-  headline,
-  neutral,
+  headlineBold24,
+  headlineBold28,
+  palette,
   space,
-  textSans,
-  titlepiece,
-} from "@guardian/source-foundations";
+  textSans17,
+  titlepiece42,
+} from "@guardian/source/foundations";
 import { minWidth } from "./breakpoints";
 
 export const headingCss = css`
-  ${titlepiece.small()};
+  ${titlepiece42}
   font-size: 32px;
   line-height: 1.15;
   margin: 3px 0 18px 0;
-  color: ${neutral[7]};
+  color: ${palette.neutral[7]};
   ${minWidth.tablet} {
     font-size: 42px;
   }
@@ -34,7 +34,7 @@ export const skipToContentStyles = css`
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  ${textSans.medium()}
+  ${textSans17}
   &:active,
   &:focus {
     clip: auto;
@@ -48,7 +48,7 @@ export const skipToContentStyles = css`
 `;
 
 export const twoColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ export const twoColumnResponsiveCardHolder = css`
     margin-top: ${space[3]}px;
   }
   & > h3 {
-    ${headline.small({ fontWeight: "bold" })};
+    ${headlineBold28}
     width: 100%;
     margin: ${space[1]}px 0 ${space[2]}px;
   }
@@ -73,7 +73,7 @@ export const twoColumnResponsiveCardHolder = css`
 `;
 
 export const twoThenOneColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ export const twoThenOneColumnResponsiveCardHolder = css`
     margin-top: ${space[3]}px;
   }
   & > h3 {
-    ${headline.small({ fontWeight: "bold" })};
+    ${headlineBold28}
     width: 100%;
     margin: ${space[1]}px 0 ${space[2]}px;
   }
@@ -101,7 +101,7 @@ export const twoThenOneColumnResponsiveCardHolder = css`
 `;
 
 export const threeColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@ export const threeColumnResponsiveCardHolder = css`
 `;
 
 export const oneThenTwoColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@ export const oneThenTwoColumnResponsiveCardHolder = css`
 `;
 
 export const threeThenOneColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ export const threeThenOneColumnResponsiveCardHolder = css`
 `;
 
 export const singleColumnResponsiveCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   & > * {
@@ -175,7 +175,7 @@ export const singleColumnResponsiveCardHolder = css`
     width: 100%;
   }
   & > h3 {
-    ${headline.small({ fontWeight: "bold" })};
+    ${headlineBold28}
     width: 100%;
     margin: ${space[1]}px 0 ${space[2]}px;
   }
@@ -205,8 +205,8 @@ export const readerFundedSubscribeCardHolderCss = css`
 `;
 
 export const readerFundedHeadingCss = css`
-  color: ${neutral[100]};
-  ${headline.xsmall({ fontWeight: "bold" })}
+  color: ${palette.neutral[100]};
+  ${headlineBold24}
   border-top: 1px solid #90ABC4;
   margin: 41.5px 0 30px 0;
 
@@ -227,7 +227,7 @@ export const printReaderFundedHeadingCss = css`
 
 export const supportReaderFundedHeadingCss = css`
   font-size: 32px;
-  color: ${brandAlt[400]};
+  color: ${palette.brandAlt[400]};
   padding-top: ${space[2]}px;
 
   ${minWidth.tablet} {
@@ -237,7 +237,7 @@ export const supportReaderFundedHeadingCss = css`
 `;
 
 export const responsiveCardV2Holder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: row;
@@ -256,7 +256,7 @@ export const responsiveCardV2Holder = css`
 `;
 
 export const oneTopTwoBottomCardHolder = css`
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;
   display: flex;
   flex-direction: column;

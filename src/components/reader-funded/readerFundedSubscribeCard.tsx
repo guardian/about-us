@@ -1,18 +1,18 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+  themeButtonBrand,
+} from "@guardian/source/react-components";
 import {
+  article15,
   between,
-  body,
   from,
-  headline,
-  neutral,
+  headlineMedium20,
+  palette,
   space,
   until,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 
 interface ReaderFundedSubscribeCardProps {
   imagePath: string;
@@ -22,8 +22,8 @@ interface ReaderFundedSubscribeCardProps {
 }
 
 const title = css`
-  color: ${neutral[100]};
-  ${headline.xxsmall()};
+  color: ${palette.neutral[100]};
+  ${headlineMedium20}
   font-weight: normal;
   font-size: 22px;
   margin: 0;
@@ -38,8 +38,8 @@ const title = css`
 `;
 
 const bodyCopy = css`
-  color: ${neutral[100]};
-  ${body.small({ lineHeight: "loose" })}
+  color: ${palette.neutral[100]};
+  ${article15}
   margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
@@ -103,19 +103,18 @@ const ReaderFundedSubscribeCard = (props: ReaderFundedSubscribeCardProps) => {
           </a>
           <p css={bodyCopy}>{props.bodyText}</p>
         </div>
-        <ThemeProvider theme={buttonThemeBrand}>
-          <LinkButton
-            size="small"
-            icon={<SvgArrowRightStraight />}
-            iconSide="right"
-            nudgeIcon={true}
-            href={props.href}
-            css={linkButtonCss}
-            priority="tertiary"
-          >
-            Read more
-          </LinkButton>
-        </ThemeProvider>
+        <LinkButton
+          size="small"
+          icon={<SvgArrowRightStraight />}
+          iconSide="right"
+          nudgeIcon={true}
+          href={props.href}
+          cssOverrides={linkButtonCss}
+          priority="tertiary"
+          theme={themeButtonBrand}
+        >
+          Read more
+        </LinkButton>
       </div>
     </div>
   );

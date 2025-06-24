@@ -1,17 +1,18 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeReaderRevenue,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+  themeButtonReaderRevenue,
+} from "@guardian/source/react-components";
 import {
-  neutral,
   space,
   from,
   until,
-  body,
-  headline,
-} from "@guardian/source-foundations";
+  palette,
+  articleBold17,
+  headlineMedium17,
+  headlineMedium20,
+} from "@guardian/source/foundations";
 import { useEffect, useState } from "react";
 import { getCountryGroup } from "../../helpers/countryGroup";
 import React from "react";
@@ -21,8 +22,8 @@ const aCss = css`
 `;
 
 const h3MobileCss = css`
-  color: ${neutral[100]};
-  ${body.medium({ fontWeight: "bold" })};
+  color: ${palette.neutral[100]};
+  ${articleBold17}
   font-size: 24px;
   margin: 0;
   border-top: 1px solid #90abc4;
@@ -41,15 +42,16 @@ const h3DesktopCss = css`
     display: none;
   }
 
-  color: ${neutral[100]};
-  ${body.medium({ fontWeight: "bold" })};
+  color: ${palette.neutral[100]};
+  ${articleBold17}
   font-size: 24px;
   margin: 0;
 `;
 
 const pCss = css`
-  color: ${neutral[100]};
-  ${headline.xxxsmall({ fontWeight: "regular" })};
+  color: ${palette.neutral[100]};
+  ${headlineMedium17}
+  font-weight: 400;
   margin: ${space[1]}px 0 ${space[6]}px;
 
   ${from.mobileLandscape} {
@@ -61,7 +63,8 @@ const pCss = css`
   }
 
   ${from.tablet} {
-    ${headline.xxsmall({ fontWeight: "regular" })};
+    ${headlineMedium20}
+    font-weight: 400;
   }
 `;
 
@@ -161,17 +164,16 @@ const ReaderFundedContributeCard = () => {
               Choose to give once from just {currencyGlyph}1, or set up a
               recurring amount to power our reporting every month or year.
             </p>
-            <ThemeProvider theme={buttonThemeReaderRevenue}>
-              <LinkButton
-                size="small"
-                icon={<SvgArrowRightStraight />}
-                iconSide="right"
-                nudgeIcon={true}
-                href="https://support.theguardian.com/contribute"
-              >
-                Support us
-              </LinkButton>
-            </ThemeProvider>
+            <LinkButton
+              size="small"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://support.theguardian.com/contribute"
+              theme={themeButtonReaderRevenue}
+            >
+              Support us
+            </LinkButton>
           </div>
           <div css={cardImageDesktopCss} />
         </div>

@@ -3,15 +3,14 @@ import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import {
-  body,
-  headline,
-  brand,
-  neutral,
   space,
   from,
-} from "@guardian/source-foundations";
+  article17,
+  headlineBold17,
+  palette,
+} from "@guardian/source/foundations";
 
 interface DetailsAndImageProps {
   title: string;
@@ -24,7 +23,7 @@ interface DetailsAndImageProps {
 const containerCss = css`
   margin: 40px 0 0;
   padding-top: ${space[3]}px;
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   ${from.tablet} {
     display: flex;
     justify-content: space-between;
@@ -36,7 +35,7 @@ const readerFundingContainerCss = css`
   border-top: none;
 
   ${from.tablet} {
-    border-top: 1px solid ${neutral[86]};
+    border-top: 1px solid ${palette.neutral[86]};
   }
 `;
 
@@ -85,8 +84,8 @@ const figcaptionCss = css`
 `;
 
 const titleCss = css`
-  ${headline.xxxsmall({ fontWeight: "bold" })};
-  color: ${brand[400]};
+  ${headlineBold17}
+  color: ${palette.brand[400]};
   margin: 0 0 ${space[3]}px;
   font-size: 16px;
   ${from.tablet} {
@@ -110,7 +109,7 @@ const readerFundingTitleCss = css`
 `;
 
 const bodyCopyCss = css`
-  ${body.medium({ lineHeight: "loose", fontWeight: "regular" })}
+  ${article17}
   margin: ${space[3]}px 0 ${space[5]}px;
   ${from.tablet} {
     font-size: 17px;

@@ -6,7 +6,7 @@ import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
 import InnerText from "../components/innerText";
 import LatestNews from "../components/latestNews";
-import { neutral } from "@guardian/source-foundations";
+import { palette } from "@guardian/source/foundations";
 import { PageStyles } from "../components/pageStyles";
 import ReaderFundedSubscribeCard from "../components/reader-funded/readerFundedSubscribeCard";
 import ResponsiveCardVariant1 from "../components/responsiveCardVariant1";
@@ -24,7 +24,7 @@ import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedP
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import { minWidth } from "../styles/breakpoints";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -78,7 +78,7 @@ const HomePage = () => (
     />
     <main id="main">
       <h1
-        // This is a copy of `visuallyHidden` taken from @guardian/source-foundations
+        // This is a copy of `visuallyHidden` taken from @guardian/source/foundations
         css={css`
           position: absolute;
           opacity: 0;
@@ -117,7 +117,7 @@ const HomePage = () => (
       />
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
         overlapTop={true}
       >
         <>
@@ -202,7 +202,7 @@ const HomePage = () => (
       </BoxContainer>
       <BoxContainer
         theme="dark"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <InnerText title="We’re reader funded" theme="dark">
@@ -248,7 +248,7 @@ const HomePage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
         paddingBottom={true}
       >
         <>

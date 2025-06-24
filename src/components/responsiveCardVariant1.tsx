@@ -1,10 +1,10 @@
 import { css } from "@emotion/react";
-import { brand, neutral, headline, space } from "@guardian/source-foundations";
+import { headlineBold17, palette, space } from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 
 interface ResponsiveCardVariant1Props {
   title: string;
@@ -16,9 +16,9 @@ interface ResponsiveCardVariant1Props {
 
 const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
   const articleCss = css`
-    border: 1px solid ${neutral[86]};
+    border: 1px solid ${palette.neutral[86]};
     display: flex;
-    background-color: ${neutral[100]};
+    background-color: ${palette.neutral[100]};
     ${minWidth.tablet} {
       flex-direction: ${props.alwaysImgOnLeft ? "row" : "column"};
     }
@@ -73,9 +73,9 @@ const ResponsiveCardVariant1 = (props: ResponsiveCardVariant1Props) => {
   `;
 
   const titleCss = css`
-    ${headline.xxxsmall({ fontWeight: "bold" })};
+    ${headlineBold17}
     font-size: 16px;
-    color: ${brand[400]};
+    color: ${palette.brand[400]};
     margin: 0;
     min-height: 3em;
     ${minWidth.tablet} {

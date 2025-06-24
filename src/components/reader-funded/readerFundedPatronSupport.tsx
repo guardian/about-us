@@ -1,10 +1,16 @@
-import { css, ThemeProvider } from "@emotion/react";
+import { css } from "@emotion/react";
 import {
-  buttonThemeBrand,
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
-import { body, headline, neutral, space } from "@guardian/source-foundations";
+  themeButtonBrand,
+} from "@guardian/source/react-components";
+import {
+  article15,
+  headlineBold20,
+  headlineBold24,
+  palette,
+  space,
+} from "@guardian/source/foundations";
 import { minWidth } from "../../styles/breakpoints";
 
 interface PatronSupportSectionProps {
@@ -15,7 +21,7 @@ interface PatronSupportSectionProps {
 }
 
 const sectionContainerCss = css`
-  color: ${neutral[100]};
+  color: ${palette.neutral[100]};
   border-top: 1px solid #90abc4;
   display: grid;
   grid-template-columns: 1fr;
@@ -26,10 +32,10 @@ const sectionContainerCss = css`
 `;
 
 const h3Css = css`
-  ${headline.xxsmall({ fontWeight: "bold" })}
+  ${headlineBold20}
   margin: ${space[1]}px 0 0;
   ${minWidth.tablet} {
-    ${headline.xsmall({ fontWeight: "bold" })}
+    ${headlineBold24}
   }
   ${minWidth.desktop} {
     margin: 6px 0 0;
@@ -37,7 +43,7 @@ const h3Css = css`
 `;
 
 const pCss = css`
-  ${body.small({ lineHeight: "loose" })};
+  ${article15}
   margin-top: ${space[3]}px;
   margin-bottom: 22px;
 `;
@@ -53,20 +59,19 @@ const PatronSupportSection = (props: PatronSupportSectionProps) => {
         <h3 css={h3Css}>{props.title}</h3>
         <p css={pCss}>{props.bodyText}</p>
       </div>
-      <ThemeProvider theme={buttonThemeBrand}>
-        <LinkButton
-          size="small"
-          icon={<SvgArrowRightStraight />}
-          iconSide="right"
-          nudgeIcon={true}
-          href={props.buttonLink}
-          priority="tertiary"
-          className="button"
-          css={linkButtonCss}
-        >
-          {props.buttonText}
-        </LinkButton>
-      </ThemeProvider>
+      <LinkButton
+        size="small"
+        icon={<SvgArrowRightStraight />}
+        iconSide="right"
+        nudgeIcon={true}
+        href={props.buttonLink}
+        priority="tertiary"
+        className="button"
+        cssOverrides={linkButtonCss}
+        theme={themeButtonBrand}
+      >
+        {props.buttonText}
+      </LinkButton>
     </div>
   );
 };

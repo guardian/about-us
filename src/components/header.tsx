@@ -2,12 +2,10 @@ import { css } from "@emotion/react";
 import { GLogo } from "./gLogo";
 import {
   space,
-  headline,
-  textSans,
-  brand,
-  brandAlt,
-  neutral,
-} from "@guardian/source-foundations";
+  palette,
+  headlineBold24,
+  textSans17,
+} from "@guardian/source/foundations";
 import { minWidth } from "../styles/breakpoints";
 
 interface NavSection {
@@ -25,12 +23,12 @@ const mobileOpenCloseBtnSize = 42;
 const desktopMenuHighlightHeight = 4;
 
 const headerStyles = css`
-  background-color: ${brand[400]};
+  background-color: ${palette.brand[400]};
   padding: 0 57px 0 10px;
   text-align: right;
   position: relative;
   z-index: 10;
-  border-bottom: 1px solid ${brand[600]};
+  border-bottom: 1px solid ${palette.brand[600]};
   & .top-and-bottom-nav {
     position: fixed;
     top: 0;
@@ -38,7 +36,7 @@ const headerStyles = css`
     width: 100vw;
     width: calc(100vw - 30px);
     height: 100vh;
-    background-color: ${brand[400]};
+    background-color: ${palette.brand[400]};
     opacity: 0;
     transition: opacity 0.1s 0.4s ${cssTransitionFunc},
       left 0.4s ${cssTransitionFunc};
@@ -84,10 +82,11 @@ const headerStyles = css`
   }
 
   & nav a {
-    ${headline.xsmall({ fontWeight: "bold", lineHeight: "loose" })};
+    ${headlineBold24}
+    line-height: 1.4;
     padding-bottom: ${space[5]}px;
-    border-bottom: 1px solid ${brand[600]};
-    color: ${neutral[100]};
+    border-bottom: 1px solid ${palette.brand[600]};
+    color: ${palette.neutral[100]};
     display: block;
     text-decoration: none;
     margin-left: 50px;
@@ -100,7 +99,7 @@ const headerStyles = css`
     order: 2;
 
     a {
-      ${textSans.medium({ fontWeight: "regular" })};
+      ${textSans17}
     }
   }
 
@@ -134,7 +133,7 @@ const headerStyles = css`
         left: 0;
         width: 100%;
         height: 0;
-        background-color: ${brandAlt[400]};
+        background-color: ${palette.brandAlt[400]};
         transition: height 0.3s ease-in-out;
       }
       &:hover::after,
@@ -147,7 +146,7 @@ const headerStyles = css`
         left: 0;
         top: 0;
         height: 70%;
-        border-left: 1px solid ${brand[600]};
+        border-left: 1px solid ${palette.brand[600]};
       }
     }
 
@@ -156,7 +155,7 @@ const headerStyles = css`
     }
     & nav.main {
       margin-top: 0;
-      border-top: 1px solid ${brand[600]};
+      border-top: 1px solid ${palette.brand[600]};
     }
     & nav.top {
       position: absolute;
@@ -170,7 +169,7 @@ const headerStyles = css`
         transition: color 250ms ease-out;
         &:hover,
         &:focus {
-          color: ${brandAlt[400]};
+          color: ${palette.brandAlt[400]};
         }
       }
     }
@@ -183,8 +182,8 @@ const headerStyles = css`
     }
 
     & nav.main {
-      border-left: 1px solid ${brand[600]};
-      border-right: 1px solid ${brand[600]};
+      border-left: 1px solid ${palette.brand[600]};
+      border-right: 1px solid ${palette.brand[600]};
     }
 
     & nav.main a:first-of-type {
@@ -202,7 +201,7 @@ const headerStyles = css`
         left: 0;
         top: 0;
         height: 70%;
-        border-left: 1px solid ${brand[600]};
+        border-left: 1px solid ${palette.brand[600]};
       }
     }
   }

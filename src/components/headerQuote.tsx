@@ -1,12 +1,10 @@
 import { css } from "@emotion/react";
 import {
-  brand,
-  brandAlt,
-  headline,
-  neutral,
+  headlineMediumItalic20,
+  palette,
   space,
-  titlepiece,
-} from "@guardian/source-foundations";
+  titlepiece42,
+} from "@guardian/source/foundations";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 interface HeaderQuoteProps {
@@ -15,11 +13,11 @@ interface HeaderQuoteProps {
 }
 
 const backgroundCss = css`
-  background-color: ${brand[400]};
+  background-color: ${palette.brand[400]};
 `;
 
 const headerQuoteCss = css`
-  color: ${neutral[100]};
+  color: ${palette.neutral[100]};
   max-width: 1300px;
   margin: 0 auto;
 `;
@@ -29,7 +27,7 @@ const triangleCss = css`
   top: 100%;
   left: ${space[6]}px;
   border-style: solid;
-  border-color: transparent ${brand[400]} transparent transparent;
+  border-color: transparent ${palette.brand[400]} transparent transparent;
   border-width: 0 42.3px 37.14px 0;
   ${minWidth.tablet} {
     border-width: 0 64px 56.14px 0;
@@ -47,7 +45,7 @@ const triangleCss = css`
 const blockquoteCss = css`
   display: inline;
   margin: 0;
-  ${titlepiece.small()};
+  ${titlepiece42}
   font-size: 36px;
   line-height: 1.15;
   ${minWidth.tablet} {
@@ -107,10 +105,8 @@ const quoteDivCss = css`
 const citeCss = css`
   display: block;
   margin-top: ${space[2]}px;
-  ${headline.xxsmall({
-    lineHeight: "tight",
-    fontWeight: "regular",
-  })}
+  ${headlineMediumItalic20}
+  font-weight: 400;
   ${minWidth.tablet} {
     font-size: 30px;
     margin-top: ${space[2]}px;
@@ -134,7 +130,7 @@ const HeaderQuote = (props: HeaderQuoteProps) => (
         >
           <path
             d="M80.6 0.205997C79.6013 8.766 78.6027 17.3973 77.604 26.1C76.748 34.66 76.106 43.648 75.678 53.064H42.722C44.862 43.9333 47.858 35.0167 51.71 26.314C55.7047 17.4687 61.126 8.766 67.974 0.205997H80.6ZM38.87 0.205997C37.8713 8.766 36.8727 17.3973 35.874 26.1C35.018 34.66 34.376 43.648 33.948 53.064H0.992C2.84667 43.9333 5.77133 35.0167 9.766 26.314C13.9033 17.4687 19.396 8.766 26.244 0.205997H38.87Z"
-            fill={brandAlt[400]}
+            fill={palette.brandAlt[400]}
           />
         </svg>
         <blockquote css={blockquoteCss}>{props.quote}</blockquote>

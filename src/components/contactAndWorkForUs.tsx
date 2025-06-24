@@ -1,20 +1,19 @@
 import {
-  body,
-  brand,
-  headline,
-  neutral,
+  article17,
+  headlineBold24,
+  palette,
   space,
-} from "@guardian/source-foundations";
+} from "@guardian/source/foundations";
 import { css } from "@emotion/react";
 import {
   LinkButton,
   SvgArrowRightStraight,
-} from "@guardian/source-react-components";
+} from "@guardian/source/react-components";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
 const contactSectionItemCss = css`
   width: 100%;
-  border-top: 1px solid ${neutral[86]};
+  border-top: 1px solid ${palette.neutral[86]};
   margin-bottom: ${space[9]}px;
   ${minWidth.tablet} {
     width: 220px;
@@ -23,14 +22,14 @@ const contactSectionItemCss = css`
 `;
 
 const contactSectionItemH3Css = css`
-  color: ${brand[400]};
-  ${headline.xsmall({ fontWeight: "bold" })};
+  color: ${palette.brand[400]};
+  ${headlineBold24}
   margin: 0;
 `;
 
 const contactSectionItemPCss = css`
-  ${body.medium({ fontWeight: "regular" })};
-  color: ${neutral[7]};
+  ${article17}
+  color: ${palette.neutral[7]};
 `;
 
 interface ContactSectionItemProps {
@@ -57,7 +56,7 @@ const ContactSectionItem = (props: ContactSectionItemProps) => (
 );
 
 const backgroundCss = css`
-  background-color: ${neutral[100]};
+  background-color: ${palette.neutral[100]};
 `;
 
 const contactAndWorkForUsCss = css`

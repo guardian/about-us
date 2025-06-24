@@ -1,12 +1,13 @@
 import { css } from "@emotion/react";
 import {
-  brandAlt,
-  headline,
-  neutral,
+  headlineMedium20,
+  headlineMedium28,
   palette,
   space,
-  titlepiece,
-} from "@guardian/source-foundations";
+  titlepiece42,
+  titlepiece50,
+  titlepiece70,
+} from "@guardian/source/foundations";
 import { ReactElement } from "react";
 import { minWidth, namedBreakpoints } from "../styles/breakpoints";
 
@@ -19,7 +20,7 @@ interface FullWidthTextProps {
 }
 
 export const highlightedCss = css`
-  background-color: ${brandAlt[400]};
+  background-color: ${palette.brandAlt[400]};
   padding-bottom: 2px;
 `;
 
@@ -34,7 +35,7 @@ const FullWidthText = (props: FullWidthTextProps) => {
     background-color: ${props.theme === "light"
       ? palette.neutral[100]
       : palette.brand[400]};
-    color: ${props.theme === "light" ? neutral[7] : neutral[100]};
+    color: ${props.theme === "light" ? palette.neutral[7] : palette.neutral[100]};
     display: block;
     max-width: 1300px;
     margin: 0 auto;
@@ -43,17 +44,17 @@ const FullWidthText = (props: FullWidthTextProps) => {
     padding-left: ${space[6]}px;
     padding-right: ${space[6]}px;
     p {
-      ${headline.xxsmall({
-        fontWeight: "regular",
-        lineHeight: "loose",
-      })};
+      ${headlineMedium20}
+      font-weight: 400;
+      line-height: 1.4;
       margin: 0;
     }
     p + p {
       margin-top: 0.75em;
     }
     h1 {
-      ${titlepiece.small({ fontWeight: "regular" })};
+      ${titlepiece42}
+      font-weight: 400;
       margin: 0 0 0.5em;
       line-height: 1;
     }
@@ -64,13 +65,13 @@ const FullWidthText = (props: FullWidthTextProps) => {
       padding-right: ${space[5]}px;
       width: ${namedBreakpoints.tablet}px;
       p {
-        ${headline.small({
-          fontWeight: "regular",
-          lineHeight: "loose",
-        })};
+        ${headlineMedium28}
+        font-weight: 400;
+        line-height: 1.4;
       }
       h1 {
-        ${titlepiece.medium({ fontWeight: "regular" })};
+        ${titlepiece50}
+        font-weight: 400;
         line-height: 1;
       }
     }
@@ -84,7 +85,8 @@ const FullWidthText = (props: FullWidthTextProps) => {
         font-size: 35px;
       }
       h1 {
-        ${titlepiece.large({ fontWeight: "regular" })};
+        ${titlepiece70}
+        font-weight: 400;
         line-height: 1;
       }
     }

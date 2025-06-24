@@ -20,8 +20,7 @@ const nextConfig = {
   output: 'export',
   transpilePackages: [
     "@guardian/libs",
-    "@guardian/source-foundations",
-    "@guardian/source-react-components",
+    "@guardian/source",
     "@guardian/ophan-tracker-js",
   ]
 };

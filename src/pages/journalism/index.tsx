@@ -4,7 +4,7 @@ import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
-import { neutral } from "@guardian/source-foundations";
+import { palette } from "@guardian/source/foundations";
 import {
   headingCss,
   oneThenTwoColumnResponsiveCardHolder,
@@ -23,9 +23,9 @@ const Footer = dynamic(() => import("../../components/footer/footer"), {
 });
 
 const gotAStoryBkg = {
-  mobile: `linear-gradient(to top, ${neutral[100]} 42px, ${neutral[97]} 42px)`,
-  tablet: `linear-gradient(to top, ${neutral[100]} 49px, ${neutral[97]} 49px)`,
-  wide: `linear-gradient(to top, ${neutral[100]} 58px, ${neutral[97]} 58px)`,
+  mobile: `linear-gradient(to top, ${palette.neutral[100]} 42px, ${palette.neutral[97]} 42px)`,
+  tablet: `linear-gradient(to top, ${palette.neutral[100]} 49px, ${palette.neutral[97]} 49px)`,
+  wide: `linear-gradient(to top, ${palette.neutral[100]} 58px, ${palette.neutral[97]} 58px)`,
 };
 
 const JournalismPage = () => (
@@ -80,7 +80,7 @@ const JournalismPage = () => (
       />
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
         overlapTop={true}
       >
         <>
@@ -113,7 +113,7 @@ const JournalismPage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <h2 css={headingCss}>Editors</h2>
@@ -139,7 +139,7 @@ const JournalismPage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <InnerText title="Guardian journalism" theme="light">
@@ -234,7 +234,7 @@ const JournalismPage = () => (
       </BoxContainer>
       <BoxContainer
         theme="light"
-        background={{ backgroundColor: `${neutral[97]}` }}
+        background={{ backgroundColor: palette.neutral[97] }}
       >
         <>
           <h2 css={headingCss}>Editorial standards</h2>
