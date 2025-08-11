@@ -2,6 +2,8 @@
 
 About pages for theguardian.com.
 
+They appear in PROD at https://www.theguardian.com/about
+
 ## Technologies
 
 - [Next](https://nextjs.org/)
