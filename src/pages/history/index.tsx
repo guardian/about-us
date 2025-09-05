@@ -109,8 +109,8 @@ const OurHistory = () => (
         </>
       </FullWidthText>
       <FullWidthImage
-        smallImageUrl="/about/images/history-full-width-small.jpg"
-        largeImageUrl="/about/images/history-full-width-large.jpg"
+        smallImageUrl="/about/images/history-full-width-small-2.jpg"
+        largeImageUrl="/about/images/history-full-width-large-2.jpg"
       />
       <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }} overlapTop={true}>
         <>
@@ -154,7 +154,7 @@ const OurHistory = () => (
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="Annual reports and letter from the chair"
-              imagePath="/about/images/organisation-9.jpg"
+              imagePath="/about/images/organisation-10.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
             <ResponsiveCardVariant1
@@ -223,14 +223,14 @@ const OurHistory = () => (
           <div css={oneTopTwoBottomCardHolder}>
             <ResponsiveCardVariant1
               title="CP Scott’s centenary essay"
-              imagePath="https://i.guim.co.uk/img/media/f1e4961ebcf53adaa7f182dd84b01f81a1bef7fa/0_0_5000_3000/master/5000.jpg?width=620&dpr=2&s=none"
+              imagePath="/about/images/history-9.jpg"
               linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
               alwaysImgOnLeft={true}
             />
             <ResponsiveCardVariant1
               title="History of the Guardian"
-              imagePath="/about/images/history-2.jpg"
-              linkUrl="https://www.theguardian.com/gnm-archive/2002/jun/06/1"
+              imagePath="/about/images/history-10.jpg"
+              linkUrl="https://www.theguardian.com/gnm-archive/2014/dec/18/histories-of-the-newspapers"
             />
             <ResponsiveCardVariant1
               title="GNM Archive"
