@@ -11,7 +11,6 @@ interface LeadershipProfileProps {
   title: {
     name: string;
     job: String;
-    organisation: string;
   };
   imageUrl: string;
   bodyCopy: string;
@@ -94,8 +93,7 @@ export const LeadershipProfile = (props: LeadershipProfileProps) => {
         <figcaption css={titleCss}>
           <strong>{props.title.name},</strong>
           <br />
-          {props.title.job},<br />
-          {props.title.organisation}
+          {props.title.job}
         </figcaption>
       </div>
       <p css={bodyCopyCss}>{props.bodyCopy}</p>
