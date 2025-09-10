@@ -132,8 +132,7 @@ const HomePage = () => (
               imageUrl="/about/images/organisation-6.jpg"
               title={{
                 name: "Katharine Viner",
-                job: "editor-in-chief",
-                organisation: "Guardian News & Media",
+                job: "editor-in-chief"
               }}
               bodyCopy="Katharine Viner is editor-in-chief of the Guardian, a position she has held since June 2015. Prior to this, Katharine was deputy editor 2008-2015, launched the award-winning Guardian Australia in 2013, and was also editor of Guardian US, based in New York. Since becoming editor, she has put the Guardian’s purpose at the heart of its journalism and led the development of the Guardian’s successful reader contribution strategy. Under Katharine’s leadership, the Guardian became the first news organisation in the world to win both an Oscar and a Bafta."
             />
@@ -142,7 +141,6 @@ const HomePage = () => (
               title={{
                 name: "Anna Bateson",
                 job: "chief executive",
-                organisation: "Guardian Media Group",
               }}
               bodyCopy="Anna Bateson is the chief executive of Guardian Media Group (GMG), a role she took up in September 2022. Anna worked at the Guardian from 2016 onward, first as VP for platforms and partnerships and then from 2017-2020 as chief customer officer, and briefly as interim chief executive. Prior to the Guardian, Anna worked at a number of tech and media organisations, including YouTube, Google, ITV, MTV and Bloomberg, and was most recently CEO at a VC-backed e-commerce beauty business."
             />

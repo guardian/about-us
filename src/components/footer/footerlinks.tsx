@@ -62,11 +62,11 @@ export const footerLinks: FooterLink[][] = [
     },
     {
       title: "Modern Slavery Act",
-      link: `https://uploads.guim.co.uk/2022/07/20/STL_Modern_Slavery_Statement_2022.pdf`,
+      link: `https://uploads.guim.co.uk/2025/09/05/Modern_Slavery_Statement_2025.pdf`,
     },
     {
       title: "Tax strategy",
-      link: `https://uploads.guim.co.uk/2024/08/27/TAX_STRATEGY_FOR_THE_YEAR_ENDED_31_MARCH_2025.pdf`,
+      link: `https://uploads.guim.co.uk/2025/09/05/Tax_strategy_for_the_year_ended_31_March_2025.pdf`,
     },
     {
       title: "Digital newspaper archive",
