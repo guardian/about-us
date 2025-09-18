@@ -23,7 +23,7 @@
     "@guardian/libs": "22.5.0",
     "@guardian/ophan-tracker-js": "2.2.2",
     "@guardian/source": "10.2.0",
-    "@types/node": "20.14.9",
+    "@types/node": "24.5.2",
     "@types/react": "18.3.12",
     "next": "15.3.4",
     "prettier": "3.3.3",
