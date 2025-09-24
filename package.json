@@ -20,7 +20,7 @@
   "homepage": "https://github.com/guardian/about-us#readme",
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@guardian/libs": "22.5.0",
+    "@guardian/libs": "25.5.0",
     "@guardian/ophan-tracker-js": "2.2.2",
     "@guardian/source": "10.2.0",
     "@types/node": "20.14.9",
