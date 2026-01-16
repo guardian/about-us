@@ -17,7 +17,7 @@ import {
   supportReaderFundedHeadingCss,
   printReaderFundedHeadingCss,
 } from "../styles/sharedStyles";
-import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
+import { twoColumnResponsiveCardHolder, threeThenTwoColumnResponsiveCardHolder } from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
@@ -275,37 +275,57 @@ const HomePage = () => (
               </p>
             </>
           </InnerText>
-          <div css={twoColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="UK edition"
-              imagePath="/about/images/UK_920x552.jpg"
-              linkUrl="https://www.theguardian.com/uk"
-              linkText="Visit UK edition"
-            />
-            <ResponsiveCardVariant1
-              title="US edition"
-              imagePath="/about/images/USA_920x552.jpg"
-              linkUrl="https://www.theguardian.com/us"
-              linkText="Visit US edition"
-            />
-            <ResponsiveCardVariant1
-              title="Australia edition"
-              imagePath="/about/images/australia_920x552.jpg"
-              linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Australia edition"
-            />
-            <ResponsiveCardVariant1
-              title="Europe edition"
-              imagePath="/about/images/europe_920x552.jpg"
-              linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Europe edition"
-            />
-            <ResponsiveCardVariant1
-              title="International edition"
-              imagePath="/about/images/world_920x552.jpg"
-              linkUrl="https://www.theguardian.com/international"
-              linkText="Visit International edition"
-            />
+          <div css={threeThenTwoColumnResponsiveCardHolder}>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/uk"
+            >
+              UK edition
+            </LinkButton>
+                        <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/us"
+            >
+              US edition
+            </LinkButton>
+                        <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/au"
+            >
+              Australia edition
+            </LinkButton>
+                        <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/europe"
+            >
+              Europe edition
+            </LinkButton>
+                        <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/international"
+            >
+              International edition
+            </LinkButton>
           </div>
           <LinkButton
             priority="primary"

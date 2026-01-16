@@ -166,6 +166,33 @@ export const threeThenOneColumnResponsiveCardHolder = css`
   }
 `;
 
+export const threeThenTwoColumnResponsiveCardHolder = css`
+  border-top: 1px solid ${palette.neutral[86]};
+  margin: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-top: ${space[3]}px;
+  }
+  & > h3 {
+    ${headlineBold28}
+    width: 100%;
+    margin: ${space[1]}px 0 ${space[2]}px;
+  }
+  ${minWidth.tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 13px;
+    & > * {
+      width: 33.3%;
+      width: calc(33.3% - 13px);
+      margin-top: ${space[5]}px;
+    }
+  }
+  }
+`;
+
 export const singleColumnResponsiveCardHolder = css`
   border-top: 1px solid ${palette.neutral[86]};
   margin: 40px 0 0;

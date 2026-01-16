@@ -6,11 +6,16 @@ import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
 import { palette } from "@guardian/source/foundations";
 import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source/react-components";
+import {
   headingCss,
   oneThenTwoColumnResponsiveCardHolder,
   responsiveCardV2Holder,
   skipToContentStyles,
   twoColumnResponsiveCardHolder,
+  threeThenTwoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
@@ -197,38 +202,58 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-17.jpg"
             />
           </div>
-          <div css={twoColumnResponsiveCardHolder}>
+          <div css={threeThenTwoColumnResponsiveCardHolder}>
             <h3>Editions</h3>
-            <ResponsiveCardVariant1
-              title="UK edition"
-              imagePath="/about/images/UK_920x552.jpg"
-              linkUrl="https://www.theguardian.com/uk"
-              linkText="Visit UK edition"
-            />
-            <ResponsiveCardVariant1
-              title="US edition"
-              imagePath="/about/images/USA_920x552.jpg"
-              linkUrl="https://www.theguardian.com/us"
-              linkText="Visit US edition"
-            />
-            <ResponsiveCardVariant1
-              title="Australia edition"
-              imagePath="/about/images/australia_920x552.jpg"
-              linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Australia edition"
-            />
-            <ResponsiveCardVariant1
-              title="Europe edition"
-              imagePath="/about/images/europe_920x552.jpg"
-              linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Europe edition"
-            />
-            <ResponsiveCardVariant1
-              title="International edition"
-              imagePath="/about/images/world_920x552.jpg"
-              linkUrl="https://www.theguardian.com/international"
-              linkText="Visit International edition"
-            />
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/uk"
+            >
+              UK edition
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/us"
+            >
+              US edition
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/au"
+            >
+              Australia edition
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/europe"
+            >
+              Europe edition
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/international"
+            >
+              International edition
+            </LinkButton>
           </div>
         </>
       </BoxContainer>
