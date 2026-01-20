@@ -26,8 +26,8 @@ export const footerLinks: FooterLink[][] = [
       link: `https://${domain}/securedrop`,
     },
     {
-      title: "Work for us",
-      link: `https://workforus.${domain}`,
+      title: "Work with us",
+      link: `https://workwithus.${domain}`,
     },
     {
       title: "Privacy settings",

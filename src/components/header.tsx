@@ -287,7 +287,7 @@ const Header = (props: HeaderProps) => (
           <a href="https://www.theguardianfoundation.org">
             Guardian foundation
           </a>
-          <a href="https://workforus.theguardian.com/">Work for us</a>
+          <a href="https://workwithus.theguardian.com/">Work with us</a>
           <a href="https://www.theguardian.com/help/contact-us">Contact us</a>
         </nav>
         <nav className="main">
