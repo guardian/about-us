@@ -59,7 +59,7 @@ const backgroundCss = css`
   background-color: ${palette.neutral[100]};
 `;
 
-const contactAndWorkForUsCss = css`
+const contactAndWorkWithUsCss = css`
   display: flex;
   flex-direction: column;
   max-width: 1300px;
@@ -80,10 +80,10 @@ const contactAndWorkForUsCss = css`
   }
 `;
 
-const ContactAndWorkForUs = () => {
+const ContactAndWorkWithUs = () => {
   return (
     <div css={backgroundCss}>
-      <div css={contactAndWorkForUsCss}>
+      <div css={contactAndWorkWithUsCss}>
         <ContactSectionItem
           title="Contact us"
           body="Find out how to get in touch with the Guardian."
@@ -99,4 +99,4 @@ const ContactAndWorkForUs = () => {
   );
 };
 
-export default ContactAndWorkForUs;
+export default ContactAndWorkWithUs;

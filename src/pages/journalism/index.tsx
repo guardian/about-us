@@ -1,5 +1,5 @@
 import BoxContainer from "../../components/boxContainer";
-import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import ContactAndWorkWithUs from "../../components/contactAndWorkWithUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -285,7 +285,7 @@ const JournalismPage = () => (
           </div>
         </>
       </BoxContainer>
-      <ContactAndWorkForUs />
+      <ContactAndWorkWithUs />
     </main>
     <Footer />
   </>

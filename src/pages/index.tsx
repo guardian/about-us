@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import BoxContainer from "../components/boxContainer";
-import ContactAndWorkForUs from "../components/contactAndWorkForUs";
+import ContactAndWorkWithUs from "../components/contactAndWorkWithUs";
 import FullWidthText, { highlightedCss } from "../components/fullWidthText";
 import Header from "../components/header";
 import HeaderQuote from "../components/headerQuote";
@@ -321,7 +321,7 @@ const HomePage = () => (
         </>
       </BoxContainer>
       <LatestNews />
-      <ContactAndWorkForUs />
+      <ContactAndWorkWithUs />
     </main>
     <Footer />
   </>
