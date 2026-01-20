@@ -90,9 +90,9 @@ const ContactAndWorkForUs = () => {
           href="https://www.theguardian.com/help/contact-us"
         />
         <ContactSectionItem
-          title="Work for us"
+          title="Work with us"
           body="Search for jobs at the Guardian and apply. "
-          href="https://workforus.theguardian.com/"
+          href="https://workwithus.theguardian.com/"
         />
       </div>
     </div>

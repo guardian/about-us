@@ -242,9 +242,9 @@ const HomePage = () => (
               linkUrl="https://www.theguardian.com/about/2021/apr/30/employee-engagement"
             />
             <ResponsiveCardVariant1
-              title="Work for us"
+              title="Work with us"
               imagePath="/about/images/organisation-16.jpg"
-              linkUrl="https://workforus.theguardian.com/"
+              linkUrl="https://workwithus.theguardian.com/"
             />
           </div>
         </>
