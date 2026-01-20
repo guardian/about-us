@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
@@ -32,6 +33,11 @@ const gotAStoryBkg = {
   tablet: `linear-gradient(to top, ${palette.neutral[100]} 49px, ${palette.neutral[97]} 49px)`,
   wide: `linear-gradient(to top, ${palette.neutral[100]} 58px, ${palette.neutral[97]} 58px)`,
 };
+
+const LinkButtonLabelPinnedRightIcon = css`
+  width: 100%;
+  text-align: center;
+`;
 
 const JournalismPage = () => (
   <>
@@ -212,7 +218,7 @@ const JournalismPage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/uk"
             >
-              UK edition
+              <span css={LinkButtonLabelPinnedRightIcon}>UK edition</span>
             </LinkButton>
             <LinkButton
               priority="tertiary"
@@ -222,7 +228,7 @@ const JournalismPage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/us"
             >
-              US edition
+              <span css={LinkButtonLabelPinnedRightIcon}>US edition</span>
             </LinkButton>
             <LinkButton
               priority="tertiary"
@@ -232,7 +238,9 @@ const JournalismPage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/au"
             >
-              Australia edition
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                Australia edition
+              </span>
             </LinkButton>
             <LinkButton
               priority="tertiary"
@@ -242,7 +250,7 @@ const JournalismPage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/europe"
             >
-              Europe edition
+              <span css={LinkButtonLabelPinnedRightIcon}>Europe edition</span>
             </LinkButton>
             <LinkButton
               priority="tertiary"
@@ -252,7 +260,9 @@ const JournalismPage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/international"
             >
-              International edition
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                International edition
+              </span>
             </LinkButton>
           </div>
         </>

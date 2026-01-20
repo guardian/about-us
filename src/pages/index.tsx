@@ -17,7 +17,10 @@ import {
   supportReaderFundedHeadingCss,
   printReaderFundedHeadingCss,
 } from "../styles/sharedStyles";
-import { twoColumnResponsiveCardHolder, threeThenTwoColumnResponsiveCardHolder } from "../styles/sharedStyles";
+import {
+  twoColumnResponsiveCardHolder,
+  threeThenTwoColumnResponsiveCardHolder,
+} from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
@@ -41,6 +44,11 @@ const LinkButtonCss = css`
   ${minWidth.desktop} {
     margin-top: 57px;
   }
+`;
+
+const LinkButtonLabelPinnedRightIcon = css`
+  width: 100%;
+  text-align: center;
 `;
 
 const HomePage = () => (
@@ -284,9 +292,9 @@ const HomePage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/uk"
             >
-              UK edition
+              <span css={LinkButtonLabelPinnedRightIcon}>UK edition</span>
             </LinkButton>
-                        <LinkButton
+            <LinkButton
               priority="tertiary"
               size="default"
               icon={<SvgArrowRightStraight />}
@@ -294,9 +302,9 @@ const HomePage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/us"
             >
-              US edition
+              <span css={LinkButtonLabelPinnedRightIcon}>US edition</span>
             </LinkButton>
-                        <LinkButton
+            <LinkButton
               priority="tertiary"
               size="default"
               icon={<SvgArrowRightStraight />}
@@ -304,9 +312,11 @@ const HomePage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/au"
             >
-              Australia edition
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                Australia edition
+              </span>
             </LinkButton>
-                        <LinkButton
+            <LinkButton
               priority="tertiary"
               size="default"
               icon={<SvgArrowRightStraight />}
@@ -314,9 +324,9 @@ const HomePage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/europe"
             >
-              Europe edition
+              <span css={LinkButtonLabelPinnedRightIcon}>Europe edition</span>
             </LinkButton>
-                        <LinkButton
+            <LinkButton
               priority="tertiary"
               size="default"
               icon={<SvgArrowRightStraight />}
@@ -324,7 +334,9 @@ const HomePage = () => (
               nudgeIcon={true}
               href="https://www.theguardian.com/international"
             >
-              International edition
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                International edition
+              </span>
             </LinkButton>
           </div>
           <LinkButton
