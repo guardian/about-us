@@ -65,7 +65,6 @@ export const twoColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 50%;
       width: calc(50% - 10px);
       margin-top: ${space[5]}px;
     }
@@ -90,7 +89,6 @@ export const twoThenOneColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 50%;
       width: calc(50% - 10px);
       margin-top: ${space[5]}px;
       &:last-of-type {
@@ -113,7 +111,6 @@ export const threeColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 33.3%;
       width: calc(33.3% - 13px);
       margin-top: ${space[5]}px;
     }
@@ -133,7 +130,6 @@ export const oneThenTwoColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 50%;
       width: calc(50% - 13px);
       margin-top: ${space[5]}px;
       &:first-of-type {
@@ -156,7 +152,6 @@ export const threeThenOneColumnResponsiveCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 33.3%;
       width: calc(33.3% - 13px);
       margin-top: ${space[5]}px;
       &:last-of-type {
@@ -185,7 +180,6 @@ export const threeThenTwoColumnResponsiveCardHolder = css`
     justify-content: flex-start;
     gap: 13px;
     & > * {
-      width: 33.3%;
       width: calc(33.3% - 13px);
       margin-top: ${space[5]}px;
     }
@@ -223,7 +217,6 @@ export const readerFundedSubscribeCardHolderCss = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 50%;
       width: calc(50% - 13px);
       margin-bottom: 0;
     }
@@ -294,7 +287,6 @@ export const oneTopTwoBottomCardHolder = css`
     flex-wrap: wrap;
     justify-content: space-between;
     & > * {
-      width: 50%;
       width: calc(50% - 10px);
       margin-top: ${space[5]}px;
       &:first-child {
