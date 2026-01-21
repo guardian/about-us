@@ -190,7 +190,6 @@ export const threeThenTwoColumnResponsiveCardHolder = css`
       margin-top: ${space[5]}px;
     }
   }
-  }
 `;
 
 export const singleColumnResponsiveCardHolder = css`
