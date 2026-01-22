@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import BoxContainer from "../../components/boxContainer";
 import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
 import FullWidthText from "../../components/fullWidthText";
@@ -6,11 +7,16 @@ import InnerText from "../../components/innerText";
 import { PageStyles } from "../../components/pageStyles";
 import { palette } from "@guardian/source/foundations";
 import {
+  LinkButton,
+  SvgArrowRightStraight,
+} from "@guardian/source/react-components";
+import {
   headingCss,
   oneThenTwoColumnResponsiveCardHolder,
   responsiveCardV2Holder,
   skipToContentStyles,
   twoColumnResponsiveCardHolder,
+  threeThenTwoColumnResponsiveCardHolder,
 } from "../../styles/sharedStyles";
 import ResponsiveCardVariant1 from "../../components/responsiveCardVariant1";
 import FullWidthImage from "../../components/fullWidthImage";
@@ -27,6 +33,11 @@ const gotAStoryBkg = {
   tablet: `linear-gradient(to top, ${palette.neutral[100]} 49px, ${palette.neutral[97]} 49px)`,
   wide: `linear-gradient(to top, ${palette.neutral[100]} 58px, ${palette.neutral[97]} 58px)`,
 };
+
+const LinkButtonLabelPinnedRightIcon = css`
+  width: 100%;
+  text-align: center;
+`;
 
 const JournalismPage = () => (
   <>
@@ -197,38 +208,62 @@ const JournalismPage = () => (
               imageUrl="/about/images/journalism-17.jpg"
             />
           </div>
-          <div css={twoColumnResponsiveCardHolder}>
+          <div css={threeThenTwoColumnResponsiveCardHolder}>
             <h3>Editions</h3>
-            <ResponsiveCardVariant1
-              title="UK edition"
-              imagePath="/about/images/UK_920x552.jpg"
-              linkUrl="https://www.theguardian.com/uk"
-              linkText="Visit UK edition"
-            />
-            <ResponsiveCardVariant1
-              title="US edition"
-              imagePath="/about/images/USA_920x552.jpg"
-              linkUrl="https://www.theguardian.com/us"
-              linkText="Visit US edition"
-            />
-            <ResponsiveCardVariant1
-              title="Australia edition"
-              imagePath="/about/images/australia_920x552.jpg"
-              linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Australia edition"
-            />
-            <ResponsiveCardVariant1
-              title="Europe edition"
-              imagePath="/about/images/europe_920x552.jpg"
-              linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Europe edition"
-            />
-            <ResponsiveCardVariant1
-              title="International edition"
-              imagePath="/about/images/world_920x552.jpg"
-              linkUrl="https://www.theguardian.com/international"
-              linkText="Visit International edition"
-            />
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/uk"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>UK edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/us"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>US edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/au"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                Australia edition
+              </span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/europe"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>Europe edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/international"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                International edition
+              </span>
+            </LinkButton>
           </div>
         </>
       </BoxContainer>

@@ -17,7 +17,10 @@ import {
   supportReaderFundedHeadingCss,
   printReaderFundedHeadingCss,
 } from "../styles/sharedStyles";
-import { twoColumnResponsiveCardHolder } from "../styles/sharedStyles";
+import {
+  twoColumnResponsiveCardHolder,
+  threeThenTwoColumnResponsiveCardHolder,
+} from "../styles/sharedStyles";
 import FullWidthImage from "../components/fullWidthImage";
 import ReaderFundedContributeCard from "../components/reader-funded/readerFundedContributeCard";
 import ReaderFundedPatronSupport from "../components/reader-funded/readerFundedPatronSupport";
@@ -41,6 +44,11 @@ const LinkButtonCss = css`
   ${minWidth.desktop} {
     margin-top: 57px;
   }
+`;
+
+const LinkButtonLabelPinnedRightIcon = css`
+  width: 100%;
+  text-align: center;
 `;
 
 const HomePage = () => (
@@ -275,37 +283,61 @@ const HomePage = () => (
               </p>
             </>
           </InnerText>
-          <div css={twoColumnResponsiveCardHolder}>
-            <ResponsiveCardVariant1
-              title="UK edition"
-              imagePath="/about/images/UK_920x552.jpg"
-              linkUrl="https://www.theguardian.com/uk"
-              linkText="Visit UK edition"
-            />
-            <ResponsiveCardVariant1
-              title="US edition"
-              imagePath="/about/images/USA_920x552.jpg"
-              linkUrl="https://www.theguardian.com/us"
-              linkText="Visit US edition"
-            />
-            <ResponsiveCardVariant1
-              title="Australia edition"
-              imagePath="/about/images/australia_920x552.jpg"
-              linkUrl="https://www.theguardian.com/au"
-              linkText="Visit Australia edition"
-            />
-            <ResponsiveCardVariant1
-              title="Europe edition"
-              imagePath="/about/images/europe_920x552.jpg"
-              linkUrl="https://www.theguardian.com/europe"
-              linkText="Visit Europe edition"
-            />
-            <ResponsiveCardVariant1
-              title="International edition"
-              imagePath="/about/images/world_920x552.jpg"
-              linkUrl="https://www.theguardian.com/international"
-              linkText="Visit International edition"
-            />
+          <div css={threeThenTwoColumnResponsiveCardHolder}>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/uk"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>UK edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/us"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>US edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/au"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                Australia edition
+              </span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/europe"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>Europe edition</span>
+            </LinkButton>
+            <LinkButton
+              priority="tertiary"
+              size="default"
+              icon={<SvgArrowRightStraight />}
+              iconSide="right"
+              nudgeIcon={true}
+              href="https://www.theguardian.com/international"
+            >
+              <span css={LinkButtonLabelPinnedRightIcon}>
+                International edition
+              </span>
+            </LinkButton>
           </div>
           <LinkButton
             priority="primary"
