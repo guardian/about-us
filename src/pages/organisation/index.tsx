@@ -3,7 +3,7 @@ import BoxContainer, {
   boxContainerPadding,
 } from "../../components/boxContainer";
 import { palette } from "@guardian/source/foundations";
-import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import ContactAndWorkWithUs from "../../components/contactAndWorkWithUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import InnerText from "../../components/innerText";
@@ -124,7 +124,10 @@ const HomePage = () => (
           </InnerText>
         </>
       </BoxContainer>
-      <BoxContainer theme="light" background={{ backgroundColor: palette.brand[400] }}>
+      <BoxContainer
+        theme="light"
+        background={{ backgroundColor: palette.brand[400] }}
+      >
         <>
           <h2 css={headingCss}>Leadership</h2>
           <div css={leadershipProfilesHolder}>
@@ -132,7 +135,7 @@ const HomePage = () => (
               imageUrl="/about/images/organisation-6.jpg"
               title={{
                 name: "Katharine Viner",
-                job: "editor-in-chief"
+                job: "editor-in-chief",
               }}
               bodyCopy="Katharine Viner is editor-in-chief of the Guardian, a position she has held since June 2015. Prior to this, Katharine was deputy editor 2008-2015, launched the award-winning Guardian Australia in 2013, and was also editor of Guardian US, based in New York. Since becoming editor, she has put the Guardian’s purpose at the heart of its journalism and led the development of the Guardian’s successful reader contribution strategy. Under Katharine’s leadership, the Guardian became the first news organisation in the world to win both an Oscar, a Bafta and three Emmys."
             />
@@ -176,7 +179,10 @@ const HomePage = () => (
           </div>
         </>
       </BoxContainer>
-      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }}>
+      <BoxContainer
+        theme="light"
+        background={{ backgroundColor: palette.neutral[97] }}
+      >
         <>
           <InnerText title="Sustainability" theme="light">
             <>
@@ -289,7 +295,7 @@ const HomePage = () => (
           </div>
         </>
       </BoxContainer>
-      <ContactAndWorkForUs />
+      <ContactAndWorkWithUs />
     </main>
     <Footer />
   </>

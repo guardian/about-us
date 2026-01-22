@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import BoxContainer from "../../components/boxContainer";
-import ContactAndWorkForUs from "../../components/contactAndWorkForUs";
+import ContactAndWorkWithUs from "../../components/contactAndWorkWithUs";
 import FullWidthText from "../../components/fullWidthText";
 import Header from "../../components/header";
 import { PageStyles } from "../../components/pageStyles";
@@ -112,7 +112,11 @@ const OurHistory = () => (
         smallImageUrl="/about/images/history-full-width-small-2.jpg"
         largeImageUrl="/about/images/history-full-width-large-2.jpg"
       />
-      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }} overlapTop={true}>
+      <BoxContainer
+        theme="light"
+        background={{ backgroundColor: palette.neutral[97] }}
+        overlapTop={true}
+      >
         <>
           <InnerText theme="light" title="Purpose">
             <>
@@ -289,7 +293,10 @@ const OurHistory = () => (
         </>
       </BoxContainer>
       <UnfinishedBusinessThrasher />
-      <BoxContainer theme="light" background={{ backgroundColor: palette.neutral[97] }}>
+      <BoxContainer
+        theme="light"
+        background={{ backgroundColor: palette.neutral[97] }}
+      >
         <>
           <InnerText title="The Scott Trust Endowment" theme="light">
             <p>
@@ -334,7 +341,7 @@ const OurHistory = () => (
           </div>
         </>
       </BoxContainer>
-      <ContactAndWorkForUs />
+      <ContactAndWorkWithUs />
     </main>
     <Footer />
   </>
