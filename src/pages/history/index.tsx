@@ -158,7 +158,7 @@ const OurHistory = () => (
           <div css={twoColumnResponsiveCardHolder}>
             <ResponsiveCardVariant1
               title="Annual reports and letter from the chair"
-              imagePath="/about/images/organisation-10.jpg"
+              imagePath="/about/images/organisation-12.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
             <ResponsiveCardVariant1
@@ -227,7 +227,7 @@ const OurHistory = () => (
           <div css={oneTopTwoBottomCardHolder}>
             <ResponsiveCardVariant1
               title="CP Scott’s centenary essay"
-              imagePath="/about/images/history-9.jpg"
+              imagePath="/about/images/history-8.jpg"
               linkUrl="https://www.theguardian.com/sustainability/cp-scott-centenary-essay"
               alwaysImgOnLeft={true}
             />
@@ -314,7 +314,7 @@ const OurHistory = () => (
             />
             <ResponsiveCardVariant1
               title="The Scott Trust Endowment board"
-              imagePath="/about/images/organisation-3.jpg"
+              imagePath="/about/images/organisation-4.jpg"
               linkUrl="https://www.theguardian.com/info/2025/apr/15/the-scott-trust-endowment-board"
             />
           </div>
