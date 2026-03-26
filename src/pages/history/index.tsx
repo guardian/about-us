@@ -155,16 +155,23 @@ const OurHistory = () => (
               </p>
             </>
           </InnerText>
-          <div css={twoColumnResponsiveCardHolder}>
+          <div css={oneTopTwoBottomCardHolder}>
             <ResponsiveCardVariant1
-              title="Annual reports and letter from the chair"
-              imagePath="/about/images/organisation-12.jpg"
-              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
+              title="About The Scott Trust"
+              imagePath="/about/images/history-11.jpg"
+              linkUrl="https://www.youtube.com/watch?v=-TE6D9tA1XI"
+              linkText="Watch video"
+              alwaysImgOnLeft={true}
             />
             <ResponsiveCardVariant1
               title="The Scott Trust board"
               imagePath="/about/images/organisation-3.jpg"
               linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/26/the-scott-trust-board"
+            />
+            <ResponsiveCardVariant1
+              title="Annual reports and letter from the chair"
+              imagePath="/about/images/organisation-12.jpg"
+              linkUrl="https://www.theguardian.com/the-scott-trust/2015/jul/23/the-scott-trust-financials"
             />
           </div>
         </>
