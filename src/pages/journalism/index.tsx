@@ -141,9 +141,9 @@ const JournalismPage = () => (
               linkUrl="https://www.theguardian.com/profile/betsy-reed"
             />
             <ResponsiveCardVariant1
-              title="Lenore Taylor, editor of Guardian Australia"
+              title="David Munk, editor of Guardian Australia"
               imagePath="/about/images/journalism-7.jpg"
-              linkUrl="https://www.theguardian.com/profile/lenore-taylor"
+              linkUrl="https://www.theguardian.com/profile/davidmunk"
             />
           </div>
         </>
