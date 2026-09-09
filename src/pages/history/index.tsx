@@ -153,6 +153,13 @@ const OurHistory = () => (
                 </a>
                 .
               </p>
+              <p>
+                Read the latest financial reports{" "}"
+                <a href="https://www.theguardian.com/info/2025/sep/11/the-scott-trust-corporate-governance-and-financial-reports">
+                  here
+                </a>
+                .
+              </p>
             </>
           </InnerText>
           <div css={oneTopTwoBottomCardHolder}>
