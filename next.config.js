@@ -20,6 +20,7 @@ const nextConfig = {
   output: 'export',
   transpilePackages: [
     "@guardian/libs",
+    "@guardian/consent-manager",
     "@guardian/source",
     "@guardian/ophan-tracker-js",
   ]
