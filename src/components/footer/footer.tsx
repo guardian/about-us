@@ -240,7 +240,18 @@ const privacySettingsClickHandler = () => {
   }
 };
 
+const setAboutAsInfoPage = () => {
+  // This is being set as an info page as the CMP is not shown on info or help pages.
+  // The cmp is still required in the footer for the privacy settings functionality.
+  const w = window as any;
+  w.guardian = w.guardian ?? {};
+  w.guardian.config = w.guardian.config ?? {};
+  w.guardian.config.page = w.guardian.config.page ?? {};
+  w.guardian.config.page.section = "info";
+};
+
 const countryCode = getGeoLocation() ?? "GB";
+setAboutAsInfoPage();
 cmp.init({ country: countryCode as CountryCode, useNonAdvertisedList: true });
 
 const Footer = () => (
